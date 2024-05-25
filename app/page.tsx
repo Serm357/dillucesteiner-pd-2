@@ -11,16 +11,14 @@ export default function Home() {
     <main className="h-[calc(100vh-106px)]">
       <TracingBeam className="px-6">
         <MaxWidthWrapper>
-          {/* <SomeComponent /> */}
-          {"homepage"}
+          <Hero />
         </MaxWidthWrapper>
-        <Hero />
       </TracingBeam>
     </main>
   );
 }
 
- function SomeComponent() {
+function SomeComponent() {
   return (
     <div className="max-w-2xl mx-auto antialiased pt-4 relative">
       {dummyContent.map((item, index) => (

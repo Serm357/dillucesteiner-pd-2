@@ -81,14 +81,14 @@ const links = [
 ];
 function LinksBanner() {
   return (
-    <div className="block bg-gray-100  p-2 rounded-lg text-center transition-all duration-300 dark:bg-white/10 dark:hover:bg-white/10">
+    <div className="block bg-gray-100  p-2 text-center transition-all duration-300 dark:bg-white/10 dark:hover:bg-white/10">
       <div className="flex justify-end pr-3 mr-3">
         <div className="me-2 inline-block text-sm text-gray-800 dark:text-neutral-200">
           {links.map((lnk) => (
             <Link
               href={lnk.title}
               key={lnk.value}
-              className="hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md mx-1 px-2 py-1"
+              className="hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md mx-1 py-1"
             >
               {lnk.title}
             </Link>

@@ -18,14 +18,14 @@ export default function Hero() {
             architecto molestiae a facilis exercitationem.
           </p>
         </div>
-        <div className="relative">
-            <Image
-             src="/female_cutout.webp"
-             alt="female cutout"
-             fill
-             
-             className="absolute left-0 bottom-0"
-            />
+        <div className="">
+          <Image
+            src="/female_cutout.webp"
+            alt="female cutout"
+            fill
+
+            //  className="absolute left-0 bottom-0"
+          />
         </div>
       </div>
     </section>
