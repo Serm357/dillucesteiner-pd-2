@@ -20,7 +20,7 @@ export default function Home() {
   );
 }
 
-export function SomeComponent() {
+ function SomeComponent() {
   return (
     <div className="max-w-2xl mx-auto antialiased pt-4 relative">
       {dummyContent.map((item, index) => (
