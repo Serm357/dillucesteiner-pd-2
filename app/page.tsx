@@ -3,8 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import Hero from "../components/HomePageComponents/Hero";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import Hero from "./components/HomePageComponents/Hero";
+import MaxWidthWrapper from "./components/MaxWidthWrapper";
 
 export default function Home() {
   return (
