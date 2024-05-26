@@ -2,11 +2,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "@/providers/Theme";
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
+import PrelineScript from "./components/PrelineScript";
 
-const PrelineScript = dynamic(() => import("./components/PrelineScript"), {
-  ssr: false,
-});
 export const metadata: Metadata = {
   title: "Dillucesteiner",
   description: "Susceptibility Testing meets AI",
