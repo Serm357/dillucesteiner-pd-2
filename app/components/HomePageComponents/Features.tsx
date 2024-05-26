@@ -23,7 +23,7 @@ export default function Herofeatures() {
               >
                 <button
                   type="button"
-                  className="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 active"
+                  className="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700"
                   id="tabs-with-card-item-1"
                   data-hs-tab="#tabs-with-card-1"
                   aria-controls="tabs-with-card-1"
@@ -33,11 +33,17 @@ export default function Herofeatures() {
                     <Stars />
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                        Advanced tools
+                        Detection
+                      </span>
+                      <span className="block text-lg font-medium text-primary">
+                        A screening revolution has arrived. The difference is
+                        ProFound
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
-                        Use Preline thoroughly thought and automated libraries
-                        to manage your businesses.
+                        Find cancers earlier, with greater accuracy and
+                        efficiency. With up to 2x enhanced clinical performance
+                        compared to other AI platforms,3 ProFound Detection
+                        offers unrivaled accuracy and workflow advantages.
                       </span>
                     </span>
                   </span>
@@ -52,14 +58,20 @@ export default function Herofeatures() {
                   role="tab"
                 >
                   <span className="flex">
-                    <ParkingMeterIcon />
+                    <Stars />
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                        Smart dashboards
+                        Density
+                      </span>
+                      <span className="block text-lg font-medium text-primary">
+                        Objective, reliable, consistent density scoring.
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
-                        Quickly Preline sample components, copy-paste codes, and
-                        start right off.
+                        Breast density can elevate breast cancer risk up to 4x,6
+                        therefore, density scores impact and inform personalized
+                        treatment plans. Simplify and standardize assessments of
+                        breast density, with results clinicians rely on and
+                        patients understand.
                       </span>
                     </span>
                   </span>
@@ -77,11 +89,16 @@ export default function Herofeatures() {
                     <Stars />
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                        Powerful features
+                        Risk
+                      </span>
+                      <span className="block text-lg font-medium text-primary">
+                        Know your risk. Protect your future.
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
-                        Reduce time and effort on building modern look design
-                        with Preline only.
+                        The world’s first image-based risk model is 2.4x more
+                        accurate than traditional models.1,2 Identify women at
+                        high risk of developing cancer before or at their next
+                        screening to help find interval cancers, earlier.
                       </span>
                     </span>
                   </span>
@@ -192,17 +209,18 @@ export default function Herofeatures() {
 
 function Heading() {
   return (
-    <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-3">
-      <h1 className="font-semibold text-white text-5xl md:text-6xl">
-        <span className="text-[#ff0] ">Preline Agency:</span> Transforming ideas
-        into reality
+    <div className="max-w-5xl mx-auto px-4 xl:px-0 ">
+      <h1 className="font-semibold text-primary text-5xl md:text-6xl">
+        <span className="text-[#ff0] uppercase">our platform</span> ProFound
+        Breast Health Suite
       </h1>
       <div className="max-w-4xl">
-        <p className="mt-5 text-neutral-400 text-lg">
-          It is a creative hub where imagination meets craftsmanship to
-          transform ideas into tangible realities. At Preline Agency, we
-          specialize in turning conceptual visions into concrete forms, whether
-          it be through design, artistry, or technological innovation.
+        <p className="mt-1 dark:text-neutral-400 text-lg">
+          Backed by science, clinical evidence, and proven patient outcomes; our
+          suite of solutions – Detection, Density, and Risk — shine a spotlight
+          on cancer, exposing its hiding place. These clinically proven
+          AI-powered solutions provide certainty and peace of mind, improving
+          patient outcomes and saving more lives.
         </p>
       </div>
     </div>
