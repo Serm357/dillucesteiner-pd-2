@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const TracingBeam = ({
+const TracingBeam = ({
   children,
   className,
 }: {
@@ -126,3 +126,5 @@ export const TracingBeam = ({
     </motion.div>
   );
 };
+
+export default TracingBeam;
