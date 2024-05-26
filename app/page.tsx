@@ -5,7 +5,6 @@ import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
 import CTA from "./components/HomePageComponents/Cta";
 import dynamic from "next/dynamic";
-import Footer from "./components/Footer";
 
 const TracingBeam = dynamic(() => import("@/components/ui/tracing-beam"), {
   ssr: false,
@@ -33,7 +32,6 @@ export default function Home() {
           <Herofeatures />
         </MaxWidthWrapper>
       </TracingBeam>
-      <Footer />
     </main>
   );
 }

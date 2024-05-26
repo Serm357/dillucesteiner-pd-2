@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider } from "@/providers/Theme";
 import { Metadata } from "next";
 import PrelineScript from "./components/PrelineScript";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Dillucesteiner",
@@ -27,6 +28,7 @@ export default function RootLayout({
           >
             <Navbar />
             {children}
+            <Footer />
           </ThemeProvider>
         </body>
         <PrelineScript />
