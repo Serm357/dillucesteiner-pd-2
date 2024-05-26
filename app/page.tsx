@@ -6,6 +6,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import Hero from "./components/HomePageComponents/Hero";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import Stats from "./components/HomePageComponents/Stats";
+import Herofeatures from "./components/HomePageComponents/Features";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <MaxWidthWrapper>
           <Hero />
           <Stats />
+          <Herofeatures />
         </MaxWidthWrapper>
       </TracingBeam>
     </main>

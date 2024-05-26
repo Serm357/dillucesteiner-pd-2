@@ -9,6 +9,7 @@ const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
+    "./node_modules/preline/preline.js",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
@@ -79,7 +80,11 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+  plugins: [
+    require("tailwindcss-animate"),
+    addVariablesForColors,
+    require("preline/plugin"),
+  ],
 } satisfies Config;
 
 export default config;

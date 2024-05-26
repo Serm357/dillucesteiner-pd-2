@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "@/providers/Theme";
+import PrelineScript from "./components/PrelineScript";
 
 export const metadata: Metadata = {
   title: "Dillucesteiner",
@@ -28,6 +29,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </body>
+        <PrelineScript />
       </html>
     </>
   );
