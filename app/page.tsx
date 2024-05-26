@@ -10,12 +10,20 @@ const TracingBeam = dynamic(() => import("@/components/ui/tracing-beam"), {
   ssr: false,
 });
 
+const HeroScroll = dynamic(
+  () => import("./components/HomePageComponents/HeroAdvance"),
+  {
+    ssr: false,
+  }
+);
+
 export default function Home() {
   return (
     <main className="h-[calc(100vh-106px)]">
       <TracingBeam className="px-6">
+        <HeroScroll />
         <MaxWidthWrapper>
-          <Hero />
+          {/* <Hero /> */}
           <Stats />
         </MaxWidthWrapper>
         <CTA />
