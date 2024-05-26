@@ -7,6 +7,7 @@ import Hero from "./components/HomePageComponents/Hero";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
+import CTA from "./components/HomePageComponents/Cta";
 
 export default function Home() {
   return (
@@ -15,6 +16,10 @@ export default function Home() {
         <MaxWidthWrapper>
           <Hero />
           <Stats />
+        </MaxWidthWrapper>
+        <CTA />
+        <MaxWidthWrapper>
+          {" "}
           <Herofeatures />
         </MaxWidthWrapper>
       </TracingBeam>
