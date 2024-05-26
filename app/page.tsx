@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import Hero from "./components/HomePageComponents/Hero";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
+import Stats from "./components/HomePageComponents/Stats";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TracingBeam className="px-6">
         <MaxWidthWrapper>
           <Hero />
+          <Stats />
         </MaxWidthWrapper>
       </TracingBeam>
     </main>
