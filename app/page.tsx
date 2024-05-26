@@ -5,6 +5,7 @@ import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
 import CTA from "./components/HomePageComponents/Cta";
+import { Metadata } from "next";
 
 export default function Home() {
   return (
@@ -23,3 +24,8 @@ export default function Home() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Dillucesteiner",
+  description: "Susceptibility Testing meets AI",
+};
