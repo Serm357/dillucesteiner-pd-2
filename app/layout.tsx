@@ -1,8 +1,13 @@
-// "use client";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "@/providers/Theme";
-// import PrelineScript from "./components/PrelineScript";
+import PrelineScript from "./components/PrelineScript";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dillucesteiner",
+  description: "Susceptibility Testing meets AI",
+};
 
 export default function RootLayout({
   children,
@@ -24,7 +29,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </body>
-        {/* <PrelineScript /> */}
+        <PrelineScript />
       </html>
     </>
   );
