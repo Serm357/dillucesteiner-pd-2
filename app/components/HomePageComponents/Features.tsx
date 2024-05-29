@@ -205,9 +205,11 @@ export default function Herofeatures() {
 function Heading() {
   return (
     <div className="max-w-5xl mx-auto px-4 xl:px-0 ">
+      <h3 className="text-[#ff0] uppercase font-semibold text-2xl md:text-4xl">
+        our platform
+      </h3>
       <h1 className="font-semibold text-primary text-5xl md:text-6xl">
-        <span className="text-[#ff0] uppercase">our platform</span> ProFound
-        Breast Health Suite
+        ProFound Breast Health Suite
       </h1>
       <div className="max-w-4xl">
         <p className="mt-1 dark:text-neutral-400 text-lg">
