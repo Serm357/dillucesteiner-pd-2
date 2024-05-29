@@ -32,7 +32,7 @@ export default function CTA() {
             <h3 className="text-lg sm:text-2xl">
               Know where cancer may be hiding and when it might make its move.
             </h3>
-            <p className="mt-6 text-2xl leading-8 ">
+            <p className="mt-6 text-2xl leading-normal ">
               Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
               Malesuada adipiscing sagittis vel nulla.
             </p>
