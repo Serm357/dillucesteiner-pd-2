@@ -1,5 +1,4 @@
 import React from "react";
-// import Hero from "./components/HomePageComponents/Hero";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
@@ -7,7 +6,10 @@ import CTA from "./components/HomePageComponents/Cta";
 import dynamic from "next/dynamic";
 import Trusts from "./components/HomePageComponents/Trusts";
 import Testimonials from "./components/HomePageComponents/Testimonials";
-import Team from "./components/HomePageComponents/Team";
+
+const Team = dynamic(() => import("./components/HomePageComponents/Team"), {
+  ssr: false,
+});
 
 const TracingBeam = dynamic(() => import("@/components/ui/tracing-beam"), {
   ssr: false,
@@ -26,7 +28,6 @@ export default function Home() {
       <TracingBeam className="px-6">
         <MaxWidthWrapper>
           <HeroScroll />
-          {/* <Hero /> */}
           <Stats />
         </MaxWidthWrapper>
         <CTA />
