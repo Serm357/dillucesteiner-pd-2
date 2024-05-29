@@ -3,7 +3,7 @@ import React from "react";
 const Trusts = () => {
   return (
     // <!-- Clients -->
-    <div className="max-w-[85rem] min-h-[90vh] my-10 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div className="max-w-[85rem] min-h-[90vh] mt-10 mb-4 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       {/* <!-- Title --> */}
       <div className="sm:w-1/2 xl:w-1/3 mx-auto text-center mb-6">
         <h2 className="text-xl font-semibold md:text-2xl md:leading-tight text-gray-800 dark:text-neutral-200">
