@@ -4,7 +4,7 @@ import React from "react";
 const HeroFinale = () => {
   return (
     // <!-- Hero -->
-    <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('/4.jpg')] dark:before:bg-[url('/4.png')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
+    <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('/4.jpg')] dark:before:bg-[url('/4.jpg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
         {/* <!-- Announcement Banner --> */}
         <div className="flex justify-center">
@@ -52,8 +52,8 @@ const HeroFinale = () => {
             type="button"
             className="relative group p-2 ps-3 inline-flex items-center gap-x-2 text-sm font-mono rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
           >
-            $ npm i preline
-            <ChevronLeft className="flex justify-center items-center bg-gray-200 rounded-md  dark:bg-neutral-700 dark:text-neutral-400 flex-shrink-0 size-4 group-hover:rotate-6 transition" />
+            Lorem, ips dolor.
+            <ChevronRight className="flex justify-center items-center bg-gray-200 rounded-md  dark:bg-neutral-700 dark:text-neutral-400 flex-shrink-0 size-4 group-hover:rotate-6 transition" />
           </button>
         </div>
         {/* <!-- End Buttons --> */}
