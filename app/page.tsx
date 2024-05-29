@@ -6,6 +6,7 @@ import CTA from "./components/HomePageComponents/Cta";
 import dynamic from "next/dynamic";
 import Trusts from "./components/HomePageComponents/Trusts";
 import Testimonials from "./components/HomePageComponents/Testimonials";
+import HeroFn from "./components/HomePageComponents/HeroFn";
 
 const Team = dynamic(() => import("./components/HomePageComponents/Team"), {
   ssr: false,
@@ -27,7 +28,8 @@ export default function Home() {
     <main className="flex-1">
       <TracingBeam className="px-6">
         <MaxWidthWrapper>
-          <HeroScroll />
+          {/* <HeroScroll /> */}
+          <HeroFn />
           <Stats />
         </MaxWidthWrapper>
         <CTA />
