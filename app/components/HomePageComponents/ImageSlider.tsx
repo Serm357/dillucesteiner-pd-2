@@ -14,7 +14,7 @@ const ImageSlider = () => {
           <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
             {/* <!-- Item --> */}
             <div className="hs-carousel-slide">
-              <div className="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('/1.png')] bg-cover bg-center bg-no-repeat">
+              <div className="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('/2.png')] bg-cover bg-center bg-no-repeat">
                 <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
                   <span className="block text-white">Lorem, ipsum.</span>
                   <span className="block text-white text-xl md:text-3xl">
@@ -56,7 +56,7 @@ const ImageSlider = () => {
 
             {/* <!-- Item --> */}
             <div className="hs-carousel-slide">
-              <div className="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('/8.jpg')] bg-cover bg-center bg-no-repeat">
+              <div className="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('/2.jpg')] bg-cover bg-center bg-no-repeat">
                 <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
                   <span className="block text-white">Grumpy</span>
                   <span className="block text-white text-xl md:text-3xl">
@@ -82,9 +82,9 @@ const ImageSlider = () => {
           type="button"
           className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-s-2xl focus:outline-none focus:bg-white/20"
         >
-          <span className="text-2xl" aria-hidden="true">
+          <span className="text-2xl font-bold text-primary" aria-hidden="true">
             <svg
-              className="flex-shrink-0 size-3.5 md:size-4"
+              className="flex-shrink-0 size-3.5 md:size-4 font-bold text-primary"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -105,9 +105,9 @@ const ImageSlider = () => {
           className="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-e-2xl focus:outline-none focus:bg-white/20"
         >
           <span className="sr-only">Next</span>
-          <span className="text-2xl" aria-hidden="true">
+          <span className="text-2xl font-bold text-primary" aria-hidden="true">
             <svg
-              className="flex-shrink-0 size-3.5 md:size-4"
+              className="flex-shrink-0 size-3.5 md:size-4 font-bold text-primary"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"

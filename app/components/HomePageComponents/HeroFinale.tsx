@@ -1,10 +1,10 @@
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import React from "react";
 
 const HeroFinale = () => {
   return (
     // <!-- Hero -->
-    <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('/6.jpg')] dark:before:bg-[url('/1.png')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
+    <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('/4.jpg')] dark:before:bg-[url('/4.png')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
         {/* <!-- Announcement Banner --> */}
         <div className="flex justify-center">
@@ -14,7 +14,7 @@ const HeroFinale = () => {
           >
             Labaratory Open- Get Demo
             <span className="py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-200 font-semibold text-sm text-gray-600 dark:bg-neutral-700 dark:text-neutral-400">
-              <ChevronLeft />
+              <ChevronRight />
             </span>
           </a>
         </div>
@@ -46,7 +46,7 @@ const HeroFinale = () => {
             href="#"
           >
             Contact Us
-            <ChevronLeft />
+            <ChevronRight />
           </a>
           <button
             type="button"
