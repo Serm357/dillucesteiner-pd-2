@@ -51,7 +51,7 @@ const Testimonials = () => {
         />
         <Testimonial
           imgSrc="/female_cutout.webp"
-          clientQuote="gjfjfjewjfkdsjfkjsfhiofh mafiwio jjfiw."
+          clientQuote="Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla."
           clientName="Mamito mtori"
           clientPosition="Nurse"
           clientCompany="Muhimbili"
