@@ -28,18 +28,16 @@ export default function Home() {
     <main className="flex-1">
       <TracingBeam className="px-6">
         <HeroFn />
-        <MaxWidthWrapper>
-          {/* <HeroScroll /> */}
-          <Stats />
-        </MaxWidthWrapper>
+        {/* <MaxWidthWrapper> */}
+        {/* <HeroScroll /> */}
+        <Stats />
+        {/* </MaxWidthWrapper> */}
         <CTA />
-        <MaxWidthWrapper>
-          {" "}
-          <Herofeatures />
-          <Trusts />
-          <Testimonials />
-          <Team />
-        </MaxWidthWrapper>
+        {/* <MaxWidthWrapper> */} <Herofeatures />
+        <Trusts />
+        <Testimonials />
+        <Team />
+        {/* </MaxWidthWrapper> */}
       </TracingBeam>
     </main>
   );
