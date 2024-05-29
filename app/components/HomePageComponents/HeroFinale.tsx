@@ -14,7 +14,7 @@ const HeroFinale = () => {
           >
             Labaratory Open- Get Demo
             <span className="py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-200 font-semibold text-sm text-gray-600 dark:bg-neutral-700 dark:text-neutral-400">
-              <ChevronRight />
+              <ChevronRight className="flex justify-center items-center bg-gray-200 rounded-md  dark:bg-neutral-700 dark:text-neutral-400 flex-shrink-0 size-4 group-hover:rotate-6 transition" />
             </span>
           </a>
         </div>
@@ -46,7 +46,7 @@ const HeroFinale = () => {
             href="#"
           >
             Contact Us
-            <ChevronRight />
+            <ChevronRight className="flex justify-center items-center bg-gray-200 rounded-md  dark:bg-neutral-700 dark:text-neutral-400 flex-shrink-0 size-4 group-hover:rotate-6 transition" />
           </a>
           <button
             type="button"
