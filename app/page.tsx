@@ -43,7 +43,9 @@ export default function Home() {
           <Trusts />
         </MaxWidthWrapper>
         <Testimonials />
-        <Team />
+        <MaxWidthWrapper>
+          <Team />
+        </MaxWidthWrapper>
         {/* </MaxWidthWrapper> */}
       </TracingBeam>
     </main>

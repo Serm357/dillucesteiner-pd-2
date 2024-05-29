@@ -5,7 +5,7 @@ import { ChevronRight, Menu, Package2 } from "lucide-react";
 const Navbar = () => {
   return (
     <>
-      <AnnouncementBanner />
+      {/* <AnnouncementBanner /> */}
       <LinksBanner />
       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-2 sm:py-0 dark:bg-neutral-800 dark:border-neutral-700">
         <nav
