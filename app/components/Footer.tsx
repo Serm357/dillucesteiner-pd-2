@@ -262,10 +262,10 @@ export default function Footer() {
                   href="#"
                   aria-label="Brand"
                 >
-                  Brand
+                  Dillucesteinner
                 </a>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
-                  © 2022 Dillucesteinner.
+                  © {new Date().getFullYear()} Dillucesteinner.
                 </p>
               </div>
 
