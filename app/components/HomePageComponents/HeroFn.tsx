@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 
 const HeroFn = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36 md:pt-14 md:pb-10">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -38,7 +38,7 @@ const HeroFn = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-3 z-10">
+      <div className="flex justify-center relative my-14 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xl text-center text-primary max-w-80">
             Creating world where
@@ -54,7 +54,7 @@ const HeroFn = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl text-primary"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-4 text-lg md:text-lg lg:text-2xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Reprehenderit id ad eum architecto officiis delectus.
           </p>
