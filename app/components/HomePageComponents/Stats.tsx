@@ -3,7 +3,7 @@ import AnimatedNumbers from "react-animated-numbers";
 
 export default function Stats() {
   return (
-    <section className="flex flex-col items-center justify-center px-2 py-3 lg:py-4 bg-primary-foreground dark:bg-slate-800 w-full">
+    <section className="flex flex-col items-center justify-center px-2 py-3 lg:py-4 bg-primary-foreground dark:bg-opacity-50 w-full">
       <h1 className="text-primary text-3xl md:text-4xl lg:text-5xl font-extrabold">
         Why we exist?
       </h1>
@@ -34,7 +34,7 @@ function Card({
   perc: number;
 }) {
   return (
-    <div className="flex flex-col gap-y-3 lg:gap-y-5 p-4 md:p-5 bg-white border shadow-sm rounded-xl dark:bg-opacity-50 dark:border-neutral-800">
+    <div className="flex flex-col gap-y-3 lg:gap-y-5 p-4 md:p-5 bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
       <div className="inline-flex justify-center items-center">
         <span className="size-2 inline-block bg-gray-500 rounded-full me-2"></span>
         <span className="text-xs font-semibold uppercase text-gray-600 dark:text-neutral-400">

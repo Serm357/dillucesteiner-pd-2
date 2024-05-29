@@ -1,4 +1,4 @@
-import { ParkingMeterIcon, Stars } from "lucide-react";
+import { Stars } from "lucide-react";
 import Image from "next/image";
 
 export default function Herofeatures() {
@@ -35,15 +35,10 @@ export default function Herofeatures() {
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Detection
                       </span>
-                      <span className="block text-lg font-medium text-primary">
-                        A screening revolution has arrived. The difference is
-                        ProFound
-                      </span>
+
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
                         Find cancers earlier, with greater accuracy and
                         efficiency. With up to 2x enhanced clinical performance
-                        compared to other AI platforms,3 ProFound Detection
-                        offers unrivaled accuracy and workflow advantages.
                       </span>
                     </span>
                   </span>
@@ -63,15 +58,11 @@ export default function Herofeatures() {
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Density
                       </span>
-                      <span className="block text-lg font-medium text-primary">
-                        Objective, reliable, consistent density scoring.
-                      </span>
+
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
                         Breast density can elevate breast cancer risk up to 4x,6
                         therefore, density scores impact and inform personalized
-                        treatment plans. Simplify and standardize assessments of
-                        breast density, with results clinicians rely on and
-                        patients understand.
+                        treatment plans.
                       </span>
                     </span>
                   </span>
@@ -91,14 +82,11 @@ export default function Herofeatures() {
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Risk
                       </span>
-                      <span className="block text-lg font-medium text-primary">
-                        Know your risk. Protect your future.
-                      </span>
+
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
                         The world’s first image-based risk model is 2.4x more
                         accurate than traditional models.1,2 Identify women at
-                        high risk of developing cancer before or at their next
-                        screening to help find interval cancers, earlier.
+                        high risk of developing cancer
                       </span>
                     </span>
                   </span>
@@ -118,7 +106,7 @@ export default function Herofeatures() {
                     aria-labelledby="tabs-with-card-item-1"
                   >
                     <Image
-                      className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20"
+                      className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20 w-full"
                       src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
                       alt="Image Description"
                       width={987}
@@ -133,7 +121,7 @@ export default function Herofeatures() {
                     aria-labelledby="tabs-with-card-item-2"
                   >
                     <Image
-                      className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20"
+                      className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20 w-full"
                       src="https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
                       alt="Image Description"
                       width={987}
@@ -148,7 +136,7 @@ export default function Herofeatures() {
                     aria-labelledby="tabs-with-card-item-3"
                   >
                     <Image
-                      className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20"
+                      className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20 w-full"
                       src="https://images.unsplash.com/photo-1598929213452-52d72f63e307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
                       alt="Image Description"
                       width={987}
@@ -218,9 +206,7 @@ function Heading() {
         <p className="mt-1 dark:text-neutral-400 text-lg">
           Backed by science, clinical evidence, and proven patient outcomes; our
           suite of solutions – Detection, Density, and Risk — shine a spotlight
-          on cancer, exposing its hiding place. These clinically proven
-          AI-powered solutions provide certainty and peace of mind, improving
-          patient outcomes and saving more lives.
+          on cancer, exposing its hiding place.
         </p>
       </div>
     </div>
