@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./components/HomePageComponents/Hero";
+// import Hero from "./components/HomePageComponents/Hero";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";

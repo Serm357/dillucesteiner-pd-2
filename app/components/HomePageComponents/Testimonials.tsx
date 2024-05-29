@@ -1,6 +1,9 @@
+import dynamic from "next/dynamic";
 import React from "react";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+const Carousel = dynamic(() => import("react-multi-carousel"), {
+  ssr: false,
+});
 
 const Testimonials = () => {
   const responsive = {
@@ -29,7 +32,7 @@ const Testimonials = () => {
         draggable={false}
         showDots={true}
         responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
+        // ssr={true} // means to render carousel on server-side.
         infinite={true}
         keyBoardControl={true}
         customTransition="all .5"
