@@ -27,7 +27,7 @@ const Testimonials = () => {
   };
 
   return (
-    <main className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <main className="max-w-[85rem] h-screen px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <Carousel
         swipeable={true}
         draggable={false}
@@ -86,7 +86,7 @@ function Testimonial({
   return (
     <>
       {/* <!-- Grid --> */}
-      <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
+      <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center size-full">
         <div className="hidden md:block mb-24 md:mb-0 sm:px-6">
           <div className="relative">
             <img className="rounded-xl" src={imgSrc} alt="Image Description" />
