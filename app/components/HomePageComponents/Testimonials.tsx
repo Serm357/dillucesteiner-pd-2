@@ -39,7 +39,7 @@ const Testimonials = () => {
         customTransition="all .5"
         transitionDuration={500}
         // containerClass="carousel-container"
-        // dotListClass="custom-dot-list-style"
+        dotListClass="dots"
         // itemClass="carousel-item-padding-40-px"
       >
         <Testimonial

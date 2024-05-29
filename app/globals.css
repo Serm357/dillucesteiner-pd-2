@@ -56,4 +56,7 @@
   body {
     @apply bg-background text-foreground;
   }
+  .dots {
+    @apply mt-8 active:bg-primary;
+  }
 }
