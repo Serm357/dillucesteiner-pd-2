@@ -38,7 +38,10 @@ export default function Home() {
         <CTA />
         {/* <MaxWidthWrapper> */} <Herofeatures />
         <ImageSlider />
-        <Trusts />
+        <MaxWidthWrapper>
+          {" "}
+          <Trusts />
+        </MaxWidthWrapper>
         <Testimonials />
         <Team />
         {/* </MaxWidthWrapper> */}
