@@ -27,9 +27,9 @@ export default function Home() {
   return (
     <main className="flex-1">
       <TracingBeam className="px-6">
+        <HeroFn />
         <MaxWidthWrapper>
           {/* <HeroScroll /> */}
-          <HeroFn />
           <Stats />
         </MaxWidthWrapper>
         <CTA />
