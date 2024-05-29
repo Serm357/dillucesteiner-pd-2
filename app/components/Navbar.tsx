@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggler";
 import { ChevronRight, Menu, Package2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { NavMenu } from "./NavMenu";
-import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Navbar = () => {
   return (
@@ -15,7 +12,7 @@ const Navbar = () => {
           className="relative max-w-[85rem] flex flex-wrap basis-full items-center w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
           aria-label="Global"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between md:ml-3 lg:ml-7 ">
             <Link
               className="flex-none text-2xl font-bold text-primary"
               href="/"

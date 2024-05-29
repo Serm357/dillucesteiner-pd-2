@@ -27,7 +27,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            {children}
+            <main className="flex flex-col gap-2 min-h-screen">{children}</main>
             <Footer />
           </ThemeProvider>
         </body>

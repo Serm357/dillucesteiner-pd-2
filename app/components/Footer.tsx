@@ -3,25 +3,25 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import { Facebook } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <section>
       {/* <!-- ========== FOOTER ========== --> */}
-      <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+      <footer className="mt-auto w-full  py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* <!-- Grid --> */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
           <div className="col-span-full hidden lg:col-span-1 lg:block">
-            <a
-              className="flex-none text-xl font-semibold dark:text-white"
-              href="#"
+            <Link
+              className="flex-none text-xl font-semibold text-primary"
+              href="/"
               aria-label="Brand"
             >
-              Brand
-            </a>
+              Dillucesteinner
+            </Link>
             <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
-              © 2022 Preline.
+              &copy; {new Date().getFullYear()}.
             </p>
           </div>
           {/* <!-- End Col --> */}

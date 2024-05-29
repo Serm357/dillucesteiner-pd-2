@@ -5,6 +5,8 @@ import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
 import CTA from "./components/HomePageComponents/Cta";
 import dynamic from "next/dynamic";
+import Trusts from "./components/HomePageComponents/Trusts";
+import Testimonials from "./components/HomePageComponents/Testimonials";
 
 const TracingBeam = dynamic(() => import("@/components/ui/tracing-beam"), {
   ssr: false,
@@ -19,7 +21,7 @@ const HeroScroll = dynamic(
 
 export default function Home() {
   return (
-    <main className="h-[calc(100vh-106px)]">
+    <main className="flex-1">
       <TracingBeam className="px-6">
         <MaxWidthWrapper>
           <HeroScroll />
@@ -30,6 +32,8 @@ export default function Home() {
         <MaxWidthWrapper>
           {" "}
           <Herofeatures />
+          <Trusts />
+          <Testimonials />
         </MaxWidthWrapper>
       </TracingBeam>
     </main>
