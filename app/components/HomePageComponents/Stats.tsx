@@ -1,5 +1,5 @@
 "use client";
-import { Meteors } from "@/components/ui/meteors";
+
 import AnimatedNumbers from "react-animated-numbers";
 
 export default function Stats() {
@@ -103,8 +103,6 @@ function Card2(){
         </div>
      
 
-        {/* Meaty part - Meteor effect */}
-        {/* <Meteors number={70} /> */}
       </div>
     </div>
   </div>
