@@ -9,7 +9,11 @@ import Testimonials from "./components/HomePageComponents/Testimonials";
 // import HeroFn from "./components/HomePageComponents/HeroFn";
 import HeroFinale from "./components/HomePageComponents/HeroFinale";
 import ImageSlider from "./components/HomePageComponents/ImageSlider";
-import { Subhero } from "./components/HomePageComponents/Subhero";
+
+
+const Subhero = dynamic(() => import("./components/HomePageComponents/Subhero"), {
+  ssr: false,
+});
 
 const Team = dynamic(() => import("./components/HomePageComponents/Team"), {
   ssr: false,

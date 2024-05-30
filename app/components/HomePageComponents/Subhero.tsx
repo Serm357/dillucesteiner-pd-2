@@ -5,7 +5,7 @@ import MagicButton from "./MagicButton";
 import { ChevronRight } from "lucide-react";
 
 
-export function Subhero() {
+export default function Subhero() {
   return (
     <div className="h-screen py-20 w-full">
       <LayoutGrid cards={cards} />
