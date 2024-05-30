@@ -1,5 +1,5 @@
 import React from "react";
-import MaxWidthWrapper from "./components/MaxWidthWrapper";
+// import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
 // import CTA from "./components/HomePageComponents/Cta";
