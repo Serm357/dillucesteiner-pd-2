@@ -9,6 +9,7 @@ import Testimonials from "./components/HomePageComponents/Testimonials";
 // import HeroFn from "./components/HomePageComponents/HeroFn";
 import HeroFinale from "./components/HomePageComponents/HeroFinale";
 import ImageSlider from "./components/HomePageComponents/ImageSlider";
+import { Subhero } from "./components/HomePageComponents/Subhero";
 
 const Team = dynamic(() => import("./components/HomePageComponents/Team"), {
   ssr: false,
@@ -35,7 +36,8 @@ export default function Home() {
         {/* <HeroScroll /> */}
         <Stats />
         {/* </MaxWidthWrapper> */}
-        <CTA />
+        <Subhero />
+        {/* <CTA /> */}
         {/* <MaxWidthWrapper> */} <Herofeatures />
         <ImageSlider />
         <MaxWidthWrapper>

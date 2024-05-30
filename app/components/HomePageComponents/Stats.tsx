@@ -15,13 +15,13 @@ export default function Stats() {
           <Card title="Sepsis" no={13660000} desc={'millionpeople who died globally had sepsis as an immediate cause of death or in the chain of events leading to their death (intermediate cause).'} year="2019" />
           <Card title="Drug Resistant Infection" no={4950000} desc={'millionpeople who died from drug-resistant infections, such as lower respiratory, bloodstream, and intra-abdominal infections'}  year="2019"/>
           <Card title="Direct Cause" no={1270000} desc={'milliondeaths in 2019 were directly caused by AMR'}  year="2019"/>
-          {/* <Card title="Cggs" no={10000} desc={'23'} /> */}
-        
+<Card2/ >
+          
         </div>
         {/* <!-- End Grid --> */}
       </div>
     </section>
-  );
+  ); 
 } 
 
 function Card({
@@ -38,15 +38,15 @@ function Card({
   return (
     <div className="">
     <div className=" w-full h-[300px] relative max-w-xs">
-      <div className="absolute inset-0 h-full w-full bg-primary-foreground transform scale-[0.80] rounded-full blur-3xl" />
-      <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+      <div className="absolute inset-0 h-full w-full  transform scale-[0.80] rounded-full blur-3xl" />
+      <div className="relative shadow-xl bg-primary-foreground  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
         
 
        <div className="flex flex-col items-center justify-center"> 
-       <h1 className="font-bold text-md text-white mb-4 relative z-50 uppercase">
+       <h1 className="font-bold text-md text-primary mb-4 relative z-50 uppercase">
           {title}
         </h1>
-        <h1 className="font-bold text-2xl text-white mb-4 relative z-50">
+        <h1 className="font-bold text-2xl text-green-300 mb-4 relative z-50">
         <AnimatedNumbers
             includeComma
             className="text-center"
@@ -65,15 +65,48 @@ function Card({
         <p className="font-normal text-base text-slate-500 mb-4 relative z-50 capitalize">
           {desc}
         </p>
-        <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+        <h1 className="font-bold text-xl  mb-4 relative z-50">
           {year}
         </h1></div>
      
 
         {/* Meaty part - Meteor effect */}
-        <Meteors number={70} />
+        {/* <Meteors number={70} /> */}
       </div>
     </div>
   </div>
   );
+}
+
+function Card2(){
+  return (
+    <div className="">
+    <div className=" w-full h-[300px] relative max-w-xs">
+      <div className="absolute inset-0 h-full w-full  transform scale-[0.80] rounded-full blur-3xl" />
+      <div className="relative shadow-xl bg-primary-foreground  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+        
+
+       <div className="flex flex-col items-center justify-center"> 
+       <h1 className="font-bold text-md text-primary mb-4 relative z-50 uppercase">
+          AMR
+        </h1>
+        <h1 className="font-bold text-2xl text-green-300 mb-4 relative z-50">
+        1 in 5 <br/>   <span className="text-md ">people</span>
+        </h1>
+
+        <p className="font-normal text-base text-slate-500 mb-4 relative z-50 capitalize">
+         died from AMR was a child under 5 years old, often from previously treatable infections.
+        </p>
+        {/* <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+          {year}
+        </h1> */}
+        </div>
+     
+
+        {/* Meaty part - Meteor effect */}
+        {/* <Meteors number={70} /> */}
+      </div>
+    </div>
+  </div>
+  )
 }
