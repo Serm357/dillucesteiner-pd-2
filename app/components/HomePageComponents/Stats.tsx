@@ -11,7 +11,7 @@ export default function Stats() {
       {/* <!-- Card Section --> */}
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         {/* <!-- Grid --> */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <Card title="Sepsis" no={13660000} desc={'millionpeople who died globally had sepsis as an immediate cause of death or in the chain of events leading to their death (intermediate cause).'} year="2019" />
           <Card title="Drug Resistant Infection" no={4950000} desc={'millionpeople who died from drug-resistant infections, such as lower respiratory, bloodstream, and intra-abdominal infections'}  year="2019"/>
           <Card title="Direct Cause" no={1270000} desc={'milliondeaths in 2019 were directly caused by AMR'}  year="2019"/>

@@ -29,7 +29,7 @@ const TracingBeam = dynamic(() => import("@/components/ui/tracing-beam"), {
 export default function Home() {
   return (
     <main className="flex-1">
-      <TracingBeam className="px-6">
+      {/* <TracingBeam className="px-1"> */}
         {/* <HeroFn /> */}
         <HeroFinale />
         {/* <MaxWidthWrapper> */}
@@ -49,7 +49,7 @@ export default function Home() {
           <Team />
         </MaxWidthWrapper>
         {/* </MaxWidthWrapper> */}
-      </TracingBeam>
+      {/* </TracingBeam> */}
     </main>
   );
 }

@@ -5,27 +5,16 @@ import MagicButton from "./MagicButton";
 const HeroFinale = () => {
   return (
     <>
-    <div className="relative overflow-hidden before:absolute before:top-0 rounded-md before:start-1/2 before:bg-[url('/4.jpg')] dark:before:bg-[url('/4.jpg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
-      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
-        {/* <!-- Announcement Banner --> */}
-        <div className="flex justify-center">
-          <a
-            className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-sm text-gray-800 p-1 ps-3 rounded-full transition hover:border-gray-300 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 dark:text-neutral-200"
-            href="#"
-          >
-            Labaratory Open- Get Demo
-            <span className="py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-200 font-semibold text-sm text-gray-600 dark:bg-neutral-700 dark:text-neutral-400">
-              <ChevronRight className="flex justify-center items-center bg-gray-200 rounded-md  dark:bg-neutral-700 dark:text-neutral-400 flex-shrink-0 size-4 group-hover:rotate-6 transition" />
-            </span>
-          </a>
-        </div>
-        {/* <!-- End Announcement Banner --> */}
+
+    <div className="relative overflow-hidden  md:min-h-[75  before:absolute before:top-0 rounded-md before:start-1/2 before:bg-[url('/gifbg.gif')]  before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
+      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10 flex flex-col items-center justify-center">
+        
 
         {/* <!-- Title --> */}
         <div className="mt-5 max-w-2xl text-center mx-auto">
-          <h1 className="block font-bold text-primary text-2xl md:text-3xl lg:text-4xl ">
+          <h1 className="block font-bold text-white text-2xl md:text-3xl lg:text-4xl ">
             Here it is different <br/>
-            <span className="bg-clip-text bg-gradient-to-tr from-orange-400 to-gray-100 text-transparent text-4xl md:text-5xl lg:text-6xl ">
+            <span className="bg-clip-text bg-gradient-to-tr from-green-100 to-green-600 text-transparent text-4xl md:text-5xl lg:text-6xl ">
             AMR can’t  beat us
             </span>
           </h1>

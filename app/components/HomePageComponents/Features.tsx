@@ -1,5 +1,5 @@
-import { Stars } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Herofeatures() {
   return (
@@ -11,10 +11,6 @@ export default function Herofeatures() {
           {/* <!-- Grid --> */}
           <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
             <div className="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
-              <h2 className="text-2xl text-gray-800 font-bold sm:text-3xl dark:text-neutral-200">
-                Lorem ipsum dolor sit amet.
-              </h2>
-
               {/* <!-- Tab Navs --> */}
               <nav
                 className="grid gap-4 mt-5 md:mt-10"
@@ -32,13 +28,21 @@ export default function Herofeatures() {
                   <span className="flex">
                     <Stars />
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                        Density
+                      <span className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200">
+                        Detection
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Cum consectetur in ex illo dolorum sit!
+                        Our AI swiftly processes patient samples, identifying
+                        resistance patterns within hours instead of days. This
+                        quick turnaround is crucial for timely and effective
+                        treatment decisions.
                       </span>
+                      <Link
+                        href="#"
+                        className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                      >
+                        Learn How
+                      </Link>
                     </span>
                   </span>
                 </button>
@@ -54,14 +58,21 @@ export default function Herofeatures() {
                   <span className="flex">
                     <Stars />
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                        Smart screening
+                      <span className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200">
+                        Density
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit placeat numquam, est tenetur molestiae
-                        nihil.
+                        Our AI system integrates dense datasets from diverse
+                        sources, including genetic sequences, patient health
+                        records, and environmental data. This comprehensive
+                        approach ensures that no critical detail is overlooked.
                       </span>
+                      <Link
+                        href="#"
+                        className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                      >
+                        Learn How
+                      </Link>
                     </span>
                   </span>
                 </button>
@@ -75,32 +86,24 @@ export default function Herofeatures() {
                   role="tab"
                 >
                   <span className="flex">
-                    <svg
-                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                      <path d="M5 3v4" />
-                      <path d="M19 17v4" />
-                      <path d="M3 5h4" />
-                      <path d="M17 19h4" />
-                    </svg>
+                    <Stars/>
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                        Detection
+                      <span className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200">
+                        Risk
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vel deleniti esse molestias dolorem assumenda itaque.
+                        Our AI technology analyzes a wide range of data,
+                        including genetic, clinical, and environmental factors,
+                        to develop a comprehensive risk profile for each
+                        patient. This holistic approach ensures that all
+                        potential risk factors are considered.
                       </span>
+                      <Link
+                        href="#"
+                        className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                      >
+                        Learn How
+                      </Link>
                     </span>
                   </span>
                 </button>
@@ -205,7 +208,7 @@ export default function Herofeatures() {
 function Heading() {
   return (
     <div className="max-w-5xl mx-auto px-4 xl:px-0 ">
-      <h3 className="text-[#ff0] uppercase font-semibold text-2xl md:text-4xl">
+      <h3 className="uppercase font-semibold text-md md:text-2xl">
         our platform
       </h3>
       <h1 className="font-semibold text-primary text-5xl md:text-6xl">
@@ -219,5 +222,27 @@ function Heading() {
         </p>
       </div>
     </div>
+  );
+}
+function Stars() {
+  return (
+    <svg
+      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+      <path d="M5 3v4" />
+      <path d="M19 17v4" />
+      <path d="M3 5h4" />
+      <path d="M17 19h4" />
+    </svg>
   );
 }
