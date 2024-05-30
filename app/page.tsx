@@ -2,7 +2,7 @@ import React from "react";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
-import CTA from "./components/HomePageComponents/Cta";
+// import CTA from "./components/HomePageComponents/Cta";
 import dynamic from "next/dynamic";
 import Trusts from "./components/HomePageComponents/Trusts";
 import Testimonials from "./components/HomePageComponents/Testimonials";
