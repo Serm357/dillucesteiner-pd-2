@@ -14,7 +14,7 @@ type Card = {
   title:string;
 };
 
-export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
+ const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
 
@@ -115,3 +115,5 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
     </div>
   );
 };
+
+export default LayoutGrid

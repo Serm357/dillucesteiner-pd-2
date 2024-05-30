@@ -1,9 +1,12 @@
 "use client";
-import { LayoutGrid } from "@/components/ui/layout-grid";
 import React, { useState, useRef, useEffect } from "react";
 import MagicButton from "./MagicButton";
 import { ChevronRight } from "lucide-react";
+import dynamic from "next/dynamic";
 
+const LayoutGrid = dynamic(() => import("@/components/ui/layout-grid"), {
+  ssr: false,
+});
 
 export default function Subhero() {
   return (
