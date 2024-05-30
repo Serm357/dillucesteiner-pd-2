@@ -1,10 +1,11 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import {  ChevronRight } from "lucide-react";
 import React from "react";
+import MagicButton from "./MagicButton";
 
 const HeroFinale = () => {
   return (
-    // <!-- Hero -->
-    <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('/4.jpg')] dark:before:bg-[url('/4.jpg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
+    <>
+    <div className="relative overflow-hidden before:absolute before:top-0 rounded-md before:start-1/2 before:bg-[url('/4.jpg')] dark:before:bg-[url('/4.jpg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
         {/* <!-- Announcement Banner --> */}
         <div className="flex justify-center">
@@ -22,31 +23,29 @@ const HeroFinale = () => {
 
         {/* <!-- Title --> */}
         <div className="mt-5 max-w-2xl text-center mx-auto">
-          <h1 className="block font-bold text-primary text-4xl md:text-5xl lg:text-6xl ">
-            Creating World where
-            <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">
-              Cancer can't Hide
+          <h1 className="block font-bold text-primary text-2xl md:text-3xl lg:text-4xl ">
+            Here it is different <br/>
+            <span className="bg-clip-text bg-gradient-to-tr from-orange-400 to-gray-100 text-transparent text-4xl md:text-5xl lg:text-6xl ">
+            AMR can’t  beat us
             </span>
           </h1>
         </div>
         {/* <!-- End Title --> */}
 
         <div className="mt-5 max-w-3xl text-center mx-auto">
-          <p className="text-lg text-gray-600 dark:text-neutral-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-            harum tempore? Praesentium saepe laudantium magni. Lorem ipsum dolor
-            sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing.
+          <p className="text-lg text-white ">
+          What if we could have an advanced antimicrobial susceptibility and resistance test to detect and analyze resistance patterns? What if we could know if bacteria are resistant to specific medications immediately during diagnosis? With our cutting-edge technology, we can achieve this. By staying one step ahead, AMR can’t beat us. Our test ensures that healthcare providers can identify resistant strains on the spot, enabling timely and effective treatments. .
           </p>
         </div>
 
         {/* <!-- Buttons --> */}
         <div className="mt-8 gap-3 flex justify-center">
-          <a
-            className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4 dark:focus:ring-offset-gray-800"
-            href="#"
-          >
-            Contact Us
-            <ChevronRight className="flex justify-center items-center bg-gray-200 rounded-md  dark:bg-neutral-700 dark:text-neutral-400 flex-shrink-0 size-4 group-hover:rotate-6 transition" />
+        <a href="#about-us">
+            <MagicButton
+              title="About Us"
+              icon={<ChevronRight />}
+              position="right"
+            />
           </a>
           <button
             type="button"
@@ -59,8 +58,10 @@ const HeroFinale = () => {
         {/* <!-- End Buttons --> */}
       </div>
     </div>
-    // <!-- End Hero -->
-  );
+   
+    </>
+  )
 };
 
 export default HeroFinale;
+
