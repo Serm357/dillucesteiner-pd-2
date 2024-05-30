@@ -1,4 +1,5 @@
 "use client";
+import { Meteors } from "@/components/ui/meteors";
 import AnimatedNumbers from "react-animated-numbers";
 
 export default function Stats() {
@@ -11,40 +12,42 @@ export default function Stats() {
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         {/* <!-- Grid --> */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          <Card title="Cases" no={10000} perc={23} />
-          <Card title="Equipments" no={500} perc={12} />
-          <Card title="ghhf" no={999} perc={34} />
-          <Card title="Cggs" no={10000} perc={23} />
-          <Card title="lorem" no={2000} perc={56} />
-          <Card title="ttt" no={6570} perc={23} />
+          <Card title="Sepsis" no={13660000} desc={'millionpeople who died globally had sepsis as an immediate cause of death or in the chain of events leading to their death (intermediate cause).'} year="2019" />
+          <Card title="Drug Resistant Infection" no={4950000} desc={'millionpeople who died from drug-resistant infections, such as lower respiratory, bloodstream, and intra-abdominal infections'}  year="2019"/>
+          <Card title="Direct Cause" no={1270000} desc={'milliondeaths in 2019 were directly caused by AMR'}  year="2019"/>
+          {/* <Card title="Cggs" no={10000} desc={'23'} /> */}
+        
         </div>
         {/* <!-- End Grid --> */}
       </div>
     </section>
   );
-}
+} 
 
 function Card({
   title,
   no,
-  perc,
+  desc,
+  year
 }: {
   title: string;
   no: number;
-  perc: number;
+  desc: string;
+  year: string;
 }) {
   return (
-    <div className="flex flex-col gap-y-3 lg:gap-y-5 p-4 md:p-5 bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
-      <div className="inline-flex justify-center items-center">
-        <span className="size-2 inline-block bg-gray-500 rounded-full me-2"></span>
-        <span className="text-xs font-semibold uppercase text-gray-600 dark:text-neutral-400">
-          {title}
-        </span>
-      </div>
+    <div className="">
+    <div className=" w-full h-[300px] relative max-w-xs">
+      <div className="absolute inset-0 h-full w-full bg-primary-foreground transform scale-[0.80] rounded-full blur-3xl" />
+      <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+        
 
-      <div className="text-center flex items-center justify-center">
-        <h3 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-800 text-center dark:text-neutral-200">
-          <AnimatedNumbers
+       <div className="flex flex-col items-center justify-center"> 
+       <h1 className="font-bold text-md text-white mb-4 relative z-50 uppercase">
+          {title}
+        </h1>
+        <h1 className="font-bold text-2xl text-white mb-4 relative z-50">
+        <AnimatedNumbers
             includeComma
             className="text-center"
             transitions={(index) => ({
@@ -57,40 +60,20 @@ function Card({
             //   color: "red",
             // }}
           />
-        </h3>
-      </div>
+        </h1>
 
-      <dl className="flex justify-center items-center divide-x divide-gray-200 dark:divide-neutral-800">
-        <dt className="pe-3">
-          <span className="text-green-600">
-            <svg
-              className="inline-block size-4 self-center"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
-              />
-            </svg>
-            <span className="inline-block text-sm">{perc}%</span>
-          </span>
-          <span className="block text-sm text-gray-500 dark:text-neutral-500">
-            change
-          </span>
-        </dt>
-        <dd className="text-start ps-3">
-          <span className="text-sm font-semibold text-gray-800 dark:text-neutral-200">
-            5
-          </span>
-          <span className="block text-sm text-gray-500 dark:text-neutral-500">
-            past decade
-          </span>
-        </dd>
-      </dl>
+        <p className="font-normal text-base text-slate-500 mb-4 relative z-50 capitalize">
+          {desc}
+        </p>
+        <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+          {year}
+        </h1></div>
+     
+
+        {/* Meaty part - Meteor effect */}
+        <Meteors number={70} />
+      </div>
     </div>
+  </div>
   );
 }
