@@ -10,17 +10,20 @@ import Testimonials from "./components/HomePageComponents/Testimonials";
 import HeroFinale from "./components/HomePageComponents/HeroFinale";
 import ImageSlider from "./components/HomePageComponents/ImageSlider";
 
-const Subhero = dynamic(() => import("./components/HomePageComponents/Subhero"), {
-  ssr: false,
-});
+const Subhero = dynamic(
+  () => import("./components/HomePageComponents/Subhero"),
+  {
+    ssr: false,
+  }
+);
 
 const Team = dynamic(() => import("./components/HomePageComponents/Team"), {
   ssr: false,
 });
 
-const TracingBeam = dynamic(() => import("@/components/ui/tracing-beam"), {
-  ssr: false,
-});
+// const TracingBeam = dynamic(() => import("@/components/ui/tracing-beam"), {
+//   ssr: false,
+// });
 
 // const HeroScroll = dynamic(
 //   () => import("./components/HomePageComponents/HeroAdvance"),
@@ -33,25 +36,23 @@ export default async function Home() {
   return (
     <main className="flex-1">
       {/* <TracingBeam className="px-1"> */}
-        {/* <HeroFn /> */}
-        <HeroFinale />
-        {/* <MaxWidthWrapper> */}
-        {/* <HeroScroll /> */}
-        <Stats />
-        {/* </MaxWidthWrapper> */}
-        <Subhero />
-        {/* <CTA /> */}
-        {/* <MaxWidthWrapper> */} <Herofeatures />
-        <ImageSlider />
-        <MaxWidthWrapper>
-          {" "}
-          <Trusts />
-        </MaxWidthWrapper>
-        <Testimonials />
-        <MaxWidthWrapper>
-          <Team />
-        </MaxWidthWrapper>
-        {/* </MaxWidthWrapper> */}
+      {/* <HeroFn /> */}
+      <HeroFinale />
+      {/* <MaxWidthWrapper> */}
+      {/* <HeroScroll /> */}
+      <Stats />
+      {/* </MaxWidthWrapper> */}
+      <Subhero />
+      {/* <CTA /> */}
+      {/* <MaxWidthWrapper> */} <Herofeatures />
+      <ImageSlider />
+      {/* <MaxWidthWrapper> */} <Trusts />
+      {/* </MaxWidthWrapper> */}
+      <Testimonials />
+      {/* // <MaxWidthWrapper> */}
+      <Team />
+      {/* </MaxWidthWrapper> */}
+      {/* </MaxWidthWrapper> */}
       {/* </TracingBeam> */}
     </main>
   );
