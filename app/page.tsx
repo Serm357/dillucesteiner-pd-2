@@ -10,7 +10,6 @@ import Testimonials from "./components/HomePageComponents/Testimonials";
 import HeroFinale from "./components/HomePageComponents/HeroFinale";
 import ImageSlider from "./components/HomePageComponents/ImageSlider";
 
-
 const Subhero = dynamic(() => import("./components/HomePageComponents/Subhero"), {
   ssr: false,
 });
@@ -30,7 +29,7 @@ const TracingBeam = dynamic(() => import("@/components/ui/tracing-beam"), {
 //   }
 // );
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="flex-1">
       {/* <TracingBeam className="px-1"> */}
