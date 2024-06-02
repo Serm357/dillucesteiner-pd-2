@@ -169,20 +169,20 @@ export default function Herofeatures() {
                     <path
                       d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164"
                       stroke="currentColor"
-                      stroke-width="10"
-                      stroke-linecap="round"
+                      strokeWidth="10"
+                      strokeLinecap="round"
                     />
                     <path
                       d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5"
                       stroke="currentColor"
-                      stroke-width="10"
-                      stroke-linecap="round"
+                      strokeWidth="10"
+                      strokeLinecap="round"
                     />
                     <path
                       d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874"
                       stroke="currentColor"
-                      stroke-width="10"
-                      stroke-linecap="round"
+                      strokeWidth="10"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </div>
@@ -224,6 +224,7 @@ function Heading() {
     </div>
   );
 }
+
 function Stars() {
   return (
     <svg
@@ -234,9 +235,9 @@ function Stars() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
       <path d="M5 3v4" />

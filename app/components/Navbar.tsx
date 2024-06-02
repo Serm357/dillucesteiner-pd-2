@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggler";
-import { ChevronRight, Menu, Package2 } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 const Navbar = () => {
   return (
     <>
-      {/* <AnnouncementBanner /> */}
       <LinksBanner />
       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-2 sm:py-0 dark:bg-neutral-800 dark:border-neutral-700">
         <nav
@@ -260,33 +259,6 @@ const Navbar = () => {
 
 export default Navbar;
 
-function AnnouncementBanner() {
-  return (
-    <div className="max-w-[85rem] ">
-      <div className="bg-blue-600 w-full bg-[url('https://preline.co/assets/svg/examples/abstract-1.svg')] bg-no-repeat bg-cover bg-center p-4 text-center">
-        <p className="me-2 inline-block text-white">
-          New Webinar <span className="mx-1 text-yellow-300 font-bold">|</span>
-          Revolutionizing Susceptibility Testing: ​The Role of AI in
-          Microbiology.<span className="mx-1 text-yellow-300 font-bold">|</span>
-          June 22, 2024 9:00 am PT
-          <span className="mx-1 text-yellow-300 font-bold">•</span>12:00 pm EAT
-        </p>
-        <Link
-          className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border-2 border-white text-white hover:border-white/70 hover:text-white/70 disabled:opacity-50 disabled:pointer-events-none"
-          href="/webinars"
-        >
-          Save Your Seat
-          <ChevronRight />
-        </Link>
-      </div>
-    </div>
-  );
-}
-const links = [
-  { title: "Contact Us", value: "/contact" },
-  { title: "Blog", value: "/blog" },
-  // { title: "Login", value: "/login" },
-];
 function LinksBanner() {
   return (
     <div className="max-w-[85rem]  px-4 sm:px-6 lg:px-8">
@@ -303,12 +275,12 @@ function LinksBanner() {
         >
           Contact Us
         </Link>
-        <Link
-          className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-blue-600 text-blue-600 hover:border-blue-500 hover:text-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:border-blue-500 dark:text-blue-500 dark:hover:text-blue-400 dark:hover:border-blue-400"
-          href="#"
+        <button
+          className=" disabled:opacity-50 py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-blue-600 text-blue-600 hover:border-blue-500 hover:text-blue-500  disabled:pointer-events-none dark:border-blue-500 dark:text-blue-500 dark:hover:text-blue-400 dark:hover:border-blue-400"
+          disabled={true}
         >
           Request Demo
-        </Link>
+        </button>
       </div>
     </div>
   );
