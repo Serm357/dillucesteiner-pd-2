@@ -76,14 +76,13 @@ function Card({
               {title}
             </h1>
 
-            <p className="h-24  font-normal text-sm text-slate-500 dark:text-white text-center mb-3 relative z-50 capitalize">
+            <p className="h-16  font-normal text-sm text-slate-500 dark:text-white text-center mb-3 relative z-50 capitalize">
               {desc}
             </p>
-            <h1 className="font-bold text-xl  mb-4 relative z-50">{year}</h1>
+            <h1 className="font-bold text-xl mt-2 mb-4 relative z-50">
+              {year}
+            </h1>
           </div>
-
-          {/* Meaty part - Meteor effect */}
-          {/* <Meteors number={70} /> */}
         </div>
       </div>
     </div>

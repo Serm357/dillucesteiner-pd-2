@@ -46,7 +46,7 @@ const HeroFinale = () => {
 
                 <span
                   className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
-             bg-green-400 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 "
+             bg-white px-7 text-sm font-medium text-black backdrop-blur-3xl gap-2 "
                 >
                   About Us
                 </span>
