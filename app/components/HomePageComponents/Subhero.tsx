@@ -1,7 +1,6 @@
 "use client";
-import MagicButton from "./MagicButton";
-import { ChevronRight } from "lucide-react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const LayoutGrid = dynamic(() => import("@/components/ui/layout-grid"), {
   ssr: false,
@@ -9,7 +8,7 @@ const LayoutGrid = dynamic(() => import("@/components/ui/layout-grid"), {
 
 export default function Subhero() {
   return (
-    <div className="h-screen py-20 w-full">
+    <div className="h-screen py-2 lg:py-20 w-full">
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -19,19 +18,17 @@ const SkeletonOne = () => {
   return (
     <div>
       <p className="font-bold text-4xl text-white">For Provider.</p>
-      <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         At Diluc Steiner, our advanced technology is designed to uncover and
         expose antimicrobial resistance (AMR) hiding places with unparalleled
         accuracy and speed
       </p>
-      <a href="#about-us" className="my-2">
-        <MagicButton
-          title="Learn How"
-          icon={<ChevronRight />}
-          position="right"
-        />
-      </a>
+      <Link
+        href="/for-providers"
+        className="my-2 py-2 px-3 w-11 font-bold bg-primary-foreground rounded-md"
+      >
+        Lean How
+      </Link>
     </div>
   );
 };
@@ -40,8 +37,7 @@ const SkeletonTwo = () => {
   return (
     <div>
       <p className="font-bold text-4xl text-white">For Patient</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="font-normal text-base my-4 max-w-lg lg:h-28 text-neutral-200 ">
         By using our technology, patients can provide real-time data through
         regular health monitoring and reporting symptoms early. When patients
         use at-home diagnostic kits linked to our AI system, they can collect
@@ -49,13 +45,12 @@ const SkeletonTwo = () => {
         app. Our AI then analyzes these samples and symptoms for any signs of
         resistance.
       </p>
-      <a href="#about-us" className="my-2">
-        <MagicButton
-          title="Learn How"
-          icon={<ChevronRight />}
-          position="right"
-        />
-      </a>
+      <Link
+        href="/for-patients"
+        className="my-2 py-2 px-3 w-11 font-bold bg-primary-foreground rounded-md"
+      >
+        Lean How
+      </Link>
     </div>
   );
 };

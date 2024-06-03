@@ -11,10 +11,10 @@ type Card = {
   content: JSX.Element | React.ReactNode | string;
   className: string;
   thumbnail: string;
-  title:string;
+  title: string;
 };
 
- const LayoutGrid = ({ cards }: { cards: Card[] }) => {
+const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
 
@@ -29,7 +29,7 @@ type Card = {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-1 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -49,7 +49,6 @@ type Card = {
             <BlurImage card={card} />
             <div className="my-2 absolute bottom-9 left-2">
               <h1 className="text-white font-bold text-2xl">{card.title}</h1>
-          
             </div>
           </motion.div>
         </div>
@@ -60,7 +59,7 @@ type Card = {
           "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
           selected?.id ? "pointer-events-auto" : "pointer-events-none"
         )}
-        animate={{ opacity: selected?.id ? 0.3 : 0 }}
+        animate={{ opacity: selected?.id ? 0.9 : 0 }}
       />
     </div>
   );
@@ -116,4 +115,4 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
   );
 };
 
-export default LayoutGrid
+export default LayoutGrid;
