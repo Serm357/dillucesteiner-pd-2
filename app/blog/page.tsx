@@ -1,6 +1,9 @@
 import PostPreview from "@/components/PostPreview";
 import getPostMetadata from "@/components/getPostMetadata";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 const AllBlogsPage = () => {
   const postMetadata = getPostMetadata();
   const postPreviews = postMetadata.map((post) => (
