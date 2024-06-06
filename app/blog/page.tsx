@@ -8,7 +8,9 @@ const AllBlogsPage = () => {
   ));
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">{postPreviews}</div>
+    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="grid lg:grid-cols-2 gap-6">{postPreviews}</div>
+    </div>
   );
 };
 
