@@ -92,6 +92,7 @@ const config = {
     require("tailwindcss-animate"),
     addVariablesForColors,
     require("preline/plugin"),
+    require("@tailwindcss/typography"),
   ],
 } satisfies Config;
 
