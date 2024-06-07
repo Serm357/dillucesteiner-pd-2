@@ -2,6 +2,7 @@
 title: "The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance"
 subtitle: "lorem idjfirgosjgirjkj ijdgkpo fjijij ijigjj ijijgj nijirf."
 date: "2023-12-27"
+blogImage: "/3.jpg"
 ---
 
 # The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance
@@ -15,6 +16,8 @@ AMR refers to the ability of microbes, primarily bacteria, to develop resistance
 This blog post serves as a comprehensive resource on AMR, exploring its various aspects, the factors contributing to its spread, and the potential solutions to this looming public health crisis.
 
 ## Understanding the Mechanisms of AMR
+
+![images/wolfhunter_title](/4.jpg)
 
 Bacteria are remarkably adaptable organisms. When exposed to antibiotics, they can develop different mechanisms to evade their effects. Here's a closer look at some common resistance strategies:
 

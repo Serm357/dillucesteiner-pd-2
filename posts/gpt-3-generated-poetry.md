@@ -1,157 +1,74 @@
 ---
-title: "Using AI to generate poetry"
-subtitle: "I used GPT-3 to generate poetry and other creative content."
-date: "2021-08-27"
+title: "The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance"
+subtitle: "lorem idjfirgosjgirjkj ijdgkpo fjijij ijigjj ijijgj nijirf."
+date: "2023-12-27"
+blogImage: "/images/jelpi_demo.gif"
 ---
 
-<!-- Blog Article -->
-<div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
-  <div class="max-w-2xl">
-    <!-- Avatar Media -->
-    <div class="flex justify-between items-center mb-6">
-      <div class="flex w-full sm:items-center gap-x-5 sm:gap-x-3">
-        <div class="flex-shrink-0">
-          <img class="size-12 rounded-full" src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description">
-        </div>
+# The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance
 
-        <div class="grow">
-          <div class="flex justify-between items-center gap-x-2">
-            <div>
-              <!-- Tooltip -->
-              <div class="hs-tooltip [--trigger:hover] [--placement:bottom] inline-block">
-                <div class="hs-tooltip-toggle sm:mb-1 block text-start cursor-pointer">
-                  <span class="font-semibold text-gray-800 dark:text-neutral-200">
-                    Leyla Ludic
-                  </span>
+**Date: 2024-06-06**
 
-                  <!-- Dropdown Card -->
-                  <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 max-w-xs cursor-default bg-gray-900 divide-y divide-gray-700 shadow-lg rounded-xl dark:bg-neutral-950 dark:divide-neutral-700" role="tooltip">
-                    <!-- Body -->
-                    <div class="p-4 sm:p-5">
-                      <div class="mb-2 flex w-full sm:items-center gap-x-5 sm:gap-x-3">
-                        <div class="flex-shrink-0">
-                          <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description">
-                        </div>
+The discovery of antibiotics in the 20th century marked a turning point in medicine. These life-saving drugs revolutionized our ability to combat bacterial infections, dramatically reducing mortality rates and improving public health. However, a silent threat has been brewing in the background: Antimicrobial Resistance (AMR).
 
-                        <div class="grow">
-                          <p class="text-lg font-semibold text-gray-200 dark:text-neutral-200">
-                            Leyla Ludic
-                          </p>
-                        </div>
-                      </div>
-                      <p class="text-sm text-gray-400 dark:text-neutral-400">
-                        Leyla is a Customer Success Specialist at Preline and spends her time speaking to in-house recruiters all over the world.
-                      </p>
-                    </div>
-                    <!-- End Body -->
+AMR refers to the ability of microbes, primarily bacteria, to develop resistance to the drugs designed to kill them. This resistance renders antibiotics ineffective, making common infections difficult or even impossible to treat. The consequences of AMR are dire, leading to longer hospital stays, increased healthcare costs, and a rise in mortality rates from previously treatable infections.
 
-                    <!-- Footer -->
-                    <div class="flex justify-between items-center px-4 py-3 sm:px-5">
-                      <ul class="text-xs space-x-3">
-                        <li class="inline-block">
-                          <span class="font-semibold text-gray-200 dark:text-neutral-200">56</span>
-                          <span class="text-gray-400 dark:text-neutral-400">articles</span>
-                        </li>
-                        <li class="inline-block">
-                          <span class="font-semibold text-gray-200 dark:text-neutral-200">1k+</span>
-                          <span class="text-gray-400 dark:text-neutral-400">followers</span>
-                        </li>
-                      </ul>
+This blog post serves as a comprehensive resource on AMR, exploring its various aspects, the factors contributing to its spread, and the potential solutions to this looming public health crisis.
 
-                      <div>
-                        <button type="button" class="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-                          <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-                          </svg>
-                          Follow
-                        </button>
-                      </div>
-                    </div>
-                    <!-- End Footer -->
-                  </div>
-                  <!-- End Dropdown Card -->
-                </div>
-              </div>
-              <!-- End Tooltip -->
+## Understanding the Mechanisms of AMR
 
-              <ul class="text-xs text-gray-500 dark:text-neutral-500">
-                <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
-                  Jan 18
-                </li>
-                <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
-                  8 min read
-                </li>
-              </ul>
-            </div>
+![images/wolfhunter_title](/4.jpg)
 
-            <!-- Button Group -->
-            <div>
-              <button type="button" class="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-                <svg class="size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                </svg>
-                Tweet
-              </button>
-            </div>
-            <!-- End Button Group -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Avatar Media -->
+Bacteria are remarkably adaptable organisms. When exposed to antibiotics, they can develop different mechanisms to evade their effects. Here's a closer look at some common resistance strategies:
 
-    <!-- Content -->
-    <div class="space-y-5 md:space-y-8">
-      <div class="space-y-3">
-        <h2 class="text-2xl font-bold md:text-3xl dark:text-white">Announcing a free plan for small teams</h2>
+### Mutation
 
-        <p class="text-lg text-gray-800 dark:text-neutral-200">At preline, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow.</p>
-      </div>
+Bacteria can undergo spontaneous mutations in their genes, altering the structure of proteins that antibiotics target. This can prevent the drug from binding effectively, rendering it useless.
 
-      <p class="text-lg text-gray-800 dark:text-neutral-200">We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+### Plasmid Transfer
 
-      <figure class="md:float-end md:ms-5 md:ps-5 lg:w-1/2">
-        <img class="rounded-xl" src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Image Description">
-        <figcaption class="mt-3 text-sm text-gray-500 dark:text-neutral-400">Our team at work</figcaption>
-      </figure>
+Plasmids are small, circular pieces of DNA that can be transferred between bacteria. Some plasmids carry genes encoding resistance to specific antibiotics. This horizontal gene transfer allows bacteria to acquire resistance quickly.
 
-      <h3 class="text-2xl font-semibold text-gray-800 dark:text-neutral-200">What’s new?</h3>
+### Efflux Pumps
 
-      <p class="text-lg text-gray-800 dark:text-neutral-200">We’re excited to announce a few big updates:</p>
+Bacteria can develop efflux pumps, protein channels that actively pump antibiotics out of the cell. This reduces the intracellular concentration of the drug, making it less effective.
 
-      <ul class="space-y-2 text-lg text-gray-800 dark:text-neutral-200">
-        <li class="flex gap-x-3">
-          <svg class="flex-shrink-0 size-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M16 8a8 8 0 1 1-16 0A8 8 0 0 1 16 8zM8 3a.5.5 0 0 0-1 0v5a.5.5 0 0 0 .5.5H11a.5.5 0 0 0 0-1H8V3z"/>
-          </svg>
-          <span>Introducing a free plan for small teams.</span>
-        </li>
-        <li class="flex gap-x-3">
-          <svg class="flex-shrink-0 size-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M16 8a8 8 0 1 1-16 0A8 8 0 0 1 16 8zM8 3a.5.5 0 0 0-1 0v5a.5.5 0 0 0 .5.5H11a.5.5 0 0 0 0-1H8V3z"/>
-          </svg>
-          <span>Better ways to collaborate with your team.</span>
-        </li>
-        <li class="flex gap-x-3">
-          <svg class="flex-shrink-0 size-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M16 8a8 8 0 1 1-16 0A8 8 0 0 1 16 8zM8 3a.5.5 0 0 0-1 0v5a.5.5 0 0 0 .5.5H11a.5.5 0 0 0 0-1H8V3z"/>
-          </svg>
-          <span>Advanced security features.</span>
-        </li>
-      </ul>
+### Enzyme Modification
 
-      <p class="text-lg text-gray-800 dark:text-neutral-200">These updates will be available starting today, and we can't wait to hear what you think.</p>
+Bacteria can produce enzymes that modify or deactivate antibiotics, rendering them harmless.
 
-      <h3 class="text-2xl font-semibold text-gray-800 dark:text-neutral-200">Get started</h3>
+The specific mechanisms employed by bacteria to develop resistance vary depending on the type of antibiotic and the bacterial species involved. However, the net effect is the same: the bacteria become increasingly resistant to treatment, posing a significant challenge to healthcare providers.
 
-      <p class="text-lg text-gray-800 dark:text-neutral-200">To get started, simply sign up for a free account on our website. If you have any questions, feel free to reach out to our support team. We’re always here to help!</p>
+## The Rise of AMR: A Perfect Storm of Factors
 
-      <blockquote class="border-l-4 border-gray-300 pl-4 italic text-gray-500 dark:border-neutral-700 dark:text-neutral-400">"Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs</blockquote>
+Several factors contribute to the alarming rise of AMR:
 
-      <p class="text-lg text-gray-800 dark:text-neutral-200">Thank you for being a part of our community. We’re excited to continue this journey with you.</p>
-    </div>
-    <!-- End Content -->
+### Overuse and Misuse of Antibiotics
 
-  </div>
-</div>
+The widespread and often unnecessary use of antibiotics in human and animal medicine is a major driver of AMR. This includes using antibiotics for viral infections where they are ineffective, prescribing broad-spectrum antibiotics instead of targeted ones, and failing to complete the full course of antibiotic treatment.
+
+### Agricultural Practices
+
+The routine use of antibiotics in livestock farming promotes the development of resistant bacteria in animals. These resistant bacteria can then be transmitted to humans through contaminated food products or the environment.
+
+### Limited Development of New Antibiotics
+
+Pharmaceutical companies have significantly reduced their investment in developing new antibiotics due to the high costs involved and the limited return on investment. This lack of novel antibiotics makes it challenging to combat emerging resistant strains.
+
+### Inadequate Surveillance and Monitoring
+
+Effective control of AMR requires robust surveillance systems to track the prevalence of resistant bacteria and monitor trends in antibiotic use. Lack of such systems hinders our ability to implement targeted interventions.
+
+These factors create a perfect storm, accelerating the emergence and spread of AMR. It's a global problem that demands a multi-pronged approach at individual, community, and national levels.
+
+## The Devastating Consequences of AMR
+
+The consequences of AMR are far-reaching and pose a significant threat to public health:
+
+### Increased Treatment Difficulty
+
+AMR makes it more challenging to treat common bacterial infections, leading to longer hospital stays, increased healthcare costs, and a greater need for invasive procedures.
+
+### Limited Treatment Options
+
+As bacteria become resistant to existing antibiotics, healthcare providers are left with fewer options for treatment. This can lead to reliance on older, less effective antibiotics with potentially more severe side effects.

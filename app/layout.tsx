@@ -27,7 +27,7 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <main className="flex flex-col gap-2 min-h-screen">{children}</main>
+            <div className="min-h-screen w-full">{children}</div>
             <Footer />
           </ThemeProvider>
         </body>
