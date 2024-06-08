@@ -2,7 +2,7 @@
 title: "Blog 2"
 subtitle: "Blog 2 subtitle ..... ..... ....... ...."
 date: "2021-07-12"
-blogImage: "/images/jelpi_demo.gif"
+blogImage: "/5.jpg"
 ---
 
 # The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance

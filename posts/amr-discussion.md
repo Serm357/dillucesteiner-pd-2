@@ -2,7 +2,7 @@
 title: "Blog 1"
 subtitle: "Blog 1 subtitle ..... ..... ....... ...."
 date: "2020-12-19"
-blogImage: "/images/wolfhunter_title.png"
+blogImage: "/4.jpg"
 cr: ["https://www.artstation.com/shizuorin"]
 ---
 
