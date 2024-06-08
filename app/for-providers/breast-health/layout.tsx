@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy",
+  title: "Breast Health",
   description: "Susceptibility Testing meets AI",
 };
 
