@@ -23,8 +23,8 @@ const Team = () => {
       {/* <!-- Grid --> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 justify-center items-center">
         <Card name="Yohana Laurent" position="Founder / CEO" />
-        <Card name="Salum Suleiman" position="FULL STACK DEVELOPER" />
         <Card name="Chiku Hotai" position="SUPPORT CONSULTANT" />
+        <Card name="Salum Suleiman" position="FULL STACK DEVELOPER" />
       </div>
       {/* <!-- End Grid --> */}
     </div>
