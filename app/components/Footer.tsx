@@ -144,18 +144,12 @@ export default function Footer() {
           <div className="sm:flex sm:justify-between sm:items-center">
             <div className="flex items-center gap-x-3">
               <div className="space-x-4 text-sm ms-4">
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
-                  href="#"
+                  href="/privacy"
                 >
-                  Terms
-                </a>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
-                  href="#"
-                >
-                  Privacy
-                </a>
+                  Terms & Privacy
+                </Link>
                 <a
                   className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
