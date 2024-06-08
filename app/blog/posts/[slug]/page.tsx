@@ -1,8 +1,9 @@
 import fs from "fs";
-import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "../../../../components/getPostMetadata";
 import MaxWidthWrapper from "@/app/components/MaxWidthWrapper";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -31,7 +32,7 @@ const PostPage = (props: any) => {
 
       <MaxWidthWrapper>
         <article className="prose text-center">
-          <Markdown>{post.content}</Markdown>
+          <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
         </article>
       </MaxWidthWrapper>
     </div>
