@@ -3,8 +3,6 @@ import { PostMetadata } from "./PostMetadata";
 import Image from "next/image";
 
 const PostPreview = (props: PostMetadata) => {
-  console.log({ someting: props.blogImage });
-
   return (
     <Link
       className="group relative block rounded-xl"

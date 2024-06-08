@@ -11,8 +11,8 @@ export default function Footer() {
       {/* <!-- ========== FOOTER ========== --> */}
       <footer className="mt-auto w-full  py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* <!-- Grid --> */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
-          <div className="col-span-full hidden lg:col-span-1 lg:block">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+          <div className="col-span-full hidden md:col-span-1 md:block ">
             <Link
               className="flex-none text-xl font-semibold text-primary"
               href="/"
@@ -28,40 +28,32 @@ export default function Footer() {
 
           <div>
             <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
-              Product
+              For Providers
             </h4>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
-                  Pricing
+                  Profound Breast
                 </a>
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
-                  Changelog
+                  Research
                 </a>
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
-                  Docs
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Download
+                  Publications
                 </a>
               </p>
             </div>
@@ -70,162 +62,80 @@ export default function Footer() {
 
           <div>
             <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
-              Company
+              For Patients
             </h4>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
-                  About us
+                  AI powered Mammogram
                 </a>
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
-                  Blog
+                  Resources
+                </a>
+              </p>
+            </div>
+          </div>
+          {/* <!-- End Col --> */}
+
+          <div>
+            <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
+              About US
+            </h4>
+
+            <div className="mt-3 grid space-y-3 text-sm">
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  href="#"
+                >
+                  Team
                 </a>
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  href="#"
+                >
+                  History
+                </a>
+              </p>
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  href="#"
+                >
+                  Science
+                </a>
+              </p>
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  href="#"
+                >
+                  Webinars
+                </a>
+              </p>
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
                   Careers
-                </a>{" "}
-                <span className="inline text-blue-600 dark:text-blue-500">
-                  — We're hiring
-                </span>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Customers
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Newsroom
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Sitemap
                 </a>
               </p>
             </div>
           </div>
           {/* <!-- End Col --> */}
 
-          <div>
-            <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
-              Resources
-            </h4>
-
-            <div className="mt-3 grid space-y-3 text-sm">
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Community
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Help & Support
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  eBook
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  What's New
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Status
-                </a>
-              </p>
-            </div>
-          </div>
-          {/* <!-- End Col --> */}
-
-          <div>
-            <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
-              Developers
-            </h4>
-
-            <div className="mt-3 grid space-y-3 text-sm">
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Api
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Status
-                </a>
-              </p>
-            </div>
-
-            <h4 className="mt-7 text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
-              Industries
-            </h4>
-
-            <div className="mt-3 grid space-y-3 text-sm">
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Financial Services
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Education
-                </a>
-              </p>
-            </div>
-          </div>
           {/* <!-- End Col --> */}
         </div>
         {/* <!-- End Grid --> */}
@@ -235,19 +145,19 @@ export default function Footer() {
             <div className="flex items-center gap-x-3">
               <div className="space-x-4 text-sm ms-4">
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
                   Terms
                 </a>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
                   Privacy
                 </a>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
                   href="#"
                 >
                   Status
@@ -272,19 +182,19 @@ export default function Footer() {
               {/* <!-- Social Brands --> */}
               <div className="space-x-4">
                 <a
-                  className="inline-block text-gray-500 hover:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200"
+                  className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
                   href="#"
                 >
                   <TwitterLogoIcon />
                 </a>
                 <a
-                  className="inline-block text-gray-500 hover:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200"
+                  className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
                   href="#"
                 >
                   <InstagramLogoIcon />
                 </a>
                 <a
-                  className="inline-block text-gray-500 hover:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200"
+                  className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
                   href="#"
                 >
                   <LinkedInLogoIcon />
