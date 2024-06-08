@@ -6,10 +6,7 @@ blogImage: "/4.jpg"
 cr: ["https://www.artstation.com/shizuorin"]
 ---
 
-<div align="center">
 # The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance
-
-**Date: 2024-06-06**
 
 The discovery of antibiotics in the 20th century marked a turning point in medicine. These life-saving drugs revolutionized our ability to combat bacterial infections, dramatically reducing mortality rates and improving public health. However, a silent threat has been brewing in the background: Antimicrobial Resistance (AMR).
 
@@ -73,6 +70,4 @@ AMR makes it more challenging to treat common bacterial infections, leading to l
 
 ### Limited Treatment Options
 
-As bacteria become resistant to existing antibiotics, healthcare providers are left with fewer options for treatment. This can lead to reliance on older, less effective antibiotics with potentially more severe side effects.
-
-</div>
+As bacteria become resistant to existing antibiotics, healthcare providers are left with fewer options for treatment. This can lead to reliance on older, less effective antibiotics with potentially more severe side effectss.

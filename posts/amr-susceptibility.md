@@ -7,8 +7,6 @@ blogImage: "/5.jpg"
 
 # The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance
 
-**Date: 2024-06-06**
-
 The discovery of antibiotics in the 20th century marked a turning point in medicine. These life-saving drugs revolutionized our ability to combat bacterial infections, dramatically reducing mortality rates and improving public health. However, a silent threat has been brewing in the background: Antimicrobial Resistance (AMR).
 
 AMR refers to the ability of microbes, primarily bacteria, to develop resistance to the drugs designed to kill them. This resistance renders antibiotics ineffective, making common infections difficult or even impossible to treat. The consequences of AMR are dire, leading to longer hospital stays, increased healthcare costs, and a rise in mortality rates from previously treatable infections.

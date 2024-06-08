@@ -5,9 +5,7 @@ date: "2023-12-27"
 blogImage: "/3.jpg"
 ---
 
-# The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance
-
-**Date: 2024-06-06**
+# The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistanc
 
 The discovery of antibiotics in the 20th century marked a turning point in medicine. These life-saving drugs revolutionized our ability to combat bacterial infections, dramatically reducing mortality rates and improving public health. However, a silent threat has been brewing in the background: Antimicrobial Resistance (AMR).
 

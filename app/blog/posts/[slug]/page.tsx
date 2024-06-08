@@ -4,6 +4,7 @@ import getPostMetadata from "../../../../components/getPostMetadata";
 import MaxWidthWrapper from "@/app/components/MaxWidthWrapper";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -31,7 +32,7 @@ const PostPage = (props: any) => {
       </div>
 
       <MaxWidthWrapper>
-        <article className="prose text-center">
+        <article className="prose max-w-none md:prose-md lg:prose- prose-h2:text-green-400 prose-img:lg:ml-[10rem] prose-img:object-center text-center prose-headings:text-primary dark:text-gray-300">
           <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
         </article>
       </MaxWidthWrapper>
