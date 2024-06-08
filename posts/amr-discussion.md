@@ -1,6 +1,6 @@
 ---
-title: "Create retro games with PICO-8"
-subtitle: "8-bit games are a great way to learn and expand your portfolio."
+title: "Blog 1"
+subtitle: "Blog 1 subtitle ..... ..... ....... ...."
 date: "2020-12-19"
 blogImage: "/images/wolfhunter_title.png"
 cr: ["https://www.artstation.com/shizuorin"]

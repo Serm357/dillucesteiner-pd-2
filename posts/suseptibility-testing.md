@@ -1,6 +1,6 @@
 ---
-title: "The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance"
-subtitle: "lorem idjfirgosjgirjkj ijdgkpo fjijij ijigjj ijijgj nijirf."
+title: "Blog 5"
+subtitle: "Blog 5 subtitle ..... ..... ....... ...."
 date: "2023-12-27"
 blogImage: "/images/jelpi_demo.gif"
 ---
