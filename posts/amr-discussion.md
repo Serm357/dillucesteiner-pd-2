@@ -6,6 +6,7 @@ blogImage: "/4.jpg"
 cr: ["https://www.artstation.com/shizuorin"]
 ---
 
+<div align="center">
 # The Looming Shadow of AMR: A Comprehensive Look at AntiMicrobial Resistance
 
 **Date: 2024-06-06**
@@ -73,3 +74,5 @@ AMR makes it more challenging to treat common bacterial infections, leading to l
 ### Limited Treatment Options
 
 As bacteria become resistant to existing antibiotics, healthcare providers are left with fewer options for treatment. This can lead to reliance on older, less effective antibiotics with potentially more severe side effects.
+
+</div>
