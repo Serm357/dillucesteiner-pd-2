@@ -12,9 +12,9 @@ const PostPreview = (props: PostMetadata) => {
         <Image
           width={350}
           height={350}
-          loading="lazy"
+          // loading="lazy"
           className="size-full absolute top-0 start-0 object-cover"
-          src={props.blogImage && props.blogImage}
+          src={props.blogImage}
           alt="Blog Image"
         />
       </div>
