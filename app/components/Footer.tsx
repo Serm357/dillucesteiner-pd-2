@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <section>
       {/* <!-- ========== FOOTER ========== --> */}
-      <footer className="mt-auto w-full  py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+      <footer className="mt-6 w-full  py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* <!-- Grid --> */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
           <div className="col-span-full hidden md:col-span-1 md:block ">

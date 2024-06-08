@@ -10,10 +10,12 @@ const PostPreview = (props: PostMetadata) => {
     >
       <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:z-[1] before:size-[200px] before:bg-gradient-to-t before:from-gray-900/70">
         <Image
-          fill
+          width={350}
+          height={350}
+          loading="lazy"
           className="size-full absolute top-0 start-0 object-cover"
           src={props.blogImage && props.blogImage}
-          alt="Image Description"
+          alt="Blog Image"
         />
       </div>
 
@@ -25,6 +27,7 @@ const PostPreview = (props: PostMetadata) => {
               <Image
                 width={46}
                 height={46}
+                loading="lazy"
                 alt="Blog Author"
                 className="size-[46px] border-2 border-white rounded-full"
                 src="/2.jpg"
