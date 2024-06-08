@@ -265,7 +265,7 @@ function LinksBanner() {
       <div className="flex items-center justify-end gap-x-5 w-full py-2 sm:pt-2 sm:pb-0">
         <Link
           className="inline-flex justify-center items-center gap-2 font-medium text-gray-600 hover:text-neutral-500 text-sm dark:text-neutral-400 dark:hover:text-neutral-300"
-          href="#"
+          href="/blog"
         >
           Blog
         </Link>
