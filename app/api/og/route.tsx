@@ -4,13 +4,13 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 // Image metadata
-export const alt = "About Diluc Steiner";
-export const size = {
-  width: 1200,
-  height: 630,
-};
+// export const alt = "About Diluc Steiner";
+// export const size = {
+//   width: 1200,
+//   height: 630,
+// };
 
-export const contentType = "image/png";
+// export const contentType = "image/png";
 
 // Image generation
 export default async function GET() {
@@ -47,12 +47,12 @@ export default async function GET() {
           ></path>
         </svg>
       </div>
-    ),
-    // ImageResponse options
-    {
-      // For convenience, we can re-use the exported opengraph-image
-      // size config to also set the ImageResponse's width and height.
-      ...size,
-    }
+      // ImageResponse options
+      // {
+      //   // For convenience, we can re-use the exported opengraph-image
+      //   // size config to also set the ImageResponse's width and height.
+      //   ...size,
+      // }
+    )
   );
 }
