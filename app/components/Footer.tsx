@@ -18,7 +18,7 @@ export default function Footer() {
               href="/"
               aria-label="Brand"
             >
-              Dillucesteinner
+              Diluc steinner
             </Link>
             <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
               &copy; {new Date().getFullYear()}.
@@ -166,10 +166,10 @@ export default function Footer() {
                   href="#"
                   aria-label="Brand"
                 >
-                  Dillucesteinner
+                  Diluc steinner
                 </a>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
-                  © {new Date().getFullYear()} Dillucesteinner.
+                  © {new Date().getFullYear()} Diluc steinner.
                 </p>
               </div>
 

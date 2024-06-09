@@ -27,7 +27,7 @@ export default function Hero() {
             architecto molestiae a facilis exercitationem.
           </p>
           <button className="uppercase px-2 py-3 bg-blue-600 rounded-lg font-bold my-2">
-            learn how dillucesteinner finds cancer
+            learn how Diluc steinner finds cancer
           </button>
         </div>
         <div className="w-[200px] h-[200px] md:w-[270px] md:h-[300px]  flex flex-col items-center justify-center">

@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const roboto = Roboto_Serif({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dillucesteiner",
+  title: "Diluc Steiner",
   description: "Susceptibility Testing meets AI",
 };
 
