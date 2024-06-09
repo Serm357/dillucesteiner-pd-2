@@ -14,7 +14,7 @@ export default async function RootLayout({
     <>
       <div>
         <div>
-          <section className="">{children}</section>
+          <section className="min-h-screen">{children}</section>
         </div>
       </div>
     </>

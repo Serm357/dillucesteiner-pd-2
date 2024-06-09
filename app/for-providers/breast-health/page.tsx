@@ -1,4 +1,4 @@
-import { Check, CircleCheck, CircleCheckBig } from "lucide-react";
+import { CircleCheck } from "lucide-react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
@@ -61,10 +61,11 @@ const BreastHealth = () => {
         </div>
       </div>
       {/* features  */}
-      <div className="mt-11">
+      <div className="mt-11 flex flex-col items-center justify-center gap-2 ">
         <FeatureCard />
         <FeatureCard2 />
         <FeatureCard3 />
+        <Quote />
       </div>
     </div>
   );
@@ -74,7 +75,7 @@ export default BreastHealth;
 
 function FeatureCard() {
   return (
-    <div className="h-[32rem] w-full mx-2 flex flex-col-reverse md:flex-row my-2">
+    <div className="min-h-[32rem] w-full mx-2 flex flex-col-reverse md:flex-row my-2">
       <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
         <h1
           className="font-semibold my-2 text-3xl text-primary
@@ -112,7 +113,7 @@ function FeatureCard() {
 }
 function FeatureCard2() {
   return (
-    <div className="h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
+    <div className="min-h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1">
         <Image
           src="/1.png"
@@ -150,7 +151,7 @@ function FeatureCard2() {
 
 function FeatureCard3() {
   return (
-    <div className="h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
+    <div className="min-h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
         <h1
           className="font-semibold my-2 text-3xl text-primary
@@ -185,6 +186,21 @@ function FeatureCard3() {
           alt="image description"
         />
       </div>
+    </div>
+  );
+}
+function Quote() {
+  return (
+    <div className="min-h-[12rem] py-5 bg-[url('/2.jpg')] bg-no-repeat bg-cover my-3 w-full mx-2 flex flex-col items-center justify-centergap-3">
+      <h1 className="prose md:prose-lg text-center text-2xl lg:text-3xl text-white/90 font-bold  ">
+        "If we fail to act, we are looking at an almost unthinkable scenario
+        where antibiotics no longer work and we are cast back into the dark ages
+        of medicine"
+      </h1>
+      <h2 className="text-white text-lg md:text-2xl">David Cameron</h2>
+      <h3 className="text-white/90 text-sm md:text-lg">
+        former UK Prime Minister.
+      </h3>
     </div>
   );
 }
