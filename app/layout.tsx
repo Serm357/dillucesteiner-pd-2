@@ -1,18 +1,14 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "@/providers/Theme";
-import { Metadata } from "next";
 import PrelineScript from "./components/PrelineScript";
 import Footer from "./components/Footer";
 import { Roboto_Serif } from "next/font/google";
-import { cn } from "@/lib/utils";
+import { cn, constructMetadata } from "@/lib/utils";
 
 const roboto = Roboto_Serif({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Diluc Steiner",
-  description: "Susceptibility Testing meets AI",
-};
+export const metadata = constructMetadata();
 
 export default async function RootLayout({
   children,
