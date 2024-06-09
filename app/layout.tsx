@@ -4,6 +4,10 @@ import { ThemeProvider } from "@/providers/Theme";
 import { Metadata } from "next";
 import PrelineScript from "./components/PrelineScript";
 import Footer from "./components/Footer";
+import { Roboto_Serif } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const roboto = Roboto_Serif({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dillucesteiner",
@@ -27,7 +31,9 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <div className="min-h-screen w-full">{children}</div>
+            <div className={cn("min-h-screen w-full", roboto.className)}>
+              {children}
+            </div>
             <Footer />
           </ThemeProvider>
         </body>
