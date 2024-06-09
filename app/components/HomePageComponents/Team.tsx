@@ -14,7 +14,7 @@ const Team = () => {
     >
       {/* <!-- Title --> */}
       <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-        <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
+        <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-primary">
           Meet the crew
         </h2>
         <p className="mt-1 text-gray-600 dark:text-neutral-400">
@@ -24,10 +24,28 @@ const Team = () => {
       {/* <!-- End Title --> */}
 
       {/* <!-- Grid --> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 justify-center items-center">
-        <Card name="Yohana Laurent" position="Founder / CEO" />
-        <Card name="Chiku Hotai" position="SUPPORT CONSULTANT" />
-        <Card name="Salum Suleiman" position="FULL STACK DEVELOPER" />
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-12 gap-4 md:gap-8 justify-center items-center">
+        <Card
+          name="Yohana Laurent"
+          position="Founder / CEO"
+          image="/team/laurent.png"
+        />
+
+        <Card
+          name="Salum Suleiman"
+          position="Full Stack Developer"
+          image="/team/Salum.png"
+        />
+        <Card
+          name="Fidelis John"
+          position="Marketing & Commrcial"
+          image="/team/Fidelis.png"
+        />
+        <Card
+          name="Yohana Palangyo"
+          position="Head OF PRODUCT"
+          image="/team/yohana.png"
+        />
       </div>
       {/* <!-- End Grid --> */}
     </div>
@@ -37,15 +55,23 @@ const Team = () => {
 
 export default Team;
 
-function Card({ name, position }: { name: string; position: string }) {
+function Card({
+  name,
+  position,
+  image,
+}: {
+  name: string;
+  position: string;
+  image: string;
+}) {
   return (
     <>
       <div className="flex gap-y-3 gap-x-5">
-        <Image
+        <img
           width={80}
           height={80}
-          className="rounded-lg size-20 sm:size-24 lg:size-28"
-          src="/2.jpg"
+          className="rounded-full size-20 sm:size-24 lg:size-28"
+          src={image}
           alt="Image Description"
         />
 

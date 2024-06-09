@@ -4,8 +4,14 @@ import Herofeatures from "./components/HomePageComponents/Features";
 import dynamic from "next/dynamic";
 import Trusts from "./components/HomePageComponents/Trusts";
 import Testimonials from "./components/HomePageComponents/Testimonials";
-import HeroFinale from "./components/HomePageComponents/HeroFinale";
 import ImageSlider from "./components/HomePageComponents/ImageSlider";
+
+const HeroFinale = dynamic(
+  () => import("./components/HomePageComponents/HeroFinale"),
+  {
+    ssr: false,
+  }
+);
 
 const Subhero = dynamic(
   () => import("./components/HomePageComponents/Subhero"),

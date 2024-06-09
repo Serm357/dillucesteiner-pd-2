@@ -17,7 +17,7 @@ export default function Subhero() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">For Provider.</p>
+      <p className="font-bold text-4xl text-primary">For Provider.</p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         At Diluc Steiner, our advanced technology is designed to uncover and
         expose antimicrobial resistance (AMR) hiding places with unparalleled
@@ -25,7 +25,7 @@ const SkeletonOne = () => {
       </p>
       <Link
         href="/for-providers"
-        className="my-2 py-2 px-3 w-11 font-bold bg-primary-foreground rounded-md"
+        className="my-2 py-2 px-3 w-11 font-bold bg-primary-foreground text-primary rounded-md"
       >
         Lean How
       </Link>
@@ -36,7 +36,7 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">For Patient</p>
+      <p className="font-bold text-4xl text-primary">For Patient</p>
       <p className="font-normal text-base my-4 max-w-lg lg:h-28 text-neutral-200 ">
         By using our technology, patients can provide real-time data through
         regular health monitoring and reporting symptoms early. When patients
@@ -47,7 +47,7 @@ const SkeletonTwo = () => {
       </p>
       <Link
         href="/for-patients"
-        className="my-2 py-2 px-3 w-11 font-bold bg-primary-foreground rounded-md"
+        className="my-2 py-2 px-3 w-11 font-bold bg-primary-foreground text-primary rounded-md"
       >
         Lean How
       </Link>
@@ -60,14 +60,14 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2 hover:cursor-pointer ",
-    thumbnail: "/2.jpg",
+    thumbnail: "/bg/10.jpg",
     title: "For Providers",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1 hover:cursor-pointer ",
-    thumbnail: "/6.jpg",
+    thumbnail: "/bg/18.jpg",
     title: "For Patients",
   },
 ];

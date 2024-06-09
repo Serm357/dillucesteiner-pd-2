@@ -27,12 +27,14 @@ const PostPage = (props: any) => {
   return (
     <div>
       <div className="my-12 text-center">
-        <h1 className="text-2xl text-slate-600 ">{post.data.title}</h1>
+        <h1 className="text-2xl font-bold text-orange-400 ">
+          {post.data.title}
+        </h1>
         <p className="text-slate-400 mt-2">{post.data.date}</p>
       </div>
 
       <MaxWidthWrapper>
-        <article className="prose max-w-none md:prose-md lg:prose- prose-h2:text-blue-400 prose-img:lg:ml-[10rem] prose-img:object-center prose-headings:text-primary dark:text-gray-300">
+        <article className="prose max-w-none md:prose-md lg:prose- prose-h3:text-green-400 prose-img:lg:ml-[10rem] prose-img:object-center prose-headings:text-primary dark:text-gray-300">
           <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
         </article>
       </MaxWidthWrapper>

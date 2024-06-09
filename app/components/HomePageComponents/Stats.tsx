@@ -79,9 +79,7 @@ function Card({
             <p className="h-16  font-normal text-sm text-slate-500 dark:text-white text-center mb-3 relative z-50 capitalize">
               {desc}
             </p>
-            <h1 className="font-bold text-xl mt-2 mb-4 relative z-50">
-              {year}
-            </h1>
+            <h1 className="font-bold text-xl mt-2 mb-4">{year}</h1>
           </div>
         </div>
       </div>

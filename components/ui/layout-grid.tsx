@@ -48,7 +48,7 @@ const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             {selected?.id === card.id && <SelectedCard selected={selected} />}
             <BlurImage card={card} />
             <div className="my-2 absolute bottom-9 left-2">
-              <h1 className="text-white font-bold text-2xl">{card.title}</h1>
+              <h1 className="text-primary font-bold text-2xl">{card.title}</h1>
             </div>
           </motion.div>
         </div>
