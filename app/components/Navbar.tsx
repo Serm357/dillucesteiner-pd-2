@@ -91,7 +91,7 @@ const Navbar = () => {
                       href="/for-providers/breast-health"
                       className="w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-gray-100 md:hover:text-primary focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700  dark:hover:text-primary"
                     >
-                      ProFound Breast Health Suite
+                      Breast Health Suite
                       <svg
                         className="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
                         xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +184,7 @@ const Navbar = () => {
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
                     href="/for-patients/ai-powered-mammogram"
                   >
-                    AI powered Mammogram
+                    AI Mammogram
                   </Link>
 
                   <Link

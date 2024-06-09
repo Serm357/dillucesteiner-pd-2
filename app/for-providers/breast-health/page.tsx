@@ -9,12 +9,23 @@ const BgCard = dynamic(() => import("@/app/components/BgCard"), {
 const BreastHealth = () => {
   return (
     <div>
-      <BgCard />
+      <BgCard
+        images={["/1.png", "/2.jpg", "/3.jpg"]}
+        title="Resistance suite site."
+        subtitle=" Resistance finally met its match."
+        desc="Our AI-powered technology revolutionizes the fight against AMR by
+          precisely analyzing resistance patterns, enabling early detection of
+          resistant strains. 
+          It provides tailored treatment plans based on comprehensive analysis,
+          ensuring precise, effective, and timely interventions to combat
+          antimicrobial resistance."
+        btnText="See it in Action →"
+      />
       <div className="ml-2 my-3">
         <h1 className="uppercase font-semibold text-xl text-gray-400 my-3">
           PROFOUND AMR HEALTH SUITE
         </h1>
-        <h1 className="capitalize font-bold text-4xl md:text-5xl text-primary my-3 ">
+        <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Together, we can{" "}
           <span className="text-black dark:text-orange-500">save</span> more{" "}
           <span className="text-black dark:text-orange-500">lives.</span>
@@ -223,6 +234,7 @@ function FeatureCard3() {
     </div>
   );
 }
+
 function Quote() {
   return (
     <div className="min-h-[12rem] py-5 bg-[url('/2.jpg')] bg-no-repeat bg-cover my-3 w-full mx-2 flex flex-col items-center justify-centergap-3">
@@ -243,7 +255,7 @@ function FeatureLastCard() {
   return (
     <div className="min-h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
-        <h1 className="capitalize font-bold text-4xl md:text-5xl text-primary my-3 ">
+        <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-3 ">
           Quality healthcare
           <span className="text-black dark:text-orange-500"> reimagined.</span>
         </h1>
