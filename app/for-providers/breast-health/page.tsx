@@ -1,6 +1,5 @@
 import { CircleCheck } from "lucide-react";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Link from "next/link";
 
 const BgCard = dynamic(() => import("@/app/components/BgCard"), {
@@ -16,8 +15,9 @@ const BreastHealth = () => {
           PROFOUND AMR HEALTH SUITE
         </h1>
         <h1 className="capitalize font-bold text-4xl md:text-5xl text-primary my-3 ">
-          Together, we can <span className="text-yellow-300">save</span> more{" "}
-          <span className="text-yellow-300">lives</span>.
+          Together, we can{" "}
+          <span className="text-black dark:text-orange-500">save</span> more{" "}
+          <span className="text-black dark:text-orange-500">lives.</span>
         </h1>
         <p className="prose max-w-none md:prose-lg lg:prose-xl my- dark:text-gray-200">
           Our AI technology saves lives by quickly identifying resistant strains
@@ -66,6 +66,40 @@ const BreastHealth = () => {
         <FeatureCard2 />
         <FeatureCard3 />
         <Quote />
+        <FeatureLastCard />
+      </div>
+      {/* icons again */}
+      <div className="flex gap-4 md:gap-6 lg:gap-8 justify-around items-center my-12 mx-2 py-5">
+        <div className="flex flex-col gap-2 items-center justify-center">
+          <CircleCheck
+            color="white"
+            size={100}
+            className="bg-primary rounded-full"
+          />
+          <h1 className="text-lg lg:text-3xl font-semibold capitalize text-center">
+            Improved Health Outcomes
+          </h1>
+        </div>
+        <div className="flex flex-col gap-2 items-center justify-center">
+          <CircleCheck
+            color="white"
+            size={100}
+            className="bg-primary rounded-full"
+          />{" "}
+          <h1 className="text-lg lg:text-3xl font-semibold capitalize text-center">
+            Reduced Health Costs
+          </h1>
+        </div>
+        <div className="flex flex-col gap-2 items-center justify-center">
+          <CircleCheck
+            color="white"
+            size={100}
+            className="bg-primary rounded-full"
+          />{" "}
+          <h1 className="text-lg lg:text-3xl font-semibold capitalize text-center">
+            Enhanced Patient Experience
+          </h1>
+        </div>
       </div>
     </div>
   );
@@ -99,13 +133,13 @@ function FeatureCard() {
         </Link>
       </div>
       <div className="flex-1">
-        <Image
-          src="/1.png"
-          className="size-full rounded-md"
+        <img
+          src="/6.jpg"
+          className="size-full rounded-md "
           loading="lazy"
           width={100}
           height={100}
-          alt="image description"
+          alt="img description"
         />
       </div>
     </div>
@@ -115,13 +149,13 @@ function FeatureCard2() {
   return (
     <div className="min-h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1">
-        <Image
-          src="/1.png"
+        <img
+          src="/6.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
           height={100}
-          alt="image description"
+          alt="img description"
         />
       </div>
       <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
@@ -177,13 +211,13 @@ function FeatureCard3() {
         </Link>
       </div>
       <div className="flex-1">
-        <Image
-          src="/1.png"
+        <img
+          src="/6.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
           height={100}
-          alt="image description"
+          alt="img description"
         />
       </div>
     </div>
@@ -201,6 +235,48 @@ function Quote() {
       <h3 className="text-white/90 text-sm md:text-lg">
         former UK Prime Minister.
       </h3>
+    </div>
+  );
+}
+
+function FeatureLastCard() {
+  return (
+    <div className="min-h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
+      <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
+        <h1 className="capitalize font-bold text-4xl md:text-5xl text-primary my-3 ">
+          Quality healthcare
+          <span className="text-black dark:text-orange-500"> reimagined.</span>
+        </h1>
+        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+          At Diluc Steiner, we are redefining quality healthcare through the
+          integration of cutting-edge AI technology. Our innovative solutions
+          provide rapid, precise, and actionable insights, transforming the way
+          antimicrobial resistance (AMR) is detected and treated. By leveraging
+          advanced data analytics, we offer personalized treatment plans that
+          enhance patient outcomes and streamline healthcare processes. Our
+          commitment to innovation ensures that healthcare providers have the
+          tools they need to deliver the highest standard of care, proactively
+          addressing AMR and other emerging health threats. With Diluc Steiner,
+          quality healthcare is not just a promise—it's a reality, reimagined
+          for a safer, healthier future.
+        </p>
+        <Link
+          href="/for-providers/risk"
+          className="capitalize py-2 px-3 font-bold my-2 bg-primary text-xl text-white rounded-md"
+        >
+          Learn how
+        </Link>
+      </div>
+      <div className="flex-1">
+        <img
+          src="/6.jpg"
+          className="size-full rounded-md"
+          loading="lazy"
+          width={100}
+          height={100}
+          alt="img description"
+        />
+      </div>
     </div>
   );
 }

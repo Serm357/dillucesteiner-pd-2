@@ -62,19 +62,19 @@ function Card({ name, position }: { name: string; position: string }) {
           {/* <!-- Social Brands --> */}
           <div className="mt-2 text-lg sm:mt-auto space-x-2.5">
             <a
-              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
+              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
               href="#"
             >
               <LinkedInLogoIcon />
             </a>
             <a
-              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
+              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
               href="#"
             >
               <InstagramLogoIcon />
             </a>
             <a
-              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
+              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
               href="#"
             >
               <TwitterLogoIcon />

@@ -32,7 +32,7 @@ const PostPage = (props: any) => {
       </div>
 
       <MaxWidthWrapper>
-        <article className="prose max-w-none md:prose-md lg:prose- prose-h2:text-green-400 prose-img:lg:ml-[10rem] prose-img:object-center prose-headings:text-primary dark:text-gray-300">
+        <article className="prose max-w-none md:prose-md lg:prose- prose-h2:text-blue-400 prose-img:lg:ml-[10rem] prose-img:object-center prose-headings:text-primary dark:text-gray-300">
           <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
         </article>
       </MaxWidthWrapper>

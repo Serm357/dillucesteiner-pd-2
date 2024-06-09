@@ -11,7 +11,7 @@ const HeroFinale = () => {
           <div className="mt-5 max-w-2xl text-center mx-auto">
             <h1 className="block font-bold text-white text-2xl md:text-3xl lg:text-4xl ">
               Here it is different <br />
-              <span className="bg-clip-text bg-gradient-to-tr from-green-100 to-green-600 text-transparent text-4xl md:text-5xl lg:text-6xl ">
+              <span className="bg-clip-text bg-gradient-to-tr from-blue-100 to-blue-600 text-transparent text-4xl md:text-5xl lg:text-6xl ">
                 AMR can’t beat us
               </span>
             </h1>

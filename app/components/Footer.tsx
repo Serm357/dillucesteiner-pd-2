@@ -27,14 +27,14 @@ export default function Footer() {
           {/* <!-- End Col --> */}
 
           <div>
-            <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
+            <h4 className="text-xs font-semibold text-primary uppercase ">
               For Providers
             </h4>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Profound Breast
@@ -42,7 +42,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Research
@@ -50,7 +50,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Publications
@@ -61,14 +61,14 @@ export default function Footer() {
           {/* <!-- End Col --> */}
 
           <div>
-            <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
+            <h4 className="text-xs font-semibold text-primary uppercase ">
               For Patients
             </h4>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   AI powered Mammogram
@@ -76,7 +76,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Resources
@@ -87,14 +87,14 @@ export default function Footer() {
           {/* <!-- End Col --> */}
 
           <div>
-            <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
+            <h4 className="text-xs font-semibold text-primary uppercase ">
               About US
             </h4>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Team
@@ -102,7 +102,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   History
@@ -110,7 +110,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Science
@@ -118,7 +118,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Webinars
@@ -126,7 +126,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Careers
@@ -145,13 +145,13 @@ export default function Footer() {
             <div className="flex items-center gap-x-3">
               <div className="space-x-4 text-sm ms-4">
                 <Link
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="/privacy"
                 >
                   Terms & Privacy
                 </Link>
                 <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-green-500 dark:text-neutral-400 dark:hover:text-green-500"
+                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
                   href="#"
                 >
                   Status
@@ -176,19 +176,19 @@ export default function Footer() {
               {/* <!-- Social Brands --> */}
               <div className="space-x-4">
                 <a
-                  className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
+                  className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                   href="#"
                 >
                   <TwitterLogoIcon />
                 </a>
                 <a
-                  className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
+                  className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                   href="#"
                 >
                   <InstagramLogoIcon />
                 </a>
                 <a
-                  className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
+                  className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                   href="#"
                 >
                   <LinkedInLogoIcon />

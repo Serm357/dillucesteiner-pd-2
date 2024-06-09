@@ -61,7 +61,7 @@ function Card({
         <div className="absolute inset-0 h-full w-full  transform scale-[0.80] rounded-full blur-3xl" />
         <div className="relative shadow-md  shadow-primary bg-primary-foreground  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="font-bold text-2xl text-green-900 dark:text-green-300 mb-4 relative z-50">
+            <h1 className="font-bold text-2xl text-blue-900 dark:text-blue-300 mb-4 relative z-50">
               <AnimatedNumbers
                 includeComma
                 className="text-center"
@@ -96,7 +96,7 @@ function Card2() {
         <div className="absolute inset-0 h-full w-full  transform scale-[0.80] rounded-full blur-3xl" />
         <div className="relative shadow-md shadow-primary bg-primary-foreground  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="font-bold flex items-center justify-center text-2xl text-green-900 dark:text-green-300 mb-4 relative z-50">
+            <h1 className="font-bold flex items-center justify-center text-2xl text-blue-900 dark:text-blue-300 mb-4 relative z-50">
               <AnimatedNumbers
                 includeComma
                 className="text-center"

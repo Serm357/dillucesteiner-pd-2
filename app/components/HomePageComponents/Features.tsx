@@ -28,7 +28,7 @@ export default function Herofeatures() {
                   <span className="flex">
                     <Stars />
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200">
+                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Detection
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
@@ -39,7 +39,7 @@ export default function Herofeatures() {
                       </span>
                       <Link
                         href="#"
-                        className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                        className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
                       </Link>
@@ -58,7 +58,7 @@ export default function Herofeatures() {
                   <span className="flex">
                     <Stars />
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200">
+                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Density
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
@@ -69,7 +69,7 @@ export default function Herofeatures() {
                       </span>
                       <Link
                         href="#"
-                        className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                        className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
                       </Link>
@@ -86,9 +86,9 @@ export default function Herofeatures() {
                   role="tab"
                 >
                   <span className="flex">
-                    <Stars/>
+                    <Stars />
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200">
+                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Risk
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
@@ -100,7 +100,7 @@ export default function Herofeatures() {
                       </span>
                       <Link
                         href="#"
-                        className="block text-lg font-semibold hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                        className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
                       </Link>
@@ -228,7 +228,7 @@ function Heading() {
 function Stars() {
   return (
     <svg
-      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-green-600 text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

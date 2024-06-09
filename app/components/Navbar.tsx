@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <LinksBanner />
-      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-lg   dark:bg-neutral-800 dark:border-neutral-700">
+      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b border-gray-200 text-lg    dark:border-neutral-700">
         <nav
           className="relative max-w-[85rem] flex flex-wrap basis-full items-center w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
           aria-label="Global"
@@ -58,7 +58,7 @@ const Navbar = () => {
 
           <div
             id="navbar-offcanvas-example"
-            className="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-[60] bg-white border-e basis-full grow sm:order-2 sm:static sm:block sm:h-auto sm:max-w-none sm:w-auto sm:border-r-transparent sm:transition-none sm:translate-x-0 sm:z-40 sm:basis-auto dark:bg-neutral-800 dark:border-r-gray-700 sm:dark:border-r-transparent hidden"
+            className="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-[60]  border-e basis-full grow sm:order-2 sm:static sm:block sm:h-auto sm:max-w-none sm:w-auto sm:border-r-transparent sm:transition-none sm:translate-x-0 sm:z-40 sm:basis-auto  dark:border-r-gray-700 sm:dark:border-r-transparent hidden"
             // tabIndex={-1}
             data-hs-overlay-close-on-resize
           >
