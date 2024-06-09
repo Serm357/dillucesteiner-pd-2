@@ -34,6 +34,7 @@
     "react-multi-carousel": "^2.8.5",
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.0",
+    "simplex-noise": "^4.0.1",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },

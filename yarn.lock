@@ -2068,6 +2068,7 @@ __metadata:
     react-multi-carousel: "npm:^2.8.5"
     rehype-raw: "npm:^7.0.0"
     remark-gfm: "npm:^4.0.0"
+    simplex-noise: "npm:^4.0.1"
     tailwind-merge: "npm:^2.3.0"
     tailwindcss: "npm:^3.4.1"
     tailwindcss-animate: "npm:^1.0.7"
@@ -5658,6 +5659,13 @@ __metadata:
   version: 4.1.0
   resolution: "signal-exit@npm:4.1.0"
   checksum: 10c0/41602dce540e46d599edba9d9860193398d135f7ff72cab629db5171516cfae628d21e7bfccde1bbfdf11c48726bc2a6d1a8fb8701125852fbfda7cf19c6aa83
+  languageName: node
+  linkType: hard
+
+"simplex-noise@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "simplex-noise@npm:4.0.1"
+  checksum: 10c0/d3eb0608fc3ba63d3daa89d69d5dadeb5bd7afff4f2e32910a5b373ebc2e807dcc62987afd95f822972a2214b77d0ecec6393ac402dd564aa9317be0fffa5092
   languageName: node
   linkType: hard
 
