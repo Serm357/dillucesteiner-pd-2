@@ -6,24 +6,18 @@ const BgCard = dynamic(() => import("@/app/components/BgCard"), {
   ssr: false,
 });
 
-const BreastHealth = () => {
+const AMRInsights = () => {
   return (
     <div>
       <BgCard
         images={["/1.png", "/2.jpg", "/3.jpg"]}
-        title="Resistance suite site."
-        subtitle=" Resistance finally met its match."
-        desc="Our AI-powered technology revolutionizes the fight against AMR by
-          precisely analyzing resistance patterns, enabling early detection of
-          resistant strains. 
-          It provides tailored treatment plans based on comprehensive analysis,
-          ensuring precise, effective, and timely interventions to combat
-          antimicrobial resistance."
-        btnText="See it in Action →"
+        title="Unmasking AMR Threats."
+        subtitle="Resistance's hiding place, exposed.."
+        desc="Delivering clarity, confidence, and peace of mind. Ditekta, our cutting-edge AI technology, is clinically proven to improve antimicrobial resistance detection and enhance healthcare professional performance. Diluc Steiner empowers you with accurate, data-driven insights, ensuring timely interventions and effective treatment plans. Join us in revolutionizing the fight against antimicrobial resistance."
       />
       <div className="ml-2 my-3">
         <h1 className="uppercase font-semibold text-xl text-gray-400 my-3">
-          PROFOUND AMR HEALTH SUITE
+          AI-Powered Resistance Insight
         </h1>
         <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Together, we can{" "}
@@ -116,7 +110,7 @@ const BreastHealth = () => {
   );
 };
 
-export default BreastHealth;
+export default AMRInsights;
 
 function FeatureCard() {
   return (

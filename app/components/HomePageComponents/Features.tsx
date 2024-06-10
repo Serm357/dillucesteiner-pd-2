@@ -212,7 +212,7 @@ function Heading() {
         our platform
       </h3>
       <h1 className="font-semibold text-primary text-5xl md:text-6xl">
-        ProFound Breast Health Suite
+        AMR insights
       </h1>
       <div className="max-w-4xl">
         <p className="mt-1 dark:text-neutral-400 text-lg">

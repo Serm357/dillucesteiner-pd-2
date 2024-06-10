@@ -27,110 +27,103 @@ export default function Footer() {
           {/* <!-- End Col --> */}
 
           <div>
-            <h4 className="text-xs font-semibold text-primary uppercase ">
+            <Link
+              href="for-providers"
+              className="text-xs font-semibold text-primary uppercase "
+            >
               For Providers
-            </h4>
+            </Link>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
+                  href="/for-providers/amr-insights"
                 >
-                  Profound Breast
-                </a>
+                  AMR insights
+                </Link>
               </p>
               <p>
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
+                  href="/for-providers/research"
                 >
                   Research
-                </a>
+                </Link>
               </p>
               <p>
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
+                  href="/for-providers/services"
                 >
-                  Publications
-                </a>
+                  Services
+                </Link>
               </p>
             </div>
           </div>
           {/* <!-- End Col --> */}
 
           <div>
-            <h4 className="text-xs font-semibold text-primary uppercase ">
+            <Link
+              href="/for-patients"
+              className="text-xs font-semibold text-primary uppercase "
+            >
               For Patients
-            </h4>
+            </Link>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
+                  href="/for-patients/ai-powered-mammogram"
                 >
                   AI powered Mammogram
-                </a>
+                </Link>
               </p>
               <p>
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
+                  href="/for-providers/resources"
                 >
                   Resources
-                </a>
+                </Link>
               </p>
             </div>
           </div>
           {/* <!-- End Col --> */}
 
           <div>
-            <h4 className="text-xs font-semibold text-primary uppercase ">
+            <Link
+              href="/about-us"
+              className="text-xs font-semibold text-primary uppercase "
+            >
               About US
-            </h4>
+            </Link>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
+                  href="/#team"
                 >
                   Team
-                </a>
+                </Link>
               </p>
               <p>
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
+                  href="/about-us#history"
                 >
                   History
-                </a>
+                </Link>
               </p>
               <p>
-                <a
+                <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
+                  href="/about-us/#science"
                 >
                   Science
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
-                >
-                  Webinars
-                </a>
-              </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
-                >
-                  Careers
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -150,24 +143,18 @@ export default function Footer() {
                 >
                   Terms & Privacy
                 </Link>
-                <a
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="#"
-                >
-                  Status
-                </a>
               </div>
             </div>
 
             <div className="flex justify-between items-center">
               <div className="mt-3 sm:hidden">
-                <a
+                <Link
                   className="flex-none text-xl font-semibold dark:text-white"
-                  href="#"
+                  href="/"
                   aria-label="Brand"
                 >
                   Diluc steinner
-                </a>
+                </Link>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
                   © {new Date().getFullYear()} Diluc steinner.
                 </p>
@@ -175,24 +162,24 @@ export default function Footer() {
 
               {/* <!-- Social Brands --> */}
               <div className="space-x-4">
-                <a
+                <Link
                   className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                   href="#"
                 >
                   <TwitterLogoIcon />
-                </a>
-                <a
+                </Link>
+                <Link
                   className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                   href="#"
                 >
                   <InstagramLogoIcon />
-                </a>
-                <a
+                </Link>
+                <Link
                   className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                   href="#"
                 >
                   <LinkedInLogoIcon />
-                </a>
+                </Link>
               </div>
               {/* <!-- End Social Brands --> */}
             </div>

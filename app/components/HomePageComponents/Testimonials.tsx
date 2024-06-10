@@ -1,70 +1,106 @@
 "use client";
-import dynamic from "next/dynamic";
-import React from "react";
-import "react-multi-carousel/lib/styles.css";
-const Carousel = dynamic(() => import("react-multi-carousel"), {
-  ssr: false,
-});
+import * as React from "react";
+
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 const Testimonials = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 1,
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  const testimonialsArray: {
+    imgSrc: string;
+    clientQuote: string;
+    clientName: string;
+    clientPosition: string;
+    clientCompany: string;
+  }[] = [
+    {
+      imgSrc: "/team/laurent.png",
+      clientQuote:
+        "Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.",
+      clientName: "Rwenzori rwanchungura",
+      clientPosition: "Medical doctor",
+      clientCompany: "Muhimbili",
     },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1,
+    {
+      imgSrc: "/team/laurent.png",
+      clientQuote:
+        "Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.",
+      clientName: "Rwenzori rwanchungura",
+      clientPosition: "Medical doctor",
+      clientCompany: "Muhimbili",
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
+    {
+      imgSrc: "/team/laurent.png",
+      clientQuote:
+        "Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.",
+      clientName: "Rwenzori rwanchungura",
+      clientPosition: "Medical doctor",
+      clientCompany: "Muhimbili",
     },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  ];
 
   return (
-    <main className="max-w-[85rem] h-screen px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <section
+      id="#testimonial"
+      className="max-w-[85rem] min-h-[75vh] flex flex-col gap-3 items-center justify-center"
+    >
+      <h1 className="font-bold capitalize my-3 lg:my-6 md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-400 py-4">
+        here is what our clients say
+      </h1>
       <Carousel
-        swipeable={true}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        // ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
-        // containerClass="carousel-container"
-        dotListClass="dots"
-        // itemClass="carousel-item-padding-40-px"
+        setApi={setApi}
+        opts={{
+          loop: true,
+        }}
+        className="w-full max-w-xs md:max-w-md lg:max-w-4xl"
       >
-        <Testimonial
-          imgSrc="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=500&h=600&q=80"
-          clientQuote="Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla."
-          clientName="Rwenzori rwanchungura"
-          clientPosition="Medical doctor"
-          clientCompany="Muhimbili"
-        />
-        <Testimonial
-          imgSrc="/female_cutout.webp"
-          clientQuote="Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla."
-          clientName="Mamito mtori"
-          clientPosition="Nurse"
-          clientCompany="Muhimbili"
-        />
-        <Testimonial
-          imgSrc="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=500&h=600&q=80"
-          clientQuote="Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla."
-          clientName="Rwenzori rwanchungura"
-          clientPosition="Medical doctor"
-          clientCompany="Bugando Medical Center"
-        />
+        <CarouselContent>
+          {testimonialsArray.map((singleTestimonial) => (
+            <CarouselItem key={singleTestimonial.clientName}>
+              <Card>
+                <CardContent className="lg:aspect-video aspect-square">
+                  <Testimonial
+                    imgSrc={singleTestimonial.imgSrc}
+                    clientQuote={singleTestimonial.clientQuote}
+                    clientName={singleTestimonial.clientName}
+                    clientPosition={singleTestimonial.clientPosition}
+                    clientCompany={singleTestimonial.clientCompany}
+                  />
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
-    </main>
+      <div className="py-2 text-center text-sm text-muted-foreground">
+        {current} / {count}
+      </div>
+    </section>
   );
 };
 
@@ -86,10 +122,14 @@ function Testimonial({
   return (
     <>
       {/* <!-- Grid --> */}
-      <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center size-full">
-        <div className="hidden md:block mb-24 md:mb-0 sm:px-6">
+      <div className="lg:grid lg:grid-cols-2 mt-6 md:mt-12 flex flex-col items-center justify-center lg:gap-16 lg:items-center size-full">
+        <div className="hidden lg:block mb-24 md:mb-0 sm:px-6">
           <div className="relative">
-            <img className="rounded-xl" src={imgSrc} alt="Image Description" />
+            <img
+              className="rounded-full"
+              src={imgSrc}
+              alt="Image Description"
+            />
 
             {/* <!-- SVG Element --> */}
             <div className="absolute bottom-0 start-0 -z-[1] translate-y-10 -translate-x-14">
@@ -176,8 +216,8 @@ function Testimonial({
             </svg>
 
             <div className="relative z-10">
-              <p className="text-xs font-semibold text-gray-500 tracking-wide uppercase mb-3 dark:text-neutral-200">
-                Featured client
+              <p className="text-xs font-semibold text-primary tracking-wide uppercase mb-3 dark:text-primary">
+                Top client
               </p>
 
               <p className="text-xl font-medium italic text-gray-800 md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal dark:text-neutral-200">
@@ -187,9 +227,9 @@ function Testimonial({
 
             <footer className="mt-6">
               <div className="flex items-center">
-                <div className="md:hidden flex-shrink-0">
+                <div className="lg:hidden flex-shrink-0">
                   <img
-                    className="size-12 rounded-full"
+                    className="size-20 rounded-full"
                     src={imgSrc}
                     alt="Image Description"
                   />
@@ -204,15 +244,6 @@ function Testimonial({
                 </div>
               </div>
             </footer>
-
-            {/* <div className="mt-8 lg:mt-14">
-              <a
-                className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-800 text-white hover:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800"
-                href="#"
-              >
-                Read the story
-              </a>
-            </div> */}
           </blockquote>
           {/* <!-- End Blockquote --> */}
         </div>

@@ -29,7 +29,7 @@ const ImageSlider = () => {
               >
                 <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
                   <span className="block text-white"> {firstBlog.title}.</span>
-                  <span className="block text-white text-xl md:text-3xl">
+                  <span className="block text-white text-xl md:text-3xl truncate">
                     {firstBlog.subtitle}
                   </span>
                   <div className="mt-5">

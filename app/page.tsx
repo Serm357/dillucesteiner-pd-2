@@ -2,8 +2,6 @@ import React from "react";
 import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
 import dynamic from "next/dynamic";
-import Trusts from "./components/HomePageComponents/Trusts";
-import Testimonials from "./components/HomePageComponents/Testimonials";
 import ImageSlider from "./components/HomePageComponents/ImageSlider";
 
 const HeroFinale = dynamic(
@@ -24,6 +22,13 @@ const Team = dynamic(() => import("./components/HomePageComponents/Team"), {
   ssr: false,
 });
 
+const Testimonials = dynamic(
+  () => import("./components/HomePageComponents/Testimonials"),
+  {
+    ssr: false,
+  }
+);
+
 export default async function Home() {
   return (
     <main className="flex-1">
@@ -32,7 +37,6 @@ export default async function Home() {
       <Subhero />
       <Herofeatures />
       <ImageSlider />
-      <Trusts />
       <Testimonials />
       <Team />
     </main>

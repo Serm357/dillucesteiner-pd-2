@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Breast Health",
+  title: "Patients - Diluc",
   description: "Susceptibility Testing meets AI",
 };
 

@@ -88,10 +88,10 @@ const Navbar = () => {
                 <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg py-2 px-3 sm:px-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
                   <div className="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] relative">
                     <Link
-                      href="/for-providers/breast-health"
+                      href="/for-providers/amr-insights"
                       className="w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-gray-100 md:hover:text-primary focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700  dark:hover:text-primary"
                     >
-                      Breast Health Suite
+                      AMR insights
                       <svg
                         className="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
                         xmlns="http://www.w3.org/2000/svg"
@@ -111,13 +111,13 @@ const Navbar = () => {
                     <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full">
                       <Link
                         className="flex md:hidden items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                        href="/for-providers/breast-health"
+                        href="/for-providers/amr-insights"
                       >
-                        ProFound Breast Health Suite
+                        AMR insights
                       </Link>
                       <Link
                         className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                        href="/for-providers/breast-health/detection"
+                        href="/for-providers/amr-insights/detection"
                       >
                         Detection
                       </Link>
@@ -129,7 +129,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                        href="/for-providers/breast-health/risk"
+                        href="/for-providers/amr-insights/risk"
                       >
                         Risk Evaluation
                       </Link>

@@ -15,7 +15,7 @@ export default function BgCard({
   title: string;
   subtitle: string;
   desc: string;
-  btnText: string;
+  btnText?: string;
 }) {
   return (
     <ImagesSlider className="h-[35rem]" images={images} direction="down">
@@ -42,10 +42,12 @@ export default function BgCard({
         <p className="text-white/90 my-1 prose max-w-none text-lg md:text-xl leading-8">
           {desc}
         </p>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <Link href="/">{btnText}</Link>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-        </button>
+        {btnText && (
+          <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+            <Link href="/">{btnText}</Link>
+            <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+          </button>
+        )}
       </motion.div>
     </ImagesSlider>
   );
