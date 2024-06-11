@@ -114,7 +114,7 @@ export default AMRInsights;
 
 function FeatureCard() {
   return (
-    <div className="min-h-[32rem] w-full mx-2 flex flex-col-reverse md:flex-row my-2">
+    <div className="min-h-[32rem] max-w-[85rem] mx-2 flex flex-col-reverse md:flex-row my-2">
       <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
         <h1
           className="font-semibold my-2 text-3xl text-primary
@@ -152,7 +152,7 @@ function FeatureCard() {
 }
 function FeatureCard2() {
   return (
-    <div className="min-h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
+    <div className="min-h-[32rem] max-w-[85rem] mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1">
         <img
           src="/6.jpg"
@@ -190,7 +190,7 @@ function FeatureCard2() {
 
 function FeatureCard3() {
   return (
-    <div className="min-h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
+    <div className="min-h-[32rem] max-w-[85rem] mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
         <h1
           className="font-semibold my-2 text-3xl text-primary
@@ -231,7 +231,7 @@ function FeatureCard3() {
 
 function Quote() {
   return (
-    <div className="min-h-[12rem] py-5 bg-[url('/2.jpg')] bg-no-repeat bg-cover my-3 w-full mx-2 flex flex-col items-center justify-centergap-3">
+    <div className="min-h-[12rem] py-5 bg-[url('/2.jpg')] bg-no-repeat bg-cover my-3 max-w-[85rem] mx-2 flex flex-col items-center justify-centergap-3">
       <h1 className="prose md:prose-lg text-center text-2xl lg:text-3xl text-white/90 font-bold  ">
         "If we fail to act, we are looking at an almost unthinkable scenario
         where antibiotics no longer work and we are cast back into the dark ages
@@ -247,7 +247,7 @@ function Quote() {
 
 function FeatureLastCard() {
   return (
-    <div className="min-h-[32rem] w-full mx-2 flex flex-col md:flex-row my-2">
+    <div className="min-h-[32rem] max-w-[85rem] mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
         <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-3 ">
           Quality healthcare
