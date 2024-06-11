@@ -229,7 +229,7 @@ function StatCard2({ title, desc }: { title: string; desc: string }) {
           className="bg-primary rounded-full"
         />
       </h1>
-      <h1 className="text-4xl font-bold lg:text-5xl text-orange-500 my-3 mb-0 text-center ">
+      <h1 className="text-lg font-bold lg:text-xl text-orange-500 my-3 mb-0 text-center ">
         {title}
       </h1>
       <p className="m-3 mt-0 text-white">{desc}</p>
