@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import StatCard, { StatCardType } from "./StatsCard";
+import { CircleCheck } from "lucide-react";
 
 const BgCard = dynamic(() => import("@/app/components/BgCard"), {
   ssr: false,
@@ -39,6 +40,7 @@ const RiskAssesment = () => {
         <FeatureCard />
         <FeatureCard2 />
         <FeatureCard3 />
+        <FeatureCard303 />
         <FeatureCard4 />
       </div>
     </div>
@@ -82,19 +84,20 @@ function FeatureCard() {
 const data: StatCardType[] = [
   {
     number1: 2800000,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil, quas enim iste, nisi culpa, blanditiis soluta iusto nostrum quidem ipsa voluptate quod temporibus at sequi sint molestias. Esse, ad.",
+    desc: " Over 2.8 million people are infected with AMR in United States alone. This number is significantly highlighting the urgent need for effective strategies to combat this growing public health threat.",
   },
   {
-    number1: 2800000,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil, quas enim iste, nisi culpa, blanditiis soluta iusto nostrum quidem ipsa voluptate quod temporibus at sequi sint molestias. Esse, ad.",
+    number1: 35000,
+    desc: "Annually, AMR leads to a staggering toll of over 35,000 lives lost in the United States, emphasizing the pressing need for comprehensive measures to tackle antibiotic resistance",
   },
   {
-    number1: 2800000,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil, quas enim iste, nisi culpa, blanditiis soluta iusto nostrum quidem ipsa voluptate quod temporibus at sequi sint molestias. Esse, ad.",
+    number1: 10000000,
+    desc: "If left unchecked, AMR could claim a devastating toll of 10 million lives by 2050, as warned by WHO. Urgent action is imperative to avert this looming global health crisis.",
   },
+
   {
-    number1: 2800000,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil, quas enim iste, nisi culpa, blanditiis soluta iusto nostrum quidem ipsa voluptate quod temporibus at sequi sint molestias. Esse, ad.",
+    number1: 750000,
+    desc: "AMR exacts a dire toll of over 750,000 lives annually in developing nations, underscoring the urgent need for accessible solutions to combat antibiotic resistance worldwide.",
   },
 ];
 
@@ -167,6 +170,69 @@ function FeatureCard3() {
           alt="img description"
         />
       </div>
+    </div>
+  );
+}
+
+const data2: {
+  title: string;
+  desc: string;
+}[] = [
+  {
+    title: "Comprehensive Data Integration",
+    desc: "Integrate clinical, genomic, and epidemiological data for a holistic AMR risk assessment",
+  },
+
+  {
+    title: "User-Friendly Interface",
+    desc: "Ensure ease of use for healthcare professionals to interpret results and take action",
+  },
+
+  {
+    title: "Real-time Monitoring",
+    desc: "Detect emerging AMR trends promptly for rapid response.",
+  },
+
+  {
+    title: "Predictive Modeling",
+    desc: "Forecast future AMR trends and assess intervention impacts",
+  },
+];
+
+function FeatureCard303() {
+  return (
+    <div className="min-h-[90vh]  mt-3 mx-3 bg-blue-900 rounded-md">
+      <div className="flex mx-2 flex-col  gap-3 items-start py3 px-5 justify-center">
+        <h1 className=" font-bold text-3xl md:text-4xl text-white my-6">
+          What to look for in a
+          <span className="text-orange-500 mx-1">Risk Assessment</span>solution.
+        </h1>
+      </div>
+      <div className="grid m-2 grid-cols-2 lg:grid-cols-4 gap-3">
+        {data2.map((card) => {
+          return (
+            <StatCard2 key={card.title} title={card.title} desc={card.desc} />
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function StatCard2({ title, desc }: { title: string; desc: string }) {
+  return (
+    <div className="flex flex-col gap-3 items-center justify-center md:w-full">
+      <h1 className="text-4xl font-bold lg:text-5xl  my-3 mb-0 text-center ">
+        <CircleCheck
+          color="white"
+          size={100}
+          className="bg-primary rounded-full"
+        />
+      </h1>
+      <h1 className="text-4xl font-bold lg:text-5xl text-orange-500 my-3 mb-0 text-center ">
+        {title}
+      </h1>
+      <p className="m-3 mt-0 text-white">{desc}</p>
     </div>
   );
 }

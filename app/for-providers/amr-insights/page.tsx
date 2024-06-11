@@ -131,7 +131,7 @@ function FeatureCard() {
           resistance.
         </p>
         <Link
-          href="/for-providers/detection"
+          href="/for-providers/amr-insights/detection"
           className="capitalize py-2 px-3 font-bold my-2 bg-primary text-xl text-white rounded-md"
         >
           Learn how
@@ -178,7 +178,7 @@ function FeatureCard2() {
           plans, ensuring optimal patient outcomes.
         </p>
         <Link
-          href="/for-providers/risk-assesment"
+          href="/for-providers/amr-insights/risk-assesment"
           className="capitalize py-2 px-3 font-bold my-2 bg-primary text-xl text-white rounded-md"
         >
           Learn how
@@ -209,7 +209,7 @@ function FeatureCard3() {
           strategies.
         </p>
         <Link
-          href="/for-providers/risk-evaluation"
+          href="/for-providers/amr-insights/risk-evaluation"
           className="capitalize py-2 px-3 font-bold my-2 bg-primary text-xl text-white rounded-md"
         >
           Learn how
