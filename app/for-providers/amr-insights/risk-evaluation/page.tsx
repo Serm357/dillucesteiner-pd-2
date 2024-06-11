@@ -113,7 +113,13 @@ function FeatureCard2() {
       </div>
       <div className="grid m-2 grid-cols-2 lg:grid-cols-4 gap-3">
         {data.map((card) => {
-          return <StatCard number1={card.number1} desc={card.desc} />;
+          return (
+            <StatCard
+              key={card.number1}
+              number1={card.number1}
+              desc={card.desc}
+            />
+          );
         })}
       </div>
     </div>
