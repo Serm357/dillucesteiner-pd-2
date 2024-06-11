@@ -27,12 +27,9 @@ export default function Footer() {
           {/* <!-- End Col --> */}
 
           <div>
-            <Link
-              href="for-providers"
-              className="text-xs font-semibold text-primary uppercase "
-            >
+            <h4 className="text-xs font-semibold text-primary uppercase ">
               For Providers
-            </Link>
+            </h4>
 
             <div className="mt-3 grid space-y-3 text-sm">
               <p>

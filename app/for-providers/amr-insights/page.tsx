@@ -178,7 +178,7 @@ function FeatureCard2() {
           plans, ensuring optimal patient outcomes.
         </p>
         <Link
-          href="/for-providers/density"
+          href="/for-providers/risk-assesment"
           className="capitalize py-2 px-3 font-bold my-2 bg-primary text-xl text-white rounded-md"
         >
           Learn how

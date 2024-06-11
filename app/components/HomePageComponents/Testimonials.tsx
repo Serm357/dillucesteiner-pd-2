@@ -67,7 +67,7 @@ const Testimonials = () => {
       id="#testimonial"
       className="max-w-[85rem] min-h-[75vh] flex flex-col gap-3 items-center justify-center"
     >
-      <h1 className="font-bold capitalize my-3 lg:my-6 md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-400 py-4">
+      <h1 className="font-bold capitalize m-3 lg:my-6 md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-700 to-blue-400 py-4">
         here is what our clients say
       </h1>
       <Carousel
