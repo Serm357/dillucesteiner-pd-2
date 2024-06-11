@@ -168,7 +168,7 @@ function FeatureCard2() {
           className="font-semibold my-2 text-3xl text-primary
       "
         >
-          Density
+          Risk Assesment
         </h1>
         <p className="prose md:prose-lg dark:text-gray-200 my-2">
           Our technology measures the density of resistance by analyzing the
@@ -196,7 +196,7 @@ function FeatureCard3() {
           className="font-semibold my-2 text-3xl text-primary
       "
         >
-          Risk
+          Risk Evaluation
         </h1>
         <p className="prose md:prose-lg dark:text-gray-200 my-2">
           Our risk assessment solutions are highly accurate, utilizing advanced
@@ -209,7 +209,7 @@ function FeatureCard3() {
           strategies.
         </p>
         <Link
-          href="/for-providers/risk"
+          href="/for-providers/risk-evaluation"
           className="capitalize py-2 px-3 font-bold my-2 bg-primary text-xl text-white rounded-md"
         >
           Learn how
@@ -266,12 +266,6 @@ function FeatureLastCard() {
           quality healthcare is not just a promise—it's a reality, reimagined
           for a safer, healthier future.
         </p>
-        <Link
-          href="/for-providers/risk"
-          className="capitalize py-2 px-3 font-bold my-2 bg-primary text-xl text-white rounded-md"
-        >
-          Learn how
-        </Link>
       </div>
       <div className="flex-1">
         <img

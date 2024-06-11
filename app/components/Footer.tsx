@@ -41,12 +41,9 @@ export default function Footer() {
                 </Link>
               </p>
               <p>
-                <Link
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="/for-providers/research"
-                >
+                <h4 className="inline-flex gap-x-2 text-gray-600   dark:text-neutral-400">
                   Research
-                </Link>
+                </h4>
               </p>
               <p>
                 <Link
@@ -72,15 +69,15 @@ export default function Footer() {
               <p>
                 <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="/for-patients/ai-powered-mammogram"
+                  href="/for-patients/ai-powered-system"
                 >
-                  AI powered Mammogram
+                  AI powered system
                 </Link>
               </p>
               <p>
                 <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="/for-providers/resources"
+                  href="/for-patients/resources"
                 >
                   Resources
                 </Link>

@@ -129,19 +129,16 @@ const Navbar = () => {
                       </Link>
                       <Link
                         className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                        href="/for-providers/amr-insights/risk"
+                        href="/for-providers/amr-insights/risk-evaluation"
                       >
                         Risk Evaluation
                       </Link>
                     </div>
                   </div>
 
-                  <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 hover:text-primary focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/for-providers/research"
-                  >
+                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800    focus:ring-2 focus:ring-blue-500 dark:text-neutral-400">
                     Research & Publications
-                  </Link>
+                  </h4>
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 hover:text-primary focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
                     href="/for-providers/services"
@@ -182,9 +179,9 @@ const Navbar = () => {
                 <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg py-2 px-3 sm:px-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/for-patients/ai-powered-mammogram"
+                    href="/for-patients/ai-powered-system"
                   >
-                    AI Mammogram
+                    AI System
                   </Link>
 
                   <Link
