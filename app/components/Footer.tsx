@@ -3,6 +3,7 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
+import { FacebookIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -158,19 +159,25 @@ export default function Footer() {
               <div className="space-x-4">
                 <Link
                   className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
-                  href="#"
+                  href="https://www.facebook.com/dilucsteiner/"
+                >
+                  <FacebookIcon />
+                </Link>
+                <Link
+                  className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                  href="https://x.com/dilucsteiner"
                 >
                   <TwitterLogoIcon />
                 </Link>
                 <Link
                   className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
-                  href="#"
+                  href="https://www.instagram.com/dilucsteiner"
                 >
                   <InstagramLogoIcon />
                 </Link>
                 <Link
                   className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
-                  href="#"
+                  href="http://linkedin.com/company/dilucsteiner"
                 >
                   <LinkedInLogoIcon />
                 </Link>

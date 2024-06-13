@@ -228,7 +228,7 @@ function Testimonial({
                 Top client
               </p>
 
-              <p className=" prose md:prose-md dark:text-gray-200 my-2">
+              <p className=" prose prose-sm dark:text-gray-200 my-2">
                 {clientQuote}
               </p>
             </div>

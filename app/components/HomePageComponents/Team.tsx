@@ -29,22 +29,32 @@ const Team = () => {
           name="Yohana Laurent"
           position="Founder / CEO"
           image="/team/laurent.png"
+          lnk="https://www.linkedin.com/in/yohanalaurent/"
+          ins="https://www.instagram.com/laurentinojr"
+          twt="https://x.com/Oficiallorenzo"
         />
 
         <Card
           name="Salum Suleiman"
           position="Full Stack Developer"
           image="/team/Salum.png"
+          lnk="https://www.linkedin.com/in/salum-suleiman-783351229/"
         />
         <Card
           name="Fidelis John"
           position="Marketing & Commrcial"
           image="/team/Fidelis.png"
+          lnk=" https://www.linkedin.com/in/fidelis-songo-20a087275/"
+          ins="https://www.instagram.com/laurentinojr"
+          twt="https://x.com/Oficiallorenzo"
         />
         <Card
           name="Yohana Palangyo"
           position="Head OF PRODUCT"
           image="/team/yohana.png"
+          lnk="https://www.linkedin.com/in/yohana-pallangyo-2b6a18312/"
+          ins="https://www.instagram.com/yospa_2020"
+          twt="https://x.com/BpharmPallangyo"
         />
       </div>
       {/* <!-- End Grid --> */}
@@ -59,10 +69,16 @@ function Card({
   name,
   position,
   image,
+  lnk,
+  ins,
+  twt,
 }: {
   name: string;
   position: string;
   image: string;
+  lnk?: string;
+  ins?: string;
+  twt?: string;
 }) {
   return (
     <>
@@ -87,24 +103,30 @@ function Card({
 
           {/* <!-- Social Brands --> */}
           <div className="mt-2 text-lg sm:mt-auto space-x-2.5">
-            <a
-              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
-              href="#"
-            >
-              <LinkedInLogoIcon />
-            </a>
-            <a
-              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
-              href="#"
-            >
-              <InstagramLogoIcon />
-            </a>
-            <a
-              className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
-              href="#"
-            >
-              <TwitterLogoIcon />
-            </a>
+            {lnk && (
+              <a
+                className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                href={lnk}
+              >
+                <LinkedInLogoIcon />
+              </a>
+            )}
+            {ins && (
+              <a
+                className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                href={ins}
+              >
+                <InstagramLogoIcon />
+              </a>
+            )}
+            {twt && (
+              <a
+                className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                href={twt}
+              >
+                <TwitterLogoIcon />
+              </a>
+            )}
           </div>
           {/* <!-- End Social Brands --> */}
         </div>
