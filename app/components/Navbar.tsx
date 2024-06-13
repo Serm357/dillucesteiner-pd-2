@@ -271,7 +271,7 @@ function LinksBanner() {
         </Link>
         <Link
           className="inline-flex justify-center items-center gap-2 font-medium text-gray-600 hover:text-neutral-500 text-sm dark:text-neutral-400 dark:hover:text-primary"
-          href="/contact-us"
+          href="/for-partners#partner-form"
         >
           Contact Us
         </Link>
@@ -294,7 +294,8 @@ function AnnouncementBanner() {
       <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
         <div className="flex">
           <p className="text-white">
-            Diluc steiner is now live but under ongoing development 😊. <br />
+            Diluc steiner is now live but under ongoing development 😊.{" "}
+            <br className="md:hidden" />
             let us know if you encouter any difficulies{" "}
             <Link href="/for-partners#partners-form" className="mx-2 underline">
               here
