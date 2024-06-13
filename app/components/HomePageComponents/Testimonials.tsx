@@ -130,7 +130,7 @@ function Testimonial({
   return (
     <>
       {/* <!-- Grid --> */}
-      <div className="lg:grid lg:grid-cols-2 mt-6 md:mt-12 flex flex-col items-center justify-center lg:gap-16 lg:items-center size-full">
+      <div className="lg:grid h-fit lg:grid-cols-2 mt-6 md:mt-12 flex flex-col items-center justify-center lg:gap-16 lg:items-center size-full">
         <div className="hidden lg:block mb-24 md:mb-0 sm:px-6">
           <div className="relative">
             <img
@@ -228,7 +228,7 @@ function Testimonial({
                 Top client
               </p>
 
-              <p className=" prose prose-sm dark:text-gray-200 my-2">
+              <p className=" prose max-sm:text-xs prose-sm md:prose-md dark:text-gray-200 my-2">
                 {clientQuote}
               </p>
             </div>
