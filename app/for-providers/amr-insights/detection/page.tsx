@@ -8,7 +8,19 @@ const Detection = () => {
   return (
     <div>
       <BgCard
-        images={["/1.png", "/2.jpg", "/3.jpg"]}
+        images={[
+          "/bg/pictures/70.jpg",
+          "/bg/pictures/71.jpg",
+          "/bg/pictures/72.jpg",
+          "/bg/pictures/73.jpg",
+          "/bg/pictures/74.jpg",
+          "/bg/pictures/75.jpg",
+          "/bg/pictures/76.jpg",
+          "/bg/pictures/77.jpg",
+          "/bg/pictures/78.jpg",
+          "/bg/pictures/79.jpg",
+          "/bg/pictures/80.jpg",
+        ]}
         title="Resistance suite site."
         subtitle=" Resistance finally met its match."
         desc="Our AI-powered technology revolutionizes the fight against AMR by
@@ -65,7 +77,7 @@ function FeatureCard() {
       </div>
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/81.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}

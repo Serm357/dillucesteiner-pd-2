@@ -9,7 +9,13 @@ const RiskEvaluation = () => {
   return (
     <div className="w-full">
       <BgCard
-        images={["/1.png", "/2.jpg", "/3.jpg"]}
+        images={[
+          "/bg/pictures/110.jpg",
+          "/bg/pictures/111.jpg",
+          "/bg/pictures/112.jpg",
+          "/bg/pictures/113.jpg",
+          "/bg/pictures/114.jpg",
+        ]}
         title="Ditekta Risk."
         subtitle="Expose resistance before it makes its move."
         desc="Exposing resistance before it makes its move is crucial because early detection allows healthcare providers to intervene promptly, preventing the spread of resistant infections. This proactive approach ensures effective treatment, reduces complications, and helps maintain the efficacy of existing antibiotics, ultimately safeguarding public health."
@@ -43,7 +49,7 @@ function FeatureCard() {
     <div className="min-h-screen w-full mt-3 mx-2 flex flex-col-reverse md:flex-row my-2">
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/115.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
@@ -171,7 +177,7 @@ function FeatureCard4() {
     <div className="min-h-screen w-full  mx-2 flex flex-col-reverse md:flex-row mb-2">
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/116.jpg"
           className="size-full "
           loading="lazy"
           width={100}
@@ -247,7 +253,7 @@ function FeatureCard5() {
       </div>
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/117.jpg"
           className="size-full "
           loading="lazy"
           width={100}

@@ -9,7 +9,13 @@ const PatnersPage = () => {
   return (
     <div className="w-full">
       <PortalBgCard
-        images={["/1.png", "/2.jpg", "/3.jpg"]}
+        images={[
+          "/bg/pictures/121.jpg",
+          "/bg/pictures/122.jpg",
+          "/bg/pictures/123.jpg",
+          "/bg/pictures/124.jpg",
+          "/bg/pictures/125.jpg",
+        ]}
         title="For Partners."
         subtitle="Together, we are creating a world where AMR can’t hide."
         linkText="Become a Patner →"

@@ -10,7 +10,17 @@ const AMRInsights = () => {
   return (
     <div>
       <BgCard
-        images={["/1.png", "/2.jpg", "/3.jpg"]}
+        images={[
+          "/bg/pictures/50.jpg",
+          "/bg/pictures/5.jpg",
+          "/bg/pictures/52.jpg",
+          "/bg/pictures/53.jpg",
+          "/bg/pictures/54.jpg",
+          "/bg/pictures/55.jpg",
+          "/bg/pictures/56.jpg",
+          "/bg/pictures/57.jpg",
+          "/bg/pictures/59.jpg",
+        ]}
         title="Unmasking AMR Threats."
         subtitle="Resistance's hiding place, exposed.."
         desc="Delivering clarity, confidence, and peace of mind. Ditekta, our cutting-edge AI technology, is clinically proven to improve antimicrobial resistance detection and enhance healthcare professional performance. Diluc Steiner empowers you with accurate, data-driven insights, ensuring timely interventions and effective treatment plans. Join us in revolutionizing the fight against antimicrobial resistance."
@@ -139,7 +149,7 @@ function FeatureCard() {
       </div>
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/47.jpg"
           className="size-full rounded-md "
           loading="lazy"
           width={100}
@@ -155,7 +165,7 @@ function FeatureCard2() {
     <div className="min-h-[32rem] max-w-[85rem] mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/64.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
@@ -217,7 +227,7 @@ function FeatureCard3() {
       </div>
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/45.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
@@ -269,7 +279,7 @@ function FeatureLastCard() {
       </div>
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/63.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}

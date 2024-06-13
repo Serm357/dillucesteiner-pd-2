@@ -10,7 +10,18 @@ const RiskAssesment = () => {
   return (
     <div>
       <BgCard
-        images={["/1.png", "/2.jpg", "/3.jpg"]}
+        images={[
+          "/bg/pictures/90.jpg",
+          "/bg/pictures/91.jpg",
+          "/bg/pictures/92.jpg",
+          "/bg/pictures/93.jpg",
+          "/bg/pictures/94.jpg",
+          "/bg/pictures/95.jpg",
+          "/bg/pictures/96.jpg",
+          "/bg/pictures/97.jpg",
+          "/bg/pictures/98.jpg",
+          "/bg/pictures/99.jpg",
+        ]}
         title="Risk Assessment."
         subtitle="Reveal resistance hiding place."
         desc="Risk assessment is vital as it provides objective and consistent evaluations of resistance
@@ -69,7 +80,7 @@ function FeatureCard() {
       </div>
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/0303.gif"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
@@ -162,7 +173,7 @@ function FeatureCard3() {
       </div>
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/103.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
@@ -243,7 +254,7 @@ function FeatureCard4() {
     <div className="min-h-[32rem] max-w-[85rem] mt-3 mx-2 flex flex-col-reverse  md:flex-row my-2">
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/105.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
