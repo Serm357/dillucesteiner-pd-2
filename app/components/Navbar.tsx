@@ -5,6 +5,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <>
+      <AnnouncementBanner />
       <LinksBanner />
       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b border-gray-200 text-lg    dark:border-neutral-700">
         <nav
@@ -177,19 +178,19 @@ const Navbar = () => {
                 </button>
 
                 <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg py-2 px-3 sm:px-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
-                  <Link
+                  <h4
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/for-patients/ai-powered-system"
+                    // href="/for-patients/ai-powered-system"
                   >
                     AI System
-                  </Link>
+                  </h4>
 
-                  <Link
+                  <h4
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/for-patients/resources"
+                    // href="/for-patients/resources"
                   >
                     Resources
-                  </Link>
+                  </h4>
                 </div>
               </div>
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] px-6 py-3 sm:px-3">
@@ -215,43 +216,37 @@ const Navbar = () => {
                 </button>
 
                 <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg py-2 px-3 sm:px-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
-                  <Link
+                  <h4
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/about-us/#company-overview"
+                    // href="/about-us/#company-overview"
                   >
                     Company Overview
-                  </Link>
-                  <Link
+                  </h4>
+                  <h4
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/about-us/#science"
+                    // href="/about-us/#science"
                   >
                     Science
-                  </Link>
-                  <Link
+                  </h4>
+                  <h4
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/about-us/#history"
+                    // href="/about-us/#history"
                   >
                     History
-                  </Link>
-                  <Link
+                  </h4>
+                  <h4
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:text-primary hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/#team"
+                    // href="/#team"
                   >
                     Team
-                  </Link>
+                  </h4>
 
-                  <Link
+                  <h4
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/about-us/#webinars"
-                  >
-                    Webinars
-                  </Link>
-                  <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-primary"
-                    href="/about-us/#careers"
+                    // href="/about-us/#careers"
                   >
                     Careers
-                  </Link>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -286,6 +281,51 @@ function LinksBanner() {
         >
           Request Demo
         </button>
+      </div>
+    </div>
+  );
+}
+function AnnouncementBanner() {
+  return (
+    <div
+      id="ab-full-width-with-dismiss-button-on-blue-bg"
+      className="hs-removing:-translate-y-full bg-blue-600"
+    >
+      <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="flex">
+          <p className="text-white">
+            Diluc steiner is now live but under ongoing development 😊. <br />
+            let us know if you encouter any difficulies{" "}
+            <Link href="/for-partners#partners-form" className="mx-2 underline">
+              here
+            </Link>
+          </p>
+
+          <div className="ps-3 ms-auto">
+            <button
+              type="button"
+              className="inline-flex rounded-lg p-1.5 text-white/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-600 focus:ring-white"
+              data-hs-remove-element="#ab-full-width-with-dismiss-button-on-blue-bg"
+            >
+              <span className="sr-only">Dismiss</span>
+              <svg
+                className="flex-shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

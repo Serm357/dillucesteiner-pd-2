@@ -94,7 +94,7 @@ function FeatureCard2() {
     <div className="min-h-[32rem] w-full mt-3 mx-2 flex flex-col-reverse md:flex-row my-2">
       <div className="flex-1">
         <img
-          src="/6.jpg"
+          src="/bg/pictures/82.jpg"
           className="size-full rounded-md"
           loading="lazy"
           width={100}
