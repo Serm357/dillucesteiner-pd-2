@@ -297,7 +297,7 @@ function AnnouncementBanner() {
             Diluc steiner is now live but under ongoing development 😊.{" "}
             <br className="md:hidden" />
             let us know if you encouter any difficulies{" "}
-            <Link href="/for-partners#partners-form" className="mx-2 underline">
+            <Link href="/for-partners#partner-form" className="mx-2 underline">
               here
             </Link>
           </p>
