@@ -158,7 +158,7 @@ export default function Footer() {
               {/* <!-- Social Brands --> */}
               <div className="space-x-4">
                 <Link
-                  className="inline-block text-sm text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                  className="inline-block text-xs size-xs text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                   href="https://www.facebook.com/dilucsteiner/"
                 >
                   <FacebookIcon />
