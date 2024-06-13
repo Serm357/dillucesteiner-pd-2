@@ -293,7 +293,7 @@ function AnnouncementBanner() {
     >
       <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
         <div className="flex">
-          <p className="text-white">
+          <p className="text-white font-bold capitalize">
             Diluc steiner is now live but under ongoing development 😊.{" "}
             <br className="md:hidden" />
             let us know if you encouter any difficulies{" "}
