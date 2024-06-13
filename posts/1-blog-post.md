@@ -7,7 +7,7 @@ blogImage: "/bg/pictures/503.jpg"
 
 ### Impact of artificial intelligence on AMR: Common themes and Challenges
 
-![images/george](/blog/george-semakula_on-walker.jpg)
+![images/george](/bg/pictures/503.jpg)
 
 On February 9 th, over 55 in-person and 60 online attendees joined a collaborative symposium to explore
 the impact of AI in research and practice on AMR. The event, co-organized by Imperial College London’s

@@ -7,7 +7,7 @@ const ImageSlider = () => {
   const blogs = getPostMetadata();
   const firstBlog = blogs[0];
   const secondBlog = blogs[1];
-  const thirdBlog = blogs[2];
+  // const thirdBlog = blogs[2];
 
   return (
     <div className="px-4 md:px-6 lg:px-8 py-10">
@@ -72,7 +72,7 @@ const ImageSlider = () => {
             {/* <!-- End Item --> */}
 
             {/* <!-- Item --> */}
-            <div className="hs-carousel-slide">
+            {/* <div className="hs-carousel-slide">
               <div
                 style={{
                   backgroundImage: `url(${thirdBlog.blogImage})`,
@@ -94,7 +94,7 @@ const ImageSlider = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* <!-- End Item --> */}
           </div>
         </div>
