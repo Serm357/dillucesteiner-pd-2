@@ -115,7 +115,7 @@ export default AMRInsights;
 function FeatureCard() {
   return (
     <div className="min-h-[32rem] max-w-[85rem] mx-2 flex flex-col-reverse md:flex-row my-2">
-      <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col gap-3 items-start py-3 px-8 justify-center">
         <h1
           className="font-semibold my-2 text-3xl text-primary
       "
@@ -163,7 +163,7 @@ function FeatureCard2() {
           alt="img description"
         />
       </div>
-      <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col gap-3 items-start py-3 px-8 justify-center">
         <h1
           className="font-semibold my-2 text-3xl text-primary
       "
@@ -191,7 +191,7 @@ function FeatureCard2() {
 function FeatureCard3() {
   return (
     <div className="min-h-[32rem] max-w-[85rem] mx-2 flex flex-col md:flex-row my-2">
-      <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col gap-3 items-start py-3 px-8 justify-center">
         <h1
           className="font-semibold my-2 text-3xl text-primary
       "
@@ -248,7 +248,7 @@ function Quote() {
 function FeatureLastCard() {
   return (
     <div className="min-h-[32rem] max-w-[85rem] mx-2 flex flex-col md:flex-row my-2">
-      <div className="flex-1 flex flex-col gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col gap-3 items-start py-3 px-8 justify-center">
         <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-3 ">
           Quality healthcare
           <span className="text-black dark:text-orange-500"> reimagined.</span>

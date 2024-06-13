@@ -52,7 +52,7 @@ export default RiskAssesment;
 function FeatureCard() {
   return (
     <div className="min-h-[32rem] max-w-[85rem] mt-3 mx-2 flex flex-col md:flex-row my-2">
-      <div className="flex-1 flex flex-col  gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           <span className="text-black dark:text-orange-500">Detekta®</span> Risk
           Assessment
@@ -104,7 +104,7 @@ const data: StatCardType[] = [
 function FeatureCard2() {
   return (
     <div className="min-h-[90vh]  mt-3 mx-3 bg-blue-900 rounded-md">
-      <div className="flex mx-2 flex-col  gap-3 items-start py3 px-5 justify-center">
+      <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-white my-3">
           Why Risk assessment
           <span className="text-orange-500"> matters.</span>
@@ -132,7 +132,7 @@ function FeatureCard2() {
 function FeatureCard3() {
   return (
     <div className="min-h-[32rem] max-w-[85rem] mt-3 mx-2 flex flex-col md:flex-row my-2">
-      <div className="flex-1 flex flex-col  gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Remove the
           <span className="text-black dark:text-orange-500">
@@ -202,10 +202,11 @@ const data2: {
 function FeatureCard303() {
   return (
     <div className="min-h-[90vh]  mt-3 mx-3 bg-blue-900 rounded-md">
-      <div className="flex mx-2 flex-col  gap-3 items-start py3 px-5 justify-center">
+      <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className=" font-bold text-3xl md:text-4xl text-white my-6">
           What to look for in a
-          <span className="text-orange-500 mx-1">Risk Assessment</span>solution.
+          <span className="text-orange-500 mx-1"> Risk Assessment </span>
+          solution.
         </h1>
       </div>
       <div className="grid m-2 grid-cols-2 lg:grid-cols-4 gap-3">
@@ -250,7 +251,7 @@ function FeatureCard4() {
           alt="img description"
         />
       </div>
-      <div className="flex-1 flex flex-col  gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Stay
           <span className="text-black dark:text-orange-500">

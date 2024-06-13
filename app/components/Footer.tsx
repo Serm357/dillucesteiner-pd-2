@@ -40,11 +40,11 @@ export default function Footer() {
                   AMR insights
                 </Link>
               </p>
-              <p>
-                <h4 className="inline-flex gap-x-2 text-gray-600   dark:text-neutral-400">
+              <div>
+                <p className="inline-flex gap-x-2 text-gray-600   dark:text-neutral-400">
                   Research
-                </h4>
-              </p>
+                </p>
+              </div>
               <p>
                 <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"

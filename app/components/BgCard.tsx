@@ -14,7 +14,7 @@ export default function BgCard({
   images: string[];
   title: string;
   subtitle: string;
-  desc: string;
+  desc?: string;
   btnText?: string;
 }) {
   return (

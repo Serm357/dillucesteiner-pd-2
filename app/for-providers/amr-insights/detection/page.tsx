@@ -49,7 +49,7 @@ export default Detection;
 function FeatureCard() {
   return (
     <div className="min-h-[32rem] w-full mt-3 mx-2 flex flex-col md:flex-row my-2">
-      <div className="flex-1 flex flex-col  gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           <span className="text-black dark:text-orange-500">Detector AI®</span>{" "}
           for Digital Resistance detection
@@ -90,7 +90,7 @@ function FeatureCard2() {
           alt="img description"
         />
       </div>
-      <div className="flex-1 flex flex-col  gap-3 items-start py3 px-5 justify-center">
+      <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Why early detection
           <span className="text-black dark:text-orange-500"> matters.</span>
