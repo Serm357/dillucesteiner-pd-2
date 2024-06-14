@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar, { AnnouncementBanner, LinksBanner } from "./components/Navbar";
 import { ThemeProvider } from "@/providers/Theme";
 import PrelineScript from "./components/PrelineScript";
 import Footer from "./components/Footer";
@@ -41,10 +41,12 @@ export default async function RootLayout({
         <body>
           <ThemeProvider
             attribute="class"
-            defaultTheme="light"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
+            <AnnouncementBanner />
+            <LinksBanner />
             <Navbar />
             <div className={cn("min-h-screen w-full", roboto.className)}>
               {children}
