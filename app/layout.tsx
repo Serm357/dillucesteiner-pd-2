@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import { Roboto_Serif } from "next/font/google";
 import { cn, constructMetadata } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Roboto_Serif({ subsets: ["latin"] });
 
@@ -54,6 +55,7 @@ export default async function RootLayout({
             <Footer />
           </ThemeProvider>
           <Toaster />
+          <Analytics />
         </body>
         <PrelineScript />
       </html>
