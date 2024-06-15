@@ -3,7 +3,7 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import Image from "next/image";
+import { Mail } from "lucide-react";
 import React from "react";
 
 const Team = () => {
@@ -39,6 +39,7 @@ const Team = () => {
           position="Full Stack Developer"
           image="/team/Salum.png"
           lnk="https://www.linkedin.com/in/salum-suleiman-783351229/"
+          mail="mailto:kilangalilasalum@gmail.com"
         />
         <Card
           name="Fidelis John"
@@ -72,6 +73,7 @@ function Card({
   lnk,
   ins,
   twt,
+  mail,
 }: {
   name: string;
   position: string;
@@ -79,6 +81,7 @@ function Card({
   lnk?: string;
   ins?: string;
   twt?: string;
+  mail?: string;
 }) {
   return (
     <>
@@ -125,6 +128,14 @@ function Card({
                 href={twt}
               >
                 <TwitterLogoIcon />
+              </a>
+            )}
+            {mail && (
+              <a
+                className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                href={mail}
+              >
+                <Mail className="size-4" />
               </a>
             )}
           </div>

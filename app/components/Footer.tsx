@@ -161,7 +161,7 @@ export default function Footer() {
                   className="inline-block text-xs size-xs text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                   href="https://www.facebook.com/dilucsteiner/"
                 >
-                  <FacebookIcon />
+                  <FacebookIcon className="size-4" />
                 </Link>
                 <Link
                   className="inline-block text-gray-500 hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"

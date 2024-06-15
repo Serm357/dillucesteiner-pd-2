@@ -122,9 +122,6 @@ function FeatureCard2() {
       </div>
       <div className="flex-1 flex flex-col  gap-3 items-center py-3 px-8 justify-start">
         <h1 className="mt-4 self-start capitalize font-bold text-xl md:text-2xl text-primary my-3">
-          2D vs. 3D mammograms. How are they different?
-        </h1>
-        <h1 className="mt-4 self-start capitalize font-bold text-lg md:text-xl  my-3">
           Why It Is Important to Monitor Your Resistance Pattern
         </h1>
 
@@ -167,11 +164,8 @@ function FeatureCard3() {
         />
       </div>
       <div className="flex-1 flex flex-col  gap-3 items-center py-3 px-8 justify-start">
-        <h1 className="mt-4 self-start capitalize font-bold text-lg md:text-xl  my-3">
-          How Our AI Will Help in Reducing and Combating AMR
-        </h1>
         <h1 className="mt-4 self-start capitalize font-bold text-xl md:text-2xl text-primary my-3">
-          When the radiologist analyzes your scan…
+          How Our AI Will Help in Reducing and Combating AMR
         </h1>
         <p className="prose md:prose-lg dark:text-gray-200 my-2">
           Antimicrobial resistance (AMR) is a growing threat, but our advanced
@@ -219,12 +213,9 @@ function FeatureCard4() {
         />
       </div>
       <div className="flex-1 flex flex-col  gap-3 items-center py-3 px-8 justify-start">
-        <h1 className="mt-4 self-start capitalize font-bold text-lg md:text-xl  my-3">
+        <h1 className="mt-4 self-start capitalize font-bold text-xl md:text-2xl text-primary my-3">
           Why It Is Important to Adhere to Doctors' and Pharmacists'
           Instructions on Handling Antibiotics
-        </h1>
-        <h1 className="mt-4 self-start capitalize font-bold text-xl md:text-2xl text-primary my-3">
-          Some radiologists partner with cutting-edge, AI-powered solutions…
         </h1>
 
         <p className="prose md:prose-lg dark:text-gray-200 my-2">

@@ -3,7 +3,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -16,6 +15,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
+import { useToast } from "@/components/ui/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 const formSchema = z.object({
   firstname: z
@@ -42,7 +43,8 @@ const formSchema = z.object({
 });
 
 const PartnerFoam = () => {
-  //   const formRef = useRef<FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>();
+  const { toast } = useToast();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -80,12 +82,21 @@ const PartnerFoam = () => {
         }
       );
       console.log("SUCCESS!");
+      toast({
+        title: "Your message has been sent.",
+        description: "We will get back to you as quick as we can",
+      });
     } catch (err) {
       if (err instanceof EmailJSResponseStatus) {
         console.log("EMAILJS FAILED...", err);
         return;
       }
-
+      toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem with your request.",
+        action: <ToastAction altText="Try again">Try again</ToastAction>,
+      });
       console.log("ERROR", err);
     }
     form.reset({
@@ -193,7 +204,7 @@ const PartnerFoam = () => {
                 <FormControl>
                   <Input
                     placeholder="eg: +255751234567"
-                    type="telephone:"
+                    type="tel"
                     {...field}
                   />
                 </FormControl>
