@@ -40,6 +40,7 @@ const Team = () => {
           image="/team/Salum.png"
           lnk="https://www.linkedin.com/in/salum-suleiman-783351229/"
           mail="mailto:kilangalilasalum@gmail.com"
+          twt="https://x.com/salum_dev"
         />
         <Card
           name="Fidelis John"
