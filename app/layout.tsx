@@ -19,6 +19,7 @@ export default async function RootLayout({
   return (
     <>
       <html lang="en" suppressHydrationWarning>
+        <link rel="icon" href="/favicon.ico" />
         <head>
           <link
             rel="apple-touch-icon"
