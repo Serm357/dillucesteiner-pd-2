@@ -111,6 +111,7 @@ function Card({
               <a
                 className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                 href={lnk}
+                target="_blank"
               >
                 <LinkedInLogoIcon />
               </a>
@@ -119,6 +120,7 @@ function Card({
               <a
                 className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                 href={ins}
+                target="_blank"
               >
                 <InstagramLogoIcon />
               </a>
@@ -127,6 +129,7 @@ function Card({
               <a
                 className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                 href={twt}
+                target="_blank"
               >
                 <TwitterLogoIcon />
               </a>
@@ -135,6 +138,7 @@ function Card({
               <a
                 className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
                 href={mail}
+                target="_blank"
               >
                 <Mail className="size-4" />
               </a>
