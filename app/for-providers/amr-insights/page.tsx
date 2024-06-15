@@ -12,29 +12,29 @@ const AMRInsights = () => {
       <BgCard
         images={[
           "/bg/pictures/50.jpg",
-          "/bg/pictures/5.jpg",
+          "/bg/pictures/51.jpg",
           "/bg/pictures/52.jpg",
           "/bg/pictures/53.jpg",
           "/bg/pictures/54.jpg",
           "/bg/pictures/55.jpg",
           "/bg/pictures/56.jpg",
           "/bg/pictures/57.jpg",
-          "/bg/pictures/59.jpg",
         ]}
         title="Unmasking AMR Threats."
         subtitle="Resistance's hiding place, exposed.."
         desc="Delivering clarity, confidence, and peace of mind. Ditekta, our cutting-edge AI technology, is clinically proven to improve antimicrobial resistance detection and enhance healthcare professional performance. Diluc Steiner empowers you with accurate, data-driven insights, ensuring timely interventions and effective treatment plans. Join us in revolutionizing the fight against antimicrobial resistance."
       />
-      <div className="ml-2 my-3">
-        <h1 className="uppercase font-semibold text-xl text-gray-400 my-3">
+
+      <div className="ml-2 my-32">
+        <h1 className="uppercase font-semibold text-xl text-gray-400 my-12">
           AI-Powered Resistance Insight
         </h1>
-        <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-3">
+        <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-12">
           Together, we can{" "}
           <span className="text-black dark:text-orange-500">save</span> more{" "}
           <span className="text-black dark:text-orange-500">lives.</span>
         </h1>
-        <p className="prose max-w-none md:prose-lg lg:prose-xl my- dark:text-gray-200">
+        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200">
           Our AI technology saves lives by quickly identifying resistant strains
           and providing tailored treatment plans. Early detection and precise
           interventions prevent severe infections and complications, improving
@@ -43,7 +43,7 @@ const AMRInsights = () => {
         </p>
       </div>
       {/* //icons */}
-      <div className="flex gap-4 md:gap-6 lg:gap-8  justify-around items-center my-5 py-5">
+      <div className="flex gap-4 md:gap-6 lg:gap-8  justify-around items-center my-28 py-5">
         <div className="flex flex-col gap-2 items-center justify-center">
           <CircleCheck
             color="white"
@@ -76,7 +76,7 @@ const AMRInsights = () => {
         </div>
       </div>
       {/* features  */}
-      <div className="mt-11 flex flex-col items-center justify-center gap-2 ">
+      <div className="mt-32 flex flex-col items-center justify-center gap-2 ">
         <FeatureCard />
         <FeatureCard2 />
         <FeatureCard3 />
@@ -84,7 +84,7 @@ const AMRInsights = () => {
         <FeatureLastCard />
       </div>
       {/* icons again */}
-      <div className="flex gap-4 md:gap-6 lg:gap-8 justify-around items-center my-12 mx-2 py-5">
+      <div className="flex gap-4 md:gap-6 lg:gap-8 justify-around items-center my-32 mx-2 py-5">
         <div className="flex flex-col gap-2 items-center justify-center">
           <CircleCheck
             color="white"

@@ -4,6 +4,8 @@ import { ModeToggle } from "./ModeToggler";
 const Navbar = () => {
   return (
     <>
+      <AnnouncementBanner />
+      <LinksBanner />
       <header className=" flex sticky top-0 left-0 z-[100] bg-background right-0 flex-wrap sm:justify-start items-center sm:flex-nowrap w-full  text-sm py-4 ">
         <nav
           className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
@@ -113,7 +115,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                        href="/for-providers/amr-insights/risk-assesment"
+                        href="/for-providers/amr-insights/risk-evaluation"
                       >
                         Risk Evaluation
                       </Link>
@@ -167,7 +169,7 @@ const Navbar = () => {
                 <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                    href="#"
+                    href="for-patients/#ai-system"
                   >
                     AI System
                   </Link>
@@ -274,23 +276,6 @@ function MobileSidebar() {
                 type="button"
                 className="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-lg  rounded-lg  hover:bg-muted-foreground bg-muted  dark:hs-accordion-active:text-white"
               >
-                {/* <svg
-                  className="size-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg> */}
                 For Providers
                 <svg
                   className="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
@@ -601,7 +586,7 @@ function MobileSidebar() {
   );
 }
 
-export function LinksBanner() {
+function LinksBanner() {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-end gap-x-5 w-full py-2 sm:pt-2 sm:pb-0">
@@ -627,7 +612,7 @@ export function LinksBanner() {
     </div>
   );
 }
-export function AnnouncementBanner() {
+function AnnouncementBanner() {
   return (
     <div
       id="ab-full-width-with-dismiss-button-on-blue-bg"

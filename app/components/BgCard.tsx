@@ -8,12 +8,14 @@ export default function BgCard({
   images,
   title,
   subtitle,
+  subtitle2,
   desc,
   btnText,
 }: {
   images: string[];
   title: string;
   subtitle: string;
+  subtitle2?: string;
   desc?: string;
   btnText?: string;
 }) {
@@ -39,6 +41,11 @@ export default function BgCard({
         <h2 className="text-white text-xl md:text-2xl lg:text-3xl font-bold my-2 ">
           {subtitle}
         </h2>
+        {subtitle2 && (
+          <h2 className="text-white/80 text-lg md:text-xl lg:text-2xl font-bold my-2 ">
+            {subtitle2}
+          </h2>
+        )}
         <p className="text-white/90 my-1 prose max-w-none text-lg md:text-xl leading-8">
           {desc}
         </p>

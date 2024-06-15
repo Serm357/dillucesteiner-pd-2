@@ -64,7 +64,7 @@ function FeatureCard() {
           Protect the
           <span className="text-black dark:text-orange-500 mx-1"> Future.</span>
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4 leading-normal">
+        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
           Our algorithm identifies AMR risk by analyzing vast datasets to detect
           resistance patterns and predict future trends. By providing early,
           accurate insights, it enables timely interventions and informed
@@ -85,7 +85,7 @@ function FeatureCard2() {
         <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl text-primary my-3">
           Our Detekta will be more accurate compared to traditional models
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4 leading-normal">
+        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
           Traditional models of assessing AMR risk rely on manual laboratory
           tests and clinical observations, which can be time-consuming and
           subject to human error. These methods often involve culturing bacteria
@@ -100,7 +100,7 @@ function FeatureCard2() {
         <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl text-primary my-3">
           Ditekta Risk changes the game in risk assessment.
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4 leading-normal">
+        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
           Our Ditekta Risk technology revolutionizes AMR risk assessment by
           leveraging advanced AI and machine learning to analyze large datasets
           in real-time, offering rapid and precise detection of resistance
@@ -199,7 +199,7 @@ function FeatureCard4() {
         <h1 className="mt-5 capitalize self-start ml-3 font-bold text-xl md:text-2xl text-primary my-3">
           Commitment to Ensuring Screening Equality.
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4 leading-normal">
+        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
           Diversity matters within AI training and testing datasets. The
           ProFound Risk AMR Solution's deep learning dataset includes racial,
           ethnic, and geographic diversity within its AI research and training.
@@ -242,7 +242,7 @@ function FeatureCard5() {
         <h1 className="mt-5 capitalize self-start ml-3 font-bold text-xl md:text-2xl text-primary my-3">
           Clinical study tells the story
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4 leading-normal">
+        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
           Using a US nationwide survey, disparities in antimicrobial drug
           acquisition by race/ethnicity for 2014–2015 was measured. White
           persons reported twice as many antimicrobial drug prescription fills

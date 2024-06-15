@@ -37,7 +37,7 @@ const RiskAssesment = () => {
           has arrived. The difference is
           <span className="text-black dark:text-orange-500"> Ditekta.</span>
         </h1>
-        <p className="prose max-w-none md:prose-lg lg:prose-xl my- dark:text-gray-200">
+        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200">
           Diluc Steiner's AI model, is built using advanced machine learning
           algorithms and vast datasets of genetic, clinical, and environmental
           information. It swiftly and accurately detects antimicrobial

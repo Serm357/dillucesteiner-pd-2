@@ -18,7 +18,7 @@ const SkeletonOne = () => {
   return (
     <div>
       <p className="font-bold text-4xl text-primary">For Provider.</p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="font-normal text-base my-4  max-w-lg text-neutral-200">
         At Diluc Steiner, our advanced technology is designed to uncover and
         expose antimicrobial resistance (AMR) hiding places with unparalleled
         accuracy and speed
@@ -37,7 +37,7 @@ const SkeletonTwo = () => {
   return (
     <div>
       <p className="font-bold text-4xl text-primary">For Patient</p>
-      <p className="font-normal text-base my-4 max-w-lg lg:h-28 text-neutral-200 ">
+      <p className="font-normal text-base my-4  max-w-lg lg:h-28 text-neutral-200 ">
         By using our technology, patients can provide real-time data through
         regular health monitoring and reporting symptoms early. When patients
         use at-home diagnostic kits linked to our AI system, they can collect
