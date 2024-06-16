@@ -76,14 +76,11 @@ export default function Footer() {
                   AI system
                 </Link>
               </p>
-              <p>
-                <Link
-                  className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="/for-patients/resources"
-                >
+              <div>
+                <h4 className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500">
                   Resources
-                </Link>
-              </p>
+                </h4>
+              </div>
             </div>
           </div>
           {/* <!-- End Col --> */}
