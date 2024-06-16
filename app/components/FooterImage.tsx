@@ -7,10 +7,10 @@ const FooterImage = () => {
   return (
     <>
       {theme == "dark" && (
-        <img src="/logos/steiner-2.png" className="w-20 h-auto ml-5" />
+        <img src="/logos/steiner-2.png" className="size-20  ml-5" />
       )}
       {theme == "light" && (
-        <img src="/logos/steiner-1.png" className="w-20 h-auto ml-5" />
+        <img src="/logos/steiner-1.png" className="size-20  ml-5" />
       )}
     </>
   );
