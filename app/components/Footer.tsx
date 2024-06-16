@@ -71,9 +71,9 @@ export default function Footer() {
               <p>
                 <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="/for-patients/ai-powered-system"
+                  href="/for-patients/ai-system"
                 >
-                  AI powered system
+                  AI system
                 </Link>
               </p>
               <p>
