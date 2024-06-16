@@ -20,7 +20,7 @@ export default function Footer() {
               href="/"
               aria-label="Brand"
             >
-              Diluc steinner
+              <img src="/logos/steiner-1.png" className="w-20 h-auto ml-2" />
             </Link>
             <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
               &copy; {new Date().getFullYear()}.
@@ -185,7 +185,7 @@ export default function Footer() {
                 >
                   <img
                     src="/logos/steiner-1.png"
-                    className="w-20 h-auto ml-5"
+                    className="w-20 h-auto ml-2"
                   />
                 </Link>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
