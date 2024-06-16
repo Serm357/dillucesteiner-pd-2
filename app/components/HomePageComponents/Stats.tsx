@@ -100,7 +100,7 @@ function Card2() {
                 className="text-center"
                 transitions={(index) => ({
                   type: "spring",
-                  duration: index + 0.3,
+                  duration: index + 0.7,
                 })}
                 animateToNumber={1}
               />{" "}
@@ -110,7 +110,7 @@ function Card2() {
                 className="text-center"
                 transitions={(index) => ({
                   type: "spring",
-                  duration: index + 0.3,
+                  duration: index + 0.7,
                 })}
                 animateToNumber={5}
               />{" "}

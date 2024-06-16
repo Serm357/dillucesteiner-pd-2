@@ -4,7 +4,7 @@ import { ModeToggle } from "./ModeToggler";
 const Navbar = () => {
   return (
     <>
-      <AnnouncementBanner />
+      {/* <AnnouncementBanner /> */}
       <LinksBanner />
       <header className=" flex sticky top-0 left-0 z-[100] bg-background right-0 flex-wrap sm:justify-start items-center sm:flex-nowrap w-full  text-sm py-4 ">
         <nav
@@ -21,27 +21,30 @@ const Navbar = () => {
                 className="w-20 h-auto sm:ml-10"
               />
             </Link>
-            <button
-              type="button"
-              className="hover:text-gray-600 sm:hidden bg-secondary rounded"
-              data-hs-overlay="#docs-sidebar"
-              aria-controls="docs-sidebar"
-              aria-label="Toggle navigation"
-            >
-              <span className="sr-only">Toggle Navigation</span>
-              <svg
-                className="flex-shrink-0 size-8"
-                width="32"
-                height="32"
-                fill="currentColor"
-                viewBox="0 0 16 16"
+            <div className="flex gap-2 items-center justify-center">
+              <button
+                type="button"
+                className="hover:text-gray-600 sm:hidden bg-secondary rounded"
+                data-hs-overlay="#docs-sidebar"
+                aria-controls="docs-sidebar"
+                aria-label="Toggle navigation"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-            </button>
+                <span className="sr-only">Toggle Navigation</span>
+                <svg
+                  className="flex-shrink-0 size-8"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+              <ModeToggle />
+            </div>
           </div>
           <div
             id="navbar-with-mega-menu"
@@ -122,15 +125,12 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                  <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                    href=""
-                  >
+                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary ">
                     Research & Publications
-                  </Link>
+                  </h4>
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                    href=""
+                    href="for-providers/services"
                   >
                     Service & Support
                   </Link>
@@ -174,12 +174,9 @@ const Navbar = () => {
                     AI System
                   </Link>
 
-                  <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                    href="#"
-                  >
+                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary ">
                     Resources
-                  </Link>
+                  </h4>
                 </div>
               </div>
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] ">
@@ -208,16 +205,28 @@ const Navbar = () => {
                 <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                    href="#"
+                    href="/about-us"
                   >
                     Company Overview
                   </Link>
 
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                    href="#"
+                    href="/about-us#science"
                   >
                     Science
+                  </Link>
+                  <Link
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    href="/about-us#history"
+                  >
+                    History
+                  </Link>
+                  <Link
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    href="/about-us#goals"
+                  >
+                    Goals
                   </Link>
 
                   <Link
@@ -227,12 +236,9 @@ const Navbar = () => {
                     Team
                   </Link>
 
-                  <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                    href="#"
-                  >
+                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary ">
                     Webinars
-                  </Link>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -390,18 +396,15 @@ function MobileSidebar() {
                       </ul>
                     </div>
                   </li>
-                  <li>
-                    <Link
-                      className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  "
-                      href=""
-                    >
+                  <div>
+                    <h4 className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  ">
                       Research & Publications
-                    </Link>
-                  </li>
+                    </h4>
+                  </div>
                   <li>
                     <Link
                       className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  "
-                      href=""
+                      href="/for-providers#services"
                     >
                       Services & Support
                     </Link>
@@ -464,19 +467,16 @@ function MobileSidebar() {
                   <li>
                     <Link
                       className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  "
-                      href="/for-patients#ai-system"
+                      href="/for-patients"
                     >
                       AI System
                     </Link>
                   </li>{" "}
-                  <li>
-                    <Link
-                      className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  "
-                      href=""
-                    >
+                  <div>
+                    <h4 className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  ">
                       Resources
-                    </Link>
-                  </li>
+                    </h4>
+                  </div>
                 </ul>
               </div>
             </li>
@@ -556,22 +556,19 @@ function MobileSidebar() {
                       Blog
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  "
-                      href=""
-                    >
+                  <div>
+                    <h4 className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  ">
                       Webinars
-                    </Link>
-                  </li>
+                    </h4>
+                  </div>
                 </ul>
               </div>
             </li>
             <li>
-              <div className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700  dark:text-white/80  dark:hover:text-primary hover:text-primary ">
-                <ModeToggle />
-                Theme
-              </div>
+              {/* <div className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700  dark:text-white/80  dark:hover:text-primary hover:text-primary "> */}
+
+              {/* Theme */}
+              {/* </div> */}
             </li>
           </ul>
         </nav>

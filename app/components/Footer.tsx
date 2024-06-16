@@ -3,8 +3,9 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import { FacebookIcon } from "lucide-react";
+import { FacebookIcon, Mail } from "lucide-react";
 import Link from "next/link";
+import FooterImage from "./FooterImage";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
       {/* <!-- ========== FOOTER ========== --> */}
       <footer className="mt-6 w-full  py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* <!-- Grid --> */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-10">
           <div className="col-span-full hidden md:col-span-1 md:block ">
             <Link
               className="flex-none text-xl font-semibold text-primary"
@@ -123,6 +124,40 @@ export default function Footer() {
             </div>
           </div>
           {/* <!-- End Col --> */}
+          {/* <!-- End Col --> */}
+
+          <div>
+            <p className="text-xs font-semibold text-primary uppercase ">
+              LOCATION
+            </p>
+
+            <div className="mt-3 grid space-y-2 text-sm">
+              <div>
+                <p className="inline-flex gap-x-2 text-gray-600   dark:text-neutral-400 ">
+                  Diluc Steiner,
+                </p>
+              </div>
+              <div>
+                <p className="inline-flex gap-x-2 text-gray-600   dark:text-neutral-400 ">
+                  Pugu road, Ilala Dar es Saalam,
+                </p>
+              </div>
+              <div>
+                <p className="inline-flex gap-x-2 text-gray-600  dark:text-neutral-400 ">
+                  United Republic of Tanzania.
+                </p>
+              </div>
+              <p>
+                <Link
+                  className="hover:scale-105 gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500 flex items-center justify-start"
+                  href="mailto:info@dilucsteiner.com"
+                >
+                  <Mail className="size-4" /> info@dilucsteiner.com
+                </Link>
+              </p>
+            </div>
+          </div>
+          {/* <!-- End Col --> */}
 
           {/* <!-- End Col --> */}
         </div>
@@ -142,13 +177,13 @@ export default function Footer() {
             </div>
 
             <div className="flex justify-between items-center">
-              <div className="mt-3 sm:hidden">
+              <div className="mt-3 sm:hidden flex gap-1 items-center justify-center">
                 <Link
                   className="flex-none text-xl font-semibold dark:text-white"
                   href="/"
                   aria-label="Brand"
                 >
-                  Diluc steinner
+                  <FooterImage />
                 </Link>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
                   © {new Date().getFullYear()} Diluc steinner.

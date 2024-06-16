@@ -207,18 +207,21 @@ export default function Herofeatures() {
 
 function Heading() {
   return (
-    <div className="max-w-5xl mx-auto px-4 xl:px-0 ">
-      <h3 className="uppercase font-semibold text-md md:text-2xl">
+    <div className="max-w-5xl mx-auto mt-28 px-4 xl:px-0 ">
+      <h3 className="uppercase my-5 font-semibold text-md md:text-2xl">
         our platform
       </h3>
-      <h1 className="font-semibold text-primary text-5xl md:text-6xl">
+      <h1 className="font-semibold mb-9 text-primary text-5xl md:text-6xl">
         AMR insights
       </h1>
       <div className="max-w-4xl">
         <p className="mt-1 dark:text-neutral-400 text-lg">
-          Backed by science, clinical evidence, and proven patient outcomes; our
-          suite of solutions – Detection, Density, and Risk — shine a spotlight
-          on cancer, exposing its hiding place.
+          Backed by science, clinical evidence, and proven patient outcomes.
+        </p>
+        <p className="mt-1 dark:text-neutral-400 text-lg">
+          Our suite of solutions – Detection, Risk assesment, and Risk
+          evaluation shine a spotlight on AMR, exposing its nature in the
+          quickest way posssible.
         </p>
       </div>
     </div>
