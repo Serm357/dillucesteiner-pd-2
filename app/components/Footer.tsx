@@ -183,7 +183,10 @@ export default function Footer() {
                   href="/"
                   aria-label="Brand"
                 >
-                  <FooterImage />
+                  <img
+                    src="/logos/steiner-1.png"
+                    className="w-20 h-auto ml-5"
+                  />
                 </Link>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
                   © {new Date().getFullYear()} Diluc steinner.

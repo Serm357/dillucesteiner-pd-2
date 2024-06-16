@@ -43,7 +43,9 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
-              <ModeToggle />
+              <div className="sm:hidden">
+                <ModeToggle />
+              </div>
             </div>
           </div>
           <div
