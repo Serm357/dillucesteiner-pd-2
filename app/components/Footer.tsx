@@ -14,7 +14,7 @@ export default function Footer() {
       <footer className="mt-6 w-full  py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* <!-- Grid --> */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-10">
-          <div className="col-span-full hidden md:col-span-1 md:block ">
+          <div className="col-span-full hidden md:col-span-1 gap-1 md:flex flex-col items-center justify-center">
             <Link
               className="flex-none text-xl font-semibold text-primary"
               href="/"
