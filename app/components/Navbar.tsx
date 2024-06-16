@@ -568,15 +568,10 @@ function MobileSidebar() {
               </div>
             </li>
             <li>
-              <Link
-                className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700  dark:text-white/80  dark:hover:text-primary hover:text-primary "
-                href="#"
-              >
-                {/* <div className="hidden sm:block mr-5"> */}
+              <div className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700  dark:text-white/80  dark:hover:text-primary hover:text-primary ">
                 <ModeToggle />
-                {/* </div> */}
                 Theme
-              </Link>
+              </div>
             </li>
           </ul>
         </nav>
