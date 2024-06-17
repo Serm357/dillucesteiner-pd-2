@@ -62,8 +62,8 @@ const PartnerFoam = () => {
     console.log(values);
     try {
       await emailjs.send(
-        "service_zpzw7gr",
-        "template_rnxyon7",
+        "service_zm2m00r",
+        "template_zvia1w9",
         {
           from_name:
             values.firstname +
@@ -80,7 +80,7 @@ const PartnerFoam = () => {
           message: values.solution,
         },
         {
-          publicKey: "ssghcjYb9GW19sVYB",
+          publicKey: "f0UozlQblvkh6wX_1",
         }
       );
       console.log("SUCCESS!");
