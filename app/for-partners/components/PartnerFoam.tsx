@@ -237,7 +237,7 @@ const PartnerFoam = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="uppercase text-primary font-semibold">
-                  intergrated solution
+                  Message
                 </FormLabel>
                 <FormControl>
                   <textarea
