@@ -26,16 +26,13 @@ const RiskEvaluation = () => {
 
         <div className="ml-2">
           {" "}
-          <h1 className="mt-5 mx-3 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
+          <h1 className="my-9 mx-3 capitalize font-bold text-3xl md:text-4xl text-primary ">
             Good just
             <span className="text-black dark:text-orange-500 mx-1">
               {" "}
               isn’t{" "}
             </span>
             good enough.
-          </h1>
-          <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl mx-3  my-3">
-            Our Ditekta will be more accurate compared to traditional models
           </h1>
         </div>
 
