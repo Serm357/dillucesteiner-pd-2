@@ -264,7 +264,9 @@ const PartnerFoam = () => {
               </FormItem>
             )}
           />
-          <Button type="submit">{isLoading ? "Loading..." : "Submit"}</Button>
+          <Button type="submit" disabled={isLoading}>
+            {isLoading ? "Loading..." : "Submit"}
+          </Button>
         </form>
       </Form>
     </div>
