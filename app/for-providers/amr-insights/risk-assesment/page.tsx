@@ -65,7 +65,7 @@ function FeatureCard() {
     <div className="min-h-[32rem] max-w-[85rem] mt-3 mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
-          <span className="text-black dark:text-orange-500">Detekta®</span> Risk
+          <span className="text-black dark:text-orange-500">Ditekta®</span> Risk
           Assessment
         </h1>
         <p className="prose md:prose-lg dark:text-gray-200 my-2">

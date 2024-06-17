@@ -24,14 +24,20 @@ const RiskEvaluation = () => {
       <div className="w-full">
         <FeatureCard />
 
-        <h1 className="mt-5 mx-3 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
-          Good just
-          <span className="text-black dark:text-orange-500 mx-1"> isn’t </span>
-          good enough.
-        </h1>
-        <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl mx-3  my-3">
-          Our Detekta will be more accurate compared to traditional models
-        </h1>
+        <div className="ml-2">
+          {" "}
+          <h1 className="mt-5 mx-3 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
+            Good just
+            <span className="text-black dark:text-orange-500 mx-1">
+              {" "}
+              isn’t{" "}
+            </span>
+            good enough.
+          </h1>
+          <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl mx-3  my-3">
+            Our Ditekta will be more accurate compared to traditional models
+          </h1>
+        </div>
 
         <FeatureCard2 />
         <FeatureCard3 />
@@ -83,7 +89,7 @@ function FeatureCard2() {
     <div className="min-h-[60vh] w-full  mx-2 flex flex-col md:flex-row mt-2 mb-0 bg-gray-200 dark:bg-secondary">
       <div className="flex-1 flex flex-col  gap-3 items-start py-1 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl text-primary my-3">
-          Our Detekta will be more accurate compared to traditional models
+          Our Ditekta will be more accurate compared to traditional models
         </h1>
         <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
           Traditional models of assessing AMR risk rely on manual laboratory

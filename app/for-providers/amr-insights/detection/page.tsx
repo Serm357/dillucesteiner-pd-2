@@ -29,7 +29,6 @@ const Detection = () => {
           It provides tailored treatment plans based on comprehensive analysis,
           ensuring precise, effective, and timely interventions to combat
           antimicrobial resistance."
-        btnText="See it in Action →"
       />
       <div className="ml-2 my-3">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
@@ -63,11 +62,11 @@ function FeatureCard() {
     <div className="min-h-[32rem] w-full mt-3 mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
-          <span className="text-black dark:text-orange-500">Detector AI®</span>{" "}
+          <span className="text-black dark:text-orange-500">Ditekta AI®</span>{" "}
           for Digital Resistance detection
         </h1>
         <p className="prose md:prose-lg dark:text-gray-200 my-2">
-          Detector AI® stands at the forefront of digital resistance detection,
+          Ditekta AI® stands at the forefront of digital resistance detection,
           offering unmatched efficiency. By harnessing advanced algorithms, it
           swiftly processes vast datasets to identify resistance patterns
           accurately. This efficiency enables timely interventions and

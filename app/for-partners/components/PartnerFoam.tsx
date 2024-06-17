@@ -72,9 +72,9 @@ const PartnerFoam = () => {
             values.coutry +
             " company " +
             values.company,
-          to_name: "Salum dev",
+          to_name: "Diluc Steiner",
           from_email: values.email,
-          to_email: "topgnserm@gmail.com",
+          to_email: "info@dilucsteiner.com",
           message: values.solution,
         },
         {

@@ -38,7 +38,7 @@ export default function BgCard({
         <motion.p className="font-bold uppercase md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-400 py-4">
           {title}
         </motion.p>
-        <h2 className="text-white text-xl md:text-2xl lg:text-3xl font-bold my-2 ">
+        <h2 className="text-[#0099cc] text-xl md:text-2xl lg:text-3xl font-bold my-2 ">
           {subtitle}
         </h2>
         {subtitle2 && (

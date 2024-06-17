@@ -32,6 +32,7 @@ const Team = () => {
           lnk="https://www.linkedin.com/in/yohanalaurent/"
           ins="https://www.instagram.com/laurentinojr"
           twt="https://x.com/Oficiallorenzo"
+          mail="mailto:laurent@dilucsteiner.com"
         />
 
         <Card
@@ -39,7 +40,7 @@ const Team = () => {
           position="Full Stack Developer"
           image="/team/Salum.png"
           lnk="https://www.linkedin.com/in/salum-suleiman-783351229/"
-          mail="mailto:kilangalilasalum@gmail.com"
+          mail="mailto:salumdeveloper@dilucsteiner.com"
           twt="https://x.com/salum_dev"
         />
         <Card
@@ -47,8 +48,7 @@ const Team = () => {
           position="Marketing & Commrcial"
           image="/team/Fidelis.png"
           lnk=" https://www.linkedin.com/in/fidelis-songo-20a087275/"
-          ins="https://www.instagram.com/laurentinojr"
-          twt="https://x.com/Oficiallorenzo"
+          mail="fidelis@dilucsteiner.com"
         />
         <Card
           name="Yohana Palangyo"
@@ -57,6 +57,7 @@ const Team = () => {
           lnk="https://www.linkedin.com/in/yohana-pallangyo-2b6a18312/"
           ins="https://www.instagram.com/yospa_2020"
           twt="https://x.com/BpharmPallangyo"
+          mail="yohana@dilucsteiner.com"
         />
       </div>
       {/* <!-- End Grid --> */}

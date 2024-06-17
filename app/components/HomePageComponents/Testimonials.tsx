@@ -41,7 +41,7 @@ const Testimonials = () => {
       clientQuote:
         "I'm looking forward to the release of Diluc Steiner's AI-driven technology. Its precision in identifying antimicrobial resistance at a cellular level promises to improve our ability to prescribe targeted treatments, thereby reducing antibiotic misuse. This advancement has the potential to make a significant contribution to global efforts in combating resistant infections and improving patient care",
       clientName: "Baraka Karamba ",
-      clientPosition: "Pharmacisct Chemist",
+      clientPosition: "Pharmaceutical Chemist",
       clientCompany: "Community Pharmacy",
     },
     {

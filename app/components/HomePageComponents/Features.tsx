@@ -1,3 +1,8 @@
+import {
+  CandlestickChartIcon,
+  FlaskRoundIcon,
+  MicroscopeIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,7 +31,11 @@ export default function Herofeatures() {
                   role="tab"
                 >
                   <span className="flex">
-                    <Stars />
+                    <FlaskRoundIcon
+                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
+                      width="24"
+                      height="24"
+                    />
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Detection
@@ -38,7 +47,7 @@ export default function Herofeatures() {
                         treatment decisions.
                       </span>
                       <Link
-                        href="#"
+                        href="/for-providers/amr-insights/detection"
                         className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
@@ -56,10 +65,14 @@ export default function Herofeatures() {
                   role="tab"
                 >
                   <span className="flex">
-                    <Stars />
+                    <CandlestickChartIcon
+                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
+                      width="24"
+                      height="24"
+                    />
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                        Density
+                        Risk Assesment
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
                         Our AI system integrates dense datasets from diverse
@@ -68,7 +81,7 @@ export default function Herofeatures() {
                         approach ensures that no critical detail is overlooked.
                       </span>
                       <Link
-                        href="#"
+                        href="/for-providers/amr-insights/risk-assesment"
                         className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
@@ -86,10 +99,14 @@ export default function Herofeatures() {
                   role="tab"
                 >
                   <span className="flex">
-                    <Stars />
+                    <MicroscopeIcon
+                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
+                      width="24"
+                      height="24"
+                    />
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                        Risk
+                        Risk Evaluation
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
                         Our AI technology analyzes a wide range of data,
@@ -99,7 +116,7 @@ export default function Herofeatures() {
                         potential risk factors are considered.
                       </span>
                       <Link
-                        href="#"
+                        href="/for-providers/amr-insights/risk-evaluation"
                         className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
@@ -219,9 +236,14 @@ function Heading() {
           Backed by science, clinical evidence, and proven patient outcomes.
         </p>
         <p className="mt-1 dark:text-neutral-400 text-lg">
-          Our suite of solutions – Detection, Risk assesment, and Risk
-          evaluation shine a spotlight on AMR, exposing its nature in the
-          quickest way posssible.
+          Our suite of solutions – Detection, Risk Assessment, and Risk
+          Evaluation – shines a spotlight on AMR, exposing its nature in the
+          quickest way possible. Harnessing cutting-edge technology, our
+          platform delivers unparalleled accuracy and efficiency, empowering
+          healthcare providers with actionable insights to combat antimicrobial
+          resistance. Discover how our innovative approach is transforming the
+          fight against AMR, ensuring better patient outcomes and a healthier
+          future for all.
         </p>
       </div>
     </div>
