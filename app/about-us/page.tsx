@@ -15,8 +15,8 @@ const AboutUs = () => {
         />
         <div className="absolute inset-0 top-32 lg:top-44 ">
           <div className=" flex flex-col items-center justify-center">
-            <h1 className="font-bold uppercase text-5xl md:text-6xl bg-clip-text text-transparent shadow-md shadow-green-300 shadow-b bg-gradient-to-t via-gray-500 from-gray-50 to-gray-800 py-4">
-              About Diluc
+            <h1 className="font-bold capitalize text-5xl md:text-6xl text-[#0099cc] shadow-md shadow-blue-300 shadow-b  py-4">
+              About Diluc Steiner
             </h1>
           </div>
         </div>
@@ -28,20 +28,12 @@ const AboutUs = () => {
         <div className="mx-3">
           <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
             At Diluc Steiner, we revolutionize healthcare through AI to combat
-            antimicrobial resistance (AMR). Our advanced technology provides
-            rapid, accurate insights, enabling early detection and precise
-            treatment plans.
-          </p>
-          <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-            Combining medical expertise with cutting-edge algorithms, we analyze
-            comprehensive datasets to identify resistance patterns swiftly.
-          </p>
-          <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-            Our mission is to improve patient outcomes, support ongoing AMR
-            surveillance, and set new standards in healthcare diagnostics and
-            treatment planning. Driven by innovation and a commitment to global
-            health, we strive to preserve effective treatments and protect
-            lives.
+            antimicrobial resistance (AMR), education, and awareness. Our
+            advanced technology provides rapid, accurate insights, enabling
+            early detection and precise treatment plans. We also believe that
+            informed communities and proactive measures are key to preventing
+            the spread of AMR from animals to humans, the environment to humans,
+            and between humans.
           </p>
         </div>
       </div>
@@ -51,9 +43,13 @@ const AboutUs = () => {
         </h1>
         <div className="mx-3">
           <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-            AMR can’t beat us. To lead in the development of AI-driven
-            diagnostic tools that significantly impact the fight against AMR,
-            ensuring better health outcomes for both humans and animals.
+            We envision a world where antimicrobial resistance is no longer a
+            threat to public health. Through cutting-edge technology,
+            comprehensive education, and strong advocacy, we strive to create a
+            future where AMR is effectively managed and minimized. Our
+            commitment is to ensure that healthcare providers, communities, and
+            policymakers work together to combat AMR, securing better health
+            outcomes for all.
           </p>
         </div>
       </div>
@@ -62,19 +58,13 @@ const AboutUs = () => {
           Our mission
         </h1>
         <div className="mx-3">
-          <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-            Revolutionize healthcare by leveraging cutting-edge AI technology to
-            combat antimicrobial resistance (AMR).
-          </p>
-          <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-            We are dedicated to empowering healthcare professionals with rapid,
-            accurate, and actionable insights, enabling them to detect
-            resistance patterns early and develop effective treatment plans. By
-            combining the expertise of medical professionals with the power of
-            machine learning, we strive to enhance patient outcomes, safeguard
-            global health, and ensure a sustainable future in both human and
-            animal health.
-          </p>
+          Our mission is to harness the power of innovative artificial
+          intelligence (AI) solutions to accurately, reliably, and swiftly
+          detect AMR, while simultaneously educating and raising awareness
+          within communities. By advocating for policy changes and promoting
+          responsible antibiotic use, we aim to reduce the spread of resistance
+          and optimize every individual’s opportunity to live a healthier,
+          longer life.
         </div>
       </div>
       <div className="ml-2 my-8" id="goals">
@@ -134,54 +124,87 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="ml-2 my-8" id="science">
-        <h1 className=" mt-16 capitalize font-bold text-xl md:text-3xl mx-2 ml-7 text-primary mb-8">
-          Our objectives
-        </h1>
-        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-          Our objectives at Diluc Steiner are clear and ambitious:-
-        </p>
-        <div className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-          <ul className="marker:text-primary list-decimal">
-            <li>
-              <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
-                Develop the Smartest AI
-              </h2>
-              We strive to create the most advanced AI technology, leveraging
-              cutting-edge algorithms and data analytics to revolutionize
-              antimicrobial resistance (AMR) detection.
-            </li>
-            <li>
-              <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
-                Enhance AMR Detection Accuracy
-              </h2>
-              Our goal is to enhance the accuracy of AMR detection, ensuring
-              precise identification of resistance patterns to guide effective
-              treatment strategies.
-            </li>
-            <li>
-              <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
-                Accelerate Detection
-              </h2>
-              Time: We aim to significantly reduce detection time compared to
-              traditional methods, providing rapid insights into resistance
-              patterns to enable timely intervention and better patient
-              outcomes.
-            </li>
-            <li>
-              <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
-                Provide Comprehensive Treatment Plans
-              </h2>
-              We are committed to offering comprehensive treatment plans based
-              on our AI analysis, empowering healthcare professionals with
-              actionable insights to combat AMR effectively and safeguard public
-              health.
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Objectives />
     </section>
   );
 };
 
 export default AboutUs;
+
+function Objectives() {
+  return (
+    <div className="ml-2 my-8" id="science">
+      <h1 className=" mt-16 capitalize font-bold text-xl md:text-3xl mx-2 ml-7 text-primary mb-8">
+        Our objectives
+      </h1>
+      <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+        Our objectives at Diluc Steiner are clear and ambitious:-
+      </p>
+      <div className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+        <ul className="marker:text-primary list-decimal">
+          <li>
+            <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
+              Develop the Smartest AI
+            </h2>
+            We strive to create the most advanced AI technology, leveraging
+            cutting-edge algorithms and data analytics to revolutionize
+            antimicrobial resistance (AMR) detection.
+          </li>
+          <li>
+            <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
+              Enhance AMR Detection Accuracy
+            </h2>
+            Our goal is to enhance the accuracy of AMR detection, ensuring
+            precise identification of resistance patterns to guide effective
+            treatment strategies.
+          </li>
+          <li>
+            <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
+              Accelerate Detection
+            </h2>
+            Time: We aim to significantly reduce detection time compared to
+            traditional methods, providing rapid insights into resistance
+            patterns to enable timely intervention and better patient outcomes.
+          </li>
+          <li>
+            <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
+              Provide Comprehensive Treatment Plans
+            </h2>
+            We are committed to offering comprehensive treatment plans based on
+            our AI analysis, empowering healthcare professionals with actionable
+            insights to combat AMR effectively and safeguard public health.
+          </li>
+          <li>
+            <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
+              Educational Programs
+            </h2>
+            We provide education and awareness to students in secondary schools
+            and healthcare workers on the proper handling of antibiotics.
+          </li>
+          <li>
+            <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
+              Community Engagement
+            </h2>
+            We raise awareness in communities about the importance of
+            responsible antibiotic use and the risks of AMR.
+          </li>
+          <li>
+            <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
+              Advocacy
+            </h2>
+            We advocate for policy changes to mitigate AMR and promote best
+            practices across all sectors.
+          </li>
+          <li>
+            <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
+              Prevention Strategies
+            </h2>
+            We focus on preventing the spread of resistance from animal to
+            human, environment to human, human to human, and human to
+            environment.
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}

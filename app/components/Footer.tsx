@@ -183,7 +183,7 @@ export default function Footer() {
                   <FooterImage />
                 </Link>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
-                  © {new Date().getFullYear()} Diluc steinner.
+                  © {new Date().getFullYear()} Diluc steiner.
                 </p>
               </div>
 
