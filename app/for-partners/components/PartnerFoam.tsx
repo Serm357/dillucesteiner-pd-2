@@ -25,7 +25,10 @@ const formSchema = z.object({
   lastname: z
     .string()
     .min(2, { message: "last name must be at least 2 characters." }),
-  email: z.string().min(1).email({ message: "Invalid email address." }),
+  email: z
+    .string()
+    .min(1, { message: "Email must contain at least 1 chracter" })
+    .email({ message: "Invalid email address." }),
   company: z
     .string()
     .min(2, { message: "company name must be at least 2 characters." }),
@@ -62,7 +65,7 @@ const PartnerFoam = () => {
     console.log(values);
     try {
       await emailjs.send(
-        "service_zm2m00r",
+        "service_zm2mOOr",
         "template_zvia1w9",
         {
           from_name:
@@ -80,7 +83,7 @@ const PartnerFoam = () => {
           message: values.solution,
         },
         {
-          publicKey: "f0UozlQblvkh6wX_1",
+          publicKey: "fOUozlQblvkh6wX_1",
         }
       );
       console.log("SUCCESS!");
