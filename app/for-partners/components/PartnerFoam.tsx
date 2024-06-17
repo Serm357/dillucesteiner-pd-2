@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import { useToast } from "@/components/ui/use-toast";
 import { ToastAction } from "@/components/ui/toast";
+import { useState } from "react";
 
 const formSchema = z.object({
   firstname: z
@@ -47,7 +48,7 @@ const formSchema = z.object({
 
 const PartnerFoam = () => {
   const { toast } = useToast();
-
+  const [isLoading, setIsLoading] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -63,6 +64,7 @@ const PartnerFoam = () => {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+    setIsLoading(true);
     try {
       await emailjs.send(
         "service_zm2m00r",
@@ -91,7 +93,9 @@ const PartnerFoam = () => {
         title: "Your message has been sent.",
         description: "We will get back to you as quick as we can",
       });
+      setIsLoading(false);
     } catch (err) {
+      setIsLoading(false);
       if (err instanceof EmailJSResponseStatus) {
         console.log("EMAILJS FAILED...", err);
         return;
@@ -113,6 +117,7 @@ const PartnerFoam = () => {
       coutry: "",
       solution: "",
     });
+    setIsLoading(false);
     // console.log(formRef.current.s);
   }
 
@@ -259,7 +264,7 @@ const PartnerFoam = () => {
               </FormItem>
             )}
           />
-          <Button type="submit">Submit</Button>
+          <Button type="submit">{isLoading ? "Loading..." : "Submit"}</Button>
         </form>
       </Form>
     </div>
