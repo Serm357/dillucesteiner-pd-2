@@ -62,7 +62,7 @@ const PartnerFoam = () => {
     console.log(values);
     try {
       await emailjs.send(
-        "service_8h619oz",
+        "service_zpzw7gr",
         "template_8wjshsb",
         {
           from_name:
@@ -71,7 +71,9 @@ const PartnerFoam = () => {
             " from " +
             values.coutry +
             " company " +
-            values.company,
+            values.company +
+            " Phone Number " +
+            values.phonenumber,
           to_name: "Diluc Steiner",
           from_email: values.email,
           to_email: "info@dilucsteiner.com",
