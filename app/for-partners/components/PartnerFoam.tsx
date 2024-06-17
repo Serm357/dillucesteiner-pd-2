@@ -63,7 +63,7 @@ const PartnerFoam = () => {
     try {
       await emailjs.send(
         "service_zpzw7gr",
-        "template_8wjshsb",
+        "template_rnxyon7",
         {
           from_name:
             values.firstname +
