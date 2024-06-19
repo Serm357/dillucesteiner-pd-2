@@ -15,13 +15,13 @@ export default function Footer() {
         {/* <!-- Grid --> */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-10">
           <div className="col-span-full hidden md:col-span-1 gap-1 md:flex flex-col items-center justify-center">
-            <Link
+            <div
               className="flex-none text-xl font-semibold text-primary"
-              href="/"
+              // href="/"
               aria-label="Brand"
             >
               <FooterImage />
-            </Link>
+            </div>
             <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
               &copy; {new Date().getFullYear()}.
             </p>
@@ -44,15 +44,16 @@ export default function Footer() {
               </p>
               <div>
                 <p className="inline-flex gap-x-2 text-gray-600   dark:text-neutral-400">
-                  Research
+                  Research{" "}
+                  <span className=" text-xs text-primary">- coming soon</span>
                 </p>
               </div>
               <p>
                 <Link
                   className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="/for-providers/services"
+                  href="/for-providers/service-support"
                 >
-                  Services
+                  Services & Support
                 </Link>
               </p>
             </div>
@@ -77,8 +78,9 @@ export default function Footer() {
                 </Link>
               </p>
               <div>
-                <h4 className="inline-flex gap-x-2 text-gray-600 hover:text-blue-500 dark:text-neutral-400 dark:hover:text-blue-500">
-                  Resources
+                <h4 className="inline-flex gap-x-2 text-gray-600 dark:text-neutral-400 ">
+                  Resources{" "}
+                  <span className=" text-xs text-primary">- coming soon</span>
                 </h4>
               </div>
             </div>
@@ -175,13 +177,13 @@ export default function Footer() {
 
             <div className="flex justify-between items-center">
               <div className="mt-3 sm:hidden flex gap-1 items-center justify-center">
-                <Link
+                <div
                   className="flex-none text-xl font-semibold dark:text-white"
-                  href="/"
+                  // href="/"
                   aria-label="Brand"
                 >
                   <FooterImage />
-                </Link>
+                </div>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
                   © {new Date().getFullYear()} Diluc steiner.
                 </p>

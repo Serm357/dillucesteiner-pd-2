@@ -32,7 +32,7 @@ const Team = () => {
           lnk="https://www.linkedin.com/in/yohanalaurent/"
           ins="https://www.instagram.com/laurentinojr"
           twt="https://x.com/Oficiallorenzo"
-          mail="mailto:laurent@dilucsteiner.com"
+          // mail="mailto:laurent@dilucsteiner.com"
         />
 
         <Card
@@ -40,15 +40,15 @@ const Team = () => {
           position="Full Stack Developer"
           image="/team/Salum.png"
           lnk="https://www.linkedin.com/in/salum-suleiman-783351229/"
-          mail="mailto:salumdeveloper@dilucsteiner.com"
+          // // mail="mailto:salumdeveloper@dilucsteiner.com"
           twt="https://x.com/salum_dev"
         />
         <Card
           name="Fidelis John"
-          position="Marketing & Commrcial"
+          position="Marketing & Commercial"
           image="/team/Fidelis.png"
           lnk=" https://www.linkedin.com/in/fidelis-songo-20a087275/"
-          mail="fidelis@dilucsteiner.com"
+          // mail="mailto:fidelis@dilucsteiner.com"
         />
         <Card
           name="Yohana Palangyo"
@@ -57,7 +57,7 @@ const Team = () => {
           lnk="https://www.linkedin.com/in/yohana-pallangyo-2b6a18312/"
           ins="https://www.instagram.com/yospa_2020"
           twt="https://x.com/BpharmPallangyo"
-          mail="yohana@dilucsteiner.com"
+          // mail="mailto:yohana@dilucsteiner.com"
         />
       </div>
       {/* <!-- End Grid --> */}

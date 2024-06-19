@@ -81,9 +81,18 @@ const config = {
             opacity: "0",
           },
         },
+        "background-shine": {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
+        "background-shine": "background-shine 2s linear infinite",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
@@ -98,7 +107,6 @@ const config = {
 
 export default config;
 
-// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(

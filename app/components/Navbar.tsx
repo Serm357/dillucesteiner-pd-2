@@ -38,7 +38,7 @@ const Navbar = () => {
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
                   />
                 </svg>
@@ -132,7 +132,7 @@ const Navbar = () => {
                   </h4>
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
-                    href="for-providers/services"
+                    href="/for-providers/service-support"
                   >
                     Service & Support
                   </Link>
@@ -406,7 +406,7 @@ function MobileSidebar() {
                   <li>
                     <Link
                       className="flex items-center gap-x-3.5 py-2 px-2.5  text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  "
-                      href="/for-providers#services"
+                      href="/for-providers/service-support"
                     >
                       Services & Support
                     </Link>

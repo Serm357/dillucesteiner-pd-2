@@ -1,9 +1,14 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useRouter } from "next/navigation";
 
 const FooterImage = () => {
   const { theme } = useTheme();
+  const { push } = useRouter();
+  const handleClick = () => {
+    push("/");
+  };
   return (
     <>
       {theme == "dark" && (
@@ -12,7 +17,8 @@ const FooterImage = () => {
           width={80}
           height={80}
           alt="Diluc logo"
-          className="size-20  ml-1"
+          onClick={handleClick}
+          className="size-20  ml-1 cursor-pointer"
         />
       )}
       {theme == "light" && (
@@ -21,7 +27,8 @@ const FooterImage = () => {
           width={80}
           height={80}
           alt="Diluc logo"
-          className="size-20  ml-1"
+          onClick={handleClick}
+          className="size-20  ml-1 cursor-pointer"
         />
       )}
     </>
