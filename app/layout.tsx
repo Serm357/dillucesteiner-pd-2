@@ -3,13 +3,13 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider } from "@/providers/Theme";
 import PrelineScript from "./components/PrelineScript";
 import Footer from "./components/Footer";
-// import { Roboto_Serif } from "next/font/google";
+import { Roboto_Serif } from "next/font/google";
 import { cn, constructMetadata } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-// const roboto = Roboto_Serif({ subsets: ["latin"] });
+const roboto = Roboto_Serif({ subsets: ["latin"] });
 
 export const metadata = constructMetadata({
   icons: "/favicon.ico",
@@ -52,8 +52,8 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <div className="min-h-screen w-full">
-              {/* <div className={cn("min-h-screen w-full", roboto.className)}> */}
+            {/* <div className="min-h-screen w-full"> */}
+            <div className={cn("min-h-screen w-full", roboto.className)}>
               {children}
             </div>
             <Footer />

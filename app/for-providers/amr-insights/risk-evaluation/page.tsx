@@ -49,14 +49,14 @@ export default RiskEvaluation;
 
 function FeatureCard() {
   return (
-    <div className="min-h-screen w-full mt-3 mx-2 flex flex-col-reverse md:flex-row my-2">
+    <div className="min-h-[37rem] w-full mt-3 mx-2 flex flex-col-reverse md:flex-row my-2">
       <div className="flex-1">
         <img
           src="/bg/pictures/115.jpg"
-          className="size-full rounded-md"
+          className="w-full h-[37rem]  rounded-md"
           loading="lazy"
-          width={100}
-          height={100}
+          // width={100}
+          // height={100}
           alt="img description"
         />
       </div>
@@ -177,14 +177,14 @@ function StatCard({ title, desc }: { title: string; desc: string }) {
 
 function FeatureCard4() {
   return (
-    <div className="min-h-screen w-full  mx-2 flex flex-col-reverse md:flex-row mb-2">
-      <div className="flex-1">
+    <div className="min-h-[37rem] w-full  mx-2 flex flex-col-reverse md:flex-row mb-2">
+      <div className="flex-1 flex items-center justify-center">
         <img
           src="/bg/pictures/116.jpg"
-          className="size-full "
+          className="w-full h-[37rem]"
           loading="lazy"
-          width={100}
-          height={100}
+          // width={100}
+          // height={100}
           alt="img description"
         />
       </div>
@@ -218,7 +218,7 @@ function FeatureCard4() {
         </h1>
 
         <div className="prose md:prose-lg text-start dark:text-gray-200 my-2">
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col gap-2 marker:text-primary">
             <li>
               Genetic differences among populations can influence the
               susceptibility to specific infections and the effectiveness of
@@ -257,7 +257,7 @@ function FeatureCard5() {
       <div className="flex-1">
         <img
           src="/bg/pictures/117.jpg"
-          className="size-full "
+          className="w-full h-[32rem] "
           loading="lazy"
           width={100}
           height={100}
