@@ -107,7 +107,7 @@ function FeatureCard2() {
           <span className="text-black dark:text-orange-500"> matters.</span>
         </h1>
         <div className="prose md:prose-lg dark:text-gray-200 my-2">
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col gap-2 marker:text-primary">
             <li>Timely intervention prevents AMR spread.</li>
             <li>Improves patient outcomes.</li>
             <li>Preserves antibiotic effectiveness</li>

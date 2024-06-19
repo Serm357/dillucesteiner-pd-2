@@ -23,7 +23,7 @@ const AboutUs = () => {
       </div>
       <div className="mx-16">
         <div className="ml-2 mt-28">
-          <h1 className="mt-16 capitalize font-bold text-3xl md:text-4xl mx-2 text-center text-primary mb-8">
+          <h1 className="mt-16 ngaringari py-3 rounded-full capitalize font-bold text-3xl md:text-4xl mx-2 text-center text-primary mb-8">
             About Us
           </h1>
           <div className="mx-3">

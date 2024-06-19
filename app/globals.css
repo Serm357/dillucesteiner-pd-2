@@ -60,3 +60,6 @@
     @apply mt-8 active:bg-primary;
   }
 }
+.ngaringari {
+  @apply animate-background-shine  bg-[linear-gradient(110deg,#6ee7b71a,45%,#b7e8ea,55%,#6ee7b71a)]   bg-[length:200%_100%]  transition-colors;
+}

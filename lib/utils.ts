@@ -33,6 +33,7 @@ export function constructMetadata({
       creator: "@sermdev",
     },
     icons,
-    metadataBase: new URL("https://dilucsteiner.com/"),
+    metadataBase: new URL("http://localhost:3000/"),
+    // metadataBase: new URL("https://dilucsteiner.com/"),
   };
 }

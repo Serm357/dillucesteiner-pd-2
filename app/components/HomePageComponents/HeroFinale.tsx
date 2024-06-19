@@ -38,18 +38,19 @@ const HeroFinale = () => {
           <motion.p className="font-bold uppercase md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-400 py-4">
             AMR can’t beat us
           </motion.p>
-          <p className="text-white/90 my-1 prose  text-lg md:text-xl leading-8">
+          <p className="text-white/90 my-1 prose max-sm:mx-4  text-lg md:text-xl leading-normal ">
             What if we could have an advanced antimicrobial susceptibility and
-            resistance test to detect and analyze resistance patterns? What if
-            we could know if bacteria are resistant to specific medications
-            immediately during diagnosis? With our cutting-edge technology, we
-            can achieve this. By staying one step ahead, AMR can’t beat us. Our
-            test ensures that healthcare providers can identify resistant
-            strains on the spot, enabling timely and effective treatments.
+            resistance test to detect and analyze resistance patterns? <br />
+            What if we could know if bacteria are resistant to specific
+            medications immediately during diagnosis? With our cutting-edge
+            technology, we can achieve this. <br />
+            By staying one step ahead, AMR can’t beat us. Our test ensures that
+            healthcare providers can identify resistant strains on the spot,
+            enabling timely and effective treatments.
           </p>
-          <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+          <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4 ngaringari">
             <Link href="/about-us">About Us</Link>
-            <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+            <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent " />
           </button>
         </motion.div>
       </ImagesSlider>

@@ -11,7 +11,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 // const roboto = Roboto_Serif({ subsets: ["latin"] });
 
-export const metadata = constructMetadata();
+export const metadata = constructMetadata({
+  icons: "/favicon.ico",
+});
 
 export default async function RootLayout({
   children,
