@@ -12,7 +12,7 @@ const Team = () => {
       id="team"
       className="max-w-[85rem]  min-h-[80vh] mt-5 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
     >
-      {/* <!-- Title --> */}
+      {/*  Title  */}
       <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
         <h2 className="text-3xl font-bold md:text-5xl md:leading-tight text-primary">
           Meet the Crew
@@ -21,9 +21,9 @@ const Team = () => {
           Creative people
         </p> */}
       </div>
-      {/* <!-- End Title --> */}
+      {/*  End Title  */}
 
-      {/* <!-- Grid --> */}
+      {/*  Grid  */}
       <div className="grid grid-cols-1 md:grid-cols-2 mx-12 gap-4 md:gap-8 justify-center items-center">
         <Card
           name="Yohana Laurent"
@@ -40,7 +40,7 @@ const Team = () => {
           position="Full Stack Developer"
           image="/team/Salum.png"
           lnk="https://www.linkedin.com/in/salum-suleiman-783351229/"
-          // // mail="mailto:salumdeveloper@dilucsteiner.com"
+          // mail="mailto:salumdeveloper@dilucsteiner.com"
           twt="https://x.com/salum_dev"
         />
         <Card
@@ -60,9 +60,9 @@ const Team = () => {
           // mail="mailto:yohana@dilucsteiner.com"
         />
       </div>
-      {/* <!-- End Grid --> */}
+      {/*  End Grid  */}
     </div>
-    // {/* <!-- End Team --> */}
+    // {/*  End Team  */}
   );
 };
 
@@ -106,7 +106,7 @@ function Card({
             </p>
           </div>
 
-          {/* <!-- Social Brands --> */}
+          {/*  Social Brands  */}
           <div className="mt-2 text-lg sm:mt-auto space-x-2.5">
             {lnk && (
               <a
@@ -145,7 +145,7 @@ function Card({
               </a>
             )}
           </div>
-          {/* <!-- End Social Brands --> */}
+          {/*  End Social Brands  */}
         </div>
       </div>
     </>
