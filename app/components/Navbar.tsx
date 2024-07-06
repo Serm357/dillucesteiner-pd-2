@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       {/* <AnnouncementBanner /> */}
       <LinksBanner />
-      <header className=" flex sticky top-0 left-0 z-[100] bg-background right-0 flex-wrap sm:justify-start items-center sm:flex-nowrap w-full  text-sm py-4 ">
+      <header className=" flex sticky top-0 left-0 z-[100] bg-background right-0 flex-wrap sm:justify-start items-center sm:flex-nowrap w-full  text-sm py-4   border-b border-blue-200 dark:border-blue-900 ">
         <nav
           className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"

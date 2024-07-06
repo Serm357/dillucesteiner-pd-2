@@ -42,8 +42,8 @@ const HeroFinale = () => {
             What if we could have an advanced antimicrobial susceptibility and
             resistance test to detect and analyze resistance patterns? <br />
             What if we could know if bacteria are resistant to specific
-            medications immediately during diagnosis? With our cutting-edge
-            technology, we can achieve this. <br />
+            medications immediately during diagnosis? <br />
+            With our cutting-edge technology, we can achieve this. <br />
             By staying one step ahead, AMR can’t beat us. Our test ensures that
             healthcare providers can identify resistant strains on the spot,
             enabling timely and effective treatments.

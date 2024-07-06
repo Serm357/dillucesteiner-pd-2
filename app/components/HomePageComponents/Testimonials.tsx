@@ -83,12 +83,12 @@ const Testimonials = () => {
         opts={{
           loop: true,
         }}
-        className="w-full max-w-[23rem] mx-2 md:max-w-md lg:max-w-4xl"
+        className="w-full max-w-[23rem] mx-2 md:max-w-md lg:max-w-4xl "
       >
         <CarouselContent>
           {testimonialsArray.map((singleTestimonial) => (
             <CarouselItem key={singleTestimonial.clientName}>
-              <Card>
+              <Card className="border-none border-0">
                 <CardContent className="lg:aspect-video aspect-square">
                   <Testimonial
                     imgSrc={singleTestimonial.imgSrc}

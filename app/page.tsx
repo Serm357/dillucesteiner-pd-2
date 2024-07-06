@@ -3,16 +3,10 @@ import Stats from "./components/HomePageComponents/Stats";
 import Herofeatures from "./components/HomePageComponents/Features";
 import dynamic from "next/dynamic";
 import ImageSlider from "./components/HomePageComponents/ImageSlider";
+import CTA from "./components/HomePageComponents/CTA";
 
 const HeroFinale = dynamic(
   () => import("./components/HomePageComponents/HeroFinale"),
-  {
-    ssr: false,
-  }
-);
-
-const Subhero = dynamic(
-  () => import("./components/HomePageComponents/Subhero"),
   {
     ssr: false,
   }
@@ -34,7 +28,7 @@ export default async function Home() {
     <main className="flex-1">
       <HeroFinale />
       <Stats />
-      <Subhero />
+      <CTA />
       <Herofeatures />
       <ImageSlider />
       <Testimonials />

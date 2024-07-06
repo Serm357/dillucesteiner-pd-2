@@ -3,7 +3,6 @@ import {
   FlaskRoundIcon,
   MicroscopeIcon,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Herofeatures() {
@@ -238,12 +237,13 @@ function Heading() {
         <p className="mt-1 dark:text-neutral-400 text-lg">
           Our suite of solutions – Detection, Risk Assessment, and Risk
           Evaluation – shines a spotlight on AMR, exposing its nature in the
-          quickest way possible. Harnessing cutting-edge technology, our
-          platform delivers unparalleled accuracy and efficiency, empowering
-          healthcare providers with actionable insights to combat antimicrobial
-          resistance. Discover how our innovative approach is transforming the
-          fight against AMR, ensuring better patient outcomes and a healthier
-          future for all.
+          quickest way possible. <br />
+          Harnessing cutting-edge technology, our platform delivers unparalleled
+          accuracy and efficiency, empowering healthcare providers with
+          actionable insights to combat antimicrobial resistance.
+          <br /> Discover how our innovative approach is transforming the fight
+          against AMR, ensuring better patient outcomes and a healthier future
+          for all.
         </p>
       </div>
     </div>
