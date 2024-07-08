@@ -73,9 +73,9 @@ const Testimonials = () => {
   return (
     <section
       id="#testimonial"
-      className="max-w-[85rem] min-h-[75vh] flex flex-col gap-3 items-center justify-center"
+      className="min-h-screen flex flex-col gap-3 items-center justify-center"
     >
-      <h1 className="font-bold capitalize m-3 text-center lg:my-6 md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-700 to-blue-400 py-4">
+      <h1 className="font-bold capitalize m-3 text-center lg:my-6 md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-700 to-blue-400 py-2">
         here is what our colleagues say
       </h1>
       <Carousel
@@ -83,13 +83,13 @@ const Testimonials = () => {
         opts={{
           loop: true,
         }}
-        className="w-full max-w-[23rem] mx-2 md:max-w-md lg:max-w-4xl "
+        className="w-full max-w-[23rem] mx-2 md:max-w-md lg:max-w-4xl  "
       >
         <CarouselContent>
           {testimonialsArray.map((singleTestimonial) => (
             <CarouselItem key={singleTestimonial.clientName}>
-              <Card className="border-none border-0">
-                <CardContent className="lg:aspect-video aspect-square">
+              <Card className="border-none border-0  ">
+                <CardContent className="lg:aspect-video aspect-square  ">
                   <Testimonial
                     imgSrc={singleTestimonial.imgSrc}
                     clientQuote={singleTestimonial.clientQuote}
@@ -102,11 +102,11 @@ const Testimonials = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="border border-primary/40" />
+        <CarouselNext className="border border-primary/40" />
       </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground">
-        {current} / {count}
+      <div className="pb-2 pt-0 text-center text-sm text-muted-foreground">
+        <span className="text-primary">{current}</span> / {count}
       </div>
     </section>
   );

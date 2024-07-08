@@ -17,7 +17,7 @@ const CTA = () => {
               unparalleled accuracy and speed
             </p>
             <Link
-              href="/for-providers"
+              href="/for-providers/service-support"
               className="text-primary underline hover:scale-150 font-bold"
             >
               Lean How
