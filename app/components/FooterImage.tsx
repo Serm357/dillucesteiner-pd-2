@@ -13,7 +13,7 @@ const FooterImage = () => {
   return (
     <a href="/">
       <img
-        src="/logos/steiner-1.png"
+        src="/ditekta-logo.png"
         width={80}
         height={80}
         alt="Diluc logo"
