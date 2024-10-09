@@ -1,26 +1,25 @@
 // "use client";
 
 // import { useTheme } from "next-themes";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 const FooterImage = () => {
   // const { theme, systemTheme } = useTheme();
 
-  const { push } = useRouter();
-  const handleClick = () => {
-    push("/");
-  };
+  // const { push } = useRouter();
+  // const handleClick = () => {
+  //   push("/");
+  // };
   return (
-    <>
+    <a href="/">
       <img
         src="/logos/steiner-1.png"
         width={80}
         height={80}
         alt="Diluc logo"
-        onClick={handleClick}
         className="size-20  ml-1 cursor-pointer"
       />
-    </>
+    </a>
   );
 };
 
