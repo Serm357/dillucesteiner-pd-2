@@ -614,7 +614,7 @@ function AnnouncementBanner() {
           <p className="text-white font-bold capitalize">
             Ditekta is now rebranding and is currently under ongoing
             development. <br className="md:hidden" />
-            contact us know if you encouter any difficulies 😊{" "}
+            contact us if you encouter any difficulies 😊{" "}
             <Link href="/for-partners#partner-form" className="mx-2 underline">
               here
             </Link>
