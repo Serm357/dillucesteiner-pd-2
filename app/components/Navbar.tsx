@@ -4,7 +4,7 @@ import { ModeToggle } from "./ModeToggler";
 const Navbar = () => {
   return (
     <>
-      {/* <AnnouncementBanner /> */}
+      <AnnouncementBanner />
       <LinksBanner />
       <header className=" flex sticky top-0 left-0 z-[100] bg-background right-0 flex-wrap sm:justify-start items-center sm:flex-nowrap w-full  text-sm py-4  border-b-[0.1px] border-[#37dd0f] dark:border-green-900 ">
         <nav
@@ -612,9 +612,9 @@ function AnnouncementBanner() {
       <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
         <div className="flex">
           <p className="text-white font-bold capitalize">
-            Ditekta is now live but under ongoing development 😊.{" "}
-            <br className="md:hidden" />
-            let us know if you encouter any difficulies{" "}
+            Ditekta is now rebranding and is currently under ongoing
+            development. <br className="md:hidden" />
+            let us know if you encouter any difficulies 😊{" "}
             <Link href="/for-partners#partner-form" className="mx-2 underline">
               here
             </Link>
