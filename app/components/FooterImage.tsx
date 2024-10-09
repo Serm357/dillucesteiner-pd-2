@@ -19,7 +19,7 @@ const FooterImage = () => {
         width={80}
         height={80}
         alt="Diluc logo"
-        className="size-20  ml-1 cursor-pointer"
+        className="w-40 h-30  sm:ml-1 cursor-pointer"
       />
     </Link>
   );
