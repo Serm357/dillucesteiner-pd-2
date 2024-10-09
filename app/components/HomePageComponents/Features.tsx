@@ -23,7 +23,7 @@ export default function Herofeatures() {
               >
                 <button
                   type="button"
-                  className="hs-tab-active:bg-[#37dd0f] hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-[#37dd0f] p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 bg-neutral-800"
+                  className="hs-tab-active:bg-dilucttl hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-green-500 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 active"
                   id="tabs-with-card-item-1"
                   data-hs-tab="#tabs-with-card-1"
                   aria-controls="tabs-with-card-1"
@@ -31,15 +31,15 @@ export default function Herofeatures() {
                 >
                   <span className="flex">
                     <FlaskRoundIcon
-                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white hover:text-white text-[var(--dilucttl)] dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       width="24"
                       height="24"
                     />
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-white hover:text-white text-[var(--dilucttl)] dark:hs-tab-active:text-white dark:text-neutral-200">
+                      <span className="block text-lg font-semibold hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Detection
                       </span>
-                      <span className="block mt-1 text-gray-400 hover:text-[#092332] dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
+                      <span className="block mt-1 hs-tab-active:text-dilucbg text-neutral-200">
                         Our AI swiftly processes patient samples, identifying
                         resistance patterns within hours instead of days. This
                         quick turnaround is crucial for timely and effective
@@ -47,7 +47,7 @@ export default function Herofeatures() {
                       </span>
                       <Link
                         href="/for-providers/amr-insights/detection"
-                        className="block text-lg font-semibold hs-tab-active:text-white text-white dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                        className="block text-lg font-semibold hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
                       </Link>
@@ -57,7 +57,7 @@ export default function Herofeatures() {
 
                 <button
                   type="button"
-                  className="hs-tab-active:bg-[#37dd0f] hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-[#37dd0f] p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700"
+                  className="hs-tab-active:bg-dilucttl hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-green-500 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 "
                   id="tabs-with-card-item-2"
                   data-hs-tab="#tabs-with-card-2"
                   aria-controls="tabs-with-card-2"
@@ -65,15 +65,15 @@ export default function Herofeatures() {
                 >
                   <span className="flex">
                     <CandlestickChartIcon
-                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white text-black dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       width="24"
                       height="24"
                     />
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-white text-black dark:hs-tab-active:text-green-500 dark:text-neutral-200">
+                      <span className="block text-lg font-semibold hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Risk Assesment
                       </span>
-                      <span className="block mt-1 text-black dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
+                      <span className="block mt-1  hs-tab-active:text-dilucbg text-neutral-200">
                         Our AI system integrates dense datasets from diverse
                         sources, including genetic sequences, patient health
                         records, and environmental data. This comprehensive
@@ -81,7 +81,7 @@ export default function Herofeatures() {
                       </span>
                       <Link
                         href="/for-providers/amr-insights/risk-assesment"
-                        className="block text-lg font-semibold hs-tab-active:text-white text-black dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                        className="block text-lg font-semibold hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
                       </Link>
@@ -91,7 +91,7 @@ export default function Herofeatures() {
 
                 <button
                   type="button"
-                  className="hs-tab-active:bg-[#37dd0f] hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-[#37dd0f] p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700"
+                  className="hs-tab-active:bg-dilucttl hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-green-500 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 "
                   id="tabs-with-card-item-3"
                   data-hs-tab="#tabs-with-card-3"
                   aria-controls="tabs-with-card-3"
@@ -99,15 +99,15 @@ export default function Herofeatures() {
                 >
                   <span className="flex">
                     <MicroscopeIcon
-                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white text-black dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       width="24"
                       height="24"
                     />
                     <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-white text-black dark:hs-tab-active:text-green-500 dark:text-neutral-200">
+                      <span className="block text-lg font-semibold hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
                         Risk Evaluation
                       </span>
-                      <span className="block mt-1 text-black dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
+                      <span className="block mt-1  hs-tab-active:text-dilucbg text-neutral-200">
                         Our AI technology analyzes a wide range of data,
                         including genetic, clinical, and environmental factors,
                         to develop a comprehensive risk profile for each
@@ -116,7 +116,7 @@ export default function Herofeatures() {
                       </span>
                       <Link
                         href="/for-providers/amr-insights/risk-evaluation"
-                        className="block text-lg font-semibold hs-tab-active:text-white text-black dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+                        className="block text-lg font-semibold hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
                       >
                         Learn How
                       </Link>
@@ -138,7 +138,7 @@ export default function Herofeatures() {
                     aria-labelledby="tabs-with-card-item-1"
                   >
                     <img
-                      className="shadow-xl shadow-[#37dd0f] rounded-xl dark:shadow-gray-900/20"
+                      className="shadow-xl shadow-dilucttl rounded-xl dark:shadow-gray-900/20"
                       src="/bg/28.jpg"
                       alt="Image Description"
                     />
@@ -151,7 +151,7 @@ export default function Herofeatures() {
                     aria-labelledby="tabs-with-card-item-2"
                   >
                     <img
-                      className="shadow-xl shadow-[#37dd0f] rounded-xl dark:shadow-gray-900/20"
+                      className="shadow-xl shadow-dilucttl rounded-xl dark:shadow-gray-900/20"
                       src="/bg/11.jpg"
                       alt="Image Description"
                     />
@@ -164,7 +164,7 @@ export default function Herofeatures() {
                     aria-labelledby="tabs-with-card-item-3"
                   >
                     <img
-                      className="shadow-xl shadow-[#37dd0f] rounded-xl dark:shadow-gray-900/20"
+                      className="shadow-xl shadow-dilucttl rounded-xl dark:shadow-gray-900/20"
                       src="/bg/21.jpg"
                       alt="Image Description"
                     />
@@ -175,7 +175,7 @@ export default function Herofeatures() {
                 {/* <!-- SVG Element --> */}
                 <div className="hidden absolute top-0 end-0 translate-x-20 md:block lg:translate-x-20">
                   <svg
-                    className="w-16 h-auto text-[#37dd0f]"
+                    className="w-16 h-auto text-dilucttl"
                     width="121"
                     height="135"
                     viewBox="0 0 121 135"
@@ -211,7 +211,7 @@ export default function Herofeatures() {
 
           {/* <!-- Background Color --> */}
           <div className="absolute inset-0 grid grid-cols-12 size-full md:hidden">
-            <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-neutral-800 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full "></div>
+            <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-neutral-900 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full dark:bg-neutral-800"></div>
           </div>
           {/* <!-- End Background Color --> */}
         </div>
@@ -253,7 +253,7 @@ function Heading() {
 function Stars() {
   return (
     <svg
-      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white text-gray-800 dark:hs-tab-active:text-green-500 dark:text-neutral-200"
+      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white text-dilucttl dark:hs-tab-active:text-blue-500 dark:text-neutral-200"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

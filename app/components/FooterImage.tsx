@@ -1,5 +1,7 @@
 // "use client";
 
+import Link from "next/link";
+
 // import { useTheme } from "next-themes";
 // import { useRouter } from "next/router";
 
@@ -9,9 +11,9 @@ const FooterImage = () => {
   // const { push } = useRouter();
   // const handleClick = () => {
   //   push("/");
-  // };
+  // }
   return (
-    <a href="/">
+    <Link href="/">
       <img
         src="/ditekta-logo.png"
         width={80}
@@ -19,7 +21,7 @@ const FooterImage = () => {
         alt="Diluc logo"
         className="size-20  ml-1 cursor-pointer"
       />
-    </a>
+    </Link>
   );
 };
 
