@@ -22,7 +22,7 @@ const AMRInsights = () => {
         ]}
         title="Unmasking AMR Threats."
         subtitle="Resistance's hiding place, exposed.."
-        desc="Delivering clarity, confidence, and peace of mind. Ditekta, our cutting-edge AI technology, is clinically proven to improve antimicrobial resistance detection and enhance healthcare professional performance. Diluc Steiner empowers you with accurate, data-driven insights, ensuring timely interventions and effective treatment plans. Join us in revolutionizing the fight against antimicrobial resistance."
+        desc="Delivering clarity, confidence, and peace of mind. Ditekta, our cutting-edge AI technology, is clinically proven to improve antimicrobial resistance detection and enhance healthcare professional performance. Ditekta  empowers you with accurate, data-driven insights, ensuring timely interventions and effective treatment plans. Join us in revolutionizing the fight against antimicrobial resistance."
       />
 
       <div className="ml-2 my-32">
@@ -264,7 +264,7 @@ function FeatureLastCard() {
           <span className="text-black dark:text-orange-500"> reimagined.</span>
         </h1>
         <p className="prose md:prose-lg dark:text-gray-200 my-2">
-          At Diluc Steiner, we are redefining quality healthcare through the
+          At Ditekta , we are redefining quality healthcare through the
           integration of cutting-edge AI technology. Our innovative solutions
           provide rapid, precise, and actionable insights, transforming the way
           antimicrobial resistance (AMR) is detected and treated. By leveraging
@@ -272,7 +272,7 @@ function FeatureLastCard() {
           enhance patient outcomes and streamline healthcare processes. Our
           commitment to innovation ensures that healthcare providers have the
           tools they need to deliver the highest standard of care, proactively
-          addressing AMR and other emerging health threats. With Diluc Steiner,
+          addressing AMR and other emerging health threats. With Ditekta ,
           quality healthcare is not just a promise—it's a reality, reimagined
           for a safer, healthier future.
         </p>

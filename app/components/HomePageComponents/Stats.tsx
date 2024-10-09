@@ -6,8 +6,8 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 
 export default function Stats() {
   return (
-    <section className="flex flex-col items-center mt-12 justify-center px-2 py-3 lg:py-4 light:bg-primary-foreground dark:transparent w-full">
-      <h1 className="text-primary text-3xl md:text-4xl lg:text-5xl font-extrabold">
+    <section className="flex flex-col items-center mt-12 justify-center px-2 py-3 lg:py-4  dark:transparent w-full">
+      <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold">
         Why we exist?
       </h1>
       {/* <!-- Card Section --> */}
@@ -57,11 +57,11 @@ function Card({
 }) {
   return (
     <div className="">
-      <div className=" w-full h-[300px] relative max-w-xs">
-        <div className="absolute inset-0 h-full w-full  transform scale-[0.80] rounded-full blur-3xl" />
-        <div className="relative shadow-md  shadow-primary bg-primary-foreground  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+      <div className=" w-full h-[300px] relative max-w-xs  ">
+        {/* <div className="absolute inset-0 h-full w-full  transform scale-[0.80] rounded-full blur-3xl" /> */}
+        <div className="relative shadow-md bg-[var(--dilucttl)] shadow-white px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="font-bold text-2xl text-blue-900 dark:text-blue-300 mb-4 relative z-50">
+            <h1 className="font-bold text-2xl text-black dark:text-blue-300 mb-4 relative z-50">
               <AnimatedNumbers
                 includeComma
                 className="text-center"
@@ -72,14 +72,14 @@ function Card({
                 animateToNumber={no}
               />
             </h1>
-            <h1 className="font-bold text-sm text-primary mb-1 relative z-50 uppercase">
+            <h1 className="font-bold text-sm text-center text-white mb-1 relative z-50 uppercase">
               {title}
             </h1>
 
-            <p className="h-16  font-normal text-sm text-slate-500 dark:text-white text-center mb-3 relative z-50 capitalize">
+            <p className="h-16  font-normal text-sm text-black text-center mb-3 relative z-50 capitalize">
               {desc}
             </p>
-            <h1 className="font-bold text-xl mt-8 mb-4">{year}</h1>
+            <h1 className="font-bold text-xl mt-8 mb-4 text-white">{year}</h1>
           </div>
         </div>
       </div>
@@ -91,10 +91,10 @@ function Card2() {
   return (
     <div className="">
       <div className=" w-full h-[300px] relative max-w-xs">
-        <div className="absolute inset-0 h-full w-full  transform scale-[0.80] rounded-full blur-3xl" />
-        <div className="relative shadow-md shadow-primary bg-primary-foreground  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+        {/* <div className="absolute inset-0 h-full w-full  transform scale-[0.80] rounded-full blur-3xl" /> */}
+        <div className="relative shadow-md shadow-white bg-[var(--dilucttl)] px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="font-bold flex items-center justify-center text-2xl text-blue-900 dark:text-blue-300 mb-4 relative z-50">
+            <h1 className="font-bold flex items-center justify-center text-2xl text-black mb-4 relative z-50">
               <AnimatedNumbers
                 includeComma
                 className="text-center"
@@ -116,14 +116,14 @@ function Card2() {
               />{" "}
               <br /> <span className="text-sm  ml-1">People</span>
             </h1>
-            <h1 className="font-bold text-sm text-primary mb-1 relative z-50 uppercase">
+            <h1 className="font-bold text-sm text-white mb-1 relative z-50 uppercase">
               AMR
             </h1>
-            <p className="h-24 font-normal text-sm text-slate-500 dark:text-white text-center mb-3 relative z-50 capitalize">
+            <p className="h-24 font-normal text-sm text-black text-center mb-3 relative z-50 capitalize">
               died from AMR was a child under 5 years old, often from previously
               treatable infections.
             </p>
-            {/* <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+            {/* <h1 className="font-bold text-xl text-black mb-4 relative z-50">
           {year}
         </h1> */}
           </div>

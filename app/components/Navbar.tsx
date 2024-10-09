@@ -6,25 +6,22 @@ const Navbar = () => {
     <>
       {/* <AnnouncementBanner /> */}
       <LinksBanner />
-      <header className=" flex sticky top-0 left-0 z-[100] bg-background right-0 flex-wrap sm:justify-start items-center sm:flex-nowrap w-full  text-sm py-4   border-b border-blue-200 dark:border-blue-900 ">
+      <header className=" flex sticky top-0 left-0 z-[100] bg-background right-0 flex-wrap sm:justify-start items-center sm:flex-nowrap w-full  text-sm py-4  border-b-[0.1px] border-[#37dd0f] dark:border-green-900 ">
         <nav
           className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
         >
           <div className="flex items-center justify-between max-h-14">
             <Link
-              className="flex-none text-xl font-semibold dark:text-white"
+              className="flex-none text-xl font-semibold text-white"
               href="/"
             >
-              <img
-                src="/logos/steiner-1.png"
-                className="w-20 h-auto sm:ml-10"
-              />
+              <img src="/ditekta-logo.png" className="w-20 h-auto sm:ml-10" />
             </Link>
             <div className="flex gap-2 items-center justify-center">
               <button
                 type="button"
-                className="hover:text-gray-600 sm:hidden bg-secondary rounded"
+                className="hover:text-white sm:hidden  rounded"
                 data-hs-overlay="#docs-sidebar"
                 aria-controls="docs-sidebar"
                 aria-label="Toggle navigation"
@@ -43,9 +40,9 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
-              <div className="sm:hidden">
+              {/* <div className="sm:hidden">
                 <ModeToggle />
-              </div>
+              </div> */}
             </div>
           </div>
           <div
@@ -57,7 +54,7 @@ const Navbar = () => {
                 <button
                   id="hs-mega-menu-basic-dr"
                   type="button"
-                  className="flex items-center w-full text-gray-600 hover:text-primary font-medium  dark:text-white/80 dark:hover:text-primary text-lg "
+                  className="flex items-center w-full text-white hover:text-white font-medium  dark:text-white/80 dark:hover:text-white text-lg "
                 >
                   For Providers
                   <svg
@@ -76,15 +73,15 @@ const Navbar = () => {
                   </svg>
                 </button>
 
-                <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
+                <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-[var(--dilucttl)] sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
                   <div className="hs-dropdown relative [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] ">
                     <button
                       type="button"
-                      className="w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                      className="w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                     >
                       AMR insights
                       <svg
-                        className="sm:-rotate-90 ms-2 flex-shrink-0 size-4 text-gray-600  dark:text-white/80"
+                        className="sm:-rotate-90 ms-2 flex-shrink-0 size-4 text-white  dark:text-white/80"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -99,27 +96,27 @@ const Navbar = () => {
                       </svg>
                     </button>
 
-                    <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full">
+                    <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-green-100 sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full">
                       <Link
-                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                         href="/for-providers/amr-insights"
                       >
                         AMR Insights Page
                       </Link>
                       <Link
-                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                         href="/for-providers/amr-insights/detection"
                       >
                         Detection
                       </Link>
                       <Link
-                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                         href="/for-providers/amr-insights/risk-assesment"
                       >
                         Risk Assesment
                       </Link>
                       <Link
-                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                         href="/for-providers/amr-insights/risk-evaluation"
                       >
                         Risk Evaluation
@@ -127,11 +124,11 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary ">
+                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white ">
                     Research & Publications
                   </h4>
                   <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                     href="/for-providers/service-support"
                   >
                     Service & Support
@@ -139,7 +136,7 @@ const Navbar = () => {
                 </div>
               </div>
               <Link
-                className="font-medium text-gray-600 hover:text-primary  dark:text-white/80 dark:hover:text-primary text-lg"
+                className="font-medium text-white hover:text-white  dark:text-white/80 dark:hover:text-white text-lg"
                 href="/for-partners"
               >
                 For Partners
@@ -149,7 +146,7 @@ const Navbar = () => {
                 <button
                   id="hs-mega-menu-basic-dr"
                   type="button"
-                  className="flex items-center w-full text-gray-600 hover:text-primary font-medium  dark:text-white/80 dark:hover:text-primary text-lg "
+                  className="flex items-center w-full text-white hover:text-white font-medium  dark:text-white/80 dark:hover:text-white text-lg "
                 >
                   For Patients
                   <svg
@@ -168,15 +165,15 @@ const Navbar = () => {
                   </svg>
                 </button>
 
-                <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
+                <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-[var(--dilucttl)] sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
                   <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                     href="/for-patients"
                   >
                     AI System
                   </Link>
 
-                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary ">
+                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white ">
                     Resources
                   </h4>
                 </div>
@@ -185,7 +182,7 @@ const Navbar = () => {
                 <button
                   id="hs-mega-menu-basic-dr"
                   type="button"
-                  className="flex items-center w-full text-gray-600 hover:text-primary font-medium  dark:text-white/80 dark:hover:text-primary text-lg "
+                  className="flex items-center w-full text-white hover:text-white font-medium  dark:text-white/80 dark:hover:text-white text-lg "
                 >
                   About Us
                   <svg
@@ -204,41 +201,41 @@ const Navbar = () => {
                   </svg>
                 </button>
 
-                <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
+                <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-[var(--dilucttl)] sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden">
                   <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                     href="/about-us"
                   >
                     Company Overview
                   </Link>
 
                   <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                     href="/about-us#science"
                   >
                     Science
                   </Link>
                   <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                     href="/about-us#history"
                   >
                     History
                   </Link>
                   <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                     href="/about-us#goals"
                   >
                     Goals
                   </Link>
 
                   <Link
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary "
+                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white "
                     href="/#team"
                   >
                     Team
                   </Link>
 
-                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-primary hover:text-primary ">
+                  <h4 className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-[var(--dilucbg)] focus:ring-2 focus:ring-green-500  dark:text-white/80 dark:hover:bg-neutral-700  dark:hover:text-white hover:text-white ">
                     Webinars
                   </h4>
                 </div>
@@ -246,9 +243,9 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <div className="hidden sm:block mr-5">
+        {/* <div className="hidden sm:block mr-5">
           <ModeToggle />
-        </div>
+        </div> */}
       </header>
       <MobileSidebar />
     </>
@@ -271,7 +268,7 @@ function MobileSidebar() {
             href="/"
             aria-label="Brand"
           >
-            <img src="/logos/steiner-1.png" className="w-20 h-auto ml-5" />
+            <img src="/ditekta-logo.png" className="w-20 h-auto ml-5" />
           </Link>
         </div>
         <nav
@@ -282,11 +279,11 @@ function MobileSidebar() {
             <li className="hs-accordion" id="users-accordion">
               <button
                 type="button"
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-lg  rounded-lg  hover:bg-muted-foreground bg-muted  dark:hs-accordion-active:text-white"
+                className="hs-accordion-toggle hs-accordion-active:text-green-600  w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-lg  rounded-lg  hover:bg-muted-foreground bg-[var(--dilucttl)]  dark:hs-accordion-active:text-white text-black"
               >
                 For Providers
                 <svg
-                  className="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
+                  className="hs-accordion-active:block ms-auto hidden size-4 text-black group-hover:text-gray-500  dark:text-white/80"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -300,7 +297,7 @@ function MobileSidebar() {
                   <path d="m18 15-6-6-6 6" />
                 </svg>
                 <svg
-                  className="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
+                  className="hs-accordion-active:hidden ms-auto block size-4 text-white group-hover:text-gray-500  dark:text-white/80"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -325,11 +322,11 @@ function MobileSidebar() {
                   <li className="hs-accordion" id="users-accordion-sub-1">
                     <button
                       type="button"
-                      className="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg  hover:bg-muted-foreground bg-muted  dark:hs-accordion-active:text-white"
+                      className="hs-accordion-toggle hs-accordion-active:text-green-600  w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg  hover:bg-muted-foreground   dark:hs-accordion-active:text-white"
                     >
                       AMR Insights
                       <svg
-                        className="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
+                        className="hs-accordion-active:block ms-auto hidden size-4 text-white group-hover:text-gray-500  dark:text-white/80"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -343,7 +340,7 @@ function MobileSidebar() {
                         <path d="m18 15-6-6-6 6" />
                       </svg>
                       <svg
-                        className="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
+                        className="hs-accordion-active:hidden ms-auto block size-4 text-white group-hover:text-gray-500  dark:text-white/80"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -365,7 +362,7 @@ function MobileSidebar() {
                       <ul className="pt-2 ps-2 flex flex-col gap-2">
                         <li>
                           <Link
-                            className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg  hover:bg-muted-foreground bg-muted "
+                            className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg  hover:bg-muted-foreground bg-[var(--dilucttl)] "
                             href="/for-providers/amr-insights"
                           >
                             AMR insights Page
@@ -373,7 +370,7 @@ function MobileSidebar() {
                         </li>
                         <li>
                           <Link
-                            className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg  hover:bg-muted-foreground bg-muted "
+                            className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg  hover:bg-muted-foreground bg-[var(--dilucttl)] "
                             href="/for-providers/amr-insights/detection"
                           >
                             Detection
@@ -381,7 +378,7 @@ function MobileSidebar() {
                         </li>
                         <li>
                           <Link
-                            className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg  hover:bg-muted-foreground bg-muted "
+                            className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg  hover:bg-muted-foreground bg-[var(--dilucttl)]"
                             href="/for-providers/amr-insights/risk-assesment"
                           >
                             Risk assesment
@@ -416,7 +413,7 @@ function MobileSidebar() {
             </li>
             <li>
               <Link
-                className="flex items-center gap-x-3.5 py-2 px-2.5  text-lg  rounded-lg  hover:bg-muted-foreground bg-muted  "
+                className="flex items-center gap-x-3.5 py-2 px-2.5  text-lg  rounded-lg  hover:bg-muted-foreground bg-[var(--dilucttl)] text-black "
                 href="/for-partners"
               >
                 For Partners
@@ -425,11 +422,11 @@ function MobileSidebar() {
             <li className="hs-accordion" id="users-accordion">
               <button
                 type="button"
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-lg  rounded-lg  hover:bg-muted-foreground bg-muted  dark:hs-accordion-active:text-white"
+                className="hs-accordion-toggle hs-accordion-active:text-green-600  w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-lg  rounded-lg  hover:bg-muted-foreground bg-[var(--dilucttl)]  dark:hs-accordion-active:text-white text-black"
               >
                 For Patients
                 <svg
-                  className="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
+                  className="hs-accordion-active:block ms-auto hidden size-4 text-white group-hover:text-gray-500  dark:text-white/80"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -443,7 +440,7 @@ function MobileSidebar() {
                   <path d="m18 15-6-6-6 6" />
                 </svg>
                 <svg
-                  className="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
+                  className="hs-accordion-active:hidden ms-auto block size-4 text-white group-hover:text-gray-500  dark:text-white/80"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -485,11 +482,11 @@ function MobileSidebar() {
             <li className="hs-accordion" id="users-accordion">
               <button
                 type="button"
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-lg  rounded-lg  hover:bg-muted-foreground bg-muted  dark:hs-accordion-active:text-white"
+                className="hs-accordion-toggle hs-accordion-active:text-green-600  w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-lg  rounded-lg  hover:bg-muted-foreground bg-[var(--dilucttl)]  dark:hs-accordion-active:text-white text-black"
               >
                 About Us
                 <svg
-                  className="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
+                  className="hs-accordion-active:block ms-auto hidden size-4 text-white group-hover:text-gray-500  dark:text-white/80"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -503,7 +500,7 @@ function MobileSidebar() {
                   <path d="m18 15-6-6-6 6" />
                 </svg>
                 <svg
-                  className="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500  dark:text-white/80"
+                  className="hs-accordion-active:hidden ms-auto block size-4 text-white group-hover:text-gray-500  dark:text-white/80"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -567,7 +564,7 @@ function MobileSidebar() {
               </div>
             </li>
             <li>
-              {/* <div className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700  dark:text-white/80  dark:hover:text-primary hover:text-primary "> */}
+              {/* <div className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-[var(--dilucbg)] dark:hover:bg-neutral-700  dark:text-white/80  dark:hover:text-white hover:text-white "> */}
 
               {/* Theme */}
               {/* </div> */}
@@ -585,19 +582,19 @@ function LinksBanner() {
     <div className="w-full px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-end gap-x-5 w-full py-2 sm:pt-2 sm:pb-0">
         <Link
-          className="inline-flex justify-center items-center gap-2 font-medium text-gray-600 hover:text-neutral-500 text-sm dark:text-neutral-400 dark:hover:text-primary"
+          className="inline-flex justify-center items-center gap-2 font-medium text-white hover:text-neutral-500 text-sm dark:text-neutral-400 dark:hover:text-white"
           href="/blog"
         >
           Blog
         </Link>
         <Link
-          className="inline-flex justify-center items-center gap-2 font-medium text-gray-600 hover:text-neutral-500 text-sm dark:text-neutral-400 dark:hover:text-primary"
+          className="inline-flex justify-center items-center gap-2 font-medium text-white hover:text-neutral-500 text-sm dark:text-neutral-400 dark:hover:text-white"
           href="/for-partners#partner-form"
         >
           Contact Us
         </Link>
         <button
-          className=" disabled:opacity-50 py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-blue-600 text-blue-600 hover:border-blue-500 hover:text-blue-500  disabled:pointer-events-none dark:border-blue-500 dark:text-blue-500 dark:hover:text-blue-400 dark:hover:border-blue-400"
+          className=" disabled:opacity-50 py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-green-600 text-green-600 hover:border-green-500 hover:text-green-500  disabled:pointer-events-none dark:border-green-500 dark:text-green-500 dark:hover:text-green-400 dark:hover:border-green-400"
           disabled={true}
         >
           Request Demo
@@ -609,13 +606,13 @@ function LinksBanner() {
 function AnnouncementBanner() {
   return (
     <div
-      id="ab-full-width-with-dismiss-button-on-blue-bg"
-      className="hs-removing:-translate-y-full bg-blue-600"
+      id="ab-full-width-with-dismiss-button-on-green-bg"
+      className="hs-removing:-translate-y-full bg-green-600"
     >
       <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
         <div className="flex">
           <p className="text-white font-bold capitalize">
-            Diluc steiner is now live but under ongoing development 😊.{" "}
+            Ditekta is now live but under ongoing development 😊.{" "}
             <br className="md:hidden" />
             let us know if you encouter any difficulies{" "}
             <Link href="/for-partners#partner-form" className="mx-2 underline">
@@ -626,8 +623,8 @@ function AnnouncementBanner() {
           <div className="ps-3 ms-auto">
             <button
               type="button"
-              className="inline-flex rounded-lg p-1.5 text-white/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-600 focus:ring-white"
-              data-hs-remove-element="#ab-full-width-with-dismiss-button-on-blue-bg"
+              className="inline-flex rounded-lg p-1.5 text-white/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-600 focus:ring-white"
+              data-hs-remove-element="#ab-full-width-with-dismiss-button-on-green-bg"
             >
               <span className="sr-only">Dismiss</span>
               <svg

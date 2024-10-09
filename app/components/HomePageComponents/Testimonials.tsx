@@ -39,7 +39,7 @@ const Testimonials = () => {
     {
       imgSrc: "/testimonials/baraka.png",
       clientQuote:
-        "I'm looking forward to the release of Diluc Steiner's AI-driven technology. Its precision in identifying antimicrobial resistance at a cellular level promises to improve our ability to prescribe targeted treatments, thereby reducing antibiotic misuse. This advancement has the potential to make a significant contribution to global efforts in combating resistant infections and improving patient care",
+        "I'm looking forward to the release of Ditekta 's AI-driven technology. Its precision in identifying antimicrobial resistance at a cellular level promises to improve our ability to prescribe targeted treatments, thereby reducing antibiotic misuse. This advancement has the potential to make a significant contribution to global efforts in combating resistant infections and improving patient care",
       clientName: "Baraka Karamba ",
       clientPosition: "Pharmaceutical Chemist",
       clientCompany: "Community Pharmacy",
@@ -47,7 +47,7 @@ const Testimonials = () => {
     {
       imgSrc: "/testimonials/samwel.png",
       clientQuote:
-        " The innovative AI solutions being developed by Diluc Steiner could be a game-changer in the fight against antimicrobial resistance. With its capacity to analyze extensive datasets and accurately identify resistance trends, this technology is poised to support more effective public health interventions and prevent outbreaks. I'm excited to see its impact on community health.",
+        " The innovative AI solutions being developed by Ditekta  could be a game-changer in the fight against antimicrobial resistance. With its capacity to analyze extensive datasets and accurately identify resistance trends, this technology is poised to support more effective public health interventions and prevent outbreaks. I'm excited to see its impact on community health.",
       clientName: "Samwel Malangwa",
       clientPosition: "pre-Undergraduate Pharmacist",
       clientCompany: "Kampala University",
@@ -55,7 +55,7 @@ const Testimonials = () => {
     {
       imgSrc: "/testimonials/Hosiana.png",
       clientQuote:
-        "The upcoming AI platform from Diluc Steiner holds great promise for enhancing our healthcare systems. Its ability to integrate seamlessly with existing infrastructure and provide data-driven insights could transform our approach to managing AMR. I believe this technology will set a new benchmark in healthcare efficiency and patient care",
+        "The upcoming AI platform from Ditekta  holds great promise for enhancing our healthcare systems. Its ability to integrate seamlessly with existing infrastructure and provide data-driven insights could transform our approach to managing AMR. I believe this technology will set a new benchmark in healthcare efficiency and patient care",
       clientName: "Hosiana Somi",
       clientPosition: "Tech Enthusiast",
       clientCompany: "AI",
@@ -63,7 +63,7 @@ const Testimonials = () => {
     {
       imgSrc: "/testimonials/emmanuel.png",
       clientQuote:
-        " I am eagerly anticipating the release of Diluc Steiner's AI technology. Its potential to revolutionize how we detect and manage antimicrobial resistance is immense. By providing accurate, real-time insights into resistance patterns, this technology promises to significantly improve treatment outcomes and reduce the spread of resistant infections.",
+        " I am eagerly anticipating the release of Ditekta 's AI technology. Its potential to revolutionize how we detect and manage antimicrobial resistance is immense. By providing accurate, real-time insights into resistance patterns, this technology promises to significantly improve treatment outcomes and reduce the spread of resistant infections.",
       clientName: "Emmanuel Kessy",
       clientPosition: "pre-undergraduate Microbiologist",
       clientCompany: "Kampala University",
@@ -75,7 +75,7 @@ const Testimonials = () => {
       id="#testimonial"
       className="min-h-screen flex flex-col gap-3 items-center justify-center"
     >
-      <h1 className="font-bold capitalize m-3 text-center lg:my-6 md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-700 to-blue-400 py-2">
+      <h1 className="font-bold capitalize m-3 text-center lg:my-6 md:text-6xl text-4xl bg-clip-text text-[var(--dilucttl)] py-2">
         here is what our colleagues say
       </h1>
       <Carousel
@@ -102,8 +102,8 @@ const Testimonials = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="border border-primary/40" />
-        <CarouselNext className="border border-primary/40" />
+        <CarouselPrevious className="border border-[var(--dilucttl)]" />
+        <CarouselNext className="border border-[var(--dilucttl)]" />
       </Carousel>
       <div className="pb-2 pt-0 text-center text-sm text-muted-foreground">
         <span className="text-primary">{current}</span> / {count}
@@ -209,7 +209,7 @@ function Testimonial({
           {/* <!-- Blockquote --> */}
           <blockquote className="relative">
             <svg
-              className="absolute top-0 start-0 transform -translate-x-8 -translate-y-4 size-24 text-orange-300 dark:text-orange-700"
+              className="absolute top-0 start-0 transform -translate-x-8 -translate-y-4 size-24 text-[var(--dilucttl)] dark:text-orange-700"
               width="16"
               height="16"
               viewBox="0 0 16 16"
@@ -224,12 +224,12 @@ function Testimonial({
             </svg>
 
             <div className="relative z-10">
-              <p className=" prose max-sm:text-sm lg:text-lg prose-sm md:prose-md dark:text-gray-200 my-2">
+              <p className=" prose max-sm:text-sm lg:text-lg prose-sm md:prose-md text-white my-2">
                 {clientQuote}
               </p>
             </div>
             <svg
-              className="absolute lg:bottom-0 bottom-11 lg:right-5 right-3 rotate-180 transform -translate-x-8 -translate-y-4 size-24 text-orange-300 dark:text-orange-700"
+              className="absolute lg:bottom-0 bottom-11 lg:right-5 right-3 rotate-180 transform -translate-x-8 -translate-y-4 size-24 text-[var(--dilucttl)] dark:text-orange-700"
               width="16"
               height="16"
               viewBox="0 0 16 16"
@@ -255,7 +255,7 @@ function Testimonial({
                   <div className="text-base capitalize font-semibold text-primary">
                     {clientName}
                   </div>
-                  <div className="text-xs text-gray-500 dark:text-neutral-400">
+                  <div className="text-xs text-neutral-400">
                     {clientPosition} | {clientCompany}
                   </div>
                 </div>

@@ -19,9 +19,9 @@ const SkeletonOne = () => {
     <div>
       <p className="font-bold text-4xl text-primary">For Provider.</p> azurite
       <p className="font-normal text-base my-4  max-w-lg text-neutral-200">
-        At Diluc Steiner, our advanced technology is designed to uncover and
-        expose antimicrobial resistance (AMR) hiding places with unparalleled
-        accuracy and speed
+        At Ditekta , our advanced technology is designed to uncover and expose
+        antimicrobial resistance (AMR) hiding places with unparalleled accuracy
+        and speed
       </p>
       <Link
         href="/for-providers"

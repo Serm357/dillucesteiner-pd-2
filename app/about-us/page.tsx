@@ -16,7 +16,7 @@ const AboutUs = () => {
         <div className="absolute inset-0 top-32 lg:top-44 ">
           <div className=" flex flex-col items-center justify-center">
             <h1 className="font-bold capitalize text-5xl md:text-6xl text-[#0099cc] shadow-md shadow-blue-300 shadow-b  py-4 px-4  backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20  mx-auto text-center rounded-full relative mt-4">
-              About Diluc Steiner
+              About Ditekta
             </h1>
           </div>
         </div>
@@ -28,7 +28,7 @@ const AboutUs = () => {
           </h1>
           <div className="mx-3">
             <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-              At Diluc Steiner, we revolutionize healthcare through AI to combat
+              At Ditekta , we revolutionize healthcare through AI to combat
               antimicrobial resistance (AMR), education, and awareness. Our
               advanced technology provides rapid, accurate insights, enabling
               early detection and precise treatment plans. We also believe that
@@ -106,11 +106,11 @@ const AboutUs = () => {
               determination to find a better way to combat AMR
             </p>
             <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-              In response to this urgent need, Diluc Steiner was founded in
-              December 2023. Our mission is to revolutionize healthcare with
-              cutting-edge AI technology designed to detect resistance patterns
-              early and accurately. By empowering healthcare professionals with
-              rapid, actionable insights, we aim to enhance patient outcomes and
+              In response to this urgent need, Ditekta was founded in December
+              2023. Our mission is to revolutionize healthcare with cutting-edge
+              AI technology designed to detect resistance patterns early and
+              accurately. By empowering healthcare professionals with rapid,
+              actionable insights, we aim to enhance patient outcomes and
               safeguard global health.
             </p>
             <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
@@ -119,8 +119,8 @@ const AboutUs = () => {
               solutions for healthcare diagnostics. Our journey began in the
               midst of a global crisis, driven by a passion for innovation and a
               commitment to preventing AMR in both human and animal health.
-              Diluc Steiner stands at the forefront of this battle, dedicated to
-              a future where effective treatments can preserve lives and combat
+              Ditekta stands at the forefront of this battle, dedicated to a
+              future where effective treatments can preserve lives and combat
               resistance.
             </p>
           </div>
@@ -140,7 +140,7 @@ function Objectives() {
         Our objectives
       </h1>
       <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
-        Our objectives at Diluc Steiner are clear and ambitious:-
+        Our objectives at Ditekta are clear and ambitious:-
       </p>
       <div className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
         <ul className="marker:text-primary list-decimal">

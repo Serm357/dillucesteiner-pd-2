@@ -105,7 +105,7 @@ const ImageSlider = () => {
           className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-s-2xl focus:outline-none focus:bg-white/20"
         >
           <span className="text-2xl font-bold  bg-opacity-70 bg-white size-12 rounded-full text-center flex items-center justify-center">
-            <ChevronLeftIcon className="flex-shrink-0 size-8 md:size-12 font-bold text-orange-500" />
+            <ChevronLeftIcon className="flex-shrink-0 size-8 md:size-12 font-bold text-[var(--dilucttl)]" />
           </span>
           <span className="sr-only">Previous</span>
         </button>
@@ -119,7 +119,7 @@ const ImageSlider = () => {
             className="text-2xl font-bold  bg-opacity-70 bg-white size-12 rounded-full text-center flex items-center justify-center"
             aria-hidden="true"
           >
-            <ChevronRightIcon className="flex-shrink-0 size-8 md:size-12 font-bold text-orange-500" />
+            <ChevronRightIcon className="flex-shrink-0 size-8 md:size-12 font-bold text-[var(--dilucttl)]" />
           </span>
         </button>
         {/* <!-- End Arrows --> */}

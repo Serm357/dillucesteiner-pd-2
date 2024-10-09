@@ -28,7 +28,7 @@ const Team = () => {
         <Card
           name="Yohana Laurent"
           position="Founder / CEO"
-          image="/team/laurent.png"
+          image="/laurent.png"
           lnk="https://www.linkedin.com/in/yohanalaurent/"
           ins="https://www.instagram.com/laurentinojr"
           twt="https://x.com/Oficiallorenzo"
@@ -38,22 +38,22 @@ const Team = () => {
         <Card
           name="Salum Suleiman"
           position="Full Stack Developer"
-          image="/team/Salum.png"
+          image="/salum.png"
           lnk="https://www.linkedin.com/in/salum-suleiman-783351229/"
-          // mail="mailto:salumdeveloper@dilucsteiner.com"
-          twt="https://x.com/salum_dev"
+          mail="mailto:salumdeveloper@dilucsteiner.com"
+          // twt="https://x.com/salum_dev"
         />
         <Card
           name="Fidelis John"
           position="Marketing & Commercial"
-          image="/team/Fidelis.png"
+          image="/fidelis.png"
           lnk=" https://www.linkedin.com/in/fidelis-songo-20a087275/"
           // mail="mailto:fidelis@dilucsteiner.com"
         />
         <Card
           name="Yohana Palangyo"
           position="Head OF PRODUCT"
-          image="/team/yohana.png"
+          image="/yohana.png"
           lnk="https://www.linkedin.com/in/yohana-pallangyo-2b6a18312/"
           ins="https://www.instagram.com/yospa_2020"
           twt="https://x.com/BpharmPallangyo"
@@ -98,10 +98,10 @@ function Card({
 
         <div className="sm:flex sm:flex-col sm:h-full">
           <div>
-            <h3 className="font-medium text-2xl text-gray-800 dark:text-neutral-200">
+            <h3 className="font-medium text-2xl text-white dark:text-neutral-200">
               {name}
             </h3>
-            <p className="mt-1  text-sm uppercase text-gray-500 dark:text-neutral-500">
+            <p className="mt-1  text-sm uppercase text-[var(--dilucttl)] dark:text-neutral-500">
               {position}
             </p>
           </div>
@@ -110,7 +110,7 @@ function Card({
           <div className="mt-2 text-lg sm:mt-auto space-x-2.5">
             {lnk && (
               <a
-                className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                className="inline-flex justify-center items-center text-gray-200 rounded-full hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
                 href={lnk}
                 target="_blank"
               >
@@ -119,7 +119,7 @@ function Card({
             )}
             {ins && (
               <a
-                className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                className="inline-flex justify-center items-center text-gray-200 rounded-full hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
                 href={ins}
                 target="_blank"
               >
@@ -128,7 +128,7 @@ function Card({
             )}
             {twt && (
               <a
-                className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                className="inline-flex justify-center items-center text-gray-200 rounded-full hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
                 href={twt}
                 target="_blank"
               >
@@ -137,7 +137,7 @@ function Card({
             )}
             {mail && (
               <a
-                className="inline-flex justify-center items-center text-gray-500 rounded-full hover:text-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
+                className="inline-flex justify-center items-center text-gray-200 rounded-full hover:text-green-500 dark:text-neutral-500 dark:hover:text-green-500"
                 href={mail}
                 target="_blank"
               >

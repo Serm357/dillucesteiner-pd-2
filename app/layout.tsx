@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import { ThemeProvider } from "@/providers/Theme";
+// import { ThemeProvider } from "@/providers/Theme";
 import PrelineScript from "./components/PrelineScript";
 import Footer from "./components/Footer";
 import { Roboto_Serif } from "next/font/google";
@@ -8,6 +8,7 @@ import { cn, constructMetadata } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import NextTopLoader from "nextjs-toploader";
 
 const roboto = Roboto_Serif({ subsets: ["latin"] });
 
@@ -45,19 +46,22 @@ export default async function RootLayout({
           <link rel="manifest" href="/site.webmanifest"></link>
         </head>
         <body>
-          <ThemeProvider
+          {/* <
             attribute="class"
             defaultTheme="system"
             enableSystem
-            disableTransitionOnChange
-          >
-            <Navbar />
-            {/* <div className="min-h-screen w-full"> */}
-            <div className={cn("min-h-screen w-full", roboto.className)}>
-              {children}
-            </div>
-            <Footer />
-          </ThemeProvider>
+            disableTran
+            sitionOnChange
+          > */}
+          <NextTopLoader color="#37dd0f" showSpinner={false} />
+
+          <Navbar />
+          {/* <div className="min-h-screen w-full"> */}
+          <div className={cn("min-h-screen w-full", roboto.className)}>
+            {children}
+          </div>
+          <Footer />
+          {/* </ThemeProvider> */}
           <Toaster />
           <Analytics />
         </body>

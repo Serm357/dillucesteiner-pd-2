@@ -79,7 +79,7 @@ const PartnerFoam = () => {
             values.company +
             " Phone Number " +
             values.phonenumber,
-          to_name: "Diluc Steiner",
+          to_name: "Ditekta ",
           from_email: values.email,
           to_email: "info@dilucsteiner.com",
           message: values.solution,

@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function constructMetadata({
-  title = "Diluc Steiner - Revolutionizing health care with Artificial Intellingence (AI)",
+  title = "Ditekta  - Revolutionizing health care with Artificial Intellingence (AI)",
   description = "Aspring Healthcare startup Company that mainly deals with Antimicrobial Resistance, Susceptibilty testing, e.t.c all rapidly done through Artificial Intelligence (AI) ",
   image = "/android-chrome-512x512.png",
   icons = "/favicon.ico",

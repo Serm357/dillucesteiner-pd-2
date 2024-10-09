@@ -9,9 +9,9 @@ const PrivacyPolicyPage = () => {
         Terms of Service
       </h1>
       <p className="prose  md:prose-lg lg:prose-2xl  dark:text-gray-200 my-2">
-        Welcome to Diluc Steiner. By accessing or using our services, you agree
-        to comply with and be bound by the following terms and conditions.
-        Please read them carefully.
+        Welcome to Ditekta . By accessing or using our services, you agree to
+        comply with and be bound by the following terms and conditions. Please
+        read them carefully.
       </p>
 
       <h2 className="my-2 text-blue-700 dark:text-blue-400 font-bold prose-h2:text-start">
@@ -51,7 +51,7 @@ const PrivacyPolicyPage = () => {
         5. Limitation of Liability.
       </h2>
       <p className="prose  md:prose-lg lg:prose-2xl  dark:text-gray-200 my-2">
-        Diluc Steiner will not be liable for any indirect, incidental, special,
+        Ditekta will not be liable for any indirect, incidental, special,
         consequential, or punitive damages, or any loss of profits or revenues,
         whether incurred directly or indirectly, or any loss of data, use,
         goodwill, or other intangible losses, resulting from your use of our
@@ -70,7 +70,7 @@ const PrivacyPolicyPage = () => {
       </h2>
       <p className="prose  md:prose-lg lg:prose-2xl  dark:text-gray-200 my-2">
         These terms are governed by and construed in accordance with the laws of
-        the jurisdiction in which Diluc Steiner operates.
+        the jurisdiction in which Ditekta operates.
       </p>
       <Section2 />
     </div>
@@ -86,8 +86,8 @@ function Section2() {
         Privacy Policy
       </h1>
       <p className="prose  md:prose-lg lg:prose-2xl  dark:text-gray-200 my-2">
-        Diluc Steiner is committed to protecting your privacy. This Privacy
-        Policy outlines how we handle your personal information to protect your
+        Ditekta is committed to protecting your privacy. This Privacy Policy
+        outlines how we handle your personal information to protect your
         privacy.
       </p>
 
@@ -168,7 +168,7 @@ function Section2() {
         5. Diversity and Inclusion.
       </h2>
       <p className="prose  md:prose-lg lg:prose-2xl  dark:text-gray-200 my-2">
-        At Diluc Steiner, we value diversity and inclusion. We are committed to
+        At Ditekta , we value diversity and inclusion. We are committed to
         ensuring that our AI models are trained on diverse datasets to provide
         accurate and equitable healthcare solutions across different
         populations. We strive to create an inclusive environment where all
@@ -201,7 +201,7 @@ function Section2() {
       <div className="mt-3 flex flex-col text-lg justify-start items-start">
         <div>
           <p className="  gap-x-2 text-gray-600   dark:text-neutral-400 ">
-            Diluc Steiner,
+            Ditekta ,
           </p>
         </div>
         <div>

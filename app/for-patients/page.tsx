@@ -43,8 +43,8 @@ symptoms for any signs of resistance.
           <span className="text-black dark:text-orange-500"> faster.</span>
         </h1>
         <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200 text-center mx-2">
-          Discover the unique, safe, and rapid AI technology at Diluc Steiner.
-          Our innovative solutions ensure faster and more accurate detection,
+          Discover the unique, safe, and rapid AI technology at Ditekta . Our
+          innovative solutions ensure faster and more accurate detection,
           providing patients with timely and effective treatment options.
         </p>
       </div>

@@ -35,7 +35,7 @@ const HeroFinale = () => {
           <h2 className="text-white text-xl md:text-2xl lg:text-3xl font-bold my-2 ">
             Here it is different
           </h2>
-          <motion.p className="font-bold uppercase md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-400 py-4">
+          <motion.p className="font-bold uppercase md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-green-50 to-green-400 py-4">
             AMR can’t beat us
           </motion.p>
           <p className="text-white/90 my-1 prose max-sm:mx-4  text-lg md:text-xl leading-normal ">

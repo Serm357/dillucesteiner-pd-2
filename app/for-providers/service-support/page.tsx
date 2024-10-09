@@ -33,8 +33,8 @@ const Page = () => {
           Your partner to ensure community is free from AMR
         </h2>
         <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200">
-          At Diluc Steiner, we are passionate about our mission to create a
-          world where AMR is not a threat. Leveraging the power of innovative
+          At Ditekta , we are passionate about our mission to create a world
+          where AMR is not a threat. Leveraging the power of innovative
           artificial intelligence (AI) solutions, we empower providers and
           professionals to accurately, reliably, and quickly detect AMR,
           improving patient outcomes. Our commitment is to optimize every
@@ -48,14 +48,14 @@ const Page = () => {
           AMR can’t hide.
         </h1>
         <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200">
-          At Diluc Steiner, customer response is invaluable in our mission to
-          combat antimicrobial resistance (AMR). Your feedback helps us refine
-          our AI solutions, ensuring they meet the real-world needs of
-          healthcare providers. By working together, we can improve detection
-          accuracy, optimize treatment plans, and ultimately create a world
-          where AMR is no longer a threat. Your insights drive our innovations
-          and enhance our commitment to delivering the best possible outcomes
-          for patients globally
+          At Ditekta , customer response is invaluable in our mission to combat
+          antimicrobial resistance (AMR). Your feedback helps us refine our AI
+          solutions, ensuring they meet the real-world needs of healthcare
+          providers. By working together, we can improve detection accuracy,
+          optimize treatment plans, and ultimately create a world where AMR is
+          no longer a threat. Your insights drive our innovations and enhance
+          our commitment to delivering the best possible outcomes for patients
+          globally
         </p>
         <h1 className="mt-8 py-4 mx-3 capitalize font-bold text-center text-3xl md:text-4xl text-primary mb-8">
           Questions? Problems?{" "}
@@ -93,14 +93,14 @@ const Page = () => {
           <span className="text-black dark:text-orange-500">email</span> away.
         </h1>
         <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200">
-          At Diluc Steiner, our dedicated team of experts is always ready to
-          assist you. Whether you have questions about our innovative AI
-          solutions or need support with antimicrobial resistance detection,
-          we're just a call or email away. Our knowledgeable professionals are
-          committed to providing prompt, reliable assistance to ensure you can
-          effectively utilize our technology and improve patient outcomes. Reach
-          out to us anytime – we’re here to help you combat AMR and make a
-          difference in healthcare.
+          At Ditekta , our dedicated team of experts is always ready to assist
+          you. Whether you have questions about our innovative AI solutions or
+          need support with antimicrobial resistance detection, we're just a
+          call or email away. Our knowledgeable professionals are committed to
+          providing prompt, reliable assistance to ensure you can effectively
+          utilize our technology and improve patient outcomes. Reach out to us
+          anytime – we’re here to help you combat AMR and make a difference in
+          healthcare.
         </p>
         <h2 className="mx-2 text-2xl lg:text-4xl   text-primary my-8 font-bold ">
           What Do You Get :-
@@ -132,9 +132,8 @@ const Page = () => {
           </ul>
         </div>
         <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200">
-          At Diluc Steiner, our support team is committed to providing
-          exceptional assistance to help you combat antimicrobial resistance
-          effectively
+          At Ditekta , our support team is committed to providing exceptional
+          assistance to help you combat antimicrobial resistance effectively
         </p>
         <h1 className="mt-8 py-4 mx-2   font-bold text-3xl md:text-4xl text-primary text-center mb-8">
           Real world.{" "}
