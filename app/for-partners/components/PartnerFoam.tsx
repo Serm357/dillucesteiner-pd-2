@@ -136,11 +136,15 @@ const PartnerFoam = () => {
             name="firstname"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="uppercase text-primary font-semibold">
+                <FormLabel className="uppercase text-dilucttl font-semibold">
                   First Name
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="enter your first name" {...field} />
+                  <Input
+                    className="border border-green-800 focus:border-dilucttl"
+                    placeholder="enter your first name"
+                    {...field}
+                  />
                 </FormControl>
 
                 <FormMessage />
@@ -153,11 +157,15 @@ const PartnerFoam = () => {
             name="lastname"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="uppercase text-primary font-semibold">
+                <FormLabel className="uppercase text-dilucttl font-semibold">
                   Last Name
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="enter your last name" {...field} />
+                  <Input
+                    className="border border-green-800 focus:border-dilucttl"
+                    placeholder="enter your last name"
+                    {...field}
+                  />
                 </FormControl>
 
                 <FormMessage />
@@ -170,11 +178,15 @@ const PartnerFoam = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="uppercase text-primary font-semibold">
+                <FormLabel className="uppercase text-dilucttl font-semibold">
                   Email Address
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="someone@mail.com" {...field} />
+                  <Input
+                    className="border border-green-800 focus:border-dilucttl"
+                    placeholder="someone@mail.com"
+                    {...field}
+                  />
                 </FormControl>
                 <FormDescription>
                   This is your work or personal email.
@@ -189,11 +201,15 @@ const PartnerFoam = () => {
             name="company"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="uppercase text-primary font-semibold">
+                <FormLabel className="uppercase text-dilucttl font-semibold">
                   Company Name
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder=" Tech med" {...field} />
+                  <Input
+                    className="border border-green-800 focus:border-dilucttl"
+                    placeholder=" Tech med"
+                    {...field}
+                  />
                 </FormControl>
                 <FormDescription>
                   Enter your company / institution name here .
@@ -208,11 +224,12 @@ const PartnerFoam = () => {
             name="phonenumber"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="uppercase text-primary font-semibold">
+                <FormLabel className="uppercase text-dilucttl font-semibold">
                   Phone Number
                 </FormLabel>
                 <FormControl>
                   <Input
+                    className="border border-green-800 focus:border-dilucttl"
                     placeholder="eg: +255751234567"
                     type="tel"
                     {...field}
@@ -229,11 +246,15 @@ const PartnerFoam = () => {
             name="coutry"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="uppercase text-primary font-semibold">
+                <FormLabel className="uppercase text-dilucttl font-semibold">
                   Country
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="eg: Tanzania" {...field} />
+                  <Input
+                    className="border border-green-800 focus:border-dilucttl"
+                    placeholder="eg: Tanzania"
+                    {...field}
+                  />
                 </FormControl>
 
                 <FormMessage />
@@ -246,12 +267,12 @@ const PartnerFoam = () => {
             name="solution"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="uppercase text-primary font-semibold">
+                <FormLabel className="uppercase text-dilucttl font-semibold">
                   Message
                 </FormLabel>
                 <FormControl>
                   <textarea
-                    className="border border-gray-300 dark:border-gray-600 bg-background p-3 w-full focus:ring-primary "
+                    className="border border-dilucttl dark:border-gray-600 bg-background p-3 w-full focus:ring-dilucttl "
                     rows={5}
                     placeholder="enter your message here"
                     {...field}
@@ -264,7 +285,11 @@ const PartnerFoam = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" disabled={isLoading}>
+          <Button
+            type="submit"
+            disabled={isLoading}
+            className="hover:opacity-90"
+          >
             {isLoading ? "Loading..." : "Submit"}
           </Button>
         </form>

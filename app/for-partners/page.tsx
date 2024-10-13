@@ -24,12 +24,12 @@ const PatnersPage = () => {
       <div className="w-full">
         <h1 className="px-3 ml-2 mt-8 lg:mt-16 mx-3 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Become a
-          <span className="text-black dark:text-orange-500 mx-1">
+          <span className="text-white dark:text-orange-500 mx-1">
             {" "}
             Diluc partner
           </span>
         </h1>
-        <p className="px-3 ml-2 prose md:prose-lg lg:prose-xl dark:text-gray-200 my-6 mx-3 leading-normal">
+        <p className="px-3 ml-2 prose md:prose-lg lg:prose-xl text-gray-200 my-6 mx-3 leading-normal">
           We partner with industry leaders across Platforms, Research,
           Integration, and Advocacy organizations. We’d love to connect with you
           to see how our organizations can best work together to beat AMR

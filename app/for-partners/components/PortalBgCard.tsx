@@ -33,7 +33,7 @@ export default function PortalBgCard({
         }}
         className="z-50 mx-3"
       >
-        <motion.p className="font-bold uppercase md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-400 py-4">
+        <motion.p className="font-bold uppercase md:text-6xl text-4xl bg-clip-text text-transparent bg-gradient-to-b from-green-200 to-dilucttl py-4">
           {title}
         </motion.p>
         <h2 className="text-white text-xl md:text-2xl lg:text-3xl font-bold my-2 ">
