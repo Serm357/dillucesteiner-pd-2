@@ -18,7 +18,7 @@ const Page = () => {
         />
         <div className="absolute inset-0 top-32 lg:top-44 ">
           <div className=" flex flex-col items-center justify-center">
-            <h1 className="font-bold capitalize text-5xl md:text-6xl text-[#0099cc] shadow-md shadow-blue-300 shadow-b  py-4 px-4  backdrop-blur-sm border  border-emerald-500/20  mx-auto text-center rounded-full relative mt-4 text-clip inline-flex   items-center justify-center ngaringari">
+            <h1 className="font-bold capitalize text-5xl md:text-6xl text-dilucttl shadow-md shadow-green-300 shadow-b  py-4 px-4  backdrop-blur-sm border  border-emerald-400  mx-auto text-center rounded-full relative mt-4 text-clip inline-flex   items-center justify-center ngaringari">
               Service & Support
             </h1>
             {/* <h2 className="mx-2 text-2xl lg:text-4xl text-center text-blue-950 mt-8 font-bold ">
@@ -32,7 +32,7 @@ const Page = () => {
         <h2 className="mx-2 text-2xl lg:text-4xl   text-primary mt-8 font-bold ">
           Your partner to ensure community is free from AMR
         </h2>
-        <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200">
+        <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 text-gray-200">
           At Ditekta , we are passionate about our mission to create a world
           where AMR is not a threat. Leveraging the power of innovative
           artificial intelligence (AI) solutions, we empower providers and
@@ -42,12 +42,12 @@ const Page = () => {
         </p>
         <h1 className="mt-8 py-4 mx-2 capitalize font-bold text-3xl md:text-4xl text-primary mb-8">
           Together,{" "}
-          <span className="text-black dark:text-orange-500">
+          <span className="text-white dark:text-orange-500">
             we can create a world where
           </span>{" "}
           AMR can’t hide.
         </h1>
-        <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200">
+        <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 text-gray-200">
           At Ditekta , customer response is invaluable in our mission to combat
           antimicrobial resistance (AMR). Your feedback helps us refine our AI
           solutions, ensuring they meet the real-world needs of healthcare
@@ -57,31 +57,30 @@ const Page = () => {
           our commitment to delivering the best possible outcomes for patients
           globally
         </p>
-        <h1 className="mt-8 py-4 mx-3 capitalize font-bold text-center text-3xl md:text-4xl text-primary mb-8">
-          Questions? Problems?{" "}
-          <span className="text-black dark:text-orange-500">Let’s talk.</span>{" "}
+        <h1 className="mt-8 py-4 mx-3 capitalize font-bold text-center text-3xl md:text-4xl text-primary mb-8 flex flex-col sm:flex-row gap-2 items-center justify-center">
+          <span>Questions?</span>
+          <span> Problems?</span>{" "}
+          <span className="text-white dark:text-orange-500">Let’s talk.</span>{" "}
         </h1>
-        <div className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200 text-center dark:prose-h4:text-primary">
+        <div className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 text-gray-200 text-center dark:prose-h4:text-primary">
           <ul className="flex flex-col gap-0 marker:text-primary list-none">
             <li>
-              <h4 className="font-bold">Phone</h4>
+              <h4 className="font-bold text-dilucttl">Phone</h4>
               Phone : +255 775 686 359
             </li>
             <li>
-              <h4 className="font-bold">Email</h4>
+              <h4 className="font-bold text-dilucttl">Email</h4>
 
               <Link
-                className="hover:scale-105 gap-x-2 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-500 flex items-center justify-center"
+                className="hover:scale-105 gap-x-2 text-gray-200 hover:text-blue-500 dark:hover:text-blue-500 flex items-center justify-center"
                 href="mailto:info@dilucsteiner.com"
               >
                 <Mail /> info@dilucsteiner.com
               </Link>
             </li>
             <li>
-              <h4 className="font-bold">Hours</h4>
-              <h5 className="dark:text-gray-200 font-bold">
-                Customer support:
-              </h5>
+              <h4 className="font-bold text-dilucttl">Hours</h4>
+              <h5 className="text-gray-200 font-bold">Customer support:</h5>
               Saturday : 16 - 22 pm GMT + 3, <br />
               Sunday : 10am-18pm GMT+3.
             </li>
@@ -89,10 +88,10 @@ const Page = () => {
         </div>
         <h1 className="mt-8 py-4 mx-2   font-bold text-3xl md:text-4xl text-primary mb-8">
           Expert help is just a{" "}
-          <span className="text-black dark:text-orange-500">call</span> or{" "}
-          <span className="text-black dark:text-orange-500">email</span> away.
+          <span className="text-white dark:text-orange-500">call</span> or{" "}
+          <span className="text-white dark:text-orange-500">email</span> away.
         </h1>
-        <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200">
+        <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 text-gray-200">
           At Ditekta , our dedicated team of experts is always ready to assist
           you. Whether you have questions about our innovative AI solutions or
           need support with antimicrobial resistance detection, we're just a
@@ -105,39 +104,45 @@ const Page = () => {
         <h2 className="mx-2 text-2xl lg:text-4xl   text-primary my-8 font-bold ">
           What Do You Get :-
         </h2>
-        <div className="prose md:prose-lg prose-h4:my-1 lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200 dark:prose-h4:text-primary">
+        <div className="prose md:prose-lg prose-h4:my-1 lg:prose-xl max-w-none lg:mx-8 mt-8 text-gray-200 dark:prose-h4:text-primary">
           <ul className="flex flex-col gap-1 marker:text-primary">
             <li>
-              <h4 className="font-bold">
+              <h4 className="font-bold text-dilucttl">
                 Rapid Response and Problem Resolution :
               </h4>
               Save time and money with our prompt support and effective
               solutions from our dedicated team.
             </li>
             <li>
-              <h4 className="font-bold">Remote Diagnostic Connection :</h4>
+              <h4 className="font-bold text-dilucttl">
+                Remote Diagnostic Connection :
+              </h4>
               Efficiently troubleshoot issues with our advanced remote
               diagnostics and expert guidance.
             </li>
             <li>
-              <h4 className="font-bold">Maximize Clinical Efficiency :</h4>
+              <h4 className="font-bold text-dilucttl">
+                Maximize Clinical Efficiency :
+              </h4>
               Enhance your clinical operations through expert consultation and
               personalized support.
             </li>
             <li>
-              <h4 className="font-bold">Best Practice Implementations :</h4>
+              <h4 className="font-bold text-dilucttl">
+                Best Practice Implementations :
+              </h4>
               Ensure workflow efficiency with our adherence to industry best
               practices and innovative approaches.
             </li>
           </ul>
         </div>
-        <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 dark:text-gray-200">
+        <p className="prose md:prose-lg lg:prose-xl max-w-none lg:mx-8 mt-8 text-gray-200">
           At Ditekta , our support team is committed to providing exceptional
           assistance to help you combat antimicrobial resistance effectively
         </p>
         <h1 className="mt-8 py-4 mx-2   font-bold text-3xl md:text-4xl text-primary text-center mb-8">
           Real world.{" "}
-          <span className="text-black dark:text-orange-500">Real results</span>
+          <span className="text-white dark:text-orange-500">Real results</span>
         </h1>
       </div>
     </section>
