@@ -33,11 +33,11 @@ const RiskAssesment = () => {
       <div className="ml-2 my-3">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           A screening{" "}
-          <span className="text-black dark:text-orange-500">revolution</span>{" "}
+          <span className="text-white dark:text-orange-500">revolution</span>{" "}
           has arrived. The difference is
-          <span className="text-black dark:text-orange-500"> Ditekta.</span>
+          <span className="text-white dark:text-orange-500"> Ditekta.</span>
         </h1>
-        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200">
+        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200">
           Ditekta 's AI model, is built using advanced machine learning
           algorithms and vast datasets of genetic, clinical, and environmental
           information. It swiftly and accurately detects antimicrobial
@@ -65,10 +65,10 @@ function FeatureCard() {
     <div className="min-h-[32rem] max-w-[85rem] mt-3 mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
-          <span className="text-black dark:text-orange-500">Ditekta®</span> Risk
+          <span className="text-white dark:text-orange-500">Ditekta®</span> Risk
           Assessment
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Our Risk Assessment solution streamlines and standardizes AMR density
           reporting by providing accurate and reliable results. By leveraging
           advanced algorithms, it simplifies the complex process of analyzing
@@ -114,7 +114,7 @@ const data: StatCardType[] = [
 
 function FeatureCard2() {
   return (
-    <div className="min-h-[90vh]  mt-3 mx-3 bg-blue-900 rounded-md">
+    <div className="min-h-[90vh]  mt-3 mx-3 bg-dilucttl rounded-md">
       <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-white my-3">
           Why Risk assessment
@@ -146,26 +146,26 @@ function FeatureCard3() {
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Remove the
-          <span className="text-black dark:text-orange-500">
+          <span className="text-white dark:text-orange-500">
             {" "}
             challenges
           </span>{" "}
           of subjectivity.
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Our technology transforms antimicrobial susceptibility testing (AST)
           by introducing objective, data-driven analysis, thus overcoming the
           subjectivity inherent in traditional methods. With standardized
           interpretation, results remain consistent across tests, ensuring
           reliability in diagnosis and treatment.
         </p>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Data-driven analysis employs extensive datasets to precisely identify
           resistance patterns, enhancing the accuracy of AST results. Machine
           learning algorithms, continuously refining their capabilities, promise
           even greater precision over time.
         </p>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Transparent methodology and consistent reporting uphold the integrity
           of our AST process, minimizing bias and fostering trust in treatment
           decisions and patient outcomes.
@@ -212,20 +212,22 @@ const data2: {
 
 function FeatureCard303() {
   return (
-    <div className="min-h-[90vh]  mt-3 mx-3 bg-blue-900 rounded-md">
-      <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
-        <h1 className=" font-bold text-3xl md:text-4xl text-white my-6">
-          What to look for in a
-          <span className="text-orange-500 mx-1"> Risk Assessment </span>
-          solution.
-        </h1>
-      </div>
-      <div className="grid m-2 grid-cols-2 lg:grid-cols-4 gap-3">
-        {data2.map((card) => {
-          return (
-            <StatCard2 key={card.title} title={card.title} desc={card.desc} />
-          );
-        })}
+    <div className="min-h-[90vh]  mt-3 mx-3 bg-dilucttl rounded-md pt-8">
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
+          <h1 className=" font-bold text-3xl md:text-4xl text-white my-6">
+            What to look for in a
+            <span className="text-orange-500 mx-1"> Risk Assessment </span>
+            solution.
+          </h1>
+        </div>
+        <div className="grid m-2 grid-cols-2 lg:grid-cols-4 gap-3">
+          {data2.map((card) => {
+            return (
+              <StatCard2 key={card.title} title={card.title} desc={card.desc} />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -265,7 +267,7 @@ function FeatureCard4() {
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Stay
-          <span className="text-black dark:text-orange-500">
+          <span className="text-white dark:text-orange-500">
             {" "}
             informed{" "}
           </span>{" "}
@@ -274,7 +276,7 @@ function FeatureCard4() {
         <h1 className="my-3 font-bold text-xl md:text-2xl text-primary ">
           The Risk is Real. The Help is Here.
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Stay informed about AMR risk to protect yourself and your community.
           Understand the latest trends, prevention strategies, and treatment
           options. Together, we can combat antimicrobial resistance and

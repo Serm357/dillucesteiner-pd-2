@@ -31,10 +31,10 @@ const AMRInsights = () => {
         </h1>
         <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-12">
           Together, we can{" "}
-          <span className="text-black dark:text-orange-500">save</span> more{" "}
-          <span className="text-black dark:text-orange-500">lives.</span>
+          <span className="text-white dark:text-orange-500">save</span> more{" "}
+          <span className="text-white dark:text-orange-500">lives.</span>
         </h1>
-        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200">
+        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200">
           Our AI technology saves lives by quickly identifying resistant strains
           and providing tailored treatment plans. Early detection and precise
           interventions prevent severe infections and complications, improving
@@ -132,7 +132,7 @@ function FeatureCard() {
         >
           Detection
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Our AI technology works by rapidly analyzing patient samples to detect
           resistance patterns. It integrates genetic, clinical, and
           environmental data to identify resistant strains early. This
@@ -180,7 +180,7 @@ function FeatureCard2() {
         >
           Risk Assesment
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Our technology measures the density of resistance by analyzing the
           number of drugs a pathogen resists and determining the resistance
           level—whether partial or full. This detailed quantification enables
@@ -208,7 +208,7 @@ function FeatureCard3() {
         >
           Risk Evaluation
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Our risk assessment solutions are highly accurate, utilizing advanced
           AI algorithms to analyze comprehensive datasets, including genetic,
           clinical, and environmental factors. This precision enables us to
@@ -261,9 +261,9 @@ function FeatureLastCard() {
       <div className="flex-1 flex flex-col gap-3 items-start py-3 px-8 justify-center">
         <h1 className="capitalize font-bold text-3xl md:text-4xl text-primary my-3 ">
           Quality healthcare
-          <span className="text-black dark:text-orange-500"> reimagined.</span>
+          <span className="text-white dark:text-orange-500"> reimagined.</span>
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           At Ditekta , we are redefining quality healthcare through the
           integration of cutting-edge AI technology. Our innovative solutions
           provide rapid, precise, and actionable insights, transforming the way

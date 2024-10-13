@@ -30,14 +30,14 @@ const Detection = () => {
           ensuring precise, effective, and timely interventions to combat
           antimicrobial resistance."
       />
-      <div className="ml-2 my-3">
+      <div className="ml-2 my-3 md:my-8">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           A screening{" "}
-          <span className="text-black dark:text-orange-500">revolution</span>{" "}
+          <span className="text-white dark:text-orange-500">revolution</span>{" "}
           has arrived. The difference is
-          <span className="text-black dark:text-orange-500"> Ditekta.</span>
+          <span className="text-white dark:text-orange-500"> Ditekta.</span>
         </h1>
-        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200">
+        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200">
           Ditekta 's AI model, is built using advanced machine learning
           algorithms and vast datasets of genetic, clinical, and environmental
           information. It swiftly and accurately detects antimicrobial
@@ -62,10 +62,10 @@ function FeatureCard() {
     <div className="min-h-[32rem] w-full mt-3 mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
-          <span className="text-black dark:text-orange-500">Ditekta AI®</span>{" "}
+          <span className="text-white dark:text-orange-500">Ditekta AI®</span>{" "}
           for Digital Resistance detection
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-2">
+        <p className="prose md:prose-lg text-gray-200 my-2">
           Ditekta AI® stands at the forefront of digital resistance detection,
           offering unmatched efficiency. By harnessing advanced algorithms, it
           swiftly processes vast datasets to identify resistance patterns
@@ -104,9 +104,9 @@ function FeatureCard2() {
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Why early detection
-          <span className="text-black dark:text-orange-500"> matters.</span>
+          <span className="text-white dark:text-orange-500"> matters.</span>
         </h1>
-        <div className="prose md:prose-lg dark:text-gray-200 my-2">
+        <div className="prose md:prose-lg text-gray-200 my-2">
           <ul className="flex flex-col gap-2 marker:text-primary">
             <li>Timely intervention prevents AMR spread.</li>
             <li>Improves patient outcomes.</li>

@@ -138,7 +138,7 @@ const data2: {
 
 function FeatureCard3() {
   return (
-    <div className="min-h-screen w-full mt-0 mx-2 bg-blue-900 ">
+    <div className="min-h-screen w-full mt-0 mx-2 bg-dilucttl ">
       <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className=" font-bold text-3xl md:text-4xl text-white my-6">
           What to look for in a

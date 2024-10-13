@@ -16,12 +16,7 @@ const Navbar = () => {
               className="flex-none text-xl font-semibold text-white"
               href="/"
             >
-              <img
-                src="/ditekta-logo.png"
-                width={80}
-                height={80}
-                className="w-40 h-30 sm:ml-10"
-              />
+              <img src="/ditekta-logo.png" className="w-40 h-30 sm:ml-10" />
             </Link>
             <div className="flex gap-2 items-center justify-center">
               <button
