@@ -36,13 +36,13 @@ symptoms for any signs of resistance.
       <div className="ml-2 my-36">
         <h1 className="mt-14 capitalize font-bold text-3xl lg:text-4xl mx-2 text-center text-primary mb-8">
           AI are{" "}
-          <span className="text-black dark:text-orange-500 mx-1">
+          <span className="text-white dark:text-orange-500 mx-1">
             unique, safe
           </span>{" "}
           and
-          <span className="text-black dark:text-orange-500"> faster.</span>
+          <span className="text-white dark:text-orange-500"> faster.</span>
         </h1>
-        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200 text-center mx-2">
+        <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200 text-center mx-2">
           Discover the unique, safe, and rapid AI technology at Ditekta . Our
           innovative solutions ensure faster and more accurate detection,
           providing patients with timely and effective treatment options.
@@ -77,12 +77,12 @@ function FeatureCard101() {
       <div className="flex-1 flex flex-col  gap-3 items-center py-3 px-8 justify-start">
         <h1 className="my-5 capitalize font-bold text-3xl lg:text-4xl text-primary ">
           Early detection is
-          <span className="text-black dark:text-orange-500"> critical!</span>
+          <span className="text-white dark:text-orange-500"> critical!</span>
         </h1>
         <h1 className="mt-5 text-center capitalize font-bold text-3xl lg:text-4xl text-primary my-3">
           <Stats no={5000000} />
         </h1>
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           Over a million people are now dying each year due to infections such
           as lower respiratory, bloodstream, and intra-abdominal infections
           because bacteria have become resistant to treatment.
@@ -92,7 +92,7 @@ function FeatureCard101() {
         <h1 className="mt-4 self-start capitalize font-bold text-xl lg:text-2xl text-primary my-3">
           With AI, even earlier detection is possible!
         </h1>
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           Our advanced AI technology promises a breakthroughs in the fight
           against antimicrobial resistance (AMR). By analyzing resistance
           patterns, our AI can detect drug-resistant infections much earlier
@@ -126,14 +126,14 @@ function FeatureCard2() {
           Why It Is Important to Monitor Your Resistance Pattern
         </h1>
 
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           Understanding and monitoring your antimicrobial resistance (AMR)
           pattern is crucial for ensuring effective treatment and safeguarding
           your health. Personalized treatment becomes possible when doctors are
           aware of your specific resistance pattern, increasing the likelihood
           of a successful recovery and reducing the risk of complications.
         </p>
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           Early detection of resistant infections allows for timely
           intervention, preventing the spread of resistant bacteria and avoiding
           severe health issues that can arise from ineffective treatments.
@@ -168,20 +168,20 @@ function FeatureCard3() {
         <h1 className="mt-4 self-start capitalize font-bold text-xl lg:text-2xl text-primary my-3">
           How Our AI Will Help in Reducing and Combating AMR
         </h1>
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           Antimicrobial resistance (AMR) is a growing threat, but our advanced
           AI technology offers a powerful solution. Our AI technology rapidly
           analyses patient samples to identify resistance patterns within hours,
           significantly faster than traditional methods. This rapid detection
           enables timely and accurate treatment decisions.
         </p>
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           By providing detailed insights into the specific resistance mechanisms
           of pathogens, our AI guides doctors in selecting the most effective
           antibiotics, minimising the use of broad-spectrum drugs and reducing
           the development of resistance.
         </p>
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           Additionally, our AI continuously learns from vast amounts of data,
           improving its accuracy and predictive capabilities, helping healthcare
           providers stay ahead of emerging resistance trends and implement
@@ -219,7 +219,7 @@ function FeatureCard4() {
           Instructions on Handling Antibiotics
         </h1>
 
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           Adhering to doctors' and pharmacists' instructions on handling
           antibiotics is essential for combating antimicrobial resistance (AMR)
           and ensuring effective treatment. Proper use of antibiotics as
@@ -227,7 +227,7 @@ function FeatureCard4() {
           taken, which is crucial for fully eradicating the infection and
           preventing the development of resistant bacteria.
         </p>
-        <p className="prose lg:prose-lg dark:text-gray-200 my-2">
+        <p className="prose lg:prose-lg text-gray-200 my-2">
           Misuse or overuse of antibiotics can lead to the survival of resistant
           bacteria, which can then multiply and spread, making infections harder
           to treat in the future. By following healthcare professionals'
@@ -243,7 +243,7 @@ function FeatureCard4() {
 }
 function FeatureCard5() {
   return (
-    <div className="min-h-screen bg-[#0099cc] text-white w-full mt-3 mx-0 flex flex-col items-center justify-start my-2">
+    <div className="min-h-screen bg-green-900 text-white w-full mt-3 mx-0 flex flex-col items-center justify-start my-2">
       <h2 className="uppercase text-sm lg:text-lg font-bold my-2">
         THE DIFFERENCE IS PROFOUND.
       </h2>
@@ -271,7 +271,7 @@ function FeatureCard5() {
                 spread
               </p>
             </div>
-            <div className="flex-1 bg-blue-700 rounded-md py-3 px-4">
+            <div className="flex-1 bg-dilucttl rounded-md py-3 px-4">
               <h1 className="capitalize  text-lg lg:text-xl font-bold mx-1 my-4">
                 The result:
               </h1>
@@ -300,7 +300,7 @@ function FeatureCard5() {
                 optimize your care plan effectively.
               </p>
             </div>
-            <div className="flex-1 bg-blue-700 rounded-md py-3 px-4">
+            <div className="flex-1 bg-dilucttl rounded-md py-3 px-4">
               <h1 className="capitalize  text-lg lg:text-xl font-bold mx-1 my-4">
                 The result:
               </h1>
@@ -324,10 +324,10 @@ function FeatureCard5() {
           a personalized plan, not just conforming to generalized standards
         </p>
       </div>
-      <div className="mt-2">
+      <div className="my-5">
         <h1 className="capitalize text-center text-sm lg:text-2xl font-bold mx-1 my-2">
           With Lab scientists, doctors, Pharmacist and AI technology joining
-          forces, <span className="text-orange-500">AMR can't beat us!.</span>
+          forces, <span className="text-dilucttl">AMR can't beat us!.</span>
         </h1>
       </div>
     </div>
