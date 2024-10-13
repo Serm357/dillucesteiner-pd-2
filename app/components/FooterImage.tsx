@@ -1,17 +1,6 @@
-// "use client";
-
 import Link from "next/link";
 
-// import { useTheme } from "next-themes";
-// import { useRouter } from "next/router";
-
 const FooterImage = () => {
-  // const { theme, systemTheme } = useTheme();
-
-  // const { push } = useRouter();
-  // const handleClick = () => {
-  //   push("/");
-  // }
   return (
     <Link href="/">
       <img

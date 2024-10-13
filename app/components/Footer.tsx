@@ -15,11 +15,7 @@ export default function Footer() {
         {/* <!-- Grid --> */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-10">
           <div className="col-span-full hidden md:col-span-1  md:flex flex-col items-center justify-center">
-            <div
-              // className="flex-none text-xl font-semibold text-primary"
-              // href="/"
-              aria-label="Brand"
-            >
+            <div aria-label="Brand">
               <FooterImage />
             </div>
             <p className="mt-3 text-xs sm:text-sm text-white dark:text-neutral-400">
@@ -162,31 +158,22 @@ export default function Footer() {
         </div>
         {/* <!-- End Grid --> */}
 
-        <div className="pt-5 mt-5 border-t border-green-200 dark:border-neutral-700">
+        <div className="pt-3 mt-3 border-t border-green-200 dark:border-neutral-700">
           <div className="sm:flex sm:justify-between sm:items-center">
-            <div className="flex items-center gap-x-3">
-              <div className="space-x-4 text-sm ms-4">
-                <Link
-                  className="inline-flex gap-x-2 text-white hover:text-green-500 dark:text-neutral-400 dark:hover:text-blue-500"
-                  href="/privacy"
-                >
-                  Terms & Privacy
-                </Link>
-              </div>
-            </div>
+            {/* <div className="flex items-center gap-x-3"> */}
+            {/* <div className="space-x-4 text-sm ms-4"> */}
+
+            {/* </div> */}
+            {/* </div> */}
 
             <div className="flex justify-between items-center">
-              <div className="mt-3 sm:hidden flex gap-1 items-center justify-center">
+              <div className=" sm:hidden flex flex-col items-center justify-center">
                 <div
                   className="flex-none text-xl font-semibold dark:text-white"
-                  // href="/"
                   aria-label="Brand"
                 >
                   <FooterImage />
                 </div>
-                <p className="mt-1 text-xs sm:text-sm text-white dark:text-neutral-400">
-                  © {new Date().getFullYear()} Ditekta .
-                </p>
               </div>
 
               {/* <!-- Social Brands --> */}
@@ -221,6 +208,17 @@ export default function Footer() {
                 </Link>
               </div>
               {/* <!-- End Social Brands --> */}
+            </div>
+            <div className="flex items-center justify-between mx-4 md:gap-3 md:flex-row-reverse">
+              <p className="mt-1 text-xs sm:text-sm text-white dark:text-neutral-400">
+                © {new Date().getFullYear()} Ditekta .
+              </p>
+              <Link
+                className="inline-flex gap-x-2 text-white hover:text-green-500 dark:text-neutral-400 dark:hover:text-blue-500 text-xs"
+                href="/privacy"
+              >
+                Terms & Privacy
+              </Link>
             </div>
             {/* <!-- End Col --> */}
           </div>
