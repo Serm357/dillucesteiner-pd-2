@@ -37,7 +37,7 @@ const Testimonials = () => {
     clientCompany?: string;
   }[] = [
     {
-      imgSrc: "/testimonials/baraka.png",
+      imgSrc: "/baraka.png",
       clientQuote:
         "I'm looking forward to the release of Ditekta 's AI-driven technology. Its precision in identifying antimicrobial resistance at a cellular level promises to improve our ability to prescribe targeted treatments, thereby reducing antibiotic misuse. This advancement has the potential to make a significant contribution to global efforts in combating resistant infections and improving patient care",
       clientName: "Baraka Karamba ",
@@ -45,7 +45,7 @@ const Testimonials = () => {
       clientCompany: "Community Pharmacy",
     },
     {
-      imgSrc: "/testimonials/samwel.png",
+      imgSrc: "/sam.png",
       clientQuote:
         " The innovative AI solutions being developed by Ditekta  could be a game-changer in the fight against antimicrobial resistance. With its capacity to analyze extensive datasets and accurately identify resistance trends, this technology is poised to support more effective public health interventions and prevent outbreaks. I'm excited to see its impact on community health.",
       clientName: "Samwel Malangwa",
@@ -53,7 +53,7 @@ const Testimonials = () => {
       clientCompany: "Kampala University",
     },
     {
-      imgSrc: "/testimonials/Hosiana.png",
+      imgSrc: "/hosiana.png",
       clientQuote:
         "The upcoming AI platform from Ditekta  holds great promise for enhancing our healthcare systems. Its ability to integrate seamlessly with existing infrastructure and provide data-driven insights could transform our approach to managing AMR. I believe this technology will set a new benchmark in healthcare efficiency and patient care",
       clientName: "Hosiana Somi",
@@ -61,7 +61,7 @@ const Testimonials = () => {
       clientCompany: "AI",
     },
     {
-      imgSrc: "/testimonials/emmanuel.png",
+      imgSrc: "/ema.png",
       clientQuote:
         " I am eagerly anticipating the release of Ditekta 's AI technology. Its potential to revolutionize how we detect and manage antimicrobial resistance is immense. By providing accurate, real-time insights into resistance patterns, this technology promises to significantly improve treatment outcomes and reduce the spread of resistant infections.",
       clientName: "Emmanuel Kessy",
