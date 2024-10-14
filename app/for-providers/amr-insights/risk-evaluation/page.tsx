@@ -88,7 +88,7 @@ function FeatureCard2() {
         <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl text-primary my-3">
           Our Ditekta will be more accurate compared to traditional models
         </h1>
-        <p className="prose md:prose-lg text-gray-200 my-4  leading-normal">
+        <p className="prose md:prose-lg text-gray-900 my-4  leading-normal">
           Traditional models of assessing AMR risk rely on manual laboratory
           tests and clinical observations, which can be time-consuming and
           subject to human error. These methods often involve culturing bacteria
@@ -103,7 +103,7 @@ function FeatureCard2() {
         <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl text-primary my-3">
           Ditekta Risk changes the game in risk assessment.
         </h1>
-        <p className="prose md:prose-lg text-gray-200 my-4  leading-normal">
+        <p className="prose md:prose-lg text-gray-900 my-4  leading-normal">
           Our Ditekta Risk technology revolutionizes AMR risk assessment by
           leveraging advanced AI and machine learning to analyze large datasets
           in real-time, offering rapid and precise detection of resistance
