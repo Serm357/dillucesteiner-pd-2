@@ -33,9 +33,9 @@ const RiskAssesment = () => {
       <div className="ml-2 my-3">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           A screening{" "}
-          <span className="text-white dark:text-orange-500">revolution</span>{" "}
-          has arrived. The difference is
-          <span className="text-white dark:text-orange-500"> Ditekta.</span>
+          <span className="text-white dark:text-dilucttl">revolution</span> has
+          arrived. The difference is
+          <span className="text-white dark:text-dilucttl"> Ditekta.</span>
         </h1>
         <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200">
           Ditekta 's AI model, is built using advanced machine learning
@@ -65,7 +65,7 @@ function FeatureCard() {
     <div className="min-h-[32rem] max-w-[85rem] mt-3 mx-2 flex flex-col md:flex-row my-2">
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
-          <span className="text-white dark:text-orange-500">Ditekta®</span> Risk
+          <span className="text-white dark:text-dilucttl">Ditekta®</span> Risk
           Assessment
         </h1>
         <p className="prose md:prose-lg text-gray-200 my-2">
@@ -114,11 +114,11 @@ const data: StatCardType[] = [
 
 function FeatureCard2() {
   return (
-    <div className="min-h-[90vh]  mt-3 mx-3 bg-dilucttl rounded-md">
+    <div className="min-h-[90vh]  mt-3 mx-3 bg-green-800 rounded-md">
       <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-white my-3">
           Why Risk assessment
-          <span className="text-orange-500"> matters.</span>
+          <span className="text-dilucttl"> matters.</span>
         </h1>
         <p className="m-2 text-white">
           Risk assessment is crucial in combating antimicrobial resistance (AMR)
@@ -146,11 +146,8 @@ function FeatureCard3() {
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Remove the
-          <span className="text-white dark:text-orange-500">
-            {" "}
-            challenges
-          </span>{" "}
-          of subjectivity.
+          <span className="text-white dark:text-dilucttl"> challenges</span> of
+          subjectivity.
         </h1>
         <p className="prose md:prose-lg text-gray-200 my-2">
           Our technology transforms antimicrobial susceptibility testing (AST)
@@ -212,12 +209,12 @@ const data2: {
 
 function FeatureCard303() {
   return (
-    <div className="min-h-[90vh]  mt-3 mx-3 bg-dilucttl rounded-md pt-8">
+    <div className="min-h-[90vh]  mt-3 mx-3 bg-green-800 rounded-md pt-8">
       <div className="flex flex-col items-center justify-center">
         <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
           <h1 className=" font-bold text-3xl md:text-4xl text-white my-6">
             What to look for in a
-            <span className="text-orange-500 mx-1"> Risk Assessment </span>
+            <span className="text-dilucttl mx-1"> Risk Assessment </span>
             solution.
           </h1>
         </div>
@@ -243,7 +240,7 @@ function StatCard2({ title, desc }: { title: string; desc: string }) {
           className="bg-primary rounded-full"
         />
       </h1>
-      <h1 className="text-lg font-bold lg:text-xl text-orange-500 my-3 mb-0 text-center ">
+      <h1 className="text-lg font-bold lg:text-xl text-dilucttl my-3 mb-0 text-center ">
         {title}
       </h1>
       <p className="m-3 mt-0 text-white">{desc}</p>
@@ -267,10 +264,7 @@ function FeatureCard4() {
       <div className="flex-1 flex flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
           Stay
-          <span className="text-white dark:text-orange-500">
-            {" "}
-            informed{" "}
-          </span>{" "}
+          <span className="text-white dark:text-dilucttl"> informed </span>{" "}
           about AMR Risk
         </h1>
         <h1 className="my-3 font-bold text-xl md:text-2xl text-primary ">
