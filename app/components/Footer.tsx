@@ -180,28 +180,28 @@ export default function Footer() {
               <div className="space-x-4">
                 <Link
                   className="inline-block text-xs size-xs text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-blue-500"
-                  href="https://www.facebook.com/dilucsteiner/"
+                  href="https://www.facebook.com/ditekta/"
                   target="_blank"
                 >
                   <FacebookIcon className="size-4" />
                 </Link>
                 <Link
                   className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-blue-500"
-                  href="https://x.com/dilucsteiner"
+                  href="https://x.com/ditekta"
                   target="_blank"
                 >
                   <TwitterLogoIcon />
                 </Link>
                 <Link
                   className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-blue-500"
-                  href="https://www.instagram.com/dilucsteiner"
+                  href="https://www.instagram.com/ditektaa"
                   target="_blank"
                 >
                   <InstagramLogoIcon />
                 </Link>
                 <Link
                   className="inline-block text-gray-500 hover:text-green-500 dark:text-neutral-500 dark:hover:text-blue-500"
-                  href="http://linkedin.com/company/dilucsteiner"
+                  href="http://linkedin.com/company/ditekta"
                   target="_blank"
                 >
                   <LinkedInLogoIcon />
