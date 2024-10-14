@@ -28,7 +28,7 @@ const RiskEvaluation = () => {
           {" "}
           <h1 className="my-9 mx-3 capitalize font-bold text-3xl md:text-4xl text-primary ">
             Good just
-            <span className="text-black dark:text-orange-500 mx-1">
+            <span className="text-white dark:text-orange-500 mx-1">
               {" "}
               isn’t{" "}
             </span>
@@ -63,11 +63,11 @@ function FeatureCard() {
       <div className="flex-1 flex flex-col  gap-3 items-center py-3 px-8 justify-start">
         <h1 className="mt-9 capitalize font-bold text-3xl  md:text-4xl text-primary my-3">
           Know the
-          <span className="text-black dark:text-orange-500 mx-1">Risk,</span>
+          <span className="text-white dark:text-orange-500 mx-1">Risk,</span>
           Protect the
-          <span className="text-black dark:text-orange-500 mx-1"> Future.</span>
+          <span className="text-white dark:text-orange-500 mx-1"> Future.</span>
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
+        <p className="prose md:prose-lg text-gray-200 my-4  leading-normal">
           Our algorithm identifies AMR risk by analyzing vast datasets to detect
           resistance patterns and predict future trends. By providing early,
           accurate insights, it enables timely interventions and informed
@@ -88,7 +88,7 @@ function FeatureCard2() {
         <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl text-primary my-3">
           Our Ditekta will be more accurate compared to traditional models
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
+        <p className="prose md:prose-lg text-gray-200 my-4  leading-normal">
           Traditional models of assessing AMR risk rely on manual laboratory
           tests and clinical observations, which can be time-consuming and
           subject to human error. These methods often involve culturing bacteria
@@ -103,7 +103,7 @@ function FeatureCard2() {
         <h1 className="mt-5 capitalize font-bold text-xl md:text-2xl text-primary my-3">
           Ditekta Risk changes the game in risk assessment.
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
+        <p className="prose md:prose-lg text-gray-200 my-4  leading-normal">
           Our Ditekta Risk technology revolutionizes AMR risk assessment by
           leveraging advanced AI and machine learning to analyze large datasets
           in real-time, offering rapid and precise detection of resistance
@@ -138,11 +138,11 @@ const data2: {
 
 function FeatureCard3() {
   return (
-    <div className="min-h-screen w-full mt-0 mx-2 bg-dilucttl ">
+    <div className="min-h-screen w-full mt-0 mx-2 bg-green-800 ">
       <div className="flex mx-2 flex-col  gap-3 items-start py-3 px-8 justify-center">
         <h1 className=" font-bold text-3xl md:text-4xl text-white my-6">
           What to look for in a
-          <span className="text-orange-500 mx-1"> Risk Evaluation </span>
+          <span className="text-dilucttl mx-1"> Risk Evaluation </span>
           solution.
         </h1>
       </div>
@@ -167,7 +167,7 @@ function StatCard({ title, desc }: { title: string; desc: string }) {
           className="bg-primary rounded-full"
         />
       </h1>
-      <h1 className="text-lg font-bold lg:text-xl mt-5 lg:mt-14 text-orange-500 my-3 mb-0 text-center ">
+      <h1 className="text-lg font-bold lg:text-xl mt-5 lg:mt-14 text-dilucttl my-3 mb-0 text-center ">
         {title}
       </h1>
       <p className="m-3 mt-0 text-white text-center">{desc}</p>
@@ -190,11 +190,11 @@ function FeatureCard4() {
       </div>
       <div className="flex-1 flex flex-col  gap-3 items-center mt-3 py-3 px-8 justify-start">
         <h1 className="mt-5 capitalize font-bold text-3xl md:text-4xl text-primary my-3">
-          <span className="text-black dark:text-orange-500 mx-1">
+          <span className="text-white dark:text-orange-500 mx-1">
             Diversity
           </span>
           and
-          <span className="text-black dark:text-orange-500 mx-1">
+          <span className="text-white dark:text-orange-500 mx-1">
             inclusivity
           </span>
           matters
@@ -202,7 +202,7 @@ function FeatureCard4() {
         <h1 className="mt-5 capitalize self-start ml-3 font-bold text-xl md:text-2xl text-primary my-3">
           Commitment to Ensuring Screening Equality.
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
+        <p className="prose md:prose-lg text-gray-200 my-4  leading-normal">
           Diversity matters within AI training and testing datasets. The
           ProFound Risk AMR Solution's deep learning dataset includes racial,
           ethnic, and geographic diversity within its AI research and training.
@@ -217,7 +217,7 @@ function FeatureCard4() {
           Did you know?
         </h1>
 
-        <div className="prose md:prose-lg text-start dark:text-gray-200 my-2">
+        <div className="prose md:prose-lg text-start text-gray-200 my-2">
           <ul className="flex flex-col gap-2 marker:text-primary">
             <li>
               Genetic differences among populations can influence the
@@ -245,7 +245,7 @@ function FeatureCard5() {
         <h1 className="mt-5 capitalize self-start ml-3 font-bold text-xl md:text-2xl text-primary my-3">
           Clinical study tells the story
         </h1>
-        <p className="prose md:prose-lg dark:text-gray-200 my-4  leading-normal">
+        <p className="prose md:prose-lg text-gray-200 my-4  leading-normal">
           Using a US nationwide survey, disparities in antimicrobial drug
           acquisition by race/ethnicity for 2014–2015 was measured. White
           persons reported twice as many antimicrobial drug prescription fills
