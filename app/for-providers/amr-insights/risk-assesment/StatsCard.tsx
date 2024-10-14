@@ -21,7 +21,7 @@ export default function StatCard({
 }: StatCardType) {
   return (
     <div className="flex flex-col gap-3 items-center justify-center md:w-full">
-      <h1 className="text-4xl font-bold lg:text-5xl text-orange-500 my-3 mb-0 text-center ">
+      <h1 className="text-4xl font-bold lg:text-5xl text-dilucttl my-3 mb-0 text-center ">
         {number1 && (
           <span className="mx-1">
             <AnimatedNumbers
