@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { ModeToggle } from "./ModeToggler";
+// import { ModeToggle } from "./ModeToggler";
 
 const Navbar = () => {
   return (
     <>
-      <AnnouncementBanner />
+      {/* <AnnouncementBanner /> */}
       <LinksBanner />
       <header className=" flex sticky top-0 left-0 z-[100] bg-background right-0 flex-wrap sm:justify-start items-center sm:flex-nowrap w-full  text-sm py-4  border-b-[0.1px] border-[#37dd0f] dark:border-green-900 ">
         <nav
@@ -579,7 +579,7 @@ function MobileSidebar() {
 
 function LinksBanner() {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
+    <div className="w-full px-4 sm:px-6 lg:px-8 ">
       <div className="flex items-center justify-end gap-x-5 w-full py-2 sm:pt-2 sm:pb-0">
         <Link
           className="inline-flex justify-center items-center gap-2 font-medium text-white hover:text-neutral-500 text-sm dark:text-neutral-400 dark:hover:text-white"
