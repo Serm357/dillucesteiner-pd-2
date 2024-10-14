@@ -240,7 +240,7 @@ function FeatureCard4() {
 
 function FeatureCard5() {
   return (
-    <div className="min-h-[95vh] w-full  mx-2 flex flex-col md:flex-row mb-2">
+    <div className="min-h-[95vh] w-full  mx-2 flex flex-col md:flex-row mb-3">
       <div className="flex-1 flex flex-col  gap-3 items-center mt-3 py-3 px-8 justify-start">
         <h1 className="mt-5 capitalize self-start ml-3 font-bold text-xl md:text-2xl text-primary my-3">
           Clinical study tells the story
