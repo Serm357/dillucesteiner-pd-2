@@ -15,7 +15,7 @@ const AboutUs = () => {
         />
         <div className="absolute inset-0 top-32 lg:top-44 ">
           <div className=" flex flex-col items-center justify-center">
-            <h1 className="font-bold capitalize text-5xl md:text-6xl text-[#0099cc] shadow-md shadow-blue-300 shadow-b  py-4 px-4  backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20  mx-auto text-center rounded-full relative mt-4">
+            <h1 className="font-bold capitalize text-5xl md:text-6xl text-dilucttl shadow-md shadow-green-300 shadow-b  py-4 px-4  backdrop-blur-sm border bg-green-300/50 border-emerald-500/20  mx-auto text-center rounded-full relative mt-4">
               About Ditekta
             </h1>
           </div>
@@ -27,7 +27,7 @@ const AboutUs = () => {
             About Us
           </h1>
           <div className="mx-3">
-            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200  mx-2">
               At Ditekta , we revolutionize healthcare through AI to combat
               antimicrobial resistance (AMR), education, and awareness. Our
               advanced technology provides rapid, accurate insights, enabling
@@ -43,7 +43,7 @@ const AboutUs = () => {
             Our vision
           </h1>
           <div className="mx-3">
-            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200  mx-2">
               We envision a world where antimicrobial resistance is no longer a
               threat to public health. Through cutting-edge technology,
               comprehensive education, and strong advocacy, we strive to create
@@ -73,7 +73,7 @@ const AboutUs = () => {
             goals
           </h1>
           <div className="mx-3">
-            <div className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+            <div className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200  mx-2">
               <ul className="marker:text-primary">
                 <li className="list-disc">
                   Innovate and improve the speed and accuracy of AST
@@ -91,13 +91,13 @@ const AboutUs = () => {
         </div>
         <div id="history" className="ml-2 my-8">
           <h1 className=" mt-16 capitalize font-bold text-3xl md:text-4xl text-center mx-2 ml-7 text-primary mb-8">
-            Learn more <span className="mx-1 text-orange-500"> about us.</span>
+            Learn more <span className="mx-1 text-white"> about us.</span>
           </h1>
           <h1 className=" mt-16 capitalize font-bold text-xl md:text-3xl mx-2 ml-7 text-primary mb-8">
             Our story
           </h1>
           <div className="mx-3">
-            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200  mx-2">
               During the COVID-19 pandemic, the world witnessed the devastating
               impact of antimicrobial resistance (AMR) alongside the virus. It
               became clear that AMR was not just a secondary issue but a
@@ -105,7 +105,7 @@ const AboutUs = () => {
               resistant infections. This eye-opening experience fueled our
               determination to find a better way to combat AMR
             </p>
-            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200  mx-2">
               In response to this urgent need, Ditekta was founded in December
               2023. Our mission is to revolutionize healthcare with cutting-edge
               AI technology designed to detect resistance patterns early and
@@ -113,7 +113,7 @@ const AboutUs = () => {
               actionable insights, we aim to enhance patient outcomes and
               safeguard global health.
             </p>
-            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+            <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200  mx-2">
               Combining the expertise of medical professionals with advanced
               machine learning, we are committed to creating next-generation
               solutions for healthcare diagnostics. Our journey began in the
@@ -139,10 +139,10 @@ function Objectives() {
       <h1 className=" mt-16 capitalize font-bold text-xl md:text-3xl mx-2 ml-7 text-primary mb-8">
         Our objectives
       </h1>
-      <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+      <p className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200  mx-2">
         Our objectives at Ditekta are clear and ambitious:-
       </p>
-      <div className="prose max-w-none md:prose-lg lg:prose-xl my-4 dark:text-gray-200  mx-2">
+      <div className="prose max-w-none md:prose-lg lg:prose-xl my-4 text-gray-200  mx-2">
         <ul className="marker:text-primary list-decimal">
           <li>
             <h2 className="font-bold capitalize text-sm md:text-lg text-primary">
