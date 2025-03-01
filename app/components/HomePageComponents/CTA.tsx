@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import Link from "next/link";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useMemo } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const CTA = () => {
@@ -10,8 +10,12 @@ const CTA = () => {
 
   // Animation variants
   const cardVariants = {
-    initial: { scale: 1 },
-    hover: { scale: 1.02, transition: { duration: 0.3 } },
+    initial: { scale: 1, boxShadow: "0px 5px 15px rgba(0,0,0,0.1)" },
+    hover: {
+      scale: 1.02,
+      boxShadow: "0px 15px 30px rgba(0,0,0,0.2)",
+      transition: { duration: 0.3, ease: "easeOut" },
+    },
   };
 
   const contentVariants = {
@@ -21,6 +25,7 @@ const CTA = () => {
       y: 0,
       transition: {
         duration: 0.4,
+        ease: "easeOut",
         staggerChildren: 0.1,
       },
     },
@@ -28,137 +33,105 @@ const CTA = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
   };
 
+  // Memoized card component to optimize performance
+  const Card = useMemo(
+    () =>
+      ({ isHovering, setIsHovering, title, description, link, image, className }: { isHovering: boolean; setIsHovering: React.Dispatch<React.SetStateAction<boolean>>; title: string; description: string; link: string; image: string; className?: string }) =>
+        (
+          <motion.div
+            className={`relative overflow-hidden rounded-xl shadow-lg h-full ${className}`}
+            variants={cardVariants}
+            initial="initial"
+            whileHover="hover"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+            onTouchStart={() => setIsHovering(true)}
+            onTouchEnd={() => setIsHovering(false)}
+          >
+            <div
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out will-change-transform"
+              style={{
+                backgroundImage: `url(${image})`,
+                transform: isHovering ? "scale(1.05)" : "scale(1)",
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+
+            <div className="relative h-full flex flex-col justify-end p-6 md:p-8">
+              <AnimatePresence mode="wait">
+                {!isHovering ? (
+                  <motion.h1
+                    key="title"
+                    className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white mb-4 tracking-tight"
+                    initial={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    {title}
+                  </motion.h1>
+                ) : (
+                  <motion.div
+                    key="content"
+                    variants={contentVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="max-w-xl"
+                  >
+                    <motion.h1
+                      variants={itemVariants}
+                      className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white mb-4 tracking-tight"
+                    >
+                      {title}
+                    </motion.h1>
+                    <motion.p
+                      variants={itemVariants}
+                      className="text-sm md:text-base lg:text-lg text-gray-100 my-4 leading-relaxed"
+                    >
+                      {description}
+                    </motion.p>
+                    <motion.div variants={itemVariants}>
+                      <Link
+                        href={link}
+                        className="group inline-flex items-center gap-2 text-white bg-gradient-to-r from-primary to-primary-dark px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold text-sm md:text-base transition-all duration-300 hover:from-primary-dark hover:to-primary shadow-md hover:shadow-lg"
+                      >
+                        Learn How
+                        <ArrowRight
+                          size={20}
+                          className="group-hover:translate-x-1 transition-transform duration-300"
+                        />
+                      </Link>
+                    </motion.div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </motion.div>
+        ),
+    []
+  );
+
   return (
-    <main className="container mx-auto px-4 py-12 max-w-6xl">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 min-h-[80vh]">
-        {/* Providers Card */}
-        <motion.div
-          className="lg:col-span-2 relative overflow-hidden rounded-lg shadow-lg"
-          variants={cardVariants}
-          initial="initial"
-          whileHover="hover"
-          onMouseEnter={() => setIsHoveringProviders(true)}
-          onMouseLeave={() => setIsHoveringProviders(false)}
-        >
-          <div
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out"
-            style={{
-              backgroundImage: "url('/bg/10.jpg')",
-              transform: isHoveringProviders ? "scale(1.05)" : "scale(1)",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-
-          <div className="relative h-full flex flex-col justify-end p-6">
-            {!isHoveringProviders ? (
-              <motion.h1
-                className="font-bold text-4xl text-white mb-4"
-                initial={{ x: 0 }}
-                animate={{ x: 0 }}
-              >
-                For Providers.
-              </motion.h1>
-            ) : (
-              <motion.div
-                variants={contentVariants}
-                initial="hidden"
-                animate="visible"
-                className="max-w-lg"
-              >
-                <motion.h1
-                  variants={itemVariants}
-                  className="font-bold text-4xl text-white"
-                >
-                  For Providers.
-                </motion.h1>
-                <motion.p
-                  variants={itemVariants}
-                  className="font-medium text-gray-200 my-4"
-                >
-                  At Ditekta, our advanced technology is designed to uncover and
-                  expose antimicrobial resistance (AMR) hiding places with
-                  unparalleled accuracy and speed.
-                </motion.p>
-                <motion.div variants={itemVariants}>
-                  <Link
-                    href="/for-providers/service-support"
-                    className="inline-flex items-center gap-2 text-white bg-primary px-4 py-2 rounded-md font-medium transition-all hover:bg-primary/90"
-                  >
-                    Learn How
-                    <ArrowRight size={16} />
-                  </Link>
-                </motion.div>
-              </motion.div>
-            )}
-          </div>
-        </motion.div>
-
-        {/* Patients Card */}
-        <motion.div
-          className="relative overflow-hidden rounded-lg shadow-lg"
-          variants={cardVariants}
-          initial="initial"
-          whileHover="hover"
-          onMouseEnter={() => setIsHoveringPatients(true)}
-          onMouseLeave={() => setIsHoveringPatients(false)}
-        >
-          <div
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out"
-            style={{
-              backgroundImage: "url('/bg/18.jpg')",
-              transform: isHoveringPatients ? "scale(1.05)" : "scale(1)",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-
-          <div className="relative h-full flex flex-col justify-end p-6">
-            {!isHoveringPatients ? (
-              <motion.h1
-                className="font-bold text-4xl text-white mb-4"
-                initial={{ x: 0 }}
-                animate={{ x: 0 }}
-              >
-                For Patients.
-              </motion.h1>
-            ) : (
-              <motion.div
-                variants={contentVariants}
-                initial="hidden"
-                animate="visible"
-                className="max-w-lg"
-              >
-                <motion.h1
-                  variants={itemVariants}
-                  className="font-bold text-4xl text-white"
-                >
-                  For Patients.
-                </motion.h1>
-                <motion.p
-                  variants={itemVariants}
-                  className="font-medium text-gray-200 my-4"
-                >
-                  By using our technology, patients can provide real-time data
-                  through regular health monitoring and reporting symptoms
-                  early. When patients use at-home diagnostic kits linked to our
-                  AI system, they can collect samples and input symptoms into a
-                  user-friendly app.
-                </motion.p>
-                <motion.div variants={itemVariants}>
-                  <Link
-                    href="/for-patients"
-                    className="inline-flex items-center gap-2 text-white bg-primary px-4 py-2 rounded-md font-medium transition-all hover:bg-primary/90"
-                  >
-                    Learn How
-                    <ArrowRight size={16} />
-                  </Link>
-                </motion.div>
-              </motion.div>
-            )}
-          </div>
-        </motion.div>
+    <main className="container mx-auto px-4 py-12 md:py-20 w-full max-w-7xl">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 min-h-[70vh] auto-rows-fr">
+        <Card
+          isHovering={isHoveringProviders}
+          setIsHovering={setIsHoveringProviders}
+          title="For Providers."
+          description="At Ditekta, our advanced technology is designed to uncover and expose antimicrobial resistance (AMR) hiding places with unparalleled accuracy and speed."
+          link="/for-providers/service-support"
+          image="/bg/10.jpg"
+          className="lg:col-span-2"
+        />
+        <Card
+          isHovering={isHoveringPatients}
+          setIsHovering={setIsHoveringPatients}
+          title="For Patients."
+          description="By using our technology, patients can provide real-time data through regular health monitoring and reporting symptoms early. When patients use at-home diagnostic kits linked to our AI system, they can collect samples and input symptoms into a user-friendly app."
+          link="/for-patients"
+          image="/bg/18.jpg"
+        />
       </div>
     </main>
   );
