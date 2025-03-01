@@ -24,7 +24,7 @@ export default function Testimonials() {
       quote:
         "The upcoming AI platform from Ditekta holds great promise for enhancing our healthcare systems. Its ability to integrate seamlessly with existing infrastructure and provide data-driven insights could transform our approach to managing AMR. I believe this technology will set a new benchmark in healthcare efficiency and patient care",
       name: "Hosiana Somi",
-      designation: "Tech Enthusiast at AI",
+      designation: "Tech Enthusiast | AI",
       company: "AI",
       src: "/hosiana.png",
     },
