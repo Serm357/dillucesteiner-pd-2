@@ -69,7 +69,7 @@ const Navbar = () => {
               <img
                 src="/ditekta-logo.png"
                 className={`transition-all duration-300 ${
-                  isScrolled ? "h-28 w-24 sm:w-32" : "h-20 w-24 sm:w-40"
+                  isScrolled ? "h-28 w-24 sm:w-32" : "h-28 w-24 sm:w-40"
                 }`}
                 alt="Ditekta Logo"
               />
@@ -84,7 +84,7 @@ const Navbar = () => {
               >
                 <div className="grid grid-cols-2 gap-6 p-6">
                   <div>
-                    <h3 className="text-sm font-bold text-emerald-600 dark:text-emerald-400 mb-3">
+                    <h3 className="text-sm font-bold text-emerald-400 dark:text-emerald-400 mb-3">
                       AMR Insights
                     </h3>
                     <MenuLink
@@ -116,12 +116,12 @@ const Navbar = () => {
                     <h3 className="text-sm font-bold text-emerald-600 dark:text-emerald-400 mb-3">
                       Resources
                     </h3>
-                    <MenuLink
+                    {/* <MenuLink
                       href="/for-providers/research"
                       onClick={handleNavigation}
                     >
                       Research & Publications
-                    </MenuLink>
+                    </MenuLink> */}
                     <MenuLink
                       href="/for-providers/service-support"
                       onClick={handleNavigation}
@@ -146,7 +146,7 @@ const Navbar = () => {
                   <MenuLink href="/for-patients" onClick={handleNavigation}>
                     AI System
                   </MenuLink>
-                  <h3 className="text-sm font-bold text-emerald-600 dark:text-emerald-400 mt-4 mb-3">
+                  {/* <h3 className="text-sm font-bold text-emerald-600 dark:text-emerald-400 mt-4 mb-3">
                     Resources
                   </h3>
                   <MenuLink href="/resources/guides" onClick={handleNavigation}>
@@ -154,7 +154,7 @@ const Navbar = () => {
                   </MenuLink>
                   <MenuLink href="/resources/faq" onClick={handleNavigation}>
                     FAQ
-                  </MenuLink>
+                  </MenuLink> */}
                 </div>
               </DesktopMenuItem>
 
@@ -183,19 +183,13 @@ const Navbar = () => {
                     </MenuLink>
                   </div>
                   <div>
-                    <MenuLink href="/about-us#team" onClick={handleNavigation}>
+                    <MenuLink href="/#team" onClick={handleNavigation}>
                       Team
                     </MenuLink>
-                    <MenuLink
-                      href="/events/webinars"
-                      onClick={handleNavigation}
-                    >
+                    <MenuLink href="#" onClick={handleNavigation}>
                       Webinars
                     </MenuLink>
-                    <MenuLink
-                      href="/events/conferences"
-                      onClick={handleNavigation}
-                    >
+                    <MenuLink href="#" onClick={handleNavigation}>
                       Conferences
                     </MenuLink>
                   </div>
@@ -210,7 +204,7 @@ const Navbar = () => {
 
               <button
                 onClick={() => setIsMobileOpen(!isMobileOpen)}
-                className="lg:hidden p-2 ml-4 text-emerald-600 dark:text-emerald-400"
+                className="lg:hidden p-2 ml-4 text-emerald-400 dark:text-emerald-400"
                 aria-label="Toggle menu"
                 aria-expanded={isMobileOpen}
               >
@@ -263,7 +257,7 @@ const Navbar = () => {
                 animate={{ x: 0 }}
                 exit={{ x: "100%" }}
                 transition={{ type: "tween", duration: 0.3 }}
-                className="absolute right-0 top-0 h-full w-3/4 max-w-sm bg-white dark:bg-gray-900 shadow-xl overflow-y-auto"
+                className="absolute right-0 top-0 h-full w-3/4 max-w-sm bg-gray-900 dark:bg-gray-900 shadow-xl overflow-y-auto"
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="p-6 space-y-6">
@@ -279,7 +273,7 @@ const Navbar = () => {
                     }
                   >
                     <div className="pl-4 py-2 space-y-4">
-                      <h3 className="font-semibold text-emerald-600 dark:text-emerald-400">
+                      <h3 className="font-semibold text-emerald-400 dark:text-emerald-400">
                         AMR Insights
                       </h3>
                       <MobileMenuLink
@@ -307,7 +301,7 @@ const Navbar = () => {
                         Risk Evaluation
                       </MobileMenuLink>
 
-                      <h3 className="font-semibold text-emerald-600 dark:text-emerald-400 mt-6">
+                      <h3 className="font-semibold text-emerald-400 dark:text-emerald-400 mt-6">
                         Resources
                       </h3>
                       <MobileMenuLink
@@ -350,11 +344,11 @@ const Navbar = () => {
                       >
                         AI System
                       </MobileMenuLink>
-                      <h3 className="font-semibold text-emerald-600 dark:text-emerald-400 mt-4">
+                      {/* <h3 className="font-semibold text-emerald-400 dark:text-emerald-400 mt-4">
                         Resources
                       </h3>
                       <MobileMenuLink
-                        href="/resources/guides"
+                        href=""
                         onClick={handleNavigation}
                       >
                         Guides
@@ -364,7 +358,7 @@ const Navbar = () => {
                         onClick={handleNavigation}
                       >
                         FAQ
-                      </MobileMenuLink>
+                      </MobileMenuLink> */}
                     </div>
                   </MobileMenuItem>
 
@@ -396,22 +390,13 @@ const Navbar = () => {
                       >
                         History
                       </MobileMenuLink>
-                      <MobileMenuLink
-                        href="/about-us#team"
-                        onClick={handleNavigation}
-                      >
+                      <MobileMenuLink href="/#team" onClick={handleNavigation}>
                         Team
                       </MobileMenuLink>
-                      <MobileMenuLink
-                        href="/events/webinars"
-                        onClick={handleNavigation}
-                      >
+                      <MobileMenuLink href="#" onClick={handleNavigation}>
                         Webinars
                       </MobileMenuLink>
-                      <MobileMenuLink
-                        href="/events/conferences"
-                        onClick={handleNavigation}
-                      >
+                      <MobileMenuLink href="#" onClick={handleNavigation}>
                         Conferences
                       </MobileMenuLink>
                     </div>
@@ -438,7 +423,7 @@ const MainMenuLink: React.FC<MainMenuLinkProps> = ({
   <Link
     href={href}
     onClick={onClick}
-    className="relative text-gray-700 dark:text-gray-200 font-medium hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors py-2 overflow-hidden group"
+    className="relative text-gray-200 dark:text-gray-200 font-medium hover:text-emerald-400 dark:hover:text-emerald-400 transition-colors py-2 overflow-hidden group"
   >
     {children}
     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 group-hover:w-full transition-all duration-300"></span>
@@ -458,7 +443,7 @@ const DesktopMenuItem: React.FC<DesktopMenuItemProps> = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <button className="relative text-gray-700 dark:text-gray-200 font-medium hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-1 py-2 overflow-hidden group">
+      <button className="relative text-gray-200 dark:text-gray-200 font-medium hover:text-emerald-400 dark:hover:text-emerald-400 transition-colors flex items-center gap-1 py-2 overflow-hidden group">
         {title}
         <svg
           className={`w-4 h-4 transition-transform duration-300 ${
@@ -487,7 +472,7 @@ const DesktopMenuItem: React.FC<DesktopMenuItemProps> = ({
             transition={{ duration: 0.2 }}
             className="absolute left-1/2 transform -translate-x-1/2 top-full pt-4 z-50"
           >
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden min-w-[320px]">
+            <div className="bg-gray-800 dark:bg-gray-800 rounded-xl shadow-xl border border-gray-700 dark:border-gray-700 overflow-hidden min-w-[320px]">
               {children}
             </div>
           </motion.div>
@@ -501,7 +486,7 @@ const MenuLink: React.FC<MenuLinkProps> = ({ href, children, onClick }) => (
   <Link
     href={href}
     onClick={onClick}
-    className="block py-2 text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+    className="block py-2 text-gray-300 dark:text-gray-300 hover:text-emerald-400 dark:hover:text-emerald-400 transition-colors"
   >
     <div className="flex items-center group">
       <span className="w-0 h-0.5 bg-emerald-500 mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300"></span>
@@ -517,9 +502,9 @@ const MobileMenuItem: React.FC<MobileMenuItemProps> = ({
   onClick,
 }) => {
   return (
-    <div className="border-b border-gray-100 dark:border-gray-800 pb-4">
+    <div className="border-b border-gray-800 dark:border-gray-800 pb-4">
       <button
-        className="w-full flex justify-between items-center py-3 text-gray-800 dark:text-gray-200 font-medium"
+        className="w-full flex justify-between items-center py-3 text-gray-200 dark:text-gray-200 font-medium"
         onClick={onClick}
       >
         {title}
@@ -567,7 +552,7 @@ const MobileMenuLink: React.FC<MobileMenuLinkProps> = ({
   <Link
     href={href}
     onClick={onClick}
-    className="block py-2 pl-4 text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+    className="block py-2 pl-4 text-gray-300 dark:text-gray-300 hover:text-emerald-400 dark:hover:text-emerald-400 transition-colors"
   >
     <div className="flex items-center">
       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2 opacity-0 group-hover:opacity-100"></span>
@@ -590,10 +575,7 @@ const TopBanner = () => (
           >
             Blog
           </Link>
-          <Link
-            href="/contact"
-            className="text-white/90 hover:text-white transition-colors"
-          >
+          <Link href={"/for-partners"} className="text-white/90 hover:text-white transition-colors">
             Contact Us
           </Link>
         </div>
