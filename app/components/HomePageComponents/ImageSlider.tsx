@@ -19,12 +19,10 @@ const ImageSlider = ({ posts }: ImageSliderProps) => {
   const autoPlayIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const totalSlides = posts.length;
-  const autoPlayDuration = 6000; // 6 seconds per slide
+  const autoPlayDuration = 6000;
 
-  // Handle slide navigation
   const goToSlide = useCallback(
     (index: number) => {
-      // Ensure index is within bounds
       const newIndex = ((index % totalSlides) + totalSlides) % totalSlides;
       setCurrentSlide(newIndex);
       resetProgressBar();
@@ -32,143 +30,85 @@ const ImageSlider = ({ posts }: ImageSliderProps) => {
     [totalSlides]
   );
 
-  const nextSlide = useCallback(() => {
-    goToSlide(currentSlide + 1);
-  }, [currentSlide, goToSlide]);
+  const nextSlide = useCallback(
+    () => goToSlide(currentSlide + 1),
+    [currentSlide, goToSlide]
+  );
+  const prevSlide = useCallback(
+    () => goToSlide(currentSlide - 1),
+    [currentSlide, goToSlide]
+  );
 
-  const prevSlide = useCallback(() => {
-    goToSlide(currentSlide - 1);
-  }, [currentSlide, goToSlide]);
-
-  // Progress bar animation
   const resetProgressBar = useCallback(() => {
     if (progressBarRef.current) {
       progressBarRef.current.style.transition = "none";
       progressBarRef.current.style.width = "0%";
-      // Force reflow
       void progressBarRef.current.offsetWidth;
       progressBarRef.current.style.transition = `width ${autoPlayDuration}ms linear`;
       progressBarRef.current.style.width = "100%";
     }
   }, [autoPlayDuration]);
 
-  // Set up autoplay
   const setupAutoPlay = useCallback(() => {
-    if (autoPlayIntervalRef.current) {
-      clearInterval(autoPlayIntervalRef.current);
-    }
-
+    if (autoPlayIntervalRef.current) clearInterval(autoPlayIntervalRef.current);
     if (isAutoPlaying) {
       resetProgressBar();
-      autoPlayIntervalRef.current = setInterval(() => {
-        nextSlide();
-      }, autoPlayDuration);
+      autoPlayIntervalRef.current = setInterval(nextSlide, autoPlayDuration);
     }
-
     return () => {
-      if (autoPlayIntervalRef.current) {
+      if (autoPlayIntervalRef.current)
         clearInterval(autoPlayIntervalRef.current);
-      }
     };
   }, [isAutoPlaying, nextSlide, resetProgressBar, autoPlayDuration]);
 
-  // Toggle autoplay
-  const toggleAutoPlay = useCallback(() => {
-    setIsAutoPlaying((prev) => !prev);
-  }, []);
+  const toggleAutoPlay = useCallback(
+    () => setIsAutoPlaying((prev) => !prev),
+    []
+  );
 
-  // Set up autoplay effect
-  useEffect(() => {
-    return setupAutoPlay();
-  }, [setupAutoPlay, currentSlide]);
+  useEffect(() => setupAutoPlay(), [setupAutoPlay, currentSlide]);
 
-  // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft") {
-        prevSlide();
-      } else if (e.key === "ArrowRight") {
-        nextSlide();
-      }
+      if (e.key === "ArrowLeft") prevSlide();
+      else if (e.key === "ArrowRight") nextSlide();
     };
-
     window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [nextSlide, prevSlide]);
 
-  // Mouse wheel navigation (optional)
-  useEffect(() => {
-    const handleWheel = (e: WheelEvent) => {
-      if (!sliderRef.current || !sliderRef.current.contains(e.target as Node))
-        return;
-
-      // Debounce wheel events
-      if (e.deltaY > 0) {
-        nextSlide();
-      } else if (e.deltaY < 0) {
-        prevSlide();
-      }
-    };
-
-    const slider = sliderRef.current;
-    if (slider) {
-      slider.addEventListener("wheel", handleWheel, { passive: true });
-    }
-
-    return () => {
-      if (slider) {
-        slider.removeEventListener("wheel", handleWheel);
-      }
-    };
-  }, [nextSlide, prevSlide]);
-
-  // Drag functionality
   const [dragStart, setDragStart] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
 
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
     setIsDragging(true);
     setIsAutoPlaying(false);
-
-    // Get client X based on event type
     const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
-
     setDragStart(clientX);
   };
 
   const handleDragEnd = (e: React.MouseEvent | React.TouchEvent) => {
     if (!isDragging) return;
-
-    // Get client X based on event type
     const clientX =
       "changedTouches" in e ? e.changedTouches[0].clientX : e.clientX;
-
     const diff = dragStart - clientX;
-
-    // Change slide if drag is significant
-    if (Math.abs(diff) > 100) {
-      if (diff > 0) {
-        nextSlide();
-      } else {
-        prevSlide();
-      }
+    if (Math.abs(diff) > 50) {
+      // Reduced threshold for mobile
+      if (diff > 0) nextSlide();
+      else prevSlide();
     }
-
     setIsDragging(false);
   };
 
   return (
-    <div className="px-0 md:px-0 lg:px-0 py-0">
+    <div className="px-0 py-0">
       <div
         ref={sliderRef}
-        className="relative h-[35rem] md:h-[calc(100vh-80px)] overflow-hidden bg-neutral-900 rounded-none md:rounded-xl"
+        className="relative h-[65vh] sm:h-[35rem] md:h-[calc(100vh-80px)] overflow-hidden bg-neutral-900 rounded-none"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         onMouseDown={handleDragStart}
         onMouseUp={handleDragEnd}
-        onMouseMove={(e) => isDragging && e.preventDefault()}
         onTouchStart={handleDragStart}
         onTouchEnd={handleDragEnd}
       >
@@ -177,10 +117,10 @@ const ImageSlider = ({ posts }: ImageSliderProps) => {
           <motion.div
             key={currentSlide}
             className="absolute inset-0 w-full h-full"
-            initial={{ opacity: 0, scale: 1.05 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
           >
             <div
               style={{
@@ -190,28 +130,26 @@ const ImageSlider = ({ posts }: ImageSliderProps) => {
             >
               <div className="flex flex-col h-full justify-end">
                 <motion.div
-                  className="p-6 md:p-12 max-w-4xl"
+                  className="p-4 sm:p-6 md:p-12 max-w-4xl"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md text-white text-sm font-medium rounded-full mb-4">
+                  <span className="inline-block px-2 py-1 text-xs sm:text-sm bg-white/10 backdrop-blur-md text-white font-medium rounded-full mb-3">
                     Featured
                   </span>
-                  <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+                  <h2 className="text-white text-xl sm:text-2xl md:text-4xl font-bold mb-2 sm:mb-3 leading-tight">
                     {posts[currentSlide]?.title}
                   </h2>
-                  <p className="text-white/80 text-base md:text-xl mb-6 max-w-3xl leading-relaxed">
+                  <p className="text-white/80 text-sm sm:text-base md:text-xl mb-4 sm:mb-6 max-w-3xl leading-relaxed line-clamp-2">
                     {posts[currentSlide]?.subtitle}
                   </p>
                   <Link
                     href={`/blog/posts/${posts[currentSlide]?.slug}`}
-                    className="group inline-flex items-center gap-2 text-white bg-white/10 hover:bg-white hover:text-black backdrop-blur-md border border-white/20 py-3 px-6 rounded-full font-medium transition-all duration-300"
+                    className="group inline-flex items-center gap-2 text-white bg-white/10 hover:bg-white hover:text-black backdrop-blur-md border border-white/20 py-2 px-4 sm:py-3 sm:px-6 rounded-full text-sm sm:text-base font-medium transition-all duration-300"
                   >
-                    <span>Read Article</span>
-                    <span className="transition-transform duration-300 group-hover:translate-x-1">
-                      <ArrowRight className="w-4 h-4" />
-                    </span>
+                    <span>Read</span>
+                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </motion.div>
               </div>
@@ -220,7 +158,7 @@ const ImageSlider = ({ posts }: ImageSliderProps) => {
         </AnimatePresence>
 
         {/* Progress bar */}
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-white/10">
+        <div className="absolute bottom-0 left-0 w-full h-0.5 bg-white/10">
           <div
             ref={progressBarRef}
             className="h-full bg-white/60 transition-width"
@@ -228,13 +166,13 @@ const ImageSlider = ({ posts }: ImageSliderProps) => {
           />
         </div>
 
-        {/* Side dots navigation */}
-        <div className="absolute right-6 top-1/2 transform -translate-y-1/2 flex flex-col space-y-3">
+        {/* Side dots navigation - horizontal on mobile */}
+        <div className="absolute bottom-2 sm:bottom-auto sm:right-4 sm:top-1/2 sm:-translate-y-1/2 flex sm:flex-col space-x-2 sm:space-x-0 sm:space-y-2 justify-center items-center w-full sm:w-auto px-2">
           {posts.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+              className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-300 ${
                 currentSlide === index
                   ? "bg-white scale-125"
                   : "bg-white/30 hover:bg-white/50"
@@ -244,15 +182,11 @@ const ImageSlider = ({ posts }: ImageSliderProps) => {
           ))}
         </div>
 
-        {/* Navigation controls - show on hover */}
-        <div
-          className={`absolute bottom-6 left-6 flex items-center space-x-3 transition-opacity duration-300 ${
-            isHovering ? "opacity-100" : "opacity-0"
-          }`}
-        >
+        {/* Navigation controls - always visible on mobile */}
+        <div className="absolute bottom-6 right-3 sm:bottom-1 sm:left-4 flex items-center space-x-2">
           <button
             onClick={toggleAutoPlay}
-            className="w-10 h-10 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-black/40 transition-colors"
+            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-black/40 transition-colors"
             aria-label={isAutoPlaying ? "Pause slideshow" : "Play slideshow"}
           >
             {isAutoPlaying ? (
@@ -261,33 +195,28 @@ const ImageSlider = ({ posts }: ImageSliderProps) => {
               <Play className="w-4 h-4" />
             )}
           </button>
-
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={prevSlide}
-              className="w-10 h-10 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-black/40 transition-colors"
-              aria-label="Previous slide"
-            >
-              <ArrowLeft className="w-4 h-4" />
-            </button>
-
-            <button
-              onClick={nextSlide}
-              className="w-10 h-10 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-black/40 transition-colors"
-              aria-label="Next slide"
-            >
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-
-          <div className="text-white/70 font-medium text-sm">
-            <span className="text-white">{currentSlide + 1}</span>
-            <span> / {totalSlides}</span>
+          <button
+            onClick={prevSlide}
+            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-black/40 transition-colors"
+            aria-label="Previous slide"
+          >
+            <ArrowLeft className="w-4 h-4" />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-black/40 transition-colors"
+            aria-label="Next slide"
+          >
+            <ArrowRight className="w-4 h-4" />
+          </button>
+          <div className="text-white/70 font-medium text-xs sm:text-sm">
+            <span className="text-white">{currentSlide + 1}</span> /{" "}
+            {totalSlides}
           </div>
         </div>
 
-        {/* Slide counter */}
-        <div className="absolute top-6 right-6 text-sm font-medium bg-black/20 backdrop-blur-md text-white px-3 py-1 rounded-full">
+        {/* Slide counter - hidden on mobile */}
+        <div className="hidden sm:block absolute top-4 right-4 text-sm font-medium bg-black/20 backdrop-blur-md text-white px-3 py-1 rounded-full">
           {currentSlide + 1} / {totalSlides}
         </div>
       </div>
