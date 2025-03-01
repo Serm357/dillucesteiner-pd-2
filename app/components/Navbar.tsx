@@ -212,6 +212,7 @@ const Navbar = () => {
                 onClick={() => setIsMobileOpen(!isMobileOpen)}
                 className="lg:hidden p-2 ml-4 text-emerald-600 dark:text-emerald-400"
                 aria-label="Toggle menu"
+                aria-expanded={isMobileOpen}
               >
                 <motion.div
                   animate={isMobileOpen ? "open" : "closed"}
