@@ -1,12 +1,61 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import dynamic from "next/dynamic";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
-  ssr: false,
-});
+// Custom hook for animating numbers
+function useCountUp(end: number, duration: number = 2000, delay: number = 0) {
+  const [count, setCount] = useState(0);
+  const nodeRef = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(nodeRef, { once: true, amount: 0.5 });
+
+  useEffect(() => {
+    if (!isInView) return;
+
+    let startTime: number | null = null;
+    let animationFrame: number;
+
+    // Format with commas
+    const formatNumber = (num: number) => {
+      return new Intl.NumberFormat().format(Math.floor(num));
+    };
+
+    // Animation function
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const elapsedTime = timestamp - startTime;
+      const progress = Math.min(elapsedTime / duration, 1);
+      const easedProgress = easeOutExpo(progress);
+      const currentCount = Math.floor(easedProgress * end);
+
+      if (nodeRef.current) {
+        nodeRef.current.textContent = formatNumber(currentCount);
+      }
+
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(animate);
+      }
+    };
+
+    // Easing function for smoother animation
+    const easeOutExpo = (x: number): number => {
+      return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
+    };
+
+    // Start animation after delay
+    const timeoutId = setTimeout(() => {
+      animationFrame = requestAnimationFrame(animate);
+    }, delay);
+
+    // Cleanup
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      clearTimeout(timeoutId);
+    };
+  }, [end, duration, delay, isInView]);
+
+  return nodeRef;
+}
 
 // Card interface for type safety
 interface StatCardProps {
@@ -105,13 +154,11 @@ export default function Stats() {
             delay={0.5}
           />
 
-          <StatCard
+          <SpecialStatCard
             title="AMR"
-            number={0}
             description="died from AMR was a child under 5 years old, often from previously treatable infections."
             color="from-emerald-500 to-teal-400"
             delay={0.7}
-            special={true}
           />
         </motion.div>
       </div>
@@ -130,6 +177,7 @@ const StatCard = ({
 }: StatCardProps) => {
   const cardRef = useRef(null);
   const isInView = useInView(cardRef, { once: true, amount: 0.5 });
+  const counterRef = useCountUp(number, 2500, delay * 1000);
 
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -159,49 +207,14 @@ const StatCard = ({
             </div>
 
             <div className="flex-grow flex flex-col items-center justify-center text-center py-8">
-              {special ? (
-                <div className="flex items-center justify-center space-x-1 mb-4">
-                  <div className="text-white font-bold">
-                    <AnimatedNumbers
-                      includeComma
-                      className="text-4xl lg:text-5xl font-extrabold"
-                      transitions={(index) => ({
-                        type: "spring",
-                        duration: index + 0.7,
-                        delay: isInView ? 0.5 : 0,
-                      })}
-                      animateToNumber={1}
-                    />
-                  </div>
-                  <span className="text-white text-lg mx-1">in</span>
-                  <div className="text-white font-bold">
-                    <AnimatedNumbers
-                      includeComma
-                      className="text-4xl lg:text-5xl font-extrabold"
-                      transitions={(index) => ({
-                        type: "spring",
-                        duration: index + 0.7,
-                        delay: isInView ? 0.7 : 0,
-                      })}
-                      animateToNumber={5}
-                    />
-                  </div>
-                  <span className="text-white text-lg ml-1">People</span>
-                </div>
-              ) : (
-                <div className="mb-4">
-                  <AnimatedNumbers
-                    includeComma
-                    className="text-4xl lg:text-5xl font-extrabold text-white"
-                    transitions={(index) => ({
-                      type: "spring",
-                      duration: index + 0.5,
-                      delay: isInView ? 0.2 : 0,
-                    })}
-                    animateToNumber={number}
-                  />
-                </div>
-              )}
+              <div className="mb-4">
+                <span
+                  ref={counterRef}
+                  className="text-4xl lg:text-5xl font-extrabold text-white"
+                >
+                  0
+                </span>
+              </div>
 
               <p className="text-sm text-gray-100 max-w-xs mx-auto">
                 {description}
@@ -217,6 +230,73 @@ const StatCard = ({
                 <span className="text-white font-medium">{year}</span>
               </div>
             )}
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+const SpecialStatCard = ({
+  title,
+  description,
+  color = "from-blue-600 to-indigo-600",
+  delay = 0,
+}: Omit<StatCardProps, "number">) => {
+  const cardRef = useRef(null);
+  const isInView = useInView(cardRef, { once: true, amount: 0.5 });
+  const firstNumberRef = useCountUp(1, 1500, delay * 1000);
+  const secondNumberRef = useCountUp(5, 1500, (delay + 0.2) * 1000);
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.22, 1, 0.36, 1],
+        delay,
+      },
+    },
+  };
+
+  return (
+    <motion.div ref={cardRef} variants={cardVariants} className="h-full">
+      <div className="h-full group rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02]">
+        <div
+          className={`relative h-full flex flex-col bg-gradient-to-br ${color} p-1`}
+        >
+          <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:16px_16px]"></div>
+          <div className="h-full relative z-10 rounded-xl backdrop-blur-sm bg-black/30 p-6 flex flex-col">
+            <div className="mb-auto">
+              <span className="inline-block text-xs font-bold tracking-wider px-3 py-1 rounded-full bg-white/10 text-white uppercase">
+                {title}
+              </span>
+            </div>
+
+            <div className="flex-grow flex flex-col items-center justify-center text-center py-8">
+              <div className="flex items-center justify-center space-x-1 mb-4">
+                <span
+                  ref={firstNumberRef}
+                  className="text-4xl lg:text-5xl font-extrabold text-white"
+                >
+                  0
+                </span>
+                <span className="text-white text-lg mx-1">in</span>
+                <span
+                  ref={secondNumberRef}
+                  className="text-4xl lg:text-5xl font-extrabold text-white"
+                >
+                  0
+                </span>
+                <span className="text-white text-lg ml-1">People</span>
+              </div>
+
+              <p className="text-sm text-gray-100 max-w-xs mx-auto">
+                {description}
+              </p>
+            </div>
           </div>
         </div>
       </div>
