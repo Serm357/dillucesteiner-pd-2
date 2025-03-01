@@ -39,7 +39,23 @@ const CTA = () => {
   // Memoized card component to optimize performance
   const Card = useMemo(
     () =>
-      ({ isHovering, setIsHovering, title, description, link, image, className }: { isHovering: boolean; setIsHovering: React.Dispatch<React.SetStateAction<boolean>>; title: string; description: string; link: string; image: string; className?: string }) =>
+      ({
+        isHovering,
+        setIsHovering,
+        title,
+        description,
+        link,
+        image,
+        className,
+      }: {
+        isHovering: boolean;
+        setIsHovering: React.Dispatch<React.SetStateAction<boolean>>;
+        title: string;
+        description: string;
+        link: string;
+        image: string;
+        className?: string;
+      }) =>
         (
           <motion.div
             className={`relative overflow-hidden rounded-xl shadow-lg h-full ${className}`}
@@ -55,7 +71,7 @@ const CTA = () => {
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out will-change-transform"
               style={{
                 backgroundImage: `url(${image})`,
-                transform: isHovering ? "scale(1.05)" : "scale(1)",
+                transform: isHovering ? "scale(1.1)" : "scale(1.05)", // Increased image scale for both states
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -65,7 +81,7 @@ const CTA = () => {
                 {!isHovering ? (
                   <motion.h1
                     key="title"
-                    className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white mb-4 tracking-tight"
+                    className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white mb-4 tracking-tight" // Reduced text sizes
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                   >
@@ -81,24 +97,24 @@ const CTA = () => {
                   >
                     <motion.h1
                       variants={itemVariants}
-                      className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white mb-4 tracking-tight"
+                      className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white mb-4 tracking-tight" // Reduced text sizes
                     >
                       {title}
                     </motion.h1>
                     <motion.p
                       variants={itemVariants}
-                      className="text-sm md:text-base lg:text-lg text-gray-100 my-4 leading-relaxed"
+                      className="text-xs md:text-sm lg:text-base text-gray-100 my-4 leading-relaxed" // Reduced text sizes
                     >
                       {description}
                     </motion.p>
                     <motion.div variants={itemVariants}>
                       <Link
                         href={link}
-                        className="group inline-flex items-center gap-2 text-white bg-gradient-to-r from-primary to-primary-dark px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold text-sm md:text-base transition-all duration-300 hover:from-primary-dark hover:to-primary shadow-md hover:shadow-lg"
+                        className="group inline-flex items-center gap-2 text-white bg-gradient-to-r from-primary to-primary-dark px-4 py-2 md:px-5 md:py-2.5 rounded-full font-semibold text-xs md:text-sm transition-all duration-300 hover:from-primary-dark hover:to-primary shadow-md hover:shadow-lg" // Reduced button text size and padding
                       >
                         Learn How
                         <ArrowRight
-                          size={20}
+                          size={16} // Reduced icon size
                           className="group-hover:translate-x-1 transition-transform duration-300"
                         />
                       </Link>
@@ -114,7 +130,9 @@ const CTA = () => {
 
   return (
     <main className="container mx-auto px-4 py-12 md:py-20 w-full max-w-7xl">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 min-h-[70vh] auto-rows-fr">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 min-h-[90vh] auto-rows-fr">
+        {" "}
+        {/* Increased viewheight from 70vh to 90vh */}
         <Card
           isHovering={isHoveringProviders}
           setIsHovering={setIsHoveringProviders}
