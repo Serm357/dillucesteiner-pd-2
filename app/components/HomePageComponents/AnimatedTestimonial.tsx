@@ -66,7 +66,7 @@ export const AnimatedTestimonials = ({
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto text-lg"
+          className="text-gray-300 dark:text-gray-300 mt-4 max-w-2xl mx-auto text-lg"
         >
           Discover insights and experiences from our team members
         </motion.p>

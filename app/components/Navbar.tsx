@@ -1,258 +1,467 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { ModeToggle } from "./ModeToggler";
+import { motion, AnimatePresence } from "framer-motion";
+
+// Type definitions for component props
+interface MainMenuLinkProps {
+  href: string;
+  children: React.ReactNode;
+  onClick: () => void;
+}
+
+interface DesktopMenuItemProps {
+  title: string;
+  children: React.ReactNode;
+  isActive: boolean;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
+}
+
+interface MenuLinkProps {
+  href: string;
+  children: React.ReactNode;
+  onClick: () => void;
+}
+
+interface MobileMenuItemProps {
+  title: string;
+  children: React.ReactNode;
+  isOpen: boolean;
+  onClick: () => void;
+}
+
+interface MobileMenuLinkProps {
+  href: string;
+  children: React.ReactNode;
+  onClick: () => void;
+}
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavigation = () => {
+    setIsMobileOpen(false);
+    setActiveSubmenu(null);
+  };
+
   return (
     <>
-      <LinksBanner />
+      <TopBanner />
       <header
-        className={`sticky top-0 z-50 bg-background transition-all duration-300 ${
-          isScrolled ? "shadow-lg backdrop-blur-md bg-opacity-90" : ""
+        className={`sticky top-0 z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-gray-900/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg py-2"
+            : "bg-gray-900 dark:bg-gray-900 py-4"
         }`}
       >
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <Link href="/" className="flex-shrink-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="flex-shrink-0 z-50 relative">
               <img
                 src="/ditekta-logo.png"
-                className="h-12 w-32 sm:w-40 transition-all duration-300 hover:scale-105"
+                className={`transition-all duration-300 ${
+                  isScrolled ? "h-28 w-24 sm:w-32" : "h-20 w-24 sm:w-40"
+                }`}
                 alt="Ditekta Logo"
               />
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              <DesktopDropdown title="For Providers">
-                <div className="grid grid-cols-2 gap-4 p-4">
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
+            <nav className="hidden lg:flex items-center space-x-8">
+              <DesktopMenuItem
+                title="For Providers"
+                isActive={activeSubmenu === "providers"}
+                onMouseEnter={() => setActiveSubmenu("providers")}
+                onMouseLeave={() => setActiveSubmenu(null)}
+              >
+                <div className="grid grid-cols-2 gap-6 p-6">
+                  <div>
+                    <h3 className="text-sm font-bold text-emerald-600 dark:text-emerald-400 mb-3">
                       AMR Insights
                     </h3>
-                    <NavLink href="/for-providers/amr-insights">
+                    <MenuLink
+                      href="/for-providers/amr-insights"
+                      onClick={handleNavigation}
+                    >
                       Overview
-                    </NavLink>
-                    <NavLink href="/for-providers/amr-insights/detection">
+                    </MenuLink>
+                    <MenuLink
+                      href="/for-providers/amr-insights/detection"
+                      onClick={handleNavigation}
+                    >
                       Detection
-                    </NavLink>
-                    <NavLink href="/for-providers/amr-insights/risk-assesment">
+                    </MenuLink>
+                    <MenuLink
+                      href="/for-providers/amr-insights/risk-assesment"
+                      onClick={handleNavigation}
+                    >
                       Risk Assessment
-                    </NavLink>
-                    <NavLink href="/for-providers/amr-insights/risk-evaluation">
+                    </MenuLink>
+                    <MenuLink
+                      href="/for-providers/amr-insights/risk-evaluation"
+                      onClick={handleNavigation}
+                    >
                       Risk Evaluation
-                    </NavLink>
+                    </MenuLink>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
+                  <div>
+                    <h3 className="text-sm font-bold text-emerald-600 dark:text-emerald-400 mb-3">
                       Resources
                     </h3>
-                    <NavLink href="/for-providers/research">
+                    <MenuLink
+                      href="/for-providers/research"
+                      onClick={handleNavigation}
+                    >
                       Research & Publications
-                    </NavLink>
-                    <NavLink href="/for-providers/service-support">
+                    </MenuLink>
+                    <MenuLink
+                      href="/for-providers/service-support"
+                      onClick={handleNavigation}
+                    >
                       Service & Support
-                    </NavLink>
+                    </MenuLink>
                   </div>
                 </div>
-              </DesktopDropdown>
+              </DesktopMenuItem>
 
-              <NavLink href="/for-partners">For Partners</NavLink>
+              <MainMenuLink href="/for-partners" onClick={handleNavigation}>
+                For Partners
+              </MainMenuLink>
 
-              <DesktopDropdown title="For Patients">
-                <div className="p-4 space-y-2 min-w-[240px]">
-                  <NavLink href="/for-patients">AI System</NavLink>
-                  <h3 className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 mt-2">
+              <DesktopMenuItem
+                title="For Patients"
+                isActive={activeSubmenu === "patients"}
+                onMouseEnter={() => setActiveSubmenu("patients")}
+                onMouseLeave={() => setActiveSubmenu(null)}
+              >
+                <div className="p-6 space-y-3 min-w-[280px]">
+                  <MenuLink href="/for-patients" onClick={handleNavigation}>
+                    AI System
+                  </MenuLink>
+                  <h3 className="text-sm font-bold text-emerald-600 dark:text-emerald-400 mt-4 mb-3">
                     Resources
                   </h3>
-                  <NavLink href="/resources/guides">Guides</NavLink>
-                  <NavLink href="/resources/faq">FAQ</NavLink>
+                  <MenuLink href="/resources/guides" onClick={handleNavigation}>
+                    Guides
+                  </MenuLink>
+                  <MenuLink href="/resources/faq" onClick={handleNavigation}>
+                    FAQ
+                  </MenuLink>
                 </div>
-              </DesktopDropdown>
+              </DesktopMenuItem>
 
-              <DesktopDropdown title="About Us">
-                <div className="grid grid-cols-2 gap-4 p-4">
-                  <div className="space-y-2">
-                    <NavLink href="/about-us">Company Overview</NavLink>
-                    <NavLink href="/about-us#science">Science</NavLink>
-                    <NavLink href="/about-us#history">History</NavLink>
+              <DesktopMenuItem
+                title="About Us"
+                isActive={activeSubmenu === "about"}
+                onMouseEnter={() => setActiveSubmenu("about")}
+                onMouseLeave={() => setActiveSubmenu(null)}
+              >
+                <div className="grid grid-cols-2 gap-6 p-6">
+                  <div>
+                    <MenuLink href="/about-us" onClick={handleNavigation}>
+                      Company Overview
+                    </MenuLink>
+                    <MenuLink
+                      href="/about-us#science"
+                      onClick={handleNavigation}
+                    >
+                      Science
+                    </MenuLink>
+                    <MenuLink
+                      href="/about-us#history"
+                      onClick={handleNavigation}
+                    >
+                      History
+                    </MenuLink>
                   </div>
-                  <div className="space-y-2">
-                    <NavLink href="/about-us#team">Team</NavLink>
-                    <NavLink href="/events/webinars">Webinars</NavLink>
-                    <NavLink href="/events/conferences">Conferences</NavLink>
+                  <div>
+                    <MenuLink href="/about-us#team" onClick={handleNavigation}>
+                      Team
+                    </MenuLink>
+                    <MenuLink
+                      href="/events/webinars"
+                      onClick={handleNavigation}
+                    >
+                      Webinars
+                    </MenuLink>
+                    <MenuLink
+                      href="/events/conferences"
+                      onClick={handleNavigation}
+                    >
+                      Conferences
+                    </MenuLink>
                   </div>
                 </div>
-              </DesktopDropdown>
-            </div>
+              </DesktopMenuItem>
+            </nav>
 
-            {/* Right Section */}
-            <div className="flex items-center gap-4">
-              <div className="hidden lg:flex items-center gap-4">
-                <ModeToggle />
-                <button className="px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-700 hover:to-green-600 text-white rounded-full font-medium transition-all duration-300">
-                  Request Demo
-                </button>
-              </div>
+            <div className="flex items-center">
+              <button className="hidden lg:flex items-center px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg">
+                Request Demo
+              </button>
 
               <button
                 onClick={() => setIsMobileOpen(!isMobileOpen)}
-                className="lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                className="lg:hidden p-2 ml-4 text-emerald-600 dark:text-emerald-400"
+                aria-label="Toggle menu"
               >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                <motion.div
+                  animate={isMobileOpen ? "open" : "closed"}
+                  className="w-7 h-7 flex flex-col justify-center items-center"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
+                  <motion.span
+                    className="w-6 h-0.5 bg-current mb-1.5 block"
+                    variants={{
+                      closed: { rotate: 0, y: 0 },
+                      open: { rotate: 45, y: 8 },
+                    }}
+                    transition={{ duration: 0.3 }}
                   />
-                </svg>
+                  <motion.span
+                    className="w-6 h-0.5 bg-current mb-1.5 block"
+                    variants={{
+                      closed: { opacity: 1 },
+                      open: { opacity: 0 },
+                    }}
+                    transition={{ duration: 0.3 }}
+                  />
+                  <motion.span
+                    className="w-6 h-0.5 bg-current block"
+                    variants={{
+                      closed: { rotate: 0, y: 0 },
+                      open: { rotate: -45, y: -8 },
+                    }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.div>
               </button>
             </div>
           </div>
-        </nav>
-
-        {/* Mobile Menu */}
-        <div
-          className={`lg:hidden fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 ${
-            isMobileOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
-          onClick={() => setIsMobileOpen(false)}
-        >
-          <div
-            className={`absolute right-0 top-0 h-full w-3/4 max-w-sm bg-white dark:bg-gray-900 shadow-xl transform transition-transform duration-300 ease-in-out ${
-              isMobileOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <div className="p-6 overflow-y-auto h-full">
-              <MobileDropdown title="For Providers">
-                <div className="space-y-2 pl-4">
-                  <h3 className="text-sm font-medium text-emerald-600 dark:text-emerald-400">
-                    AMR Insights
-                  </h3>
-                  <MobileNavLink href="/for-providers/amr-insights">
-                    Overview
-                  </MobileNavLink>
-                  <MobileNavLink href="/for-providers/amr-insights/detection">
-                    Detection
-                  </MobileNavLink>
-                  <MobileNavLink href="/for-providers/amr-insights/risk-assesment">
-                    Risk Assessment
-                  </MobileNavLink>
-                  <MobileNavLink href="/for-providers/amr-insights/risk-evaluation">
-                    Risk Evaluation
-                  </MobileNavLink>
-                  <h3 className="text-sm font-medium text-emerald-600 dark:text-emerald-400 mt-4">
-                    Resources
-                  </h3>
-                  <MobileNavLink href="/for-providers/research">
-                    Research & Publications
-                  </MobileNavLink>
-                  <MobileNavLink href="/for-providers/service-support">
-                    Service & Support
-                  </MobileNavLink>
-                </div>
-              </MobileDropdown>
-
-              <MobileNavLink href="/for-partners">For Partners</MobileNavLink>
-
-              <MobileDropdown title="For Patients">
-                <div className="pl-4 space-y-2">
-                  <MobileNavLink href="/for-patients">AI System</MobileNavLink>
-                  <h3 className="text-sm font-medium text-emerald-600 dark:text-emerald-400 mt-2">
-                    Resources
-                  </h3>
-                  <MobileNavLink href="/resources/guides">Guides</MobileNavLink>
-                  <MobileNavLink href="/resources/faq">FAQ</MobileNavLink>
-                </div>
-              </MobileDropdown>
-
-              <MobileDropdown title="About Us">
-                <div className="pl-4 space-y-2">
-                  <MobileNavLink href="/about-us">
-                    Company Overview
-                  </MobileNavLink>
-                  <MobileNavLink href="/about-us#science">
-                    Science
-                  </MobileNavLink>
-                  <MobileNavLink href="/about-us#history">
-                    History
-                  </MobileNavLink>
-                  <MobileNavLink href="/about-us#team">Team</MobileNavLink>
-                  <MobileNavLink href="/events/webinars">
-                    Webinars
-                  </MobileNavLink>
-                  <MobileNavLink href="/events/conferences">
-                    Conferences
-                  </MobileNavLink>
-                </div>
-              </MobileDropdown>
-
-              <div className="mt-8 flex flex-col gap-4">
-                <ModeToggle />
-                <button className="w-full px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium transition-colors">
-                  Request Demo
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
+
+        <AnimatePresence>
+          {isMobileOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 z-40 bg-black/60 lg:hidden"
+              onClick={() => setIsMobileOpen(false)}
+            >
+              <motion.div
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "100%" }}
+                transition={{ type: "tween", duration: 0.3 }}
+                className="absolute right-0 top-0 h-full w-3/4 max-w-sm bg-white dark:bg-gray-900 shadow-xl overflow-y-auto"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="p-6 space-y-6">
+                  <MobileMenuItem
+                    title="For Providers"
+                    isOpen={activeSubmenu === "providers-mobile"}
+                    onClick={() =>
+                      setActiveSubmenu(
+                        activeSubmenu === "providers-mobile"
+                          ? null
+                          : "providers-mobile"
+                      )
+                    }
+                  >
+                    <div className="pl-4 py-2 space-y-4">
+                      <h3 className="font-semibold text-emerald-600 dark:text-emerald-400">
+                        AMR Insights
+                      </h3>
+                      <MobileMenuLink
+                        href="/for-providers/amr-insights"
+                        onClick={handleNavigation}
+                      >
+                        Overview
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/for-providers/amr-insights/detection"
+                        onClick={handleNavigation}
+                      >
+                        Detection
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/for-providers/amr-insights/risk-assesment"
+                        onClick={handleNavigation}
+                      >
+                        Risk Assessment
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/for-providers/amr-insights/risk-evaluation"
+                        onClick={handleNavigation}
+                      >
+                        Risk Evaluation
+                      </MobileMenuLink>
+
+                      <h3 className="font-semibold text-emerald-600 dark:text-emerald-400 mt-6">
+                        Resources
+                      </h3>
+                      <MobileMenuLink
+                        href="/for-providers/research"
+                        onClick={handleNavigation}
+                      >
+                        Research & Publications
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/for-providers/service-support"
+                        onClick={handleNavigation}
+                      >
+                        Service & Support
+                      </MobileMenuLink>
+                    </div>
+                  </MobileMenuItem>
+
+                  <MobileMenuLink
+                    href="/for-partners"
+                    onClick={handleNavigation}
+                  >
+                    For Partners
+                  </MobileMenuLink>
+
+                  <MobileMenuItem
+                    title="For Patients"
+                    isOpen={activeSubmenu === "patients-mobile"}
+                    onClick={() =>
+                      setActiveSubmenu(
+                        activeSubmenu === "patients-mobile"
+                          ? null
+                          : "patients-mobile"
+                      )
+                    }
+                  >
+                    <div className="pl-4 py-2 space-y-4">
+                      <MobileMenuLink
+                        href="/for-patients"
+                        onClick={handleNavigation}
+                      >
+                        AI System
+                      </MobileMenuLink>
+                      <h3 className="font-semibold text-emerald-600 dark:text-emerald-400 mt-4">
+                        Resources
+                      </h3>
+                      <MobileMenuLink
+                        href="/resources/guides"
+                        onClick={handleNavigation}
+                      >
+                        Guides
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/resources/faq"
+                        onClick={handleNavigation}
+                      >
+                        FAQ
+                      </MobileMenuLink>
+                    </div>
+                  </MobileMenuItem>
+
+                  <MobileMenuItem
+                    title="About Us"
+                    isOpen={activeSubmenu === "about-mobile"}
+                    onClick={() =>
+                      setActiveSubmenu(
+                        activeSubmenu === "about-mobile" ? null : "about-mobile"
+                      )
+                    }
+                  >
+                    <div className="pl-4 py-2 space-y-4">
+                      <MobileMenuLink
+                        href="/about-us"
+                        onClick={handleNavigation}
+                      >
+                        Company Overview
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/about-us#science"
+                        onClick={handleNavigation}
+                      >
+                        Science
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/about-us#history"
+                        onClick={handleNavigation}
+                      >
+                        History
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/about-us#team"
+                        onClick={handleNavigation}
+                      >
+                        Team
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/events/webinars"
+                        onClick={handleNavigation}
+                      >
+                        Webinars
+                      </MobileMenuLink>
+                      <MobileMenuLink
+                        href="/events/conferences"
+                        onClick={handleNavigation}
+                      >
+                        Conferences
+                      </MobileMenuLink>
+                    </div>
+                  </MobileMenuItem>
+
+                  <button className="w-full px-6 py-3 mt-6 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white rounded-full font-medium transition-all duration-300 shadow-md">
+                    Request Demo
+                  </button>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
     </>
   );
 };
 
-// Reusable Components
-const NavLink = ({
+const MainMenuLink: React.FC<MainMenuLinkProps> = ({
   href,
   children,
-}: {
-  href: string;
-  children: React.ReactNode;
+  onClick,
 }) => (
   <Link
     href={href}
-    className="text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-emerald-400 transition-colors font-medium"
+    onClick={onClick}
+    className="relative text-gray-700 dark:text-gray-200 font-medium hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors py-2 overflow-hidden group"
   >
     {children}
+    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 group-hover:w-full transition-all duration-300"></span>
   </Link>
 );
 
-const DesktopDropdown = ({
+const DesktopMenuItem: React.FC<DesktopMenuItemProps> = ({
   title,
   children,
-}: {
-  title: string;
-  children: React.ReactNode;
+  isActive,
+  onMouseEnter,
+  onMouseLeave,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div
       className="relative"
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
-      <button className="flex items-center gap-1 text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-emerald-400 font-medium">
+      <button className="relative text-gray-700 dark:text-gray-200 font-medium hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-1 py-2 overflow-hidden group">
         {title}
         <svg
-          className={`w-4 h-4 transition-transform ${
-            isOpen ? "rotate-180" : ""
+          className={`w-4 h-4 transition-transform duration-300 ${
+            isActive ? "rotate-180 text-emerald-500" : ""
           }`}
           fill="none"
           stroke="currentColor"
@@ -265,95 +474,128 @@ const DesktopDropdown = ({
             d="M19 9l-7 7-7-7"
           />
         </svg>
+        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 group-hover:w-full transition-all duration-300"></span>
       </button>
 
-      <div
-        className={`absolute top-full pt-2 transition-opacity duration-300 ${
-          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
-      >
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 min-w-[320px] backdrop-blur-lg">
-          {children}
-        </div>
-      </div>
+      <AnimatePresence>
+        {isActive && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute left-1/2 transform -translate-x-1/2 top-full pt-4 z-50"
+          >
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden min-w-[320px]">
+              {children}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
 
-const MobileNavLink = ({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) => (
+const MenuLink: React.FC<MenuLinkProps> = ({ href, children, onClick }) => (
   <Link
     href={href}
-    className="block py-2 px-4 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 rounded-lg transition-colors"
+    onClick={onClick}
+    className="block py-2 text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
   >
-    {children}
+    <div className="flex items-center group">
+      <span className="w-0 h-0.5 bg-emerald-500 mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300"></span>
+      {children}
+    </div>
   </Link>
 );
 
-const MobileDropdown = ({
+const MobileMenuItem: React.FC<MobileMenuItemProps> = ({
   title,
   children,
-}: {
-  title: string;
-  children: React.ReactNode;
+  isOpen,
+  onClick,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <div className="border-b border-gray-100 dark:border-gray-800">
+    <div className="border-b border-gray-100 dark:border-gray-800 pb-4">
       <button
-        className="w-full flex justify-between items-center py-3 px-4 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
-        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex justify-between items-center py-3 text-gray-800 dark:text-gray-200 font-medium"
+        onClick={onClick}
       >
         {title}
-        <svg
-          className={`w-5 h-5 transition-transform ${
-            isOpen ? "rotate-180" : ""
-          }`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3 }}
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
+          <svg
+            className="w-5 h-5 text-emerald-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </motion.div>
       </button>
-      <div
-        className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-96" : "max-h-0"
-        }`}
-      >
-        {children}
-      </div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            {children}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
 
-const LinksBanner = () => (
-  <div className="bg-emerald-600 dark:bg-emerald-700">
+const MobileMenuLink: React.FC<MobileMenuLinkProps> = ({
+  href,
+  children,
+  onClick,
+}) => (
+  <Link
+    href={href}
+    onClick={onClick}
+    className="block py-2 pl-4 text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+  >
+    <div className="flex items-center">
+      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2 opacity-0 group-hover:opacity-100"></span>
+      {children}
+    </div>
+  </Link>
+);
+
+const TopBanner = () => (
+  <div className="bg-gradient-to-r from-emerald-600 to-emerald-500">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-      <div className="flex items-center justify-end gap-6 text-sm">
-        <Link
-          href="/blog"
-          className="text-white/90 hover:text-white transition-colors"
-        >
-          Blog
-        </Link>
-        <Link
-          href="/contact"
-          className="text-white/90 hover:text-white transition-colors"
-        >
-          Contact Us
-        </Link>
+      <div className="flex items-center justify-between">
+        <span className="text-white/90 text-sm hidden sm:block">
+          Leading in antimicrobial resistance detection
+        </span>
+        <div className="flex items-center gap-6 text-sm">
+          <Link
+            href="/blog"
+            className="text-white/90 hover:text-white transition-colors"
+          >
+            Blog
+          </Link>
+          <Link
+            href="/contact"
+            className="text-white/90 hover:text-white transition-colors"
+          >
+            Contact Us
+          </Link>
+        </div>
       </div>
     </div>
   </div>
