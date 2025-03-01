@@ -1,52 +1,164 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const CTA = () => {
-  return (
-    <main className="mx-3">
-      <div className="min-h-[80vh] w-full flex flex-col md:flex-row gap-2">
-        <div className="flex-[1] md:flex-[3] relative h-[450px] bg-[url('/bg/10.jpg')] bg-no-repeat bg-cover hover:cursor-pointer  group rounded-sm">
-          <h1 className="font-bold text-4xl text-primary group-hover:hidden absolute bottom-2 left-2">
-            For Providers.
-          </h1>
-          <div className="hidden group-hover:block absolute bottom-2 left-2 group-hover:animate-in">
-            <h1 className="font-bold text-4xl text-primary">For Providers.</h1>
-            <p className="font-bold text-gray-700 text-xs my-4  max-w-lg">
-              At Ditekta , our advanced technology is designed to uncover and
-              expose antimicrobial resistance (AMR) hiding places with
-              unparalleled accuracy and speed
-            </p>
-            <Link
-              href="/for-providers/service-support"
-              className="text-primary underline hover:scale-150 font-bold text-sm"
-            >
-              Lean How
-            </Link>
-          </div>
-        </div>
+  const [isHoveringProviders, setIsHoveringProviders] = useState(false);
+  const [isHoveringPatients, setIsHoveringPatients] = useState(false);
 
-        <div className="flex-[1] md:flex-[2] relative h-[450px] bg-[url('/bg/18.jpg')] bg-no-repeat bg-cover hover:cursor-pointer rounded-sm group">
-          <h1 className="font-bold text-4xl text-primary group-hover:hidden absolute bottom-2 left-2">
-            For Patients.
-          </h1>
-          <div className="hidden group-hover:block absolute bottom-2 left-2 group-hover:animate-[accordion-up] ">
-            <h1 className="font-bold text-4xl text-primary">For Patients.</h1>
-            <p className="font-bold text-gray-800 text-xs my-4  max-w-lg">
-              By using our technology, patients can provide real-time data
-              through regular health monitoring and reporting symptoms early.
-              When patients use at-home diagnostic kits linked to our AI system,
-              they can collect samples (like swabs or blood) and input symptoms
-              into a user-friendly app. Our AI then analyzes these samples and
-              symptoms for any signs of resistance.
-            </p>
-            <Link
-              href="/for-patients"
-              className="text-primary underline hover:scale-150 font-bold text-sm"
-            >
-              Lean How
-            </Link>
+  // Animation variants
+  const cardVariants = {
+    initial: { scale: 1 },
+    hover: { scale: 1.02, transition: { duration: 0.3 } },
+  };
+
+  const contentVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  return (
+    <main className="container mx-auto px-4 py-12 max-w-6xl">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 min-h-[80vh]">
+        {/* Providers Card */}
+        <motion.div
+          className="lg:col-span-2 relative overflow-hidden rounded-lg shadow-lg"
+          variants={cardVariants}
+          initial="initial"
+          whileHover="hover"
+          onMouseEnter={() => setIsHoveringProviders(true)}
+          onMouseLeave={() => setIsHoveringProviders(false)}
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out"
+            style={{
+              backgroundImage: "url('/bg/10.jpg')",
+              transform: isHoveringProviders ? "scale(1.05)" : "scale(1)",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+
+          <div className="relative h-full flex flex-col justify-end p-6">
+            {!isHoveringProviders ? (
+              <motion.h1
+                className="font-bold text-4xl text-white mb-4"
+                initial={{ x: 0 }}
+                animate={{ x: 0 }}
+              >
+                For Providers.
+              </motion.h1>
+            ) : (
+              <motion.div
+                variants={contentVariants}
+                initial="hidden"
+                animate="visible"
+                className="max-w-lg"
+              >
+                <motion.h1
+                  variants={itemVariants}
+                  className="font-bold text-4xl text-white"
+                >
+                  For Providers.
+                </motion.h1>
+                <motion.p
+                  variants={itemVariants}
+                  className="font-medium text-gray-200 my-4"
+                >
+                  At Ditekta, our advanced technology is designed to uncover and
+                  expose antimicrobial resistance (AMR) hiding places with
+                  unparalleled accuracy and speed.
+                </motion.p>
+                <motion.div variants={itemVariants}>
+                  <Link
+                    href="/for-providers/service-support"
+                    className="inline-flex items-center gap-2 text-white bg-primary px-4 py-2 rounded-md font-medium transition-all hover:bg-primary/90"
+                  >
+                    Learn How
+                    <ArrowRight size={16} />
+                  </Link>
+                </motion.div>
+              </motion.div>
+            )}
           </div>
-        </div>
+        </motion.div>
+
+        {/* Patients Card */}
+        <motion.div
+          className="relative overflow-hidden rounded-lg shadow-lg"
+          variants={cardVariants}
+          initial="initial"
+          whileHover="hover"
+          onMouseEnter={() => setIsHoveringPatients(true)}
+          onMouseLeave={() => setIsHoveringPatients(false)}
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out"
+            style={{
+              backgroundImage: "url('/bg/18.jpg')",
+              transform: isHoveringPatients ? "scale(1.05)" : "scale(1)",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+
+          <div className="relative h-full flex flex-col justify-end p-6">
+            {!isHoveringPatients ? (
+              <motion.h1
+                className="font-bold text-4xl text-white mb-4"
+                initial={{ x: 0 }}
+                animate={{ x: 0 }}
+              >
+                For Patients.
+              </motion.h1>
+            ) : (
+              <motion.div
+                variants={contentVariants}
+                initial="hidden"
+                animate="visible"
+                className="max-w-lg"
+              >
+                <motion.h1
+                  variants={itemVariants}
+                  className="font-bold text-4xl text-white"
+                >
+                  For Patients.
+                </motion.h1>
+                <motion.p
+                  variants={itemVariants}
+                  className="font-medium text-gray-200 my-4"
+                >
+                  By using our technology, patients can provide real-time data
+                  through regular health monitoring and reporting symptoms
+                  early. When patients use at-home diagnostic kits linked to our
+                  AI system, they can collect samples and input symptoms into a
+                  user-friendly app.
+                </motion.p>
+                <motion.div variants={itemVariants}>
+                  <Link
+                    href="/for-patients"
+                    className="inline-flex items-center gap-2 text-white bg-primary px-4 py-2 rounded-md font-medium transition-all hover:bg-primary/90"
+                  >
+                    Learn How
+                    <ArrowRight size={16} />
+                  </Link>
+                </motion.div>
+              </motion.div>
+            )}
+          </div>
+        </motion.div>
       </div>
     </main>
   );
