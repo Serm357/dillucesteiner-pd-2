@@ -1,6 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
-import getPostMetadata from "../../../../components/getPostMetadata";
+import getPostMetadata from "../../../components/HomePageComponents/getPostMetadata";
 import MaxWidthWrapper from "@/app/components/MaxWidthWrapper";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";

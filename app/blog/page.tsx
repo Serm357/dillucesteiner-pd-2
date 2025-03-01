@@ -1,5 +1,5 @@
 import PostPreview from "@/components/PostPreview";
-import getPostMetadata from "@/components/getPostMetadata";
+import getPostMetadata from "@/app/components/HomePageComponents/getPostMetadata";
 
 export const revalidate = 60 * 60 * 24 * 7;
 

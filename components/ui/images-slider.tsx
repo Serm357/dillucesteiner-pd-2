@@ -1,8 +1,10 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
+import Link from "next/link";
 
+// Optimized ImagesSlider component
 export const ImagesSlider = ({
   images,
   children,
@@ -21,130 +23,90 @@ export const ImagesSlider = ({
   direction?: "up" | "down";
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [loading, setLoading] = useState(false);
   const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
-    );
-  };
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+  // Memoized image loading
+  const loadImages = useCallback(async () => {
+    try {
+      const loadPromises = images.map((image) => {
+        return new Promise<string>((resolve) => {
+          const img = new Image();
+          img.src = image;
+          img.decoding = "async"; // Improve performance
+          img.loading = "eager"; // Prioritize loading
+          img.onload = () => resolve(image);
+        });
+      });
+      const loaded = await Promise.all(loadPromises);
+      setLoadedImages(loaded);
+    } catch (error) {
+      console.error("Failed to load images:", error);
+    }
+  }, [images]);
 
   useEffect(() => {
     loadImages();
-  }, []);
+  }, [loadImages]);
 
-  const loadImages = () => {
-    setLoading(true);
-    const loadPromises = images.map((image) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = image;
-        img.onload = () => resolve(image);
-        img.onerror = reject;
-      });
-    });
-
-    Promise.all(loadPromises)
-      .then((loadedImages) => {
-        setLoadedImages(loadedImages as string[]);
-        setLoading(false);
-      })
-      .catch((error) => console.error("Failed to load images", error));
-  };
+  // Optimized slideshow logic
   useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "ArrowRight") {
-        handleNext();
-      } else if (event.key === "ArrowLeft") {
-        handlePrevious();
-      }
-    };
+    if (!autoplay || loadedImages.length === 0) return;
 
-    window.addEventListener("keydown", handleKeyDown);
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % loadedImages.length);
+    }, 5000);
 
-    // autoplay
-    let interval: any;
-    if (autoplay) {
-      interval = setInterval(() => {
-        handleNext();
-      }, 5000);
-    }
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      clearInterval(interval);
-    };
-  }, []);
+    return () => clearInterval(interval);
+  }, [autoplay, loadedImages]);
 
   const slideVariants = {
-    initial: {
-      scale: 0,
-      opacity: 0,
-      rotateX: 45,
-    },
+    initial: { scale: 1.2, opacity: 0 },
     visible: {
       scale: 1,
-      rotateX: 0,
       opacity: 1,
       transition: {
-        duration: 0.5,
-        ease: [0.645, 0.045, 0.355, 1.0],
+        duration: 1.2,
+        ease: "easeOut",
       },
     },
-    upExit: {
-      opacity: 1,
-      y: "-150%",
+    exit: {
+      scale: 1.1,
+      opacity: 0,
       transition: {
-        duration: 1,
-      },
-    },
-    downExit: {
-      opacity: 1,
-      y: "150%",
-      transition: {
-        duration: 1,
+        duration: 0.8,
+        ease: "easeIn",
       },
     },
   };
 
-  const areImagesLoaded = loadedImages.length > 0;
-
   return (
-    <div
-      className={cn(
-        "overflow-hidden h-full w-full relative flex items-center justify-center",
-        className
-      )}
-      style={{
-        perspective: "1000px",
-      }}
-    >
-      {areImagesLoaded && children}
-      {areImagesLoaded && overlay && (
-        <div
-          className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)}
-        />
-      )}
-
-      {areImagesLoaded && (
-        <AnimatePresence>
-          <motion.img
-            key={currentIndex}
-            src={loadedImages[currentIndex]}
-            initial="initial"
-            animate="visible"
-            exit={direction === "up" ? "upExit" : "downExit"}
-            variants={slideVariants}
-            className="image h-full w-full absolute inset-0 object-cover object-center"
-          />
-        </AnimatePresence>
+    <div className={cn("relative h-full w-full overflow-hidden", className)}>
+      {loadedImages.length > 0 && (
+        <>
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={currentIndex}
+              src={loadedImages[currentIndex]}
+              variants={slideVariants}
+              initial="initial"
+              animate="visible"
+              exit="exit"
+              className="absolute inset-0 h-full w-full object-cover"
+              sizes="100vw"
+              loading="eager"
+              decoding="async"
+            />
+          </AnimatePresence>
+          {overlay && (
+            <div
+              className={cn(
+                "absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black/40 z-10",
+                overlayClassName
+              )}
+            />
+          )}
+          {children}
+        </>
       )}
     </div>
   );
