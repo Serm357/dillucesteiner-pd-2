@@ -2,7 +2,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import { Skeleton } from "@/components/ui/skeleton";
-import { motion } from "framer-motion";
 import { getPostMetadata } from "./components/HomePageComponents/getPostMetadata";
 
 // Server Components
