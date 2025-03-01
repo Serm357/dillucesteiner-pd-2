@@ -1,3 +1,4 @@
+"use client"
 import {
   CandlestickChartIcon,
   FlaskRoundIcon,
@@ -5,8 +6,25 @@ import {
   Sparkles,
 } from "lucide-react";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Herofeatures() {
+  const [activeTab, setActiveTab] = useState(1);
+
+  // Custom tab switching logic
+  interface TabProps {
+    tabIndex: number;
+  }
+
+  const handleTabClick = (tabIndex: number): void => {
+    setActiveTab(tabIndex);
+  };
+
+  // Initialize with first tab active
+  useEffect(() => {
+    setActiveTab(1);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950">
       <div className="absolute inset-0 opacity-10">
@@ -31,26 +49,41 @@ export default function Herofeatures() {
                 >
                   <button
                     type="button"
-                    className="group hs-tab-active:bg-gradient-to-r hs-tab-active:from-violet-600 hs-tab-active:to-emerald-600 hs-tab-active:shadow-xl text-start 
-                    transition-all duration-300 ease-in-out hover:bg-white/5 p-5 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10"
-                    id="tabs-with-card-item-1"
-                    data-hs-tab="#tabs-with-card-1"
-                    aria-controls="tabs-with-card-1"
+                    className={`group text-start transition-all duration-300 ease-in-out hover:bg-white/5 p-5 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 
+                    ${
+                      activeTab === 1
+                        ? "bg-gradient-to-r from-violet-600 to-emerald-600 shadow-xl"
+                        : ""
+                    }`}
+                    onClick={() => handleTabClick(1)}
+                    aria-selected={activeTab === 1}
                     role="tab"
                   >
                     <span className="flex items-start">
                       <span className="flex-shrink-0 p-2 rounded-lg bg-gradient-to-br from-violet-600/20 to-emerald-600/20 backdrop-blur-sm border border-white/10 group-hover:border-white/20 transition-all duration-300">
                         <FlaskRoundIcon
-                          className="size-6 md:size-7 hs-tab-active:text-white text-emerald-400 transition-all duration-300"
+                          className={`size-6 md:size-7 transition-all duration-300 ${
+                            activeTab === 1 ? "text-white" : "text-emerald-400"
+                          }`}
                           width="24"
                           height="24"
                         />
                       </span>
                       <span className="grow ms-6">
-                        <span className="block text-lg font-semibold hs-tab-active:text-white text-white transition-all duration-300">
+                        <span
+                          className={`block text-lg font-semibold transition-all duration-300 ${
+                            activeTab === 1 ? "text-white" : "text-white"
+                          }`}
+                        >
                           Detection
                         </span>
-                        <span className="block mt-2 text-sm leading-relaxed hs-tab-active:text-white/90 text-neutral-300 transition-all duration-300">
+                        <span
+                          className={`block mt-2 text-sm leading-relaxed transition-all duration-300 ${
+                            activeTab === 1
+                              ? "text-white/90"
+                              : "text-neutral-300"
+                          }`}
+                        >
                           Our AI swiftly processes patient samples, identifying
                           resistance patterns within hours instead of days. This
                           quick turnaround is crucial for timely and effective
@@ -81,26 +114,41 @@ export default function Herofeatures() {
 
                   <button
                     type="button"
-                    className="group hs-tab-active:bg-gradient-to-r hs-tab-active:from-violet-600 hs-tab-active:to-emerald-600 hs-tab-active:shadow-xl text-start 
-                    transition-all duration-300 ease-in-out hover:bg-white/5 p-5 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10"
-                    id="tabs-with-card-item-2"
-                    data-hs-tab="#tabs-with-card-2"
-                    aria-controls="tabs-with-card-2"
+                    className={`group text-start transition-all duration-300 ease-in-out hover:bg-white/5 p-5 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 
+                    ${
+                      activeTab === 2
+                        ? "bg-gradient-to-r from-violet-600 to-emerald-600 shadow-xl"
+                        : ""
+                    }`}
+                    onClick={() => handleTabClick(2)}
+                    aria-selected={activeTab === 2}
                     role="tab"
                   >
                     <span className="flex items-start">
                       <span className="flex-shrink-0 p-2 rounded-lg bg-gradient-to-br from-violet-600/20 to-emerald-600/20 backdrop-blur-sm border border-white/10 group-hover:border-white/20 transition-all duration-300">
                         <CandlestickChartIcon
-                          className="size-6 md:size-7 hs-tab-active:text-white text-emerald-400 transition-all duration-300"
+                          className={`size-6 md:size-7 transition-all duration-300 ${
+                            activeTab === 2 ? "text-white" : "text-emerald-400"
+                          }`}
                           width="24"
                           height="24"
                         />
                       </span>
                       <span className="grow ms-6">
-                        <span className="block text-lg font-semibold hs-tab-active:text-white text-white transition-all duration-300">
+                        <span
+                          className={`block text-lg font-semibold transition-all duration-300 ${
+                            activeTab === 2 ? "text-white" : "text-white"
+                          }`}
+                        >
                           Risk Assessment
                         </span>
-                        <span className="block mt-2 text-sm leading-relaxed hs-tab-active:text-white/90 text-neutral-300 transition-all duration-300">
+                        <span
+                          className={`block mt-2 text-sm leading-relaxed transition-all duration-300 ${
+                            activeTab === 2
+                              ? "text-white/90"
+                              : "text-neutral-300"
+                          }`}
+                        >
                           Our AI system integrates dense datasets from diverse
                           sources, including genetic sequences, patient health
                           records, and environmental data. This comprehensive
@@ -132,26 +180,41 @@ export default function Herofeatures() {
 
                   <button
                     type="button"
-                    className="group hs-tab-active:bg-gradient-to-r hs-tab-active:from-violet-600 hs-tab-active:to-emerald-600 hs-tab-active:shadow-xl text-start 
-                    transition-all duration-300 ease-in-out hover:bg-white/5 p-5 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10"
-                    id="tabs-with-card-item-3"
-                    data-hs-tab="#tabs-with-card-3"
-                    aria-controls="tabs-with-card-3"
+                    className={`group text-start transition-all duration-300 ease-in-out hover:bg-white/5 p-5 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 
+                    ${
+                      activeTab === 3
+                        ? "bg-gradient-to-r from-violet-600 to-emerald-600 shadow-xl"
+                        : ""
+                    }`}
+                    onClick={() => handleTabClick(3)}
+                    aria-selected={activeTab === 3}
                     role="tab"
                   >
                     <span className="flex items-start">
                       <span className="flex-shrink-0 p-2 rounded-lg bg-gradient-to-br from-violet-600/20 to-emerald-600/20 backdrop-blur-sm border border-white/10 group-hover:border-white/20 transition-all duration-300">
                         <MicroscopeIcon
-                          className="size-6 md:size-7 hs-tab-active:text-white text-emerald-400 transition-all duration-300"
+                          className={`size-6 md:size-7 transition-all duration-300 ${
+                            activeTab === 3 ? "text-white" : "text-emerald-400"
+                          }`}
                           width="24"
                           height="24"
                         />
                       </span>
                       <span className="grow ms-6">
-                        <span className="block text-lg font-semibold hs-tab-active:text-white text-white transition-all duration-300">
+                        <span
+                          className={`block text-lg font-semibold transition-all duration-300 ${
+                            activeTab === 3 ? "text-white" : "text-white"
+                          }`}
+                        >
                           Risk Evaluation
                         </span>
-                        <span className="block mt-2 text-sm leading-relaxed hs-tab-active:text-white/90 text-neutral-300 transition-all duration-300">
+                        <span
+                          className={`block mt-2 text-sm leading-relaxed transition-all duration-300 ${
+                            activeTab === 3
+                              ? "text-white/90"
+                              : "text-neutral-300"
+                          }`}
+                        >
                           Our AI technology analyzes a wide range of data,
                           including genetic, clinical, and environmental
                           factors, to develop a comprehensive risk profile for
@@ -192,46 +255,58 @@ export default function Herofeatures() {
                 <div className="relative">
                   <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 to-emerald-600 rounded-3xl blur-lg opacity-70"></div>
 
-                  <div
-                    id="tabs-with-card-1"
-                    role="tabpanel"
-                    aria-labelledby="tabs-with-card-item-1"
-                    className="relative"
-                  >
-                    <img
-                      className="shadow-2xl rounded-2xl border border-white/10 transition-all duration-500 hover:scale-[1.02]"
-                      src="/bg/28.jpg"
-                      alt="Image Description"
-                    />
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent"></div>
-                  </div>
+                  {/* Custom Tab Content with Animated Transitions */}
+                  <div className="relative overflow-hidden rounded-2xl">
+                    <div
+                      className="transition-opacity duration-500 ease-in-out"
+                      style={{
+                        opacity: activeTab === 1 ? 1 : 0,
+                        position: activeTab === 1 ? "relative" : "absolute",
+                        inset: 0,
+                        zIndex: activeTab === 1 ? 10 : 0,
+                      }}
+                    >
+                      <img
+                        className="shadow-2xl rounded-2xl border border-white/10 transition-all duration-500 hover:scale-[1.02] w-full"
+                        src="/bg/28.jpg"
+                        alt="Detection"
+                      />
+                      <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
 
-                  <div
-                    id="tabs-with-card-2"
-                    className="hidden relative"
-                    role="tabpanel"
-                    aria-labelledby="tabs-with-card-item-2"
-                  >
-                    <img
-                      className="shadow-2xl rounded-2xl border border-white/10 transition-all duration-500 hover:scale-[1.02]"
-                      src="/bg/11.jpg"
-                      alt="Image Description"
-                    />
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent"></div>
-                  </div>
+                    <div
+                      className="transition-opacity duration-500 ease-in-out"
+                      style={{
+                        opacity: activeTab === 2 ? 1 : 0,
+                        position: activeTab === 2 ? "relative" : "absolute",
+                        inset: 0,
+                        zIndex: activeTab === 2 ? 10 : 0,
+                      }}
+                    >
+                      <img
+                        className="shadow-2xl rounded-2xl border border-white/10 transition-all duration-500 hover:scale-[1.02] w-full"
+                        src="/bg/11.jpg"
+                        alt="Risk Assessment"
+                      />
+                      <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
 
-                  <div
-                    id="tabs-with-card-3"
-                    className="hidden relative"
-                    role="tabpanel"
-                    aria-labelledby="tabs-with-card-item-3"
-                  >
-                    <img
-                      className="shadow-2xl rounded-2xl border border-white/10 transition-all duration-500 hover:scale-[1.02]"
-                      src="/bg/21.jpg"
-                      alt="Image Description"
-                    />
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div
+                      className="transition-opacity duration-500 ease-in-out"
+                      style={{
+                        opacity: activeTab === 3 ? 1 : 0,
+                        position: activeTab === 3 ? "relative" : "absolute",
+                        inset: 0,
+                        zIndex: activeTab === 3 ? 10 : 0,
+                      }}
+                    >
+                      <img
+                        className="shadow-2xl rounded-2xl border border-white/10 transition-all duration-500 hover:scale-[1.02] w-full"
+                        src="/bg/21.jpg"
+                        alt="Risk Evaluation"
+                      />
+                      <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
                   </div>
                 </div>
                 {/* <!-- End Tab Content --> */}
@@ -346,28 +421,5 @@ function Heading() {
         </div>
       </div>
     </div>
-  );
-}
-
-function Stars() {
-  return (
-    <svg
-      className="flex-shrink-0 mt-2 size-6 md:size-7 hs-tab-active:text-white text-emerald-400 dark:hs-tab-active:text-blue-500"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-      <path d="M5 3v4" />
-      <path d="M19 17v4" />
-      <path d="M3 5h4" />
-      <path d="M17 19h4" />
-    </svg>
   );
 }
